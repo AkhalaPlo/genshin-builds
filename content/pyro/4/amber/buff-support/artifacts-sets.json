@@ -1,0 +1,34 @@
+{
+  "artifact_sets": [
+    {
+      "items": [
+        {
+          "name": "Noblesse Oblige",
+          "pieces": 4
+        }
+      ]
+    },
+    {
+      "items": [
+        {
+          "name": "Instructor",
+          "pieces": 4,
+          "note": "This set is preferred over **Noblesse Oblige (4)** when Amber is used as support in a Hu Tao Vaporize team."
+        }
+      ]
+    },
+    {
+      "items": [
+        {
+          "name": "Scroll of the Hero of Cinder City",
+          "pieces": 4
+        }      ]
+    },
+    {
+      "items": [
+        {
+          "name": "The Exile",
+          "pieces": 4
+        }      ]    }
+  ]
+}
