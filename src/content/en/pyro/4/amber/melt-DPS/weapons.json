@@ -1,0 +1,119 @@
+{
+  "weapons": [
+    {
+      "items": [
+        {
+          "name": "the-first-great-magic",
+          "rarity": 5
+        }
+      ]
+    },
+    {
+      "items": [
+        {
+          "name": "aqua-simulacra",
+          "rarity": 5
+        }
+      ]
+    },
+    {
+      "items": [
+        {
+          "name": "thundering-pulse",
+          "rarity": 5
+        },
+        {
+          "name": "skyward-harp",
+          "rarity": 5
+        },
+        {
+          "name": "polar-star",
+          "rarity": 5
+        }
+      ]
+    },
+    {
+      "items": [
+        {
+          "name": "slingshot",
+          "rarity": 3
+        }
+      ]
+    },
+    {
+      "items": [
+        {
+          "name": "amos-bow",
+          "rarity": 5,
+          "note": "Ranking assumes you stay close to the enemy but this weapons has the potential to outclasses **[[aqua-simulacra]]** with max stacks but maintaining stacks would be difficult."
+        },
+        {
+          "name": "hunters-path",
+          "rarity": 5
+        }
+      ]
+    },
+    {
+      "items": [
+        {
+          "name": "ibis-piercer",
+          "rarity": 4,
+          "refinement": 5
+        },
+        {
+          "name": "the-viridescent-hunt",
+          "rarity": 4
+        }
+      ]
+    },
+    {
+      "items": [
+        {
+          "name": "hamayumi",
+          "rarity": 4
+        },
+        {
+          "name": "prototype-crescent",
+          "rarity": 4
+        }
+      ]
+    },
+    {
+      "items": [
+        {
+          "name": "song-of-stillness",
+          "rarity": 4
+        }
+      ]
+    },
+    {
+      "items": [
+        {
+          "name": "windblume-ode",
+          "rarity": 4
+        },
+        {
+          "name": "the-stringless",
+          "rarity": 4
+        }
+      ]
+    },
+    {
+      "items": [
+        {
+          "name": "sharpshooters-oath",
+          "rarity": 3,
+          "note": "Significantly more potent if used in a headshot heavy Charged Attack playstyle."
+        },
+        {
+          "name": "kings-squire",
+          "rarity": 4
+        },
+        {
+          "name": "scion-of-the-blazing-sun",
+          "rarity": 4
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+    "er": "Recarga de Energía",
+    "em": "Maestría Elemental",
+    "hp": "Vida",
+    "hp%": "Vida%",
+    "atk": "ATQ",
+    "atk%": "ATQ%",
+    "def": "DEF",
+    "def%": "DEF%",
+    "cd": "Daño CRIT",
+    "cr": "Prob. CRIT",
+    "cr/cd": "Prob. CRIT / Daño CRIT",
+    "em-set": "Set +80 Maestría Elemental",
+    "atk-set": "Set +18% ATQ"
+}

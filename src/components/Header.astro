@@ -1,0 +1,55 @@
+---
+import '../styles/header.css';
+import { t } from '../utils/i18n';
+
+const { locale, lang, character } = Astro.props;
+
+const languages = [
+  { code: 'en', name: 'English' },
+  { code: 'fr', name: 'Français' },
+  { code: 'de', name: 'Deutsch' },
+  { code: 'es', name: 'Español' },
+  { code: 'it', name: 'Italiano' },
+  { code: 'ru', name: 'Русский' },
+];
+
+const currentLang = lang || 'en';
+---
+
+<header class="site-header">
+  <div class="header-content">
+    <div class="logo">
+      <a href={`/${currentLang}/`} class="logo-link">
+        <h1>Genshin Builds</h1>
+      </a>
+    </div>
+
+    <nav class="language-switcher">
+      <span class="language-label">{t(locale, 'ui', 'Language')}:</span>
+      <select
+        class="language-select"
+        id="language-select"
+        value={currentLang}
+        data-character={character}
+      >
+        {
+          languages.map((lang) => (
+            <option value={lang.code} selected={lang.code === currentLang}>
+              {lang.name}
+            </option>
+          ))
+        }
+      </select>
+    </nav>
+  </div>
+</header>
+
+<script>
+  const select = document.getElementById('language-select');
+  select?.addEventListener('change', (e) => {
+    const lang = e.target.value;
+    const char = select.dataset.character;
+    const path = `/${lang}/${char}`;
+    window.location.href = path;
+  });
+</script>

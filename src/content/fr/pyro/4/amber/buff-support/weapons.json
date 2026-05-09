@@ -1,0 +1,35 @@
+{
+  "weapons": [
+    {
+      "items": [
+        {
+          "name": "elegy-for-the-end",
+          "rarity": 5
+        }
+      ]
+    },
+    {
+      "items": [
+        {
+          "name": "favonius-warbow",
+          "rarity": 4
+        }
+      ]
+    },
+    {
+      "items": [
+        {
+          "name": "sacrificial-bow",
+          "rarity": 4
+        }      ]
+    },
+    {
+      "items": [
+        {
+          "name": "the-viridescent-hunt",
+          "rarity": 4
+        }
+      ]
+    }
+  ]
+}

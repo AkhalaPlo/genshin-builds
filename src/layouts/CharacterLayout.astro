@@ -2,8 +2,10 @@
 import '../styles/base.css';
 import '../styles/build.css';
 import '../styles/theme.css';
+import Header from '../components/Header.astro';
+import { t } from '../utils/i18n';
 
-const { character, metadata } = Astro.props;
+const { character, metadata, lang, locale } = Astro.props;
 ---
 
 <html>
@@ -12,6 +14,7 @@ const { character, metadata } = Astro.props;
   </head>
 
   <body data-element={Astro.props.element}>
+    <Header locale={locale} lang={lang} character={character} />
     <div class="page">
       <!-- CHARACTER HEADER CARD -->
       <div class="character-header">
@@ -22,7 +25,8 @@ const { character, metadata } = Astro.props;
         {
           metadata?.last_updated && (
             <div class="last-updated">
-              Last Updated: Version {metadata.last_updated}
+              {t(locale, 'ui', 'Last Updated')}: {t(locale, 'ui', 'Version')}{' '}
+              {metadata.last_updated}
             </div>
           )
         }

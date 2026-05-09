@@ -1,20 +1,33 @@
 ---
-const { notes, buildNote } = Astro.props;
+import { t } from '../utils/i18n';
+const { notes, buildNote, locale } = Astro.props;
 
 const hasNotes =
   notes.weapons.length + notes.artifacts.length + notes.talents.length > 0;
 
 const noteItems = [
-  { key: 'artifact', label: 'artifacts' },
-  { key: 'weapons', label: 'weapons' },
-  { key: 'talent', label: 'talents' },
+  {
+    key: 'artifact',
+    label: t(locale, 'ui', 'Artifacts'),
+    linkText: t(locale, 'ui', 'Detailed artifacts calculation'),
+  },
+  {
+    key: 'weapons',
+    label: t(locale, 'ui', 'Weapons'),
+    linkText: t(locale, 'ui', 'Detailed weapons calculation'),
+  },
+  {
+    key: 'talent',
+    label: t(locale, 'ui', 'Talents'),
+    linkText: t(locale, 'ui', 'Detailed talents calculation'),
+  },
 ];
 ---
 
 {
   (hasNotes || buildNote?.notes?.length > 0) && (
     <div class="card">
-      <h2>Notes</h2>
+      <h2>{t(locale, 'ui', 'Notes')}</h2>
 
       {buildNote && (
         <div>
@@ -23,9 +36,10 @@ const noteItems = [
               buildNote[item.key] && (
                 <div>
                   <a href={buildNote[item.key].link} target="_blank">
-                    Detailed {item.label} calculation
+                    {item.linkText}
                   </a>{' '}
-                  - Thank you to {buildNote[item.key].author}!
+                  - {t(locale, 'ui', 'Thank you to')}{' '}
+                  {buildNote[item.key].author}!
                 </div>
               ),
           )}
@@ -42,7 +56,7 @@ const noteItems = [
 
       {notes.weapons.length > 0 && (
         <div>
-          <h3>Regarding Weapons Choices:</h3>
+          <h3>{t(locale, 'ui', 'Regarding Weapons Choices:')}</h3>
 
           {notes.weapons.map((n: { name: string; note: string }) => (
             <div set:html={`<strong>${n.name}:</strong> ${n.note}`} />
@@ -54,11 +68,11 @@ const noteItems = [
         notes.artifacts.mainstats.length > 0 ||
         notes.artifacts.substats.length > 0) && (
         <div>
-          <h3>Regarding Artifacts Choices:</h3>
+          <h3>{t(locale, 'ui', 'Regarding Artifacts Choices:')}</h3>
 
           {notes.artifacts.sets.length > 0 && (
             <div>
-              <h4>Sets</h4>
+              <h4>{t(locale, 'ui', 'Sets')}</h4>
               {notes.artifacts.sets.map((n: { name: string; note: string }) => (
                 <div set:html={`<strong>${n.name}:</strong> ${n.note}`} />
               ))}
@@ -67,7 +81,7 @@ const noteItems = [
 
           {notes.artifacts.mainstats.length > 0 && (
             <div>
-              <h4>Main Stats</h4>
+              <h4>{t(locale, 'ui', 'Main Stats')}</h4>
               {notes.artifacts.mainstats.map(
                 (n: { name: string; note: string }) => (
                   <div set:html={`<strong>${n.name}:</strong> ${n.note}`} />
@@ -78,7 +92,7 @@ const noteItems = [
 
           {notes.artifacts.substats.length > 0 && (
             <div>
-              <h4>Substats</h4>
+              <h4>{t(locale, 'ui', 'Substats')}</h4>
               {notes.artifacts.substats.map(
                 (n: { name: string; note: string }) => (
                   <div set:html={`<strong>${n.name}:</strong> ${n.note}`} />
@@ -91,7 +105,7 @@ const noteItems = [
 
       {notes.talents.length > 0 && (
         <div>
-          <h3>Regarding Talents Choices:</h3>
+          <h3>{t(locale, 'ui', 'Regarding Talents Choices:')}</h3>
 
           {notes.talents.map((n: { name: string; note: string }) => (
             <div set:html={`<strong>${n.name}:</strong> ${n.note}`} />

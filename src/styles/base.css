@@ -3,6 +3,10 @@
     "Segoe UI", Roboto, Inter, Arial, "Noto Sans", "Helvetica Neue", sans-serif;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 .page {
   max-width: 1100px;
   margin: 0 auto;
@@ -25,6 +29,8 @@ a:hover {
 }
 
 body {
+      margin: 0;
+  padding: 0;
   font-family: inherit;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;

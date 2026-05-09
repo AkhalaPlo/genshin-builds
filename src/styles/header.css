@@ -1,0 +1,102 @@
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+
+  backdrop-filter: blur(10px);
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+
+  background: rgba(10, 10, 10, 0.7);
+}
+
+.header-content {
+  max-width: 1100px;
+  margin: 0 auto;
+
+  height: 60px;
+
+  padding: 0 1rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-link {
+  text-decoration: none;
+}
+
+.logo-link h1 {
+  margin: 0;
+
+  font-size: 1.35rem;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+
+  color: var(--accent);
+}
+
+.language-switcher {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.language-label {
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+.language-select {
+  background: rgba(255, 255, 255, 0.04);
+
+  color: var(--text);
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
+
+  padding: 0.45rem 0.75rem;
+
+  font: inherit;
+
+  cursor: pointer;
+
+  transition:
+    border-color 0.15s ease,
+    background 0.15s ease;
+}
+
+.language-select option {
+  background: white;
+  color: #111;
+}
+
+.language-select:hover,
+.language-select:focus {
+  border-color: var(--accent);
+
+  background: rgba(255, 255, 255, 0.06);
+
+  outline: none;
+}
+
+@media (max-width: 768px) {
+  .header-content {
+    height: 54px;
+    padding: 0 0.75rem;
+  }
+
+  .logo-link h1 {
+    font-size: 1.1rem;
+  }
+
+  .language-label {
+    display: none;
+  }
+
+  .language-select {
+    padding: 0.35rem 0.6rem;
+    font-size: 0.85rem;
+  }
+}

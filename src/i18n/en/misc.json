@@ -1,0 +1,15 @@
+{
+    "er": "Energy Recharge",
+    "em": "Elemental Mastery",
+    "hp": "Flat HP",
+    "hp%": "HP%",
+    "atk": "Flat ATK",
+    "atk%": "ATK%",
+    "def": "Flat DEF",
+    "def%": "DEF%",
+    "cd": "CRIT DMG",
+    "cr": "CRIT Rate",
+    "cr/cd": "CRIT Rate / CRIT DMG",
+    "em-set": "+80 EM set",
+    "atk-set": "+18% ATK set"
+}

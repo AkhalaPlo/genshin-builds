@@ -1,9 +1,10 @@
 ---
-const { talents } = Astro.props;
+import { t } from '../utils/i18n';
+const { talents, locale } = Astro.props;
 ---
 
 <div class="card">
-  <h2>Talents</h2>
+  <h2>{t(locale, 'ui', 'Talents')}</h2>
 
   {
     talents.talents.map((talent: { items: any[] }, i: number) => (

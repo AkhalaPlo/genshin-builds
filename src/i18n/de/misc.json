@@ -1,0 +1,15 @@
+{
+    "er": "Energieladung",
+    "em": "Elementarkunde",
+    "hp": "LP",
+    "hp%": "LP%",
+    "atk": "ANG",
+    "atk%": "ANG%",
+    "def": "VER",
+    "def%": "VER%",
+    "cd": "KRIT-SCH",
+    "cr": "KRIT-Rate",
+    "cr/cd": "KRIT-Rate / KRIT-SCH",
+    "em-set": "+80 Elementarkunde Set",
+    "atk-set": "+18% ANG Set"
+}

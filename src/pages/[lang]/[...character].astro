@@ -1,0 +1,438 @@
+---
+import fs from 'fs';
+import path from 'path';
+import Weapon from '../../components/Weapon.astro';
+import BuildCard from '../../components/BuildCard.astro';
+import Artifact from '../../components/Artifact.astro';
+import Talent from '../../components/Talent.astro';
+import Notes from '../../components/Notes.astro';
+import { getLocale, t } from '../../utils/i18n';
+import { marked } from 'marked';
+import CharacterPageLayout from '../../layouts/CharacterLayout.astro';
+
+export const prerender = false;
+
+const { lang, character: characterPath } = Astro.params;
+const character = Array.isArray(characterPath)
+  ? characterPath.join('/')
+  : characterPath;
+const locale = getLocale(lang);
+
+class TranslationHelper {
+  private warnings: string[] = [];
+  private warningSet = new Set<string>();
+
+  translate(
+    category: 'artifacts' | 'weapons' | 'characters' | 'misc',
+    id: string,
+    sourceFile?: string,
+  ) {
+    const translation = t(locale, category, id, sourceFile);
+
+    if (translation === id) {
+      const warning =
+        `[i18n] Missing translation for id '${id}' in category '${category}'` +
+        (sourceFile ? ` (source: ${sourceFile})` : '');
+
+      if (!this.warningSet.has(warning)) {
+        this.warningSet.add(warning);
+        this.warnings.push(warning);
+      }
+    }
+
+    return translation;
+  }
+
+  translateNoteText(text: string, sourceFile?: string) {
+    const translateId = (
+      id: string,
+      category?: 'artifacts' | 'weapons' | 'characters' | 'misc',
+    ) => {
+      if (category) {
+        const translation = this.translate(category, id, sourceFile);
+        return translation !== id ? translation : null;
+      }
+
+      const categories = [
+        'artifacts',
+        'weapons',
+        'characters',
+        'misc',
+      ] as const;
+      for (const cat of categories) {
+        const translation = t(locale, cat, id, sourceFile, false);
+        if (translation !== id) {
+          return translation;
+        }
+      }
+
+      const warning =
+        `[i18n] Missing translation for id '${id}'` +
+        (sourceFile ? ` (source: ${sourceFile})` : '');
+
+      if (!this.warningSet.has(warning)) {
+        this.warningSet.add(warning);
+        this.warnings.push(warning);
+      }
+
+      return null;
+    };
+
+    return text.replace(
+      /\[\[(?:(artifact|weapon|character|misc):)?([a-z0-9-]+)\]\]/g,
+      (match, rawCategory, id) => {
+        const category =
+          rawCategory === 'artifact'
+            ? 'artifacts'
+            : rawCategory === 'weapon'
+              ? 'weapons'
+              : rawCategory === 'character'
+                ? 'characters'
+                : rawCategory === 'misc'
+                  ? 'misc'
+                  : undefined;
+        const translation = translateId(id, category as any);
+
+        return translation ?? match;
+      },
+    );
+  }
+
+  getWarnings() {
+    return this.warnings;
+  }
+}
+
+const translator = new TranslationHelper();
+
+function loadJSON(buildPath: string, fileName: string) {
+  const buildFile = path.join(buildPath, fileName);
+  const charFile = path.join(path.dirname(buildPath), fileName);
+
+  if (fs.existsSync(buildFile)) {
+    return JSON.parse(fs.readFileSync(buildFile, 'utf-8'));
+  }
+
+  if (fs.existsSync(charFile)) {
+    return JSON.parse(fs.readFileSync(charFile, 'utf-8'));
+  }
+
+  return null;
+}
+
+const toTitleCase = (str: string) =>
+  str
+    .split('-')
+    .map((w) => w.charAt(0).toUpperCase() + w.slice(1))
+    .join(' ');
+
+function findCharacterPath(base: string, char: string) {
+  for (const element of fs.readdirSync(base)) {
+    for (const rarity of fs.readdirSync(path.join(base, element))) {
+      const candidate = path.join(base, element, rarity, char);
+      if (fs.existsSync(candidate)) {
+        return { element, rarity, path: candidate };
+      }
+    }
+  }
+  return null;
+}
+
+function collectNotes(
+  groups: any[],
+  formatter: (item: any) => string,
+  sourceFile: string,
+) {
+  const notes: { name: string; note: string }[] = [];
+
+  groups.forEach((group) => {
+    group.items.forEach((item: { note?: string }) => {
+      if (item.note) {
+        const renderedNote = translator.translateNoteText(
+          item.note,
+          sourceFile,
+        );
+        notes.push({
+          name: formatter(item),
+          note: (marked.parse(renderedNote) as string).replace(/<\/?p>/g, ''),
+        });
+      }
+    });
+  });
+
+  return notes;
+}
+
+function collectStatNotes(
+  items: any[],
+  formatter: (item: any) => string,
+  sourceFile: string,
+) {
+  const notes: { name: string; note: string }[] = [];
+
+  items.forEach((item) => {
+    const note = typeof item === 'string' ? null : item.note;
+    if (note) {
+      const renderedNote = translator.translateNoteText(note, sourceFile);
+      notes.push({
+        name: formatter(item),
+        note: (marked.parse(renderedNote) as string).replace(/<\/?p>/g, ''),
+      });
+    }
+  });
+
+  return notes;
+}
+
+function loadBuildData(buildPath: string, buildName: string) {
+  const weapons = loadJSON(buildPath, 'weapons.json');
+  weapons.weapons = weapons.weapons.map((position: { items: any[] }) => ({
+    ...position,
+    items: position.items.map((item: any) => ({
+      ...item,
+      name: translator.translate(
+        'weapons',
+        item.name,
+        path.join(buildPath, 'weapons.json'),
+      ),
+    })),
+  }));
+
+  const artifacts = {
+    sets: loadJSON(buildPath, 'artifacts-sets.json'),
+    mainstats: loadJSON(buildPath, 'artifacts-mainstats.json'),
+    substats: loadJSON(buildPath, 'artifacts-substats.json'),
+  };
+
+  artifacts.sets.artifact_sets = artifacts.sets.artifact_sets.map(
+    (artifact: { items: any[] }) => ({
+      ...artifact,
+      items: artifact.items.map((item: any) => ({
+        ...item,
+        name: translator.translate(
+          'artifacts',
+          item.name,
+          path.join(buildPath, 'artifacts-sets.json'),
+        ),
+      })),
+    }),
+  );
+
+  const translateMiscValue = (value: any, sourceFile: string) =>
+    t(
+      locale,
+      'misc',
+      typeof value === 'string' ? value : value.name,
+      sourceFile,
+      false,
+    );
+
+  const translateStatItem = (item: any, sourceFile: string) =>
+    typeof item === 'string'
+      ? { name: translateMiscValue(item, sourceFile) }
+      : { ...item, name: translateMiscValue(item, sourceFile) };
+
+  artifacts.mainstats.main_stats = {
+    sands: artifacts.mainstats.main_stats.sands.map((item: any) =>
+      translateStatItem(item, path.join(buildPath, 'artifacts-mainstats.json')),
+    ),
+    goblet: artifacts.mainstats.main_stats.goblet.map((item: any) =>
+      translateStatItem(item, path.join(buildPath, 'artifacts-mainstats.json')),
+    ),
+    circlet: artifacts.mainstats.main_stats.circlet.map((item: any) =>
+      translateStatItem(item, path.join(buildPath, 'artifacts-mainstats.json')),
+    ),
+  };
+
+  artifacts.substats.substats_priority =
+    artifacts.substats.substats_priority.map((item: any) =>
+      typeof item === 'string'
+        ? translateMiscValue(
+            item,
+            path.join(buildPath, 'artifacts-substats.json'),
+          )
+        : {
+            ...item,
+            name: translateMiscValue(
+              item,
+              path.join(buildPath, 'artifacts-substats.json'),
+            ),
+          },
+    );
+
+  const talents = loadJSON(buildPath, 'talents.json');
+
+  const notes = {
+    weapons: collectNotes(
+      weapons.weapons,
+      (w: { name: any }) => w.name,
+      path.join(buildPath, 'weapons.json'),
+    ),
+    artifacts: {
+      sets: collectNotes(
+        artifacts.sets.artifact_sets,
+        (a: { name: any; pieces: any }) => `${a.name} (${a.pieces})`,
+        path.join(buildPath, 'artifacts-sets.json'),
+      ),
+      mainstats: [
+        ...collectStatNotes(
+          artifacts.mainstats.main_stats.sands,
+          (s: { name: any }) =>
+            translator.translate(
+              'misc',
+              s.name,
+              path.join(buildPath, 'artifacts-mainstats.json'),
+            ),
+          path.join(buildPath, 'artifacts-mainstats.json'),
+        ),
+        ...collectStatNotes(
+          artifacts.mainstats.main_stats.goblet,
+          (s: { name: any }) =>
+            translator.translate(
+              'misc',
+              s.name,
+              path.join(buildPath, 'artifacts-mainstats.json'),
+            ),
+          path.join(buildPath, 'artifacts-mainstats.json'),
+        ),
+        ...collectStatNotes(
+          artifacts.mainstats.main_stats.circlet,
+          (s: { name: any }) =>
+            translator.translate(
+              'misc',
+              s.name,
+              path.join(buildPath, 'artifacts-mainstats.json'),
+            ),
+          path.join(buildPath, 'artifacts-mainstats.json'),
+        ),
+      ],
+      substats: collectStatNotes(
+        artifacts.substats.substats_priority,
+        (s: any) =>
+          translator.translate(
+            'misc',
+            typeof s === 'string' ? s : s.name,
+            path.join(buildPath, 'artifacts-substats.json'),
+          ),
+        path.join(buildPath, 'artifacts-substats.json'),
+      ),
+    },
+    talents: collectNotes(
+      talents.talents,
+      (t: { name: any }) => t.name,
+      path.join(buildPath, 'talents.json'),
+    ),
+  };
+
+  const buildNoteData = loadJSON(buildPath, 'build-notes.json');
+  const buildNote = buildNoteData
+    ? {
+        ...buildNoteData,
+        notes: buildNoteData.notes?.map((n: string) =>
+          marked.parse(
+            translator.translateNoteText(
+              n,
+              path.join(buildPath, 'build-notes.json'),
+            ),
+          ),
+        ),
+      }
+    : null;
+
+  return {
+    name: buildName,
+    weapons,
+    artifacts,
+    talents,
+    notes,
+    buildNote,
+  };
+}
+
+if (!character) {
+  throw new Error('Character parameter is required');
+}
+
+const char = character.toLowerCase();
+const characterName = translator.translate('characters', char, 'metadata.json');
+
+const base = path.resolve('src/content', lang);
+const foundPath = findCharacterPath(base, char);
+
+if (!foundPath) {
+  throw new Error('Character not found');
+}
+
+const metadata = loadJSON(foundPath.path, 'metadata.json');
+
+const builds = fs
+  .readdirSync(foundPath.path)
+  .filter((f) => fs.statSync(path.join(foundPath.path, f)).isDirectory());
+
+const data = builds.map((build) =>
+  loadBuildData(path.join(foundPath.path, build), build),
+);
+const warnings = translator.getWarnings();
+---
+
+<CharacterPageLayout
+  character={characterName !== char ? characterName : toTitleCase(character)}
+  metadata={metadata}
+  element={foundPath.element}
+  lang={lang}
+  locale={locale}
+>
+  {
+    data.map((b) => (
+      <BuildCard title={toTitleCase(b.name)} id={b.name}>
+        <div class="grid">
+          <Weapon weapons={b.weapons} locale={locale} />
+          <Artifact artifacts={b.artifacts} locale={locale} />
+          <Talent talents={b.talents} locale={locale} />
+        </div>
+
+        <Notes notes={b.notes} buildNote={b.buildNote} locale={locale} />
+      </BuildCard>
+    ))
+  }
+</CharacterPageLayout>
+
+{
+  warnings.length > 0 ? (
+    <script
+      is:inline
+      set:html={`const warnings = ${JSON.stringify(warnings)}; warnings.forEach((warning) => console.warn(warning));`}
+    />
+  ) : null
+}
+
+<script is:inline>
+  const cards = document.querySelectorAll('.build-card');
+
+  function openCard(targetId) {
+    cards.forEach((card) => {
+      const isTarget = card.dataset.id === targetId;
+      card.classList.toggle('open', isTarget);
+    });
+  }
+
+  cards.forEach((card) => {
+    const btn = card.querySelector('.build-header');
+    btn.addEventListener('click', () => {
+      const id = card.dataset.id;
+      const isOpen = card.classList.contains('open');
+      const newState = isOpen ? null : id;
+
+      const url = new URL(window.location);
+      if (newState) url.searchParams.set('build', newState);
+      else url.searchParams.delete('build');
+
+      window.history.pushState({}, '', url);
+      openCard(newState);
+    });
+  });
+
+  const params = new URLSearchParams(window.location.search);
+  const initial = params.get('build');
+  if (initial) openCard(initial);
+</script>

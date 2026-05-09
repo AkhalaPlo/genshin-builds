@@ -1,13 +1,14 @@
 ---
-const { artifacts } = Astro.props;
+import { t } from '../utils/i18n';
+const { artifacts, locale } = Astro.props;
 ---
 
 <div class="card">
-  <h2>Artifacts</h2>
+  <h2>{t(locale, 'ui', 'Artifacts')}</h2>
 
   {/* SETS */}
   <div class="section">
-    <h3>Sets</h3>
+    <h3>{t(locale, 'ui', 'Sets')}</h3>
 
     {
       artifacts.sets.artifact_sets.map(
@@ -43,7 +44,9 @@ const { artifacts } = Astro.props;
                 </div>
               ))}
 
-            <span class="bold">{set.choose ? `[Choose Two]` : ''}</span>
+            <span class="bold">
+              {set.choose ? t(locale, 'ui', 'Choose Two') : ''}
+            </span>
           </div>
         ),
       )
@@ -52,10 +55,10 @@ const { artifacts } = Astro.props;
 
   {/* MAIN STATS */}
   <div class="section">
-    <h3>Main Stats</h3>
+    <h3>{t(locale, 'ui', 'Main Stats')}</h3>
 
     <div>
-      <strong>Sands:</strong>
+      <strong>{t(locale, 'ui', 'Sands')}:</strong>
       {
         artifacts.mainstats.main_stats.sands
           .map(
@@ -67,7 +70,7 @@ const { artifacts } = Astro.props;
     </div>
 
     <div>
-      <strong>Goblet:</strong>
+      <strong>{t(locale, 'ui', 'Goblet')}:</strong>
       {
         artifacts.mainstats.main_stats.goblet
           .map(
@@ -79,7 +82,7 @@ const { artifacts } = Astro.props;
     </div>
 
     <div>
-      <strong>Circlet:</strong>
+      <strong>{t(locale, 'ui', 'Circlet')}:</strong>
       {
         artifacts.mainstats.main_stats.circlet
           .map(
@@ -93,7 +96,7 @@ const { artifacts } = Astro.props;
 
   {/* SUBSTATS */}
   <div class="section">
-    <h3>Substats</h3>
+    <h3>{t(locale, 'ui', 'Substats')}</h3>
 
     {
       artifacts.substats.substats_priority.map(

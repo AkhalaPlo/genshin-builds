@@ -1,9 +1,10 @@
 ---
-const { weapons } = Astro.props;
+import { t } from '../utils/i18n';
+const { weapons, locale } = Astro.props;
 ---
 
 <div class="card">
-  <h2>Weapons</h2>
+  <h2>{t(locale, 'ui', 'Weapons')}</h2>
 
   {
     weapons.weapons.map((position: { items: any[] }, i: number) => (

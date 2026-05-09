@@ -1,0 +1,49 @@
+{
+  "artifact_sets": [
+    {
+      "items": [
+        {
+          "name": "shimenawas-reminiscence",
+          "pieces": 4
+        }
+      ]
+    },
+    {
+      "items": [
+        {
+          "name": "wanderers-troupe",
+          "pieces": 4
+        }
+      ]
+    },
+    {
+      "items": [
+        {
+          "name": "crimson-witch-of-flames",
+          "pieces": 4
+        },
+        {
+          "name": "gilded-dreams",
+          "pieces": 4
+        }
+      ]
+    },
+    {
+      "items": [
+        {
+          "name": "crimson-witch-of-flames",
+          "pieces": 2
+        },
+        {
+          "name": "em-set",
+          "pieces": 2
+        },
+        {
+          "name": "atk-set",
+          "pieces": 2
+        }
+      ],
+      "choose": true
+    }
+  ]
+}

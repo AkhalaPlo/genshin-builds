@@ -1,0 +1,16 @@
+{
+    "er": "Recharge d'énergie",
+    "em": "Maîtrise élémentaire",
+    "hp": "PV",
+    "hp%": "PV%",
+    "atk": "ATQ",
+    "atk%": "ATQ%",
+    "def": "DEF",
+    "def%": "DEF%",
+    "cd": "Dégâts CRIT",
+    "cr": "Taux CRIT",
+    "cr/cd": "Taux CRIT / Dégâts CRIT",
+    "em-set": "set +80 ME",
+    "atk-set": "set +18% ATQ"
+
+}

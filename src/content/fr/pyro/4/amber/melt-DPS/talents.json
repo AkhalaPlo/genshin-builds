@@ -1,0 +1,17 @@
+{
+  "talents": [
+    {
+      "items": [
+        {
+          "name": "Normal Attack"
+        }      ]
+    },
+    {
+      "items": [
+        {
+          "name": "Skill"
+        }
+      ]
+    }
+    ]
+}

@@ -1,0 +1,34 @@
+{
+  "artifact_sets": [
+    {
+      "items": [
+        {
+          "name": "noblesse-oblige",
+          "pieces": 4
+        }
+      ]
+    },
+    {
+      "items": [
+        {
+          "name": "instructor",
+          "pieces": 4,
+          "note": "This set is preferred over **[[noblesse-oblige]] (4)** when [[amber]] is used as support in a [[hu-tao]] Vaporize team."        }
+      ]
+    },
+    {
+      "items": [
+        {
+          "name": "scroll-of-the-hero-of-cinder-city",
+          "pieces": 4
+        }      ]
+    },
+    {
+      "items": [
+        {
+          "name": "the-exile",
+          "pieces": 4
+        }      ]
+    }
+  ]
+}
