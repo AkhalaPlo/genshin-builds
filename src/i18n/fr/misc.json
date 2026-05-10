@@ -11,6 +11,17 @@
     "cr": "Taux CRIT",
     "cr/cd": "Taux CRIT / Dégâts CRIT",
     "em-set": "set +80 ME",
-    "atk-set": "set +18% ATQ"
+    "atk-set": "set +18% ATQ",
+    "vaporize": "Evaporation",
+    "melt": "Fonte",
+    "overload": "Surcharge",
+    "electro-charged": "Électrocution",
+    "superconduct": "Supraconduction",
+    "swirl": "Dispersion",
+    "aggravate": "Suractivation",
+    "spread": "Propagation",
+    "hyperbloom": "Exubérance",
+    "bloom": "Fleurissement",
+    "burning": "Brulûre"
 
 }

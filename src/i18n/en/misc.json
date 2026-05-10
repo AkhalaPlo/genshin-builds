@@ -11,5 +11,16 @@
     "cr": "CRIT Rate",
     "cr/cd": "CRIT Rate / CRIT DMG",
     "em-set": "+80 EM set",
-    "atk-set": "+18% ATK set"
+    "atk-set": "+18% ATK set",
+    "vaporize": "Vaporize",
+    "melt": "Melt",
+    "overload": "Overload",
+    "electro-charged": "Electro-Charged",
+    "superconduct": "Superconduct",
+    "swirl": "Swirl",
+    "aggravate": "Aggravate",
+    "spread": "Spread",
+    "hyperbloom": "Hyperbloom",
+    "bloom": "Bloom",
+    "burning": "Burning"
 }
