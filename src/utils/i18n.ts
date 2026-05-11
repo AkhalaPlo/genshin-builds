@@ -126,15 +126,16 @@ export function getLocale(lang: string | undefined) {
 /**
  * Looks up a translated string by category and ID.
  *
- * When a translation is missing, the original ID is returned. Optional warnings
- * make missing content visible during development without breaking rendering.
+ * When a locale-specific translation is missing, English is used as a fallback.
+ * Optional warnings make missing content visible during development without
+ * breaking rendering.
  *
  * @param locale Locale dictionary bundle.
  * @param category Translation dictionary name.
  * @param id Translation key.
  * @param sourceFile Optional content file path for debugging warnings.
  * @param warn Whether to log missing translation warnings.
- * @returns Translated string, or the original ID if missing.
+ * @returns Localized string, English fallback, or original ID if unresolved.
  */
 export function t(
   locale: any,
@@ -156,5 +157,5 @@ export function t(
     );
   }
 
-  return id;
+  return locales.en[category as keyof LocaleBundle]?.[id] ?? id;
 }

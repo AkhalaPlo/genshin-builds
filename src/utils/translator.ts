@@ -40,18 +40,21 @@ export class TranslationHelper {
   /**
    * Translates a content ID from a specific category.
    *
-   * If the translation is missing, a warning is stored and
-   * the original ID is returned.
+   * If the locale-specific translation is missing, a warning is stored while
+   * the shared i18n helper falls back to English when available.
    *
    * @param category Translation category.
    * @param id Translation ID.
    * @param sourceFile Optional source file path for debugging.
-   * @returns Translated string or original ID if missing.
+   * @returns Localized string, English fallback, or original ID if unresolved.
    */
   translate(category: TranslationCategory, id: string, sourceFile?: string) {
+    // Check the requested locale directly so fallback translations still warn.
+    const hasLocalizedTranslation =
+      this.locale?.[category]?.[id] !== undefined;
     const translation = t(this.locale, category, id, sourceFile);
 
-    if (translation === id) {
+    if (!hasLocalizedTranslation) {
       this.addWarning(
         `[i18n] Missing translation for id '${id}' in category '${category}'` +
           (sourceFile ? ` (source: ${sourceFile})` : ''),
@@ -98,7 +101,7 @@ export class TranslationHelper {
    * @param id Translation ID found inside an inline note reference.
    * @param category Optional translation category.
    * @param sourceFile Optional source file path for debugging.
-   * @returns Translated string or null if no translation exists.
+   * @returns Localized or fallback string, or null if no translation exists.
    */
   private translateInlineId(
     id: string,
@@ -121,13 +124,23 @@ export class TranslationHelper {
    *
    * @param id Translation ID to search for.
    * @param sourceFile Optional source file path for debugging.
-   * @returns Translated string or null if no category contains the ID.
+   * @returns Localized or fallback string, or null if no category contains it.
    */
   private findTranslationInAnyCategory(id: string, sourceFile?: string) {
     for (const category of CATEGORIES) {
+      // Fallback hits are valid display text, but the missing locale still matters.
+      const hasLocalizedTranslation =
+        this.locale?.[category]?.[id] !== undefined;
       const translation = t(this.locale, category, id, sourceFile, false);
 
       if (translation !== id) {
+        if (!hasLocalizedTranslation) {
+          this.addWarning(
+            `[i18n] Missing translation for id '${id}' in category '${category}'` +
+              (sourceFile ? ` (source: ${sourceFile})` : ''),
+          );
+        }
+
         return translation;
       }
     }

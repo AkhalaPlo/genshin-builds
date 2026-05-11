@@ -1,12 +1,12 @@
 ---
 import SimplePageLayout from '../layouts/SimplePageLayout.astro';
 import FaqContent from '../components/FaqContent.astro';
-import { getLocale } from '../utils/i18n';
+import { getLocale, t } from '../utils/i18n';
 
 const lang = 'en';
 const locale = getLocale(lang);
 ---
 
-<SimplePageLayout title={locale.ui.FAQ} lang={lang} locale={locale} page="faq">
+<SimplePageLayout title={t(locale, 'ui', 'FAQ')} lang={lang} locale={locale} page="faq">
   <FaqContent lang={lang} />
 </SimplePageLayout>

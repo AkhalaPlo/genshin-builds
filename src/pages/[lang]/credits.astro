@@ -1,7 +1,7 @@
 ---
 import SimplePageLayout from '../../layouts/SimplePageLayout.astro';
 import CreditsContent from '../../components/CreditsContent.astro';
-import { getLocale } from '../../utils/i18n';
+import { getLocale, t } from '../../utils/i18n';
 import { getLanguageStaticPaths } from '../../utils/routes';
 
 export const getStaticPaths = getLanguageStaticPaths;
@@ -11,7 +11,7 @@ const locale = getLocale(lang);
 ---
 
 <SimplePageLayout
-  title={locale.ui.Credits}
+  title={t(locale, 'ui', 'Credits')}
   lang={lang}
   locale={locale}
   page="credits"

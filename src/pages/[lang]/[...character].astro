@@ -14,6 +14,7 @@ export const getStaticPaths = getCharacterStaticPaths;
 const { lang, character: characterPath } = Astro.params;
 // Server-side loader resolves content JSON into translated, display-ready data.
 const {
+  characterSlug,
   characterName,
   metadata,
   element,
@@ -25,6 +26,7 @@ const {
 ---
 
 <CharacterPageLayout
+  characterSlug={characterSlug}
   character={characterName}
   metadata={metadata}
   element={element}

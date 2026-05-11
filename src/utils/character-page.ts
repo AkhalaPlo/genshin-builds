@@ -422,11 +422,6 @@ export function getCharacterPageData({
   const locale = getLocale(currentLang);
   const translator = new TranslationHelper(locale);
   const characterSlug = character.toLowerCase();
-  const translatedCharacterName = translator.translate(
-    'character',
-    characterSlug,
-    'metadata.json',
-  );
   const foundPath = findCharacterPath(contentBase, characterSlug);
 
   if (!foundPath) {
@@ -440,7 +435,14 @@ export function getCharacterPageData({
       fs.statSync(path.join(foundPath.path, fileName)).isDirectory(),
     );
 
+  const translatedCharacterName = translator.translate(
+    'character',
+    characterSlug,
+    'metadata.json',
+  );
+
   return {
+    characterSlug,
     characterName:
       translatedCharacterName !== characterSlug
         ? translatedCharacterName
