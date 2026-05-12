@@ -147,8 +147,8 @@ docs/root-readme
 > - You did not translate folder names or route slugs.
 > - You did not edit generated files in `dist`.
 > - Any localized content has an English fallback.
-> - `npm run build` must pass before the PR is merged.
->   - If you cannot run `npm run build`, add the `Needs Build Check` label so a developer can run it for you.
+> - GitHub will automatically check that the site builds when you open or update the PR.
+> - If the build check fails, ask for help before the PR is merged.
 > - If you are unsure about JSON formatting, add the `Needs Format Check` label so someone can check it.
 
 #### How to:
@@ -165,12 +165,9 @@ docs/root-readme
 
 #### Pull Request Labels
 
-Use these labels when you need help before the PR can be merged:
+Use this label when you need help before the PR can be merged:
 
-- `Needs Format Check`: use this if you are unsure about JSON formatting and
-  need someone to check it.
-- `Needs Build Check`: use this if you cannot run `npm run build` yourself and
-  need a developer to run it for you.
+- `Needs Format Check`: use this if you are unsure about JSON formatting and need someone to check it.
 
 ---
 
@@ -265,7 +262,10 @@ The default language is english. When adding a new build, contributor may have u
    src/i18n/<lang>/ui.json
    ```
 
-5. Run the build after translating if you can.
+5. GitHub will automatically check that the site builds when you open or update
+   the Pull Request.
+
+   Developers can still run the build locally before opening a Pull Request:
 
    ```sh
    npm run build
@@ -313,7 +313,10 @@ The website was designed with localisation in mind. Adding a new language should
    This includes build notes, FAQ content, and credits. Content that does not
    have the new language key will fall back to English.
 
-6. Run the build if you can.
+6. GitHub will automatically check that the site builds when you open or update
+   the Pull Request.
+
+   Developers can still run the build locally before opening a Pull Request:
 
    ```sh
    npm run build
@@ -357,6 +360,4 @@ Preview the built website locally:
 npm run preview
 ```
 
-Before merging a Pull Request, `npm run build` must pass. If a non-developer
-adds the `Needs Build Check` label, a developer should pull the branch, run the
-build locally, and remove the label if the build passes.
+Before merging a Pull Request, the GitHub build check must pass. Developers can also run `npm run build` locally when they want to test changes before opening a Pull Request.
