@@ -1,7 +1,7 @@
 # Content JSON Architecture
 
 This folder documents the expected shape of the JSON files under `src/content`.
-These files are human-readable authoring guides, not strict machine validators.
+These files are for contributor to read and understand how the JSONs must be written for it to be interpreted and displayed properly on the website.
 
 ## Folder Layout
 
@@ -82,10 +82,10 @@ content loader, including:
 
 - Folder names are stable slugs and should not be translated.
 - Gameplay names usually use IDs from `src/i18n/<lang>/*.json`.
-- Editorial text is localized inline in content JSON.
-- Localized editorial objects must include `en`; other languages are optional.
+- Notes are translated directly inside the JSONs
+- Notes, when present, must include `en`; other languages are optional.
 - Requested language falls back to `en`.
-- Notes support Markdown and inline translation tokens.
+- Notes support Markdown (adding `**` around a work to make it bold for example) and inline translation tokens.
 - Item notes automatically add a `*` marker next to the item and create a
   matching entry in the relevant notes section.
 - Top-level section notes do not add a `*` marker because they are not attached
@@ -174,6 +174,9 @@ Use `elements.json` for elemental labels and reactions, such as `melt`,
 `vaporize`, `swirl`, and `bloom`.
 
 ## Inline Translation Tokens
+
+For the full token rules and examples, read
+[Inline Translation Tokens](../src/i18n/README.md#inline-translation-tokens).
 
 Editorial text can reference i18n IDs:
 

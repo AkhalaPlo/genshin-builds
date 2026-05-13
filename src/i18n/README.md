@@ -6,7 +6,7 @@ Each language has its own folder and each language folder **must contain the sam
 
 ## How It Works
 
-Build files and inlline translation tokens store IDs instead of display names. The site looks up that ID in the current language dictionary and displays the translated text.
+Build files and inline translation tokens store IDs instead of display names. The site looks up that ID in the current language dictionary and displays the translated text.
 
 For example, `the-catch` is stored in:
 
@@ -111,4 +111,4 @@ Typed tokens are safer when an ID could exist in more than one dictionary.
 - Add new English entries first, then translate them into other languages.
 - If you are unsure about JSON formatting, add the `Needs Format Check` label
   to your Pull Request.
-- Each folder needs to contain the same files, even if they contain an empty dictionnary (`{}`). If you create a new file, make sure to add it to the other folders too!
+- Each language folder needs to contain the same files, even if they contain an empty dictionary (`{}`). If you create a new file to in the ./en folder (if a file was starting to get too long and you decide to split it into two files for example), make sure to add it to the other languages folders too!
