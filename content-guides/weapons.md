@@ -72,6 +72,11 @@ Use one item for a normal ranking:
       "name": "amos-bow",
       "rarity": 5,
       "refinement": 1
+    },
+    {
+      "name": "finale-of-the-deep",
+      "rarity": 4,
+      "refinement": "3+"
     }
   ]
 }
@@ -81,6 +86,7 @@ This renders as:
 
 ```txt
 1. Amos' Bow (5 ★) [R1]
+2. Finale of the deep (4 ★) [R3+]
 ```
 
 Use multiple items in the same `items` array when weapons are close enough to

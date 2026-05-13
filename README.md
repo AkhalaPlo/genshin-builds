@@ -23,11 +23,9 @@ The current website is here:
 
 https://akhalaplo.github.io/genshin-builds/
 
-The website shows the content that has been accepted into `main`.
+The website shows the content that has been accepted into the branch `main` at all times: any changes made on `main` will be reflected on the website.
 
-When a Pull Request is approved and merged into `main`, GitHub automatically updates the website. You do not need to publish anything yourself.
-
-The update may take a few minutes to appear online.
+When a Pull Request is approved and merged into `main`, GitHub **automatically** updates the website. You do not need to publish anything yourself. The update may take a few minutes to appear online.
 
 ---
 
@@ -83,11 +81,9 @@ genshin-builds/
 
 ## Contributing Content
 
-If you want to add a
-new build, update existing recommendations, improve translations, or add a new
-language, **open a Pull Request (PR)** with the smallest focused change that completes the work.
+If you want to add a new build, update existing recommendations, improve translations, or add a new language, **open a Pull Request (PR)** with the smallest focused change that completes the work.
 
-You do not need to use the command line. You can make content changes **directly from the GitHub website.**
+You do not need to use the command line. You can make content changes **directly from the GitHub website: you just need to be logged in.**
 
 ### Step 1: Create a Branch
 
@@ -123,6 +119,7 @@ docs/root-readme
 5. Make sure GitHub now shows your new branch name instead of `main`.
 
 **Goal:** Your changes should happen on your own branch, NEVER directly on `main`.
+> This is to prevent any unvoluntarily changes to be made to the website, as the website always displays the content on `main`. If a mistake is made on `main` for example, the website will be broken and thus unavailable until the mistake is fixed, whereas if it was made on a different branch, nothing happens to the website.
 
 ### Step 2: Edit Files
 
