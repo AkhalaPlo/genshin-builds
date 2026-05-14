@@ -49,6 +49,10 @@
                         "en": "Ranked assuming [[element:hydro]] [[character:traveler]] is **C4**, which provides a shield for them.",
                         "fr": "Classée en supposant que le [[character:traveler]] [[element:hydro]] est **C4**, ce qui lui offre un bouclier."
                     }
+                },
+                {
+                    "name": "lightbearing-moonshard",
+                    "rarity": 5
                 }
             ]
         },
@@ -68,11 +72,7 @@
             "items": [
                 {
                     "name": "finale-of-the-deep",
-                    "rarity": 4,
-                    "note": {
-                        "en": "If its [[ability:bol]] can be cleared reliably, this weapon performs well for this build.",
-                        "fr": "Si son [[ability:bol]] peut être retiré de façon fiable, cette arme fonctionne bien pour ce build."
-                    }
+                    "rarity": 4
                 },
                 {
                     "name": "harbinger-of-dawn",
