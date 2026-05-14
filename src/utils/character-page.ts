@@ -1,6 +1,10 @@
 import fs from 'fs';
 import path from 'path';
 import { marked } from 'marked';
+import {
+  getPublicCharacterName,
+  parsePublicCharacterSlug,
+} from './character-slugs';
 import { findCharacterPath, loadJSON, toTitleCase } from './content';
 import { getLocale, t } from './i18n';
 import { collectNotes, collectSectionNotes, collectStatNotes } from './notes';
@@ -477,6 +481,8 @@ export function getCharacterPageData({
   const locale = getLocale(currentLang);
   const translator = new TranslationHelper(locale);
   const characterSlug = character.toLowerCase();
+  const slugParts = parsePublicCharacterSlug(characterSlug);
+  const contentSlug = slugParts.character;
   const foundPath = findCharacterPath(contentBase, characterSlug);
 
   if (!foundPath) {
@@ -492,16 +498,18 @@ export function getCharacterPageData({
 
   const translatedCharacterName = translator.translate(
     'character',
-    characterSlug,
+    contentSlug,
     'metadata.json',
   );
 
   return {
     characterSlug,
     characterName:
-      translatedCharacterName !== characterSlug
+      slugParts.element
+        ? getPublicCharacterName(locale, slugParts)
+        : translatedCharacterName !== contentSlug
         ? translatedCharacterName
-        : toTitleCase(character),
+        : toTitleCase(contentSlug),
     metadata: loadJSON(foundPath.path, 'metadata.json'),
     element: foundPath.element,
     lang: currentLang,
