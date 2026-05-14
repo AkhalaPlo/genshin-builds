@@ -3,18 +3,6 @@
         {
             "items": [
                 {
-                    "name": "uraku-misugiri",
-                    "rarity": 5,
-                    "note": {
-                        "en": "Performs even better than similar options if a **[[element:geo]] character** is on the team.",
-                        "fr": "Performe encore mieux que les autres options équivalentes si un **personnage [[element:geo]]** est dans l'équipe."
-                    }
-                },
-                {
-                    "name": "light-of-foliar-incision",
-                    "rarity": 5
-                },
-                {
                     "name": "mistsplitter-reforged",
                     "rarity": 5
                 }
@@ -23,47 +11,64 @@
         {
             "items": [
                 {
-                    "name": "primordial-jade-cutter",
-                    "rarity": 5,
-                    "note": {
-                        "en": "Performs roughly equal to **[[weapon:light-of-foliar-incision]]** if [[character:traveler]] is not using **[[artifact:obsidian-codex]]** (4).",
-                        "fr": "Devient équivalent à **[[weapon:light-of-foliar-incision]]** si le [[character:traveler]] n'utilise pas **[[artifact:obsidian-codex]]** (4)."
-                    }
+                    "name": "light-of-foliar-incision",
+                    "rarity": 5
                 },
-                {
-                    "name": "haran-geppaku-futsu",
-                    "rarity": 5,
-                    "note": {
-                        "en": "Performs roughly equal to **[[weapon:light-of-foliar-incision]]** if [[character:traveler]] is not using **[[artifact:obsidian-codex]]** (4).",
-                        "fr": "Devient équivalent à **[[weapon:light-of-foliar-incision]]** si le [[character:traveler]] n'utilise pas **[[artifact:obsidian-codex]]** (4)."
-                    }
-                }
-            ]
-        },
-        {
-            "items": [
                 {
                     "name": "absolution",
                     "rarity": 5
-                },
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "uraku-misugiri",
+                    "rarity": 5,
+                    "note": {
+                        "en": "If using a **[[element:geo]] teammate** to trigger the passive, this weapon is **roughly equal to [[weapon:light-of-foliar-incision]].**",
+                        "fr": "Si jouée avec un **personnage [[element:geo]]** pour déclencher le passif, cette arme est **presque équivalente à [[weapon:light-of-foliar-incision]].**"
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
                 {
                     "name": "splendor-of-tranquil-waters",
                     "rarity": 5
-                }
-            ]
-        },
-        {
-            "items": [
+                },
                 {
-                    "name": "freedom-sworn",
+                    "name": "lightbearing-moonshard",
                     "rarity": 5
                 },
                 {
-                    "name": "wolf-fang",
+                    "name": "azurelight",
+                    "rarity": 5
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "haran-geppaku-futsu",
+                    "rarity": 5
+                },
+                {
+                    "name": "athame-artis",
+                    "rarity": 5
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "calamity-of-eshu",
                     "rarity": 4,
+                    "refinement": 5,
                     "note": {
-                        "en": "At **[R5]**, this weapon **rivals [[weapon:primordial-jade-cutter]]**.",
-                        "fr": "Une fois **[R5]**, cette arme **rivalise avec [[weapon:primordial-jade-cutter]]**."
+                        "en": "Assume [[element:pyro]] [[character:traveler]] is **shielded**",
+                        "fr": "Suppose que le [[character:traveler]] [[element:pyro]] a un **bouclier**"
                     }
                 }
             ]
@@ -71,26 +76,45 @@
         {
             "items": [
                 {
-                    "name": "iron-sting",
-                    "rarity": 4,
-                    "refinement": 5
+                    "name": "primordial-jade-cutter",
+                    "rarity": 5
                 },
                 {
-                    "name": "finale-of-the-deep",
-                    "rarity": 4,
-                    "refinement": 5,
-                    "note": {
-                        "en": "If the [[ability:bol]] can be cleared reliably, this weapon **is better than [[weapon:iron-sting]]**.",
-                        "fr": "Si l'[[ability:bol]] peut être retiré de manière fiable, cette arme **est meilleure que [[weapon:iron-sting]]**."
-                    }
+                    "name": "summit-shaper",
+                    "rarity": 5
                 },
                 {
                     "name": "harbinger-of-dawn",
                     "rarity": 3,
                     "refinement": 5,
                     "note": {
-                        "en": "Assumes the passive is always active, which may not be realistic.",
-                        "fr": "Suppose que le passif est toujours actif, ce qui n'est pas forcément réaliste."
+                        "en": "Assumes the **passive is consistently active** (always above **90%** max HP). If this is inconsistent, it's recommended to choose other weapons.",
+                        "fr": "Suppose que **le passif est toujours actif** (toujours au dessus de **90%** de ses PV max). Si ce n'est pas le cas, il est recommandé de choisir une autre arme."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "finale-of-the-deep",
+                    "rarity": 4,
+                    "refinement": 5,
+                    "note": {
+                        "en": "If the [[ability:bol]] can be cleared reliably, this weapon **is roughly equal to [[weapon:summit-shaper]]**.",
+                        "fr": "Si l'[[ability:bol]] peut être retiré de manière fiable, cette arme **est presque équivalente à [[weapon:summit-shaper]]**."
+                    }
+                },
+                {
+                    "name": "blacklcliff-longsword",
+                    "rarity": 4
+                },
+                {
+                    "name": "lions-roar",
+                    "rarity": "4",
+                    "note": {
+                        "en": "At **[R5]** this weapon performs **roughly equal to [[weapon:harbinger-of-dawn]]**.",
+                        "fr": "Une fois **[R5]** cette arme performe **de façon équivalente à [[weapon:harbinger-of-dawn]]**."
                     }
                 }
             ]
