@@ -1,0 +1,14 @@
+{
+    "main_stats": {
+        "sands": [
+            "hp%",
+            "em"
+        ],
+        "goblet": [
+            "pyro-dmg"
+        ],
+        "circlet": [
+            "cr/cd"
+        ]
+    }
+}
