@@ -1,0 +1,79 @@
+{
+    "artifact_sets": [
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "crimson-witch-of-flames",
+                            "pieces": 4,
+                            "note": {
+                                "en": "Generally the best go-to set for [[character:diluc]] due to how easily he can stack the [[stat:pyro-dmg]] effect, while his [[ability:burst]] imbues his [[ability:na]] and [[ability:ca]] with [[element:pyro]].",
+                                "fr": "Généralement le meilleur set pour [[character:diluc]] étant donné la facilité qu'il a à stack l'effet [[stat:pyro-dmg]] lorsque son [[ability:burst]] infuse ses [[ability:na]] et [[ability:ca]] avec [[element:pyro]]."
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "gilded-dreams",
+                            "pieces": 4
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "groups": [
+                {
+                    "choose": true,
+                    "items": [
+                        {
+                            "name": "crimson-witch-of-flames",
+                            "pieces": 2
+                        },
+                        {
+                            "name": "atk-set",
+                            "pieces": 2
+                        },
+                        {
+                            "name": "em-set",
+                            "pieces": 2
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "gladiators-finale",
+                            "pieces": 4
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "conditional": [
+        {
+            "items": [
+                {
+                    "name": "marechaussee-hunter",
+                    "pieces": 4,
+                    "note": {
+                        "en": "Competitive with **[[artifact:crimson-witch-of-flames]] (4)** when using **[[character:furina]] alongside [[character:diluc]]**.",
+                        "fr": "Rivalise avec **[[artifact:crimson-witch-of-flames]] (4)** lorsque **[[character:furina]] est jouée avec [[character:diluc]]**."
+                    }
+                }
+            ]
+        }
+    ]
+}

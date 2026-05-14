@@ -1,0 +1,20 @@
+{
+    "main_stats": {
+        "sands": [
+            {
+                "name": "em",
+                "note": {
+                    "en": "Can be preferred for the Sands if [[character:diluc]] is used in a [[element:vaporize]] or [[element:melt]] team.",
+                    "fr": "Peut être préféré pour le sablier si [[character:diluc]] est joué dans une équipe [[element:vaporize]] ou [[element:melt]]."
+                }
+            },
+            "atk%"
+        ],
+        "goblet": [
+            "pyro-dmg"
+        ],
+        "circlet": [
+            "cr/cd"
+        ]
+    }
+}

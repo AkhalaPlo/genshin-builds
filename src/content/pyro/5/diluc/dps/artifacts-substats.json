@@ -1,0 +1,14 @@
+{
+    "substats_priority": [
+        "cr/cd",
+        "atk%",
+        {
+            "name": "em",
+            "note": {
+                "en": "Higher priority in [[element:vaporize]] or [[element:melt]] teams.",
+                "fr": "Priorité plus élevée pour les équipes [[element:vaporize]] ou [[element:melt]]."
+            }
+        },
+        "er"
+    ]
+}
