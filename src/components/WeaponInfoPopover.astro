@@ -2,12 +2,13 @@
 import { t } from '../utils/i18n';
 import {
   formatWeaponPassive,
+  type WeaponPassiveText,
   type WeaponPassiveValue,
 } from '../utils/weapon-passive';
 
 type WeaponInfo = {
   rarity: number;
-  passive?: string;
+  passive?: WeaponPassiveText;
   r1?: WeaponPassiveValue[];
   r2?: WeaponPassiveValue[];
   r3?: WeaponPassiveValue[];
@@ -29,14 +30,14 @@ type Props = {
   };
 };
 
-const { locale, weapon } = Astro.props;
+const { locale, weapon, lang = 'en' } = Astro.props;
 const info = weapon.info;
 const refinements = [1, 2, 3, 4, 5] as const;
 
 const passivePartsByRefinement = info
   ? refinements.map((refinement) => ({
       refinement,
-      parts: formatWeaponPassive(info, refinement).split(/<br\s*\/?>/i),
+      parts: formatWeaponPassive(info, refinement, lang).split(/<br\s*\/?>/i),
     }))
   : [];
 
@@ -88,7 +89,7 @@ const substatName = info?.substat
               class="weapon-popover-passive-refinement"
               data-refinement-panel={`r${refinement}`}
               hidden={refinement !== 1}
-              set:html={formatWeaponPassive(info, refinement)}
+              set:html={formatWeaponPassive(info, refinement, lang)}
             />
           ))}
         </span>

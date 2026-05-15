@@ -1,16 +1,15 @@
 ---
 import WeaponInfoPopover from './WeaponInfoPopover.astro';
-import WeaponInfoPopover from './WeaponInfoPopover.astro';
 import { t } from '../utils/i18n';
-import type { WeaponPassiveValue } from '../utils/weapon-passive';
-const { weapons, locale } = Astro.props;
+import type { WeaponPassiveText, WeaponPassiveValue } from '../utils/weapon-passive';
+const { weapons, locale, lang = 'en' } = Astro.props;
 
 type WeaponItem = {
   name: string;
   rarity: number;
   info?: {
     rarity: number;
-    passive?: string;
+    passive?: WeaponPassiveText;
     r1?: WeaponPassiveValue[];
     r2?: WeaponPassiveValue[];
     r3?: WeaponPassiveValue[];
@@ -50,7 +49,7 @@ const formatRefinement = (refinement?: number | string) =>
           <strong>{i + 1}.</strong>&nbsp;
           {position.items[0] && (
             <span>
-              <WeaponInfoPopover weapon={position.items[0]} locale={locale} />
+              <WeaponInfoPopover weapon={position.items[0]} locale={locale} lang={lang} />
               &nbsp;
               <span class="bold">
                 ({position.items[0].rarity} {'\u2605'})
@@ -71,7 +70,7 @@ const formatRefinement = (refinement?: number | string) =>
 
         {position.items.slice(1).map((weapon) => (
           <div class="alt">
-            &asymp; <WeaponInfoPopover weapon={weapon} locale={locale} />
+            &asymp; <WeaponInfoPopover weapon={weapon} locale={locale} lang={lang} />
             &nbsp;
             <span class="bold">
               ({weapon.rarity} {'\u2605'}){formatRefinement(weapon.refinement)}
@@ -99,7 +98,7 @@ const formatRefinement = (refinement?: number | string) =>
 
         {weapons.conditional.map((weapon: WeaponItem) => (
           <div>
-            <WeaponInfoPopover weapon={weapon} locale={locale} />
+            <WeaponInfoPopover weapon={weapon} locale={locale} lang={lang} />
             &nbsp;
             <span class="bold">
               ({weapon.rarity} {'\u2605'}){formatRefinement(weapon.refinement)}

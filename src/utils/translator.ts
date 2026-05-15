@@ -1,5 +1,9 @@
 import { t } from './i18n';
-import { formatWeaponPassive, type WeaponPassiveValue } from './weapon-passive';
+import {
+  formatWeaponPassive,
+  type WeaponPassiveText,
+  type WeaponPassiveValue,
+} from './weapon-passive';
 
 type TranslationCategory =
   | 'artifact'
@@ -20,7 +24,7 @@ const CATEGORIES: TranslationCategory[] = [
 
 type SharedWeaponData = {
   rarity: number;
-  passive?: string;
+  passive?: WeaponPassiveText;
   r1?: WeaponPassiveValue[];
   r2?: WeaponPassiveValue[];
   r3?: WeaponPassiveValue[];
@@ -70,6 +74,7 @@ export class TranslationHelper {
   constructor(
     private locale: any,
     private weaponDataById: Record<string, SharedWeaponData> = {},
+    private lang = 'en',
   ) {}
 
   /**
@@ -177,7 +182,7 @@ export class TranslationHelper {
       return escapeHtml(name);
     }
 
-    const passive = formatWeaponPassive(info)
+    const passive = formatWeaponPassive(info, undefined, this.lang)
       .split(/<br\s*\/?>/i)
       .map(escapeHtml)
       .join('<br>');
