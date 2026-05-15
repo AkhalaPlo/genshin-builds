@@ -244,11 +244,6 @@ body.weapon-popover-locked .weapon-popover.is-open .weapon-popover-card {
   display: block;
 }
 
-.weapon-popover-name {
-  color: var(--accent);
-  font-weight: 700;
-}
-
 .weapon-popover-rarity,
 .weapon-popover-refinement {
   margin-top: 2px;
@@ -256,13 +251,18 @@ body.weapon-popover-locked .weapon-popover.is-open .weapon-popover-card {
 }
 
 .weapon-popover-stat {
-  display: flex;
-  justify-content: space-between;
-  gap: 12px;
-  margin: 8px 0;
-  border-top: 1px solid color-mix(in srgb, var(--text) 20%, transparent);
-  border-bottom: 1px solid color-mix(in srgb, var(--text) 20%, transparent);
-  padding: 6px 0;
+	display: flex;
+	justify-content: space-between;
+	gap: 12px;
+	padding: 8px 0;
+}
+
+.weapon-popover-stat:first-of-type {
+	margin-top: 10px;
+}
+
+.weapon-popover-stat + .weapon-popover-stat {
+	border-top: 1px solid color-mix(in srgb, var(--text) 20%, transparent);
 }
 
 .weapon-popover-passive {
@@ -317,7 +317,7 @@ body.weapon-popover-locked .weapon-popover.is-open .weapon-popover-card {
 .weapon-popover-refinement {
 	display: flex;
 	gap: 4px;
-	margin-top: 6px;
+	margin-top: 10px;
 }
 
 .weapon-popover-refinement-button {
@@ -349,6 +349,12 @@ body.weapon-popover-locked .weapon-popover.is-open .weapon-popover-card {
 	width: 100%;
 }
 
-.weapon-popover-name {
+.weapon-popover-name,
+.weapon-popover-rarity {
 	min-width: 0;
+    font-size: 1.1rem;
+	font-weight: 700;
+	line-height: 1.2;
+    color: var(--accent);
+    font-weight: 700;
 }
