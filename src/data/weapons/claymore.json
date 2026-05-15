@@ -1,183 +1,283 @@
 {
   "akuoumaru": {
     "rarity": 4,
-    "passive": "For every point of the entire party\u0027s combined maximum Energy capacity, the Elemental Burst DMG of the character equipping this weapon is increased by 0.12%/0.15%/0.18%/0.21%/0.24%. A maximum of 40%/50%/60%/70%/80% increased Elemental Burst DMG can be achieved this way.",
+    "passive": "For every point of the entire party's combined maximum Energy capacity, the Elemental Burst DMG of the character equipping this weapon is increased by {{value}}%. A maximum of {{value}}% increased Elemental Burst DMG can be achieved this way.",
     "substat": "atk%",
     "level_1": {
       "base_attack": 42,
       "substat_value": "9.0%"
-    }
+    },
+    "r1": [0.12, 40],
+    "r2": [0.15, 50],
+    "r3": [0.18, 60],
+    "r4": [0.21, 70],
+    "r5": [0.24, 80]
   },
   "a-thousand-blazing-suns": {
     "rarity": 5,
-    "passive": "Gain the \"Scorching Brilliance\" effect when using an Elemental Skill or Burst: CRIT DMG increased by 20%/25%/30%/35%/40% and ATK increased by 28%/35%/42%/49%/56% for 6s. This effect can trigger once every 10s.\u003cbr\u003eWhile a \"Scorching Brilliance\" instance is active, its duration is increased by 2s after Normal or Charged attacks deal Elemental DMG. This effect can trigger once every second, and the max duration increase is 6s.\u003cbr\u003eAdditionally, when the equipping character is in the Nightsoul\u0027s Blessing state, \"Scorching Brilliance\" effects are increased by 75%, and its duration will not count down when the equipping character is off-field.",
+    "passive": "Gain the \"Scorching Brilliance\" effect when using an Elemental Skill or Burst: CRIT DMG increased by {{value}}% and ATK increased by {{value}}% for 6s. This effect can trigger once every 10s.<br>While a \"Scorching Brilliance\" instance is active, its duration is increased by 2s after Normal or Charged attacks deal Elemental DMG. This effect can trigger once every second, and the max duration increase is 6s.<br>Additionally, when the equipping character is in the Nightsoul's Blessing state, \"Scorching Brilliance\" effects are increased by 75%, and its duration will not count down when the equipping character is off-field.",
     "substat": "cr",
     "level_1": {
       "base_attack": 49,
       "substat_value": "2.4%"
-    }
+    },
+    "r1": [20, 28],
+    "r2": [25, 35],
+    "r3": [30, 42],
+    "r4": [35, 49],
+    "r5": [40, 56]
   },
   "beacon-of-the-reed-sea": {
     "rarity": 5,
-    "passive": "After the character\u0027s Elemental Skill hits an opponent, their ATK will be increased by 20%/25%/30%/35%/40% for 8s. After the character takes DMG, their ATK will be increased by 20%/25%/30%/35%/40% for 8s. The 2 aforementioned effects can be triggered even when the character is not on the field. Additionally, when not protected by a shield, the character\u0027s Max HP will be increased by 32%/40%/48%/56%/64%.",
+    "passive": "After the character's Elemental Skill hits an opponent, their ATK will be increased by {{value}}% for 8s. After the character takes DMG, their ATK will be increased by {{value}}% for 8s. The 2 aforementioned effects can be triggered even when the character is not on the field. Additionally, when not protected by a shield, the character's Max HP will be increased by {{value}}%.",
     "substat": "cr",
     "level_1": {
       "base_attack": 46,
       "substat_value": "7.2%"
-    }
+    },
+    "r1": [20, 20, 32],
+    "r2": [25, 25, 40],
+    "r3": [30, 30, 48],
+    "r4": [35, 35, 56],
+    "r5": [40, 40, 64]
   },
   "blackcliff-slasher": {
     "rarity": 4,
-    "passive": "After defeating an opponent, ATK is increased by /After defeating an opponent, ATK is increased by /After defeating an enemy, ATK is increased by /After defeating an enemy, ATK is increased by /After defeating an enemy, ATK is increased by 12%/15%/18%/21%/24% for 30s. This effect has a maximum of 3 stacks, and the duration of each stack is independent of the others.",
+    "passive": "After defeating an opponent, ATK is increased by /After defeating an opponent, ATK is increased by /After defeating an enemy, ATK is increased by /After defeating an enemy, ATK is increased by /After defeating an enemy, ATK is increased by {{value}}% for 30s. This effect has a maximum of 3 stacks, and the duration of each stack is independent of the others.",
     "substat": "cd",
     "level_1": {
       "base_attack": 42,
       "substat_value": "12.0%"
-    }
+    },
+    "r1": [12],
+    "r2": [15],
+    "r3": [18],
+    "r4": [21],
+    "r5": [24]
   },
   "bloodtainted-greatsword": {
     "rarity": 3,
-    "passive": "Increases DMG dealt against opponents affected by Pyro or Electro by /Increases DMG dealt against opponents affected by Pyro or Electro by /Increases DMG dealt against opponents affected by Pyro or Electro by /Increases DMG dealt against opponents affected by Pyro or Electro by /Increases DMG against opponents affected by Pyro or Electro by 12%/15%/18%/21%/24%.",
+    "passive": "Increases DMG dealt against opponents affected by Pyro or Electro by /Increases DMG dealt against opponents affected by Pyro or Electro by /Increases DMG dealt against opponents affected by Pyro or Electro by /Increases DMG dealt against opponents affected by Pyro or Electro by /Increases DMG against opponents affected by Pyro or Electro by {{value}}%.",
     "substat": "em",
     "level_1": {
       "base_attack": 38,
       "substat_value": "41"
-    }
+    },
+    "r1": [12],
+    "r2": [15],
+    "r3": [18],
+    "r4": [21],
+    "r5": [24]
   },
   "debate-club": {
     "rarity": 3,
-    "passive": "After using an Elemental Skill, on hit, Normal and Charged Attacks deal additional DMG equal to 60%/75%/90%/105%/120% of ATK in a small AoE. Effect lasts 15s. DMG can only occur once every 3s.",
+    "passive": "After using an Elemental Skill, on hit, Normal and Charged Attacks deal additional DMG equal to {{value}}% of ATK in a small AoE. Effect lasts 15s. DMG can only occur once every 3s.",
     "substat": "atk%",
     "level_1": {
       "base_attack": 39,
       "substat_value": "7.7%"
-    }
+    },
+    "r1": [60],
+    "r2": [75],
+    "r3": [90],
+    "r4": [105],
+    "r5": [120]
   },
   "earth-shaker": {
     "rarity": 4,
-    "passive": "After a party member triggers a Pyro-related reaction, the equipping character\u0027s Elemental Skill DMG is increased by 16%/20%/24%/28%/32% for 8s. This effect can be triggered even when the triggering party member is not on the field.",
+    "passive": "After a party member triggers a Pyro-related reaction, the equipping character's Elemental Skill DMG is increased by {{value}}% for 8s. This effect can be triggered even when the triggering party member is not on the field.",
     "substat": "atk%",
     "level_1": {
       "base_attack": 44,
       "substat_value": "6.0%"
-    }
+    },
+    "r1": [16],
+    "r2": [20],
+    "r3": [24],
+    "r4": [28],
+    "r5": [32]
   },
   "fang-of-the-mountain-king": {
     "rarity": 5,
-    "passive": "Gain 1 stack of Canopy\u0027s Favor after hitting an opponent with an Elemental Skill. This can be triggered once every 0.5s. After a nearby party member triggers a Burning or Burgeon reaction, the equipping character will gain 3 stacks. This effect can be triggered once every 2s and can be triggered even when the triggering party member is off-field. Canopy\u0027s Favor: Elemental Skill and Burst DMG is increased by 10%/12.5%/15%/17.5%/20% for 6s. Max 6 stacks. Each stack is counted independently.",
+    "passive": "Gain 1 stack of Canopy's Favor after hitting an opponent with an Elemental Skill. This can be triggered once every 0.5s. After a nearby party member triggers a Burning or Burgeon reaction, the equipping character will gain 3 stacks. This effect can be triggered once every 2s and can be triggered even when the triggering party member is off-field. Canopy's Favor: Elemental Skill and Burst DMG is increased by {{value}}% for 6s. Max 6 stacks. Each stack is counted independently.",
     "substat": "cr",
     "level_1": {
       "base_attack": 49,
       "substat_value": "2.4%"
-    }
+    },
+    "r1": [10],
+    "r2": [12.5],
+    "r3": [15],
+    "r4": [17.5],
+    "r5": [20]
   },
   "favonius-greatsword": {
     "rarity": 4,
-    "passive": "CRIT Hits have a 60%/70%/80%/90%/100% chance to generate a small amount of Elemental Particles, which will regenerate 6 Energy for the character. Can only occur once every 12s/10.5s/9s/7.5s/6s.",
+    "passive": "CRIT Hits have a {{value}}% chance to generate a small amount of Elemental Particles, which will regenerate 6 Energy for the character. Can only occur once every 12s/10.5s/9s/7.5s/6s.",
     "substat": "er",
     "level_1": {
       "base_attack": 41,
       "substat_value": "13.3%"
-    }
+    },
+    "r1": [60],
+    "r2": [70],
+    "r3": [80],
+    "r4": [90],
+    "r5": [100]
   },
   "ferrous-shadow": {
     "rarity": 3,
-    "passive": "When HP falls below 70%/75%/80%/85%/90%, increases Charged Attack DMG by 30%/35%/40%/45%/50% and Charged Attacks become harder to interrupt.",
+    "passive": "When HP falls below {{value}}%, increases Charged Attack DMG by {{value}}% and Charged Attacks become harder to interrupt.",
     "substat": "hp%",
     "level_1": {
       "base_attack": 39,
       "substat_value": "7.7%"
-    }
+    },
+    "r1": [70, 30],
+    "r2": [75, 35],
+    "r3": [80, 40],
+    "r4": [85, 45],
+    "r5": [90, 50]
   },
   "flame-forged-insight": {
     "rarity": 4,
-    "passive": "When Electro-Charged, Lunar-Charged, Bloom, Lunar-Bloom, Crystallize or Lunar-Crystallize is triggered, restore 12/15/18/21/24 Elemental Energy and increase Elemental Mastery by 60/75/90/105/120 for 15 seconds. This effect can be triggered at most once every 15s and can be triggered even when the equipping character is off-field.",
+    "passive": "When Electro-Charged, Lunar-Charged, Bloom, Lunar-Bloom, Crystallize or Lunar-Crystallize is triggered, restore {{value}} Elemental Energy and increase Elemental Mastery by {{value}} for 15 seconds. This effect can be triggered at most once every 15s and can be triggered even when the equipping character is off-field.",
     "substat": "em",
     "level_1": {
       "base_attack": 42,
       "substat_value": "36"
-    }
+    },
+    "r1": [12, 60],
+    "r2": [15, 75],
+    "r3": [18, 90],
+    "r4": [21, 105],
+    "r5": [24, 120]
   },
   "forest-regalia": {
     "rarity": 4,
-    "passive": "After triggering Burning, Quicken, Aggravate, Spread, Bloom, Lunar-Bloom, Hyperbloom, or Burgeon, a Leaf of Consciousness will be created around the character for a maximum of 10s. When picked up, the Leaf will grant the character 60/75/90/105/120 Elemental Mastery for 12s. Only 1 Leaf can be generated this way every 20s. This effect can still be triggered if the character is not on the field. The Leaf of Consciousness\u0027 effect cannot stack.",
+    "passive": "After triggering Burning, Quicken, Aggravate, Spread, Bloom, Lunar-Bloom, Hyperbloom, or Burgeon, a Leaf of Consciousness will be created around the character for a maximum of 10s. When picked up, the Leaf will grant the character {{value}} Elemental Mastery for 12s. Only 1 Leaf can be generated this way every 20s. This effect can still be triggered if the character is not on the field. The Leaf of Consciousness' effect cannot stack.",
     "substat": "er",
     "level_1": {
       "base_attack": 44,
       "substat_value": "6.7%"
-    }
+    },
+    "r1": [60],
+    "r2": [75],
+    "r3": [90],
+    "r4": [105],
+    "r5": [120]
   },
   "fruitful-hook": {
     "rarity": 4,
-    "passive": "Increase Plunging Attack CRIT Rate by 16%/20%/24%/28%/32%; After a Plunging Attack hits an opponent, Normal, Charged, and Plunging Attack DMG increased by 16%/20%/24%/28%/32% for 10s.",
+    "passive": "Increase Plunging Attack CRIT Rate by {{value}}%; After a Plunging Attack hits an opponent, Normal, Charged, and Plunging Attack DMG increased by {{value}}% for 10s.",
     "substat": "atk%",
     "level_1": {
       "base_attack": 44,
       "substat_value": "6.0%"
-    }
+    },
+    "r1": [16, 16],
+    "r2": [20, 20],
+    "r3": [24, 24],
+    "r4": [28, 28],
+    "r5": [32, 32]
   },
   "gest-of-the-mighty-wolf": {
     "rarity": 5,
-    "passive": "Increase ATK SPD by 10%. Every time the equipping character\u0027s Normal Attack(s) hit opponent(s), when they cast their Elemental Skill, or when they begin their Charged Attack(s), gain 1/2/2 stacks of Four Winds\u0027 Hymn respectively: DMG dealt is increased by 7.5%/9.5%/11.5%/13.5%/15.5% for 4s. Max 4 stacks. This effect can be triggered once every 0.01s.\u003cbr\u003eAdditionally, when the party has the \"Hexerei: Secret Rite\" effect, each stack of Four Winds\u0027 Hymn also increases the equipping character\u0027s CRIT DMG by 7.5%/9.5%/11.5%/13.5%/15.5%.",
+    "passive": "Increase ATK SPD by 10%. Every time the equipping character's Normal Attack(s) hit opponent(s), when they cast their Elemental Skill, or when they begin their Charged Attack(s), gain 1/2/2 stacks of Four Winds' Hymn respectively: DMG dealt is increased by {{value}}% for 4s. Max 4 stacks. This effect can be triggered once every 0.01s.<br>Additionally, when the party has the \"Hexerei: Secret Rite\" effect, each stack of Four Winds' Hymn also increases the equipping character's CRIT DMG by {{value}}%.",
     "substat": "cr",
     "level_1": {
       "base_attack": 46,
       "substat_value": "7.2%"
-    }
+    },
+    "r1": [7.5, 7.5],
+    "r2": [9.5, 9.5],
+    "r3": [11.5, 11.5],
+    "r4": [13.5, 13.5],
+    "r5": [15.5, 15.5]
   },
   "katsuragikiri-nagamasa": {
     "rarity": 4,
-    "passive": "Increases Elemental Skill DMG by 6%/7.5%/9%/10.5%/12%. After Elemental Skill hits an opponent, the character loses 3 Energy but regenerates 3/3.5/4/4.5/5 Energy every 2s for the next 6s. This effect can occur once every 10s. Can be triggered even when the character is not on the field.",
+    "passive": "Increases Elemental Skill DMG by {{value}}%. After Elemental Skill hits an opponent, the character loses 3 Energy but regenerates {{value}} Energy every 2s for the next 6s. This effect can occur once every 10s. Can be triggered even when the character is not on the field.",
     "substat": "er",
     "level_1": {
       "base_attack": 42,
       "substat_value": "10.0%"
-    }
+    },
+    "r1": [6, 3],
+    "r2": [7.5, 3.5],
+    "r3": [9, 4],
+    "r4": [10.5, 4.5],
+    "r5": [12, 5]
   },
   "lithic-blade": {
     "rarity": 4,
-    "passive": "For every character in the party who hails from Liyue, the character who equips this weapon gains a 7%/8%/9%/10%/11% ATK increase and a 3%/4%/5%/6%/7% CRIT Rate increase. This effect stacks up to 4 times.",
+    "passive": "For every character in the party who hails from Liyue, the character who equips this weapon gains a {{value}}% ATK increase and a {{value}}% CRIT Rate increase. This effect stacks up to 4 times.",
     "substat": "atk%",
     "level_1": {
       "base_attack": 42,
       "substat_value": "9.0%"
-    }
+    },
+    "r1": [7, 3],
+    "r2": [8, 4],
+    "r3": [9, 5],
+    "r4": [10, 6],
+    "r5": [11, 7]
   },
   "luxurious-sea-lord": {
     "rarity": 4,
-    "passive": "Increases Elemental Burst DMG by 12%/15%/18%/21%/24%. When Elemental Burst hits opponents, there is a 100% chance of summoning a huge onrush of tuna that deals 100%/125%/150%/175%/200% ATK as AoE DMG. This effect can occur once every 15s.",
+    "passive": "Increases Elemental Burst DMG by {{value}}%. When Elemental Burst hits opponents, there is a 100% chance of summoning a huge onrush of tuna that deals {{value}}% ATK as AoE DMG. This effect can occur once every 15s.",
     "substat": "atk%",
     "level_1": {
       "base_attack": 41,
       "substat_value": "12.0%"
-    }
+    },
+    "r1": [12, 100],
+    "r2": [15, 125],
+    "r3": [18, 150],
+    "r4": [21, 175],
+    "r5": [24, 200]
   },
   "mailed-flower": {
     "rarity": 4,
-    "passive": "Within 8s after the character\u0027s Elemental Skill hits an opponent or the character triggers an Elemental Reaction, their ATK and Elemental Mastery will be increased by 12%/15%/18%/21%/24% and 48/60/72/84/96 respectively.",
+    "passive": "Within 8s after the character's Elemental Skill hits an opponent or the character triggers an Elemental Reaction, their ATK and Elemental Mastery will be increased by {{value}}% and {{value}} respectively.",
     "substat": "em",
     "level_1": {
       "base_attack": 44,
       "substat_value": "24"
-    }
+    },
+    "r1": [12, 48],
+    "r2": [15, 60],
+    "r3": [18, 72],
+    "r4": [21, 84],
+    "r5": [24, 96]
   },
   "makhaira-aquamarine": {
     "rarity": 4,
-    "passive": "The following effect will trigger every 10s: The equipping character will gain 24%/30%/36%/42%/48% of their Elemental Mastery as bonus ATK for 12s, with nearby party members gaining 30% of this buff for the same duration. Multiple instances of this weapon can allow this buff to stack. This effect will still trigger even if the character is not on the field.",
+    "passive": "The following effect will trigger every 10s: The equipping character will gain {{value}}% of their Elemental Mastery as bonus ATK for 12s, with nearby party members gaining 30% of this buff for the same duration. Multiple instances of this weapon can allow this buff to stack. This effect will still trigger even if the character is not on the field.",
     "substat": "em",
     "level_1": {
       "base_attack": 42,
       "substat_value": "36"
-    }
+    },
+    "r1": [24],
+    "r2": [30],
+    "r3": [36],
+    "r4": [42],
+    "r5": [48]
   },
   "master-key": {
     "rarity": 4,
-    "passive": "Upon causing an Elemental Reaction, increases Elemental Mastery by 60/75/90/105/120 for 12s. Moonsign: Ascendant Gleam: Elemental Mastery from this effect is further increased by 60/75/90/105/120. This effect can be triggered even if the equipping character is off-field.",
+    "passive": "Upon causing an Elemental Reaction, increases Elemental Mastery by {{value}} for 12s. Moonsign: Ascendant Gleam: Elemental Mastery from this effect is further increased by {{value}}. This effect can be triggered even if the equipping character is off-field.",
     "substat": "er",
     "level_1": {
       "base_attack": 41,
       "substat_value": "13.3%"
-    }
+    },
+    "r1": [60, 60],
+    "r2": [75, 75],
+    "r3": [90, 90],
+    "r4": [105, 105],
+    "r5": [120, 120]
   },
   "old-mercs-pal": {
     "rarity": 2,
@@ -190,165 +290,255 @@
   },
   "portable-power-saw": {
     "rarity": 4,
-    "passive": "When the wielder is healed or heals others, they will gain a Stoic\u0027s Symbol that lasts 30s, up to a maximum of 3 Symbols. When using their Elemental Skill or Burst, all Symbols will be consumed and the Roused effect will be granted for 10s. For each Symbol consumed, gain 40/50/60/70/80 Elemental Mastery, and 2s after the effect occurs, 2/2.5/3/3.5/4 Energy per Symbol consumed will be restored for said character. The Roused effect can be triggered once every 15s, and Symbols can be gained even when the character is not on the field.",
+    "passive": "When the wielder is healed or heals others, they will gain a Stoic's Symbol that lasts 30s, up to a maximum of 3 Symbols. When using their Elemental Skill or Burst, all Symbols will be consumed and the Roused effect will be granted for 10s. For each Symbol consumed, gain {{value}} Elemental Mastery, and 2s after the effect occurs, {{value}} Energy per Symbol consumed will be restored for said character. The Roused effect can be triggered once every 15s, and Symbols can be gained even when the character is not on the field.",
     "substat": "hp%",
     "level_1": {
       "base_attack": 41,
       "substat_value": "12.0%"
-    }
+    },
+    "r1": [40, 2],
+    "r2": [50, 2.5],
+    "r3": [60, 3],
+    "r4": [70, 3.5],
+    "r5": [80, 4]
   },
   "prototype-archaic": {
     "rarity": 4,
-    "passive": "On hit, Normal or Charged Attacks have a 50% chance to deal an additional 240%/300%/360%/420%/480% ATK DMG to opponents within a small AoE. Can only occur once every 15s.",
+    "passive": "On hit, Normal or Charged Attacks have a 50% chance to deal an additional {{value}}% ATK DMG to opponents within a small AoE. Can only occur once every 15s.",
     "substat": "atk%",
     "level_1": {
       "base_attack": 44,
       "substat_value": "6.0%"
-    }
+    },
+    "r1": [240],
+    "r2": [300],
+    "r3": [360],
+    "r4": [420],
+    "r5": [480]
   },
   "quartz": {
     "rarity": 3,
-    "passive": "Upon causing an Overloaded, Melt, Burning, Vaporize, Burgeon, or a Pyro-infused Swirl reaction, ATK is increased by 20%/25%/30%/35%/40% for 12s.",
+    "passive": "Upon causing an Overloaded, Melt, Burning, Vaporize, Burgeon, or a Pyro-infused Swirl reaction, ATK is increased by {{value}}% for 12s.",
     "substat": "em",
     "level_1": {
       "base_attack": 39,
       "substat_value": "31"
-    }
+    },
+    "r1": [20],
+    "r2": [25],
+    "r3": [30],
+    "r4": [35],
+    "r5": [40]
   },
   "rainslasher": {
     "rarity": 4,
-    "passive": "Increases DMG against opponents affected by Hydro or Electro by 20%/24%/28%/32%/36%.",
+    "passive": "Increases DMG against opponents affected by Hydro or Electro by {{value}}%.",
     "substat": "em",
     "level_1": {
       "base_attack": 42,
       "substat_value": "36"
-    }
+    },
+    "r1": [20],
+    "r2": [24],
+    "r3": [28],
+    "r4": [32],
+    "r5": [36]
   },
   "redhorn-stonethresher": {
     "rarity": 5,
-    "passive": "DEF is increased by 28%/35%/42%/49%/56%. Normal and Charged Attack DMG is increased by 40%/50%/60%/70%/80% of DEF.",
+    "passive": "DEF is increased by {{value}}%. Normal and Charged Attack DMG is increased by {{value}}% of DEF.",
     "substat": "cd",
     "level_1": {
       "base_attack": 44,
       "substat_value": "19.2%"
-    }
+    },
+    "r1": [28, 40],
+    "r2": [35, 50],
+    "r3": [42, 60],
+    "r4": [49, 70],
+    "r5": [56, 80]
   },
   "royal-greatsword": {
     "rarity": 4,
-    "passive": "Upon damaging an opponent, increases CRIT Rate by 8%/10%/12%/14%/16%. Max 5 stacks. A CRIT Hit removes all stacks.",
+    "passive": "Upon damaging an opponent, increases CRIT Rate by {{value}}%. Max 5 stacks. A CRIT Hit removes all stacks.",
     "substat": "atk%",
     "level_1": {
       "base_attack": 44,
       "substat_value": "6.0%"
-    }
+    },
+    "r1": [8],
+    "r2": [10],
+    "r3": [12],
+    "r4": [14],
+    "r5": [16]
   },
   "sacrificial-greatsword": {
     "rarity": 4,
-    "passive": "After damaging an opponent with an Elemental Skill, the skill has a 40%/50%/60%/70%/80% chance to end its own CD. Can only occur once every 30s/26s/22s/19s/16s.",
+    "passive": "After damaging an opponent with an Elemental Skill, the skill has a {{value}}% chance to end its own CD. Can only occur once every 30s/26s/22s/19s/16s.",
     "substat": "er",
     "level_1": {
       "base_attack": 44,
       "substat_value": "6.7%"
-    }
+    },
+    "r1": [40],
+    "r2": [50],
+    "r3": [60],
+    "r4": [70],
+    "r5": [80]
   },
   "serpent-spine": {
     "rarity": 4,
-    "passive": "Every 4s a character is on the field, they will deal 6%/7%/8%/9%/10% more DMG and take 3%/2.7%/2.4%/2.2%/2% more DMG. This effect has a maximum of 5 stacks and will not be reset if the character leaves the field, but will be reduced by 1 stack when the character takes DMG.",
+    "passive": "Every 4s a character is on the field, they will deal {{value}}% more DMG and take {{value}}% more DMG. This effect has a maximum of 5 stacks and will not be reset if the character leaves the field, but will be reduced by 1 stack when the character takes DMG.",
     "substat": "cr",
     "level_1": {
       "base_attack": 42,
       "substat_value": "6.0%"
-    }
+    },
+    "r1": [6, 3],
+    "r2": [7, 2.7],
+    "r3": [8, 2.4],
+    "r4": [9, 2.2],
+    "r5": [10, 2]
   },
   "skyrider-greatsword": {
     "rarity": 3,
-    "passive": "On hit, Normal or Charged Attacks increase ATK by 6%/7%/8%/9%/10% for 6s. Max 4 stacks. Can occur once every 0.5s.",
+    "passive": "On hit, Normal or Charged Attacks increase ATK by {{value}}% for 6s. Max 4 stacks. Can occur once every 0.5s.",
     "substat": "physical-dmg",
     "level_1": {
       "base_attack": 39,
       "substat_value": "9.6%"
-    }
+    },
+    "r1": [6],
+    "r2": [7],
+    "r3": [8],
+    "r4": [9],
+    "r5": [10]
   },
   "skyward-pride": {
     "rarity": 5,
-    "passive": "Increases all DMG by 8%/10%/12%/14%/16%. After using an Elemental Burst, a vacuum blade that does 80%/100%/120%/140%/160% of ATK as DMG to opponents along its path will be created when Normal or Charged Attacks hit. Lasts for 20s or 8 vacuum blades.",
+    "passive": "Increases all DMG by {{value}}%. After using an Elemental Burst, a vacuum blade that does {{value}}% of ATK as DMG to opponents along its path will be created when Normal or Charged Attacks hit. Lasts for 20s or 8 vacuum blades.",
     "substat": "er",
     "level_1": {
       "base_attack": 48,
       "substat_value": "8.0%"
-    }
+    },
+    "r1": [8, 80],
+    "r2": [10, 100],
+    "r3": [12, 120],
+    "r4": [14, 140],
+    "r5": [16, 160]
   },
   "snow-tombed-starsilver": {
     "rarity": 4,
-    "passive": "Hitting an opponent with Normal and Charged Attacks has a /Hitting an opponent with Normal and Charged Attacks has a /Hitting an opponent with Normal and Charged Attacks has an /Hitting an opponent with Normal and Charged Attacks has a /Hitting an opponent with Normal and Charged Attacks has a 60%/70%/80%/90%/100% chance of forming and dropping an Everfrost Icicle above them, dealing AoE DMG equal to 80%/95%/110%/125%/140% of ATK. Opponents affected by Cryo are instead dealt DMG equal to 200%/240%/280%/320%/360% of ATK. Can only occur once every 10s.",
+    "passive": "Hitting an opponent with Normal and Charged Attacks has a /Hitting an opponent with Normal and Charged Attacks has a /Hitting an opponent with Normal and Charged Attacks has an /Hitting an opponent with Normal and Charged Attacks has a /Hitting an opponent with Normal and Charged Attacks has a {{value}}% chance of forming and dropping an Everfrost Icicle above them, dealing AoE DMG equal to {{value}}% of ATK. Opponents affected by Cryo are instead dealt DMG equal to {{value}}% of ATK. Can only occur once every 10s.",
     "substat": "physical-dmg",
     "level_1": {
       "base_attack": 44,
       "substat_value": "7.5%"
-    }
+    },
+    "r1": [60, 80, 200],
+    "r2": [70, 95, 240],
+    "r3": [80, 110, 280],
+    "r4": [90, 125, 320],
+    "r5": [100, 140, 360]
   },
   "song-of-broken-pines": {
     "rarity": 5,
-    "passive": "A part of the \"Millennial Movement\" that wanders amidst the winds. Increases ATK by 16%/20%/24%/28%/32%, and when Normal or Charged Attacks hit opponents, the character gains a Sigil of Whispers. This effect can be triggered once every 0.3s. When you possess 4 Sigils of Whispers, all of them will be consumed and all nearby party members will obtain the \"Millennial Movement: Banner-Hymn\" effect for 12s. \"Millennial Movement: Banner-Hymn\" increases Normal ATK SPD by 12%/15%/18%/21%/24% and increases ATK by 20%/25%/30%/35%/40%. Once this effect is triggered, you will not gain Sigils of Whispers for 20s. Of the many effects of the \"Millennial Movement,\" buffs of the same type will not stack.",
+    "passive": "A part of the \"Millennial Movement\" that wanders amidst the winds. Increases ATK by {{value}}%, and when Normal or Charged Attacks hit opponents, the character gains a Sigil of Whispers. This effect can be triggered once every 0.3s. When you possess 4 Sigils of Whispers, all of them will be consumed and all nearby party members will obtain the \"Millennial Movement: Banner-Hymn\" effect for 12s. \"Millennial Movement: Banner-Hymn\" increases Normal ATK SPD by {{value}}% and increases ATK by {{value}}%. Once this effect is triggered, you will not gain Sigils of Whispers for 20s. Of the many effects of the \"Millennial Movement,\" buffs of the same type will not stack.",
     "substat": "physical-dmg",
     "level_1": {
       "base_attack": 49,
       "substat_value": "4.5%"
-    }
+    },
+    "r1": [16, 12, 20],
+    "r2": [20, 15, 25],
+    "r3": [24, 18, 30],
+    "r4": [28, 21, 35],
+    "r5": [32, 24, 40]
   },
   "talking-stick": {
     "rarity": 4,
-    "passive": "ATK will be increased by 16%/20%/24%/28%/32% for 15s after being affected by Pyro. This effect can be triggered once every 12s. All Elemental DMG Bonus will be increased by 12%/15%/18%/21%/24% for 15s after being affected by Hydro, Cryo, Electro, or Dendro. This effect can be triggered once every 12s.",
+    "passive": "ATK will be increased by {{value}}% for 15s after being affected by Pyro. This effect can be triggered once every 12s. All Elemental DMG Bonus will be increased by {{value}}% for 15s after being affected by Hydro, Cryo, Electro, or Dendro. This effect can be triggered once every 12s.",
     "substat": "cr",
     "level_1": {
       "base_attack": 44,
       "substat_value": "4.0%"
-    }
+    },
+    "r1": [16, 12],
+    "r2": [20, 15],
+    "r3": [24, 18],
+    "r4": [28, 21],
+    "r5": [32, 24]
   },
   "the-bell": {
     "rarity": 4,
-    "passive": "Taking DMG generates a shield which absorbs DMG up to 20%/23%/26%/29%/32% of Max HP. This shield lasts for 10s or until broken, and can only be triggered once every 45s. While protected by a shield, the character gains 12%/15%/18%/21%/24% increased DMG.",
+    "passive": "Taking DMG generates a shield which absorbs DMG up to {{value}}% of Max HP. This shield lasts for 10s or until broken, and can only be triggered once every 45s. While protected by a shield, the character gains {{value}}% increased DMG.",
     "substat": "hp%",
     "level_1": {
       "base_attack": 42,
       "substat_value": "9.0%"
-    }
+    },
+    "r1": [20, 12],
+    "r2": [23, 15],
+    "r3": [26, 18],
+    "r4": [29, 21],
+    "r5": [32, 24]
   },
   "the-unforged": {
     "rarity": 5,
-    "passive": "Increases Shield Strength by 20%/25%/30%/35%/40%. Scoring hits on opponents increases ATK by 4%/5%/6%/7%/8% for 8s. Max 5 stacks. Can only occur once every 0.3s. While protected by a shield, this ATK increase effect is increased by 100%.",
+    "passive": "Increases Shield Strength by {{value}}%. Scoring hits on opponents increases ATK by {{value}}% for 8s. Max 5 stacks. Can only occur once every 0.3s. While protected by a shield, this ATK increase effect is increased by 100%.",
     "substat": "atk%",
     "level_1": {
       "base_attack": 46,
       "substat_value": "10.8%"
-    }
+    },
+    "r1": [20, 4],
+    "r2": [25, 5],
+    "r3": [30, 6],
+    "r4": [35, 7],
+    "r5": [40, 8]
   },
   "tidal-shadow": {
     "rarity": 4,
-    "passive": "After the wielder is healed, ATK will be increased by 24%/30%/36%/42%/48% for 8s. This can be triggered even when the character is not on the field.",
+    "passive": "After the wielder is healed, ATK will be increased by {{value}}% for 8s. This can be triggered even when the character is not on the field.",
     "substat": "atk%",
     "level_1": {
       "base_attack": 42,
       "substat_value": "9.0%"
-    }
+    },
+    "r1": [24],
+    "r2": [30],
+    "r3": [36],
+    "r4": [42],
+    "r5": [48]
   },
   "ultimate-overlords-mega-magic-sword": {
     "rarity": 4,
-    "passive": "ATK increased by 12%/15%/18%/21%/24%. That\u0027s not all! The support from all Melusines you\u0027ve helped in Merusea Village fills you with strength! Based on the number of them you\u0027ve helped, your ATK is increased by up to an additional 12%/15%/18%/21%/24%.",
+    "passive": "ATK increased by {{value}}%. That's not all! The support from all Melusines you've helped in Merusea Village fills you with strength! Based on the number of them you've helped, your ATK is increased by up to an additional {{value}}%.",
     "substat": "er",
     "level_1": {
       "base_attack": 44,
       "substat_value": "6.7%"
-    }
+    },
+    "r1": [12, 12],
+    "r2": [15, 15],
+    "r3": [18, 18],
+    "r4": [21, 21],
+    "r5": [24, 24]
   },
   "verdict": {
     "rarity": 5,
-    "passive": "Increases ATK by 20%/25%/30%/35%/40%. When party members obtain Elemental Shards from Crystallize or trigger Lunar-Crystallize reactions, the equipping character will gain 1 Seal, increasing Elemental Skill DMG by 18%/22.5%/27%/31.5%/36%. The Seal lasts for 15s, and the equipper may have up to 2 Seals at once. All of the equipper\u0027s Seals will disappear 0.2s after their Elemental Skill deals DMG. Up to 1 Seal may be obtained every second through the Lunar-Crystallize reaction.",
+    "passive": "Increases ATK by {{value}}%. When party members obtain Elemental Shards from Crystallize or trigger Lunar-Crystallize reactions, the equipping character will gain 1 Seal, increasing Elemental Skill DMG by {{value}}%. The Seal lasts for 15s, and the equipper may have up to 2 Seals at once. All of the equipper's Seals will disappear 0.2s after their Elemental Skill deals DMG. Up to 1 Seal may be obtained every second through the Lunar-Crystallize reaction.",
     "substat": "cr",
     "level_1": {
       "base_attack": 48,
       "substat_value": "4.8%"
-    }
+    },
+    "r1": [20, 18],
+    "r2": [25, 22.5],
+    "r3": [30, 27],
+    "r4": [35, 31.5],
+    "r5": [40, 36]
   },
   "waster-greatsword": {
     "rarity": 1,
@@ -361,29 +551,44 @@
   },
   "whiteblind": {
     "rarity": 4,
-    "passive": "On hit, Normal or Charged Attacks increase ATK and DEF by 6%/7.5%/9%/10.5%/12% for 6s. Max 4 stacks. This effect can only occur once every 0.5s.",
+    "passive": "On hit, Normal or Charged Attacks increase ATK and DEF by {{value}}% for 6s. Max 4 stacks. This effect can only occur once every 0.5s.",
     "substat": "def%",
     "level_1": {
       "base_attack": 42,
       "substat_value": "11.3%"
-    }
+    },
+    "r1": [6],
+    "r2": [7.5],
+    "r3": [9],
+    "r4": [10.5],
+    "r5": [12]
   },
   "white-iron-greatsword": {
     "rarity": 3,
-    "passive": "Defeating an opponent restores 8%/10%/12%/14%/16% HP.",
+    "passive": "Defeating an opponent restores {{value}}% HP.",
     "substat": "def%",
     "level_1": {
       "base_attack": 39,
       "substat_value": "9.6%"
-    }
+    },
+    "r1": [8],
+    "r2": [10],
+    "r3": [12],
+    "r4": [14],
+    "r5": [16]
   },
   "wolfs-gravestone": {
     "rarity": 5,
-    "passive": "Increases ATK by 20%/25%/30%/35%/40%. On hit, attacks against opponents with less than 30% HP increase all party members\u0027 ATK by 40%/50%/60%/70%/80% for 12s. Can only occur once every 30s.",
+    "passive": "Increases ATK by {{value}}%. On hit, attacks against opponents with less than 30% HP increase all party members' ATK by {{value}}% for 12s. Can only occur once every 30s.",
     "substat": "atk%",
     "level_1": {
       "base_attack": 46,
       "substat_value": "10.8%"
-    }
+    },
+    "r1": [20, 40],
+    "r2": [25, 50],
+    "r3": [30, 60],
+    "r4": [35, 70],
+    "r5": [40, 80]
   }
 }

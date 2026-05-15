@@ -1,6 +1,7 @@
 ---
 import WeaponInfoPopover from './WeaponInfoPopover.astro';
 import { t } from '../utils/i18n';
+import type { WeaponPassiveValue } from '../utils/weapon-passive';
 const { weapons, locale } = Astro.props;
 
 type WeaponItem = {
@@ -9,6 +10,11 @@ type WeaponItem = {
   info?: {
     rarity: number;
     passive?: string;
+    r1?: WeaponPassiveValue[];
+    r2?: WeaponPassiveValue[];
+    r3?: WeaponPassiveValue[];
+    r4?: WeaponPassiveValue[];
+    r5?: WeaponPassiveValue[];
     substat?: string;
     level_1?: {
       base_attack?: number;
@@ -43,9 +49,10 @@ const formatRefinement = (refinement?: number | string) =>
           <strong>{i + 1}.</strong>&nbsp;
           {position.items[0] && (
             <span>
-              <WeaponInfoPopover weapon={position.items[0]} locale={locale} />&nbsp;
+              <WeaponInfoPopover weapon={position.items[0]} locale={locale} />
+              &nbsp;
               <span class="bold">
-                ({position.items[0].rarity} {"\u2605"})
+                ({position.items[0].rarity} {'\u2605'})
                 {formatRefinement(position.items[0].refinement)}
                 {position.items[0].noteId ? (
                   <a class="note-link" href={`#${position.items[0].noteId}`}>
@@ -63,10 +70,10 @@ const formatRefinement = (refinement?: number | string) =>
 
         {position.items.slice(1).map((weapon) => (
           <div class="alt">
-            &asymp; <WeaponInfoPopover weapon={weapon} locale={locale} />&nbsp;
+            &asymp; <WeaponInfoPopover weapon={weapon} locale={locale} />
+            &nbsp;
             <span class="bold">
-              ({weapon.rarity} {"\u2605"})
-              {formatRefinement(weapon.refinement)}
+              ({weapon.rarity} {'\u2605'}){formatRefinement(weapon.refinement)}
               {weapon.noteId ? (
                 <a class="note-link" href={`#${weapon.noteId}`}>
                   *
@@ -91,10 +98,10 @@ const formatRefinement = (refinement?: number | string) =>
 
         {weapons.conditional.map((weapon: WeaponItem) => (
           <div>
-            <WeaponInfoPopover weapon={weapon} locale={locale} />&nbsp;
+            <WeaponInfoPopover weapon={weapon} locale={locale} />
+            &nbsp;
             <span class="bold">
-              ({weapon.rarity} {"\u2605"})
-              {formatRefinement(weapon.refinement)}
+              ({weapon.rarity} {'\u2605'}){formatRefinement(weapon.refinement)}
               {weapon.noteId ? (
                 <a class="note-link" href={`#${weapon.noteId}`}>
                   *
