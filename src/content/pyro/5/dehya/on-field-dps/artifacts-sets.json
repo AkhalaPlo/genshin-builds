@@ -1,0 +1,81 @@
+{
+    "artifact_sets": [
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "emblem-of-severed-fate",
+                            "pieces": 4
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "vourukashas-glow",
+                            "pieces": 4
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "groups": [
+                {
+                    "choose": true,
+                    "items": [
+                        {
+                            "name": "crimson-witch-of-flames",
+                            "pieces": 2
+                        },
+                        {
+                            "name": "noblesse-oblige",
+                            "pieces": 2
+                        },
+                        {
+                            "name": "atk-set",
+                            "pieces": 2
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "unfinished-reverie",
+                            "pieces": 4,
+                            "note": {
+                                "en": "This is [[character:dehya]]'s best set if played in a team with [[element:burning]] present",
+                                "fr": "Le meilleur set de [[character:dehya]] si jouée dans une équipe avec la réaction [[element:burning]]"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "marechaussee-hunter",
+                            "pieces": 4,
+                            "note": {
+                                "en": "With [[character:furina]] on the team, this set performs similar to or better than **[[artifact:emblem-of-severed-fate]] (4)**, depending on [[character:dehya]]'s [[stat:er]] requirement.",
+                                "fr": "Avec [[character:furina]] dans l'équipe, ce set est équivalent voire meilleur **[[artifact:emblem-of-severed-fate]] (4)**, selon les besoins en [[stat:er]] de [[character:dehya]]."
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

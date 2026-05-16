@@ -1,0 +1,21 @@
+{
+    "main_stats": {
+        "sands": [
+            "atk%",
+            {
+                "name": "em",
+                "note": {
+                    "en": "Desirable stat if [[character:dehya]] is played in a [[element:vaporize]] or [[element:melt]] team.",
+                    "fr": "Stat voulue si [[character:dehya]] est jouée dans une équipe [[element:vaporize]] ou [[element:melt]]."
+                }
+            },
+            "er"
+        ],
+        "goblet": [
+            "pyro-dmg"
+        ],
+        "circlet": [
+            "cr/cd"
+        ]
+    }
+}

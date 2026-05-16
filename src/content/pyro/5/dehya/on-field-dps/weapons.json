@@ -1,0 +1,80 @@
+{
+    "weapons": [
+        {
+            "items": [
+                "beacon-of-the-reed-sea"
+            ]
+        },
+        {
+            "items": [
+                "redhorn-stonethresher",
+                "verdict"
+            ]
+        },
+        {
+            "items": [
+                "wolfs-gravestone",
+                "fang-of-the-mountain-king",
+                {
+                    "name": "serpent-spine",
+                    "note": {
+                        "en": "[[character:dehya]] has a hard time keeping up this weapon's stacks. At **[R5]**, this weapon can perform better than **[[weapon:wolfs-gravestone]]**.",
+                        "fr": "[[character:dehya]] a du mal à garder les stacks de cette arme. Une fois **[R5]**, cette arme peut être meileure que **[[weapon:wolfs-gravestone]]**."
+                    }
+                },
+                {
+                    "name": "mailed-flower",
+                    "refinement": 5,
+                    "note": {
+                        "en": "This weapon is only useful in [[element:melt]] or [[element:vaporize]] teams and should not be considered otherwise.",
+                        "fr": "Cette arme n'est utile que dans des équipes [[element:melt]] ou [[element:vaporize]] et ne doit pas être considérée le cas contraire."
+                    }
+                },
+                {
+                    "name": "rainslasher",
+                    "note": {
+                        "en": "Only useful in [[element:vaporize]] teams. At **[R5]**, this weapon performs similar to **[[weapon:redhorn-stonethresher]]**.",
+                        "fr": "Utile uniquement pour les équipes [[element:vaporize]]. Une fois **[R5]**, cette arme a des performances similaires à **[[weapon:redhorn-stonethresher]]**."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "tidal-shadow",
+                    "refinement": 5,
+                    "note": {
+                        "en": "Assumes [[character:dehya]] is being healed.",
+                        "fr": "Suppose que [[character:dehya]] se fait soigner."
+                    }
+                },
+                {
+                    "name": "ultimate-overlords-mega-magic-sword",
+                    "refinement": 5
+                },
+                {
+                    "name": "talking-stick",
+                    "note": {
+                        "en": "Assumes [[character:dehya]] is affected by [[element:pyro]]. At **[R5]**, this weapon performs better than **[[weapon:tidal-shadow]] [R5]**.",
+                        "fr": "Suppose que [[character:dehya]] est affectée par [[element:pyro]]. Une fois **[R5]**, cette arme performe mieux que **[[weapon:tidal-shadow]] [R5]**."
+                    }
+                },
+                "the-unforged",
+                {
+                    "name": "a-thousand-blazing-suns",
+                    "note": {
+                        "en": "As [[character:dehya]] needs to place her [[ability:skill]] at the very start of the rotation to not suffer from very high [[stat:er]] requirements, she often cannot have this weapon's passive active during her [[ability:burst]]. In teams where 10 seconds pass between her [[ability:skill]] and [[ability:burst]] use, this weapon performs similar to **[[weapon:redhorn-stonethresher]]**.",
+                        "fr": "Comme [[character:dehya]] doit utiliser son [[ability:skill]] au tout début de sa rotation pour ne pas rencontre de problèmes à cause des besoins en [[stat:er]] très élevés, elle ne bénéficie pas souvent du passif de cette arme sur son [[ability:burst]]. Dans les équipes avec plus de 10 secondes entre son [[ability:skill]] et son [[ability:burst]], cette arme équivaut à **[[weapon:redhorn-stonethresher]]**."
+                    }
+                },
+                "skyward-pride"
+            ]
+        },
+        {
+            "items": [
+                "akuoumaru"
+            ]
+        }
+    ]
+}
