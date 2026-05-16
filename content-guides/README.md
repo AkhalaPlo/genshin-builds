@@ -156,6 +156,7 @@ notes render under `Regarding Artifacts Choices:`, and talent notes render under
   circlet main stats.
 - Use [artifacts-substats.md](./artifacts-substats.md) for substat priority.
 - Use [talents.md](./talents.md) for talent priority.
+- You can copy the content of [json-base](./json-base) to have a pre-made structure for the different jsons
 
 ## Data and i18n Files
 
