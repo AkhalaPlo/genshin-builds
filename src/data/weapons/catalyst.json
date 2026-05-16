@@ -572,7 +572,7 @@
     "flowing-purity": {
         "rarity": 4,
         "passive": {
-            "en": "When using an Elemental Skill, All Elemental DMG Bonus will be increased by 8%/10%/12%/14%/16% for 15s, and a Bond of Life worth 24% of Max HP will be granted. This effect can be triggered once every 10s. When the Bond of Life is cleared, every 1,000 HP cleared in the process will provide 2%/2.5%/3%/3.5%/4% All Elemental DMG Bonus, up to a maximum of 12%/15%/18%/21%/24%. This effect lasts 15s.",
+            "en": "When using an Elemental Skill, All Elemental DMG Bonus will be increased by {{value}}% for 15s, and a Bond of Life worth 24% of Max HP will be granted. This effect can be triggered once every 10s. When the Bond of Life is cleared, every 1,000 HP cleared in the process will provide {{value}}% All Elemental DMG Bonus, up to a maximum of {{value}}%. This effect lasts 15s.",
             "de": "Erhöht beim Auslösen der Elementarfähigkeit den Elementar-SCH-Bonus aller Elemente um {{value}}%, hält 15 s. Es entsteht gleichzeitig ein Eid des Lebens mit einem Basiswert in Höhe von 24 % der max. LP. 10 s Abklingzeit. Wenn der Eid des Lebens entfernt wird, wird der Elementar-SCH-Bonus aller Elemente pro 1.000 Punkte entfernter Summe um jeweils {{value}}%, max. {{value}}%, erhöht. Hält 15 s.",
             "es": "Al usar la Habilidad Elemental, se obtiene un Bono de Daño Elemental del {{value}}% para todos los elementos durante 15 s, y otorga al personaje un “pacto vital” del 24% de su Vida Máx. Este efecto solo puede activarse una vez cada 10 s. Cuando el pacto vital se elimina, otorga un Bono de Daño Elemental del {{value}}% a todos los elementos por cada 1000 pts. de Vida consumidos de dicho pacto. Como máximo, de esta manera se puede obtener un {{value}}% de Bono de Daño Elemental para todos los elementos durante 15 s.",
             "fr": "Libérer une compétence élémentaire augmente le bonus de DGT élémentaires de {{value}}% pendant 15 s et accorde un engagement vital d'une valeur équivalant à 24 % des PV max. Cet effet peut être déclenché une fois toutes les 10 s. Lorsque l'engagement vital disparaît, chaque tranche de 1 000 pts de l'engagement accorde un bonus de DGT élémentaires de {{value}}% pendant 15 s, un maximum de {{value}}% pouvant être obtenu de cette manière.",
@@ -1377,7 +1377,7 @@
     "skyward-atlas": {
         "rarity": 5,
         "passive": {
-            "en": "Increases Elemental DMG Bonus by 12%/15%/18%/21%/24%. Normal Attack hits have a 50% chance to earn the favor of the clouds, which actively seek out nearby opponents to attack for 15s, dealing 160%/200%/240%/280%/320% ATK DMG. Can only occur once every 30s.",
+            "en": "Increases Elemental DMG Bonus by {{value}}%. Normal Attack hits have a 50% chance to earn the favor of the clouds, which actively seek out nearby opponents to attack for 15s, dealing {{value}}% ATK DMG. Can only occur once every 30s.",
             "de": "Erhöht den Elementarschaden um {{value}}% und erhält bei Treffern mit Standardangriffen mit einer Wahrscheinlichkeit von 50 % die Gunst der Wolken, die Gegner in der Umgebung aktiv angreifen und Schaden in Höhe von {{value}}% ANG verursachen. 30 s Abklingzeit.",
             "es": "Aumenta en un {{value}}% el bono de Daño Elemental. Al atacar con un Ataque Normal, hay un 50% de probabilidad de conseguir la gracia de las nubes. Estas buscarán durante 15 s enemigos a los que atacar, infligiendo un {{value}}% de daño de ATQ. Este efecto solo puede ocurrir una vez cada 30 s.",
             "fr": "Augmente le bonus de DGT élémentaires de {{value}}%. Les attaques normales ont 50 % de chances lorsqu'elles touchent d'obtenir pendant 15 s la faveur des cieux, qui attaque automatiquement les ennemis proches, et leur inflige {{value}}% des DGT d'ATQ. Cet effet peut être déclenché une fois toutes les 30 s.",
@@ -1627,7 +1627,7 @@
     "thrilling-tales-of-dragon-slayers": {
         "rarity": 3,
         "passive": {
-            "en": "When switching characters, the new character taking the field has their ATK increased by 24%/30%/36%/42%/48% for 10s. This effect can only occur once every 20s.",
+            "en": "When switching characters, the new character taking the field has their ATK increased by {{value}}% for 10s. This effect can only occur once every 20s.",
             "de": "Erhöht den ANG aktiv eingewechselter Figuren 10 s lang um {{value}}%. 20 s Abklingzeit.",
             "es": "Al cambiar de personaje, el ATQ del nuevo personaje aumenta en un {{value}}% durante 10 s. Este efecto puede ocurrir una vez cada 20 s.",
             "fr": "Augmente l'ATQ de {{value}}% pendant 10 s après un changement de personnage. Cet effet peut être déclenché une fois toutes les 20 s.",
