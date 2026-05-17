@@ -1,0 +1,14 @@
+{
+    "substats_priority": [
+        "er",
+        {
+            "name": "cr",
+            "note": {
+                "en": "Only to prioritize when using **[[weapon:favonius-lance]]**.",
+                "fr": "A prioriser uniquement si **[[weapon:favonius-lance]]** est équipée."
+            }
+        },
+        "hp%",
+        "hp"
+    ]
+}

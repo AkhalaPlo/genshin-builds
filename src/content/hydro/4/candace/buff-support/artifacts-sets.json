@@ -1,0 +1,73 @@
+{
+    "artifact_sets": [
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "scroll",
+                            "pieces": 4,
+                            "note": {
+                                "en": "Even though **[[character:candace]]** is not from Natlan, she can still take advantage of the **12% DMG Bonus** buff for the team, alongside the **Flat Energy** refund from **[[set:scroll]] (2)** if there is a **[[ability:nightsoul-burst]]** being activated on the team.",
+                                "fr": "Bien que **[[character:candace]]** ne soit pas de Natlan, elle peut quand même tirer avantage du buff de **12% de bonus de DGT** pour l'équipe, ainsi que de **l'énergie récupérée** via **[[set:scroll]] (2)** si une **[[ability:nightsoul-burst]]** est activée dans l'équipe."
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "emblem",
+                            "pieces": 4,
+                            "note": {
+                                "en": "The only necessary artifact stat for [[character:candace]] is the 20% [[stat:er]] from the **2-piece effect. The 4-piece effect** lets her better capitalize on the high [[stat:er]] amounts she wants to equip, making it her strongest personal option. However, [[set:emblem]] is a highly contested artifact set and thus it is possible for you to end up using the 2-piece + 2-piece alternatives listed above. ",
+                                "fr": "La seule stat nécessaire pour [[character:candace]] est le 20% de [[stat:er]] **du 2P. Le 4P** lui permet de capitaliser sur ses hauts besoins en [[stat:er]], en faisant son meilleur set. Cependant, [[set:emblem]] est un set très demandé, vous pouvez donc très bien utiliser une des options 2P/2P mentionnée dans la liste. "
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "instructor",
+                            "pieces": 4
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "groups": [
+                {
+                    "choose": true,
+                    "items": [
+                        {
+                            "name": "emblem",
+                            "pieces": 2
+                        },
+                        {
+                            "name": "hydro-set",
+                            "pieces": 2
+                        },
+                        {
+                            "name": "noblesse",
+                            "pieces": 2
+                        },
+                        {
+                            "name": "hp-set",
+                            "pieces": 2
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

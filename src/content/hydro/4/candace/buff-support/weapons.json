@@ -1,0 +1,60 @@
+{
+    "weapons": [
+        {
+            "items": [
+                {
+                    "name": "favonius-lance",
+                    "note": {
+                        "en": "This is [[character:candace]]'s best option because of her drastically high [[stat:er]] requirement. If she is the only [[element:hydro]] character on the team, she will need nearly 300% [[stat:er]] to maintain consistent [[ability:burst]] uptime. With another [[element:hydro]] character, this requirement drops to around 200-250% [[stat:er]]. This kind of requirement is difficult to reach with most weapons, but each **[[weapon:favonius-lance]]** passive proc cuts this requirement down by about 20%.",
+                        "fr": "La meilleure option pour [[character:candace]] à cause de ses énormes besoin en [[stat:er]]. Si c'est le seul personnage [[element:hydro]] de l'équipe, elle peut avoir besoin d'envion 300% de [[stat:er]] pour avoir son [[ability:burst]] disponible en permanence. Avec un 2ème [[element:hydro]], cette valeur atteint les 200-250% environ. Ce genre de besoins est difficile à atteindre avec la plupart des armes, mais chaque proc du passif de **[[weapon:favonius-lance]]** réduit cette valeur d'envion 20%."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                "engulfing-lightning"
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "homa",
+                    "note": {
+                        "en": "Can be considered if you want [[character:candace]] to have **high personal damage**, which is usually notable at **C6**.",
+                        "fr": "Peut être considérée si vous voulez que [[character:candace]] ait de **hauts dégâts personnels**, ce qui est généralement le cas une fois **C6**."
+                    }
+                },
+                {
+                    "name": "deathmatch",
+                    "note": {
+                        "en": "Can be considered if you want [[character:candace]] to have **high personal damage**, which is usually notable at **C6**.",
+                        "fr": "Peut être considérée si vous voulez que [[character:candace]] ait de **hauts dégâts personnels**, ce qui est généralement le cas une fois **C6**."
+                    }
+                },
+                {
+                    "name": "the-catch",
+                    "note": {
+                        "en": "[[character:candace]]'s strongest F2P option thanks to its high [[stat:er]] and [[ability:burst]]-enhancing passive.",
+                        "fr": "La meilleure option F2P pour [[character:candace]] grâce à sa haute [[stat:er]] et son passif buffant l'[[ability:burst]]."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                "prototype-starglitter"
+            ]
+        },
+        {
+            "items": [
+                "skyward-spine"
+            ]
+        },
+        {
+            "items": [
+                "black-tassel"
+            ]
+        }
+    ]
+}

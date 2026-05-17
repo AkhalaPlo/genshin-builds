@@ -1,0 +1,16 @@
+{
+    "main_stats": {
+        "sands": [
+            "er",
+            "hp%"
+        ],
+        "goblet": [
+            "hp%",
+            "hydro-dmg"
+        ],
+        "circlet": [
+            "hp%",
+            "cr/cd"
+        ]
+    }
+}
