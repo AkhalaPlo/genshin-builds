@@ -18,12 +18,20 @@ src/content/<element>/<rarity>/<character>/<build>/build-notes.json
   },
   "artifact": {
     "link": "https://example.com/artifact-calculation",
-    "author": "AuthorName"
+    "author": "AuthorName",
+    "detail": "rotation notes"
   },
-  "weapons": {
-    "link": "https://example.com/weapon-calculation",
-    "author": "AuthorName"
-  },
+  "weapons": [
+    {
+      "link": "https://example.com/weapon-calculation-a",
+      "author": "AuthorName",
+      "detail": "single target"
+    },
+    {
+      "link": "https://example.com/weapon-calculation-b",
+      "author": "OtherAuthor"
+    }
+  ],
   "talent": {
     "link": "https://example.com/talent-calculation",
     "author": "AuthorName"
@@ -50,9 +58,9 @@ src/content/<element>/<rarity>/<character>/<build>/build-notes.json
   - If `name` is missing, the site falls back to the build folder name.
 - `best`: Optional boolean. Use `true` for the role/build the character best
   excels at. This shows a badge on the closed build card header.
-- `artifact`: Optional detailed artifact calculation credit.
+- `artifact` or `artifacts`: Optional detailed artifact calculation credit.
 - `weapons`: Optional detailed weapon calculation credit.
-- `talent`: Optional detailed talent calculation credit.
+- `talent` or `talents`: Optional detailed talent calculation credit.
 - `global`: Optional detailed calculation credit for the whole build.
 - `notes`: Array of localized editorial note objects.
   - Each note item must include `en`. The requested language falls back to `en`.
@@ -65,18 +73,27 @@ src/content/<element>/<rarity>/<character>/<build>/build-notes.json
 ## Detailed Calculation Credits
 
 Use these optional objects to show detailed calculation links at the top of the
-Notes card.
+Notes card. Each category can be either one credit object or an array of credit
+objects.
 
 ```json
 {
   "artifact": {
     "link": "https://example.com/artifact-calculation",
-    "author": "AuthorName"
+    "author": "AuthorName",
+    "detail": "4pc comparison"
   },
-  "weapons": {
-    "link": "https://example.com/weapon-calculation",
-    "author": "AuthorName"
-  },
+  "weapons": [
+    {
+      "link": "https://example.com/weapon-calculation-a",
+      "author": "AuthorName",
+      "detail": "single target"
+    },
+    {
+      "link": "https://example.com/weapon-calculation-b",
+      "author": "OtherAuthor"
+    }
+  ],
   "talent": {
     "link": "https://example.com/talent-calculation",
     "author": "AuthorName"
@@ -92,12 +109,32 @@ Each object has:
 
 - `link`: URL opened by the detailed calculation link.
 - `author`: Name shown after "Thank you to".
+- `detail`: Optional text shown in parentheses after the detailed calculation
+  link text.
+
+For example, this:
+
+```json
+{
+  "weapons": {
+    "link": "https://example.com/weapon-calculation",
+    "author": "AuthorName",
+    "detail": "single target"
+  }
+}
+```
+
+renders as:
+
+```txt
+Detailed weapons calculation (single target) - Thank you to AuthorName!
+```
 
 The current keys are intentionally:
 
-- `artifact`: Shows `Detailed artifacts calculation`
+- `artifact` or `artifacts`: Shows `Detailed artifacts calculation`
 - `weapons`: Shows `Detailed weapons calculation`
-- `talent`: Shows `Detailed talents calculation`
+- `talent` or `talents`: Shows `Detailed talents calculation`
 - `global`: Shows `Detailed calculations`
 
 ## Build-Level Notes

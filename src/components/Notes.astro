@@ -2,6 +2,26 @@
 import { t } from '../utils/i18n';
 const { notes, buildNote, locale } = Astro.props;
 
+type CalculationCredit = {
+  author?: string;
+  link?: string;
+  detail?: string;
+};
+
+type NoteItem = {
+  keys: string[];
+  label: string;
+  linkText: string;
+};
+
+const toCalculationCredits = (value: CalculationCredit | CalculationCredit[]) =>
+  (Array.isArray(value) ? value : [value]).filter(
+    (credit) => credit?.author && credit?.link,
+  );
+
+const getCalculationCredits = (item: NoteItem) =>
+  item.keys.flatMap((key) => toCalculationCredits(buildNote?.[key] ?? []));
+
 // Compute section visibility up front so empty note cards are skipped entirely.
 const hasWeaponsNotes =
   notes.weapons.global.length + notes.weapons.items.length > 0;
@@ -16,50 +36,55 @@ const hasTalentNotes =
 const hasNotes = hasWeaponsNotes || hasArtifactNotes || hasTalentNotes;
 
 // Detailed calculation links use slightly different keys than their UI labels.
-const noteItems = [
+const noteItems: NoteItem[] = [
   {
-    key: 'artifact',
+    keys: ['artifact', 'artifacts'],
     label: t(locale, 'ui', 'Artifacts'),
     linkText: t(locale, 'ui', 'Detailed artifacts calculation'),
   },
   {
-    key: 'weapons',
+    keys: ['weapons'],
     label: t(locale, 'ui', 'Weapons'),
     linkText: t(locale, 'ui', 'Detailed weapons calculation'),
   },
   {
-    key: 'talent',
+    keys: ['talent', 'talents'],
     label: t(locale, 'ui', 'Talents'),
     linkText: t(locale, 'ui', 'Detailed talents calculation'),
   },
   {
-    key: 'global',
+    keys: ['global'],
     label: t(locale, 'ui', 'General'),
     linkText: t(locale, 'ui', 'Detailed calculations'),
   },
 ];
+
+const calculationCreditItems = buildNote
+  ? noteItems.flatMap((item) =>
+      getCalculationCredits(item).map((credit) => ({ ...item, credit })),
+    )
+  : [];
 ---
 
 {
-  (hasNotes || buildNote?.notes?.length > 0) && (
+  (hasNotes ||
+    calculationCreditItems.length > 0 ||
+    buildNote?.notes?.length > 0) && (
     <div class="card notes-card">
       <h2>{t(locale, 'ui', 'Notes')}</h2>
 
       {buildNote && (
         <div>
           {/* Optional external calculation links credited in build-notes.json. */}
-          {noteItems.map(
-            (item) =>
-              buildNote[item.key] && (
-                <div>
-                  <a href={buildNote[item.key].link} target="_blank">
-                    {item.linkText}
-                  </a>{' '}
-                  - {t(locale, 'ui', 'Thank you to')}{' '}
-                  {buildNote[item.key].author}!
-                </div>
-              ),
-          )}
+          {calculationCreditItems.map(({ linkText, credit }) => (
+            <div>
+              <a href={credit.link} target="_blank">
+                {linkText}
+              </a>
+              {credit.detail && <> ({credit.detail})</>} -{' '}
+              {t(locale, 'ui', 'Thank you to')} {credit.author}!
+            </div>
+          ))}
 
           {buildNote.notes?.length > 0 && (
             <div>
