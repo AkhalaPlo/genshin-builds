@@ -5,6 +5,49 @@ const weaponPopoverWindow = window as typeof window & {
 if (!weaponPopoverWindow.__weaponPopoversReady) {
     weaponPopoverWindow.__weaponPopoversReady = true;
 
+    const VIEWPORT_PADDING = 8;
+    const POPOVER_GAP = 8;
+
+    const clamp = (value: number, min: number, max: number) =>
+        Math.min(Math.max(value, min), max);
+
+    const positionPopoverCard = (popover: HTMLElement) => {
+        const trigger = popover.querySelector<HTMLElement>('.weapon-popover-trigger');
+        const card = popover.querySelector<HTMLElement>('.weapon-popover-card');
+
+        if (!trigger || !card) return;
+
+        const previousDisplay = card.style.display;
+        const previousVisibility = card.style.visibility;
+
+        card.style.display = 'block';
+        card.style.visibility = 'hidden';
+
+        const triggerRect = trigger.getBoundingClientRect();
+        const cardRect = card.getBoundingClientRect();
+        const maxLeft = window.innerWidth - cardRect.width - VIEWPORT_PADDING;
+        const maxTop = window.innerHeight - cardRect.height - VIEWPORT_PADDING;
+        const alignedLeft = triggerRect.left;
+        const topPlacement = triggerRect.top - cardRect.height - POPOVER_GAP;
+        const bottomPlacement = triggerRect.bottom + POPOVER_GAP;
+        const hasRoomAbove = topPlacement >= VIEWPORT_PADDING;
+        const hasRoomBelow = bottomPlacement + cardRect.height <= window.innerHeight - VIEWPORT_PADDING;
+        const preferredTop = hasRoomAbove || !hasRoomBelow ? topPlacement : bottomPlacement;
+
+        card.style.left = `${clamp(alignedLeft, VIEWPORT_PADDING, Math.max(VIEWPORT_PADDING, maxLeft))}px`;
+        card.style.top = `${clamp(preferredTop, VIEWPORT_PADDING, Math.max(VIEWPORT_PADDING, maxTop))}px`;
+        card.style.display = previousDisplay;
+        card.style.visibility = previousVisibility;
+    };
+
+    const positionActivePopovers = () => {
+        document
+            .querySelectorAll<HTMLElement>(
+                '.weapon-popover:hover, .weapon-popover:focus-within, .weapon-popover.is-open',
+            )
+            .forEach(positionPopoverCard);
+    };
+
     const closeWeaponPopovers = (except?: HTMLElement) => {
         document.querySelectorAll<HTMLElement>('.weapon-popover.is-open').forEach((popover) => {
             if (popover !== except) {
@@ -40,7 +83,18 @@ if (!weaponPopoverWindow.__weaponPopoversReady) {
 
         const isOpen = popover.classList.toggle('is-open');
         trigger.setAttribute('aria-expanded', String(isOpen));
+        if (isOpen) {
+            positionPopoverCard(popover);
+        }
         closeWeaponPopovers(popover);
+    });
+
+    document.addEventListener('pointerover', (event) => {
+        const popover = (event.target as HTMLElement).closest<HTMLElement>('.weapon-popover');
+
+        if (popover) {
+            positionPopoverCard(popover);
+        }
     });
 
     document.addEventListener('focusin', (event) => {
@@ -48,38 +102,48 @@ if (!weaponPopoverWindow.__weaponPopoversReady) {
         const popover = target.closest<HTMLElement>('.weapon-popover');
 
         if (popover && !document.body.classList.contains('weapon-popover-locked')) {
+            positionPopoverCard(popover);
             closeWeaponPopovers(popover);
         }
     });
+
+    window.addEventListener('resize', positionActivePopovers);
+    window.addEventListener('scroll', positionActivePopovers, true);
 
     document.addEventListener('keydown', (event) => {
         if (event.key === 'Escape') {
             closeWeaponPopovers();
         }
     });
+
+    document.addEventListener('click', (event) => {
+        const button = (event.target as HTMLElement).closest(
+            '.weapon-popover-refinement-button',
+        ) as HTMLElement | null;
+
+        if (!button) return;
+
+        const card = button.closest('.weapon-popover-card');
+
+        if (!card) return;
+
+        const refinement = button.dataset.refinement;
+
+        if (!refinement) return;
+
+        card.querySelectorAll('.weapon-popover-refinement-button').forEach((item) => {
+            item.setAttribute('aria-selected', String(item === button));
+        });
+
+        card.querySelectorAll('.weapon-popover-passive-refinement').forEach((panel) => {
+            (panel as HTMLElement).hidden =
+                (panel as HTMLElement).dataset.refinementPanel !== refinement;
+        });
+
+        const popover = button.closest<HTMLElement>('.weapon-popover');
+
+        if (popover) {
+            positionPopoverCard(popover);
+        }
+    });
 }
-
-document.addEventListener('click', (event) => {
-    const button = (event.target as HTMLElement).closest(
-        '.weapon-popover-refinement-button',
-    ) as HTMLElement | null;
-
-    if (!button) return;
-
-    const card = button.closest('.weapon-popover-card');
-
-    if (!card) return;
-
-    const refinement = button.dataset.refinement;
-
-    if (!refinement) return;
-
-    card.querySelectorAll('.weapon-popover-refinement-button').forEach((item) => {
-        item.setAttribute('aria-selected', String(item === button));
-    });
-
-    card.querySelectorAll('.weapon-popover-passive-refinement').forEach((panel) => {
-        (panel as HTMLElement).hidden =
-            (panel as HTMLElement).dataset.refinementPanel !== refinement;
-    });
-});
