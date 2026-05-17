@@ -22,7 +22,6 @@ const { character, characterSlug, metadata, lang, locale } = Astro.props;
     <!-- The header needs the URL slug, not the localized display name. -->
     <Header locale={locale} lang={lang} character={characterSlug} />
     <div class="page">
-      <!-- Character metadata stays in the layout so every build page shares it. -->
       <div class="character-header">
         <img
           class="character-image"

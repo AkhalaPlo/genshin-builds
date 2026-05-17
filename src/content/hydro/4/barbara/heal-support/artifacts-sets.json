@@ -1,0 +1,65 @@
+{
+    "artifact_sets": [
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "ocean-hued-clam",
+                            "pieces": 4,
+                            "note": {
+                                "en": "This set is the best generalist pick as it lets [[character:barbara]] deal decent damage of her own while healing.",
+                                "fr": "Ce set est la meilleure option passe-partout puisqu'il permet à [[character:barbara]] d'infliger des dégâts décents tout en soignant."
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "scroll",
+                            "pieces": 4,
+                            "note": {
+                                "en": "If [[character:barbara]] can reliably trigger reactions, this set can be the best option due to the buffs it can provide.",
+                                "fr": "Si [[character:barbara]] peut déclencher des réactions à coup sûr, ce set peut être la meilleure option grâce aux buffs qu'il offre."
+                            }
+                        }
+                    ]
+                },
+                {
+                    "items": [
+                        {
+                            "name": "instructor",
+                            "pieces": 4,
+                            "note": {
+                                "en": "If [[character:barbara]] can reliably trigger reactions, this set can be the best option due to the buffs it can provide.",
+                                "fr": "Si [[character:barbara]] peut déclencher des réactions à coup sûr, ce set peut être la meilleure option grâce aux buffs qu'il offre."
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "groups": [
+                {
+                    "choose": true,
+                    "items": [
+                        {
+                            "name": "healing-set",
+                            "pieces": 2
+                        },
+                        {
+                            "name": "hp-set",
+                            "pieces": 2
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

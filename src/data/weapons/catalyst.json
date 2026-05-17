@@ -17,7 +17,7 @@
     "ash-graven-drinking-horn": {
         "rarity": 4,
         "passive": {
-            "en": "When an attack hits an opponent, deal AoE DMG equal to 40%/50%/60%/70%/80% of Max HP at the target location. This effect can be triggered once every / of Max HP at the target's location. This effect can be triggered once every / of Max HP at the target's location. This effect can be triggered once every / of Max HP at the target's location. This effect can be triggered once every / of Max HP at the target's location. This effect can be triggered once every 15s.",
+            "en": "When an attack hits an opponent, deal AoE DMG equal to {{value}}% of Max HP at the target location. This effect can be triggered once every 15s.",
             "de": "Verursacht beim Treffen von Gegnern mit Angriffen an der Stelle des Ziels Flächenschaden basierend auf {{value}}% der max. LP, 15 s Abklingzeit.",
             "es": "Al golpear a un enemigo, inflige en su ubicación Daño en el AdE en una cantidad equivalente al {{value}}% de la Vida Máx. Este efecto solo se puede activar una vez cada 15 s.",
             "fr": "Lorsqu'une attaque touche un ennemi, des DGT de zone d'une valeur équivalant à {{value}}% des PV max sont infligés à l'emplacement de la cible. Cet effet peut être déclenché une fois toutes les 15 s.",
@@ -457,7 +457,7 @@
     "everlasting-moonglow": {
         "rarity": 5,
         "passive": {
-            "en": "Healing Bonus increased by 10%/12.5%/15%/17.5%/20%, Normal Attack DMG is increased by 1%/1.5%/2%/2.5%/3% of the Max HP of the character equipping this weapon. For 12s after using an Elemental Burst, Normal Attacks that hit opponents will restore 0.6 Energy. Energy can be restored this way once every 0.1s.",
+            "en": "Healing Bonus increased by {{value}}%, Normal Attack DMG is increased by {{value}}% of the Max HP of the character equipping this weapon. For 12s after using an Elemental Burst, Normal Attacks that hit opponents will restore 0.6 Energy. Energy can be restored this way once every 0.1s.",
             "de": "Erhöht den Heilungsbonus um {{value}}%. Erhöht den mit Standardangriffen verursachten Schaden um {{value}}% der max. LP der mit dieser Waffe ausgerüsteten Figur. Stellt nach Anwendung von Spezialfähigkeiten 12 s lang beim Treffen von Gegnern mit Standardangriffen 0,6 Punkte Elementarenergie wieder her. Stellt auf diese Weise alle 0,1 s höchstens einmal Elementarenergie wieder her.",
             "es": "El Bono de Curación aumenta en un {{value}}%. El daño infligido por los Ataques Normales aumenta en una cantidad equivalente al {{value}}% de la Vida Máx. del personaje que tenga esta arma equipada. Tras usar la Habilidad Definitiva y durante 12 s, cuando un Ataque Normal golpea a un enemigo, se regeneran 0.6 pts. de Energía Elemental. Solo se puede regenerar Energía Elemental de esta manera una vez cada 0.1 s.",
             "fr": "Augmente le bonus de soins de {{value}}%, et les DGT des attaques normales d'une valeur équivalant à {{value}}% des PV max du personnage équipé de l'arme. Pendant 12 s après l'utilisation d'un déchaînement élémentaire, les attaques normales qui touchent un ennemi restaurent 0,6 pts d'énergie élémentaire. L'énergie élémentaire peut être restaurée une fois toutes les 0,1 s de cette manière.",
