@@ -8,6 +8,7 @@ if (!infoPopoverWindow.__infoPopoversReady) {
   const VIEWPORT_PADDING = 8;
   const POPOVER_GAP = 8;
   let ignoreNextClick = false;
+  let lastTouchY = 0;
 
   /**
    * Keeps a coordinate inside a min/max viewport range.
@@ -39,6 +40,55 @@ if (!infoPopoverWindow.__infoPopoversReady) {
     target instanceof HTMLElement
       ? target.closest<HTMLElement>('.info-popover-card') !== null
       : false;
+
+  const getOpenPopoverCard = () =>
+    document.querySelector<HTMLElement>(
+      '.info-popover.is-open .info-popover-card',
+    );
+
+  const handlePopoverTouchStart = (event: TouchEvent) => {
+    if (!getOpenPopoverCard()) return;
+
+    lastTouchY = event.touches[0]?.clientY ?? 0;
+  };
+
+  const handlePopoverTouchMove = (event: TouchEvent) => {
+    const card = getOpenPopoverCard();
+
+    if (!card) return;
+
+    const touch = event.touches[0];
+
+    if (!touch) return;
+
+    const target = event.target;
+
+    if (!(target instanceof Node) || !card.contains(target)) {
+      event.preventDefault();
+      return;
+    }
+
+    const currentTouchY = touch.clientY;
+    const deltaY = currentTouchY - lastTouchY;
+    lastTouchY = currentTouchY;
+
+    const canScroll = card.scrollHeight > card.clientHeight;
+
+    if (!canScroll) {
+      event.preventDefault();
+      return;
+    }
+
+    const isAtTop = card.scrollTop <= 0;
+    const isAtBottom =
+      Math.ceil(card.scrollTop + card.clientHeight) >= card.scrollHeight;
+    const isScrollingUp = deltaY > 0;
+    const isScrollingDown = deltaY < 0;
+
+    if ((isAtTop && isScrollingUp) || (isAtBottom && isScrollingDown)) {
+      event.preventDefault();
+    }
+  };
 
   /**
    * Handles opening, closing, and outside-tap behavior for popovers.
@@ -196,6 +246,13 @@ if (!infoPopoverWindow.__infoPopoversReady) {
     }
 
     handlePopoverToggle(event);
+  });
+
+  document.addEventListener('touchstart', handlePopoverTouchStart, {
+    passive: true,
+  });
+  document.addEventListener('touchmove', handlePopoverTouchMove, {
+    passive: false,
   });
 
   document.addEventListener('pointerover', (event) => {

@@ -221,7 +221,8 @@
   display: none;
   width: min(320px, calc(100vw - 32px));
   max-height: calc(100vh - 16px);
-  overflow: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
   overscroll-behavior: contain;
   border: 1px solid color-mix(in srgb, var(--element) 55%, var(--text));
   border-radius: 6px;
@@ -234,7 +235,7 @@
   line-height: 1.35;
   white-space: normal;
   pointer-events: auto;
-  touch-action: pan-y;
+  touch-action: auto;
   -webkit-overflow-scrolling: touch;
 }
 
@@ -333,6 +334,11 @@ body.info-popover-locked .info-popover.is-open .info-popover-card {
 }
 
 @media (max-width: 900px) {
+  body.info-popover-locked {
+    overflow: hidden;
+    overscroll-behavior: none;
+  }
+
   .grid {
     grid-template-columns: 1fr;
   }
