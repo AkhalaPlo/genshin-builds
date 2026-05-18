@@ -344,7 +344,13 @@ body.info-popover-locked .info-popover.is-open .info-popover-card {
   }
 
   .info-popover-card {
+    top: 50% !important;
+    right: 16px;
+    bottom: auto;
+    left: 16px !important;
     max-height: min(420px, calc(100vh - 48px));
+    overflow: auto;
+    transform: translateY(-50%);
   }
 
   .info-popover:hover .info-popover-card {
