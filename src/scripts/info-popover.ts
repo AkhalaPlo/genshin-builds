@@ -12,6 +12,7 @@ if (!infoPopoverWindow.__infoPopoversReady) {
     { card: HTMLElement; marker: Comment }
   >();
   const portaledCards = new WeakMap<HTMLElement, HTMLElement>();
+  let ignoreNextClick = false;
 
   /**
    * Keeps a coordinate inside a min/max viewport range.
@@ -87,6 +88,79 @@ if (!infoPopoverWindow.__infoPopoversReady) {
       : false;
 
   /**
+   * Handles opening, closing, and outside-tap behavior for popovers.
+   */
+  const handlePopoverToggle = (event: Event) => {
+    const target = event.target as HTMLElement;
+    const trigger = target.closest('.info-popover-trigger');
+    const card = target.closest('.info-popover-card');
+
+    if (card) {
+      return;
+    }
+
+    if (!trigger) {
+      closeInfoPopovers();
+      return;
+    }
+
+    event.preventDefault();
+
+    const popover = getClosestPopover(trigger);
+    if (!popover) return;
+
+    const isOpen = popover.classList.toggle('is-open');
+    setTriggerExpanded(popover, isOpen);
+    if (isOpen) {
+      portalPopoverCard(popover);
+      positionPopoverCard(popover);
+    } else {
+      restorePopoverCard(popover);
+    }
+    closeInfoPopovers(popover);
+  };
+
+  /**
+   * Switches a weapon passive between refinement panels.
+   */
+  const handleRefinementChange = (event: Event) => {
+    const button = (event.target as HTMLElement).closest(
+      '.weapon-popover-refinement-button',
+    ) as HTMLElement | null;
+
+    if (!button) return;
+
+    event.preventDefault();
+
+    const card = button.closest('.info-popover-card');
+
+    if (!card) return;
+
+    const refinement = button.dataset.refinement;
+
+    if (!refinement) return;
+
+    card
+      .querySelectorAll('.weapon-popover-refinement-button')
+      .forEach((item) => {
+        item.setAttribute('aria-selected', String(item === button));
+      });
+
+    card
+      .querySelectorAll('.weapon-popover-passive-refinement')
+      .forEach((panel) => {
+        (panel as HTMLElement).hidden =
+          (panel as HTMLElement).dataset.refinementPanel !== refinement;
+      });
+
+    const popover = getClosestPopover(button);
+
+    if (popover) {
+      positionPopoverCard(popover);
+    }
+  };
+
+  /**
    * Positions a popover card so it remains fully inside the viewport.
    */
   const positionPopoverCard = (popover: HTMLElement) => {
@@ -152,32 +226,27 @@ if (!infoPopoverWindow.__infoPopoversReady) {
     );
   };
 
+  document.addEventListener('pointerdown', (event) => {
+    if (event.pointerType === 'mouse') return;
+
+    handleRefinementChange(event);
+
+    if (!event.defaultPrevented) {
+      handlePopoverToggle(event);
+    }
+
+    if (event.defaultPrevented) {
+      ignoreNextClick = true;
+    }
+  });
+
   document.addEventListener('click', (event) => {
-    const target = event.target as HTMLElement;
-    const trigger = target.closest('.info-popover-trigger');
-    const card = target.closest('.info-popover-card');
-
-    if (card) {
+    if (ignoreNextClick) {
+      ignoreNextClick = false;
       return;
     }
 
-    if (!trigger) {
-      closeInfoPopovers();
-      return;
-    }
-
-    const popover = getClosestPopover(trigger);
-    if (!popover) return;
-
-    const isOpen = popover.classList.toggle('is-open');
-    setTriggerExpanded(popover, isOpen);
-    if (isOpen) {
-      portalPopoverCard(popover);
-      positionPopoverCard(popover);
-    } else {
-      restorePopoverCard(popover);
-    }
-    closeInfoPopovers(popover);
+    handlePopoverToggle(event);
   });
 
   document.addEventListener('pointerover', (event) => {
@@ -214,38 +283,5 @@ if (!infoPopoverWindow.__infoPopoversReady) {
     }
   });
 
-  document.addEventListener('click', (event) => {
-    const button = (event.target as HTMLElement).closest(
-      '.weapon-popover-refinement-button',
-    ) as HTMLElement | null;
-
-    if (!button) return;
-
-    const card = button.closest('.info-popover-card');
-
-    if (!card) return;
-
-    const refinement = button.dataset.refinement;
-
-    if (!refinement) return;
-
-    card
-      .querySelectorAll('.weapon-popover-refinement-button')
-      .forEach((item) => {
-        item.setAttribute('aria-selected', String(item === button));
-      });
-
-    card
-      .querySelectorAll('.weapon-popover-passive-refinement')
-      .forEach((panel) => {
-        (panel as HTMLElement).hidden =
-          (panel as HTMLElement).dataset.refinementPanel !== refinement;
-      });
-
-    const popover = getClosestPopover(button);
-
-    if (popover) {
-      positionPopoverCard(popover);
-    }
-  });
+  document.addEventListener('click', handleRefinementChange);
 }
