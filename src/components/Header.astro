@@ -73,6 +73,9 @@ const menuElements = getSideMenuData(locale);
       <a class="side-menu-link" href={localizedPath(currentLang)}>
         {t(locale, 'ui', 'Home')}
       </a>
+      <a class="side-menu-link" href={localizedPath(currentLang, 'faq')}>
+        {t(locale, 'ui', 'FAQ')}
+      </a>
       {
         menuElements.map((element) => (
           <details class={`element-group ${element.element}`}>
