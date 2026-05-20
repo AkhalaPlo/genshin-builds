@@ -2,6 +2,21 @@
     "sourceUrl": "https://docs.google.com/spreadsheets/d/e/2PACX-1vRq-sQxkvdbvaJtQAGG6iVz2q2UN9FCKZ8Mkyis87QHFptcOU3ViLh0_PJyMxFSgwJZrd10kbYpQFl1/pub?gid=172546500&single=true&output=csv",
     "groups": [
         {
+            "version": "Luna VII (6.6)",
+            "entries": [
+                {
+                    "date": "May 20,2026",
+                    "changes": "Added Prune section",
+                    "appliedBy": "Greenster"
+                },
+                {
+                    "date": "May 20,2026",
+                    "changes": "Adjusted Off-Field DPS Durin weapon rankings (added Harbinger of Dawn), rewrote notes, and added Celestial gift with a note.",
+                    "appliedBy": "Quincy"
+                }
+            ]
+        },
+        {
             "version": "Luna VI (6.5)",
             "entries": [
                 {
