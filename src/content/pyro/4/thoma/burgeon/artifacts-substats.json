@@ -4,7 +4,8 @@
             "name": "er",
             "note": {
                 "en": "Until requirement is met.",
-                "fr": "Jusqu'à atteindre les besoins requis."
+                "fr": "Jusqu'à atteindre les besoins requis.",
+                "it": "Finché non sono soddisfatti i requisiti."
             }
         },
         "em",
@@ -14,7 +15,8 @@
             "name": "cr",
             "note": {
                 "en": "Only useful if using [[weapon:favonius-lance]].",
-                "fr": "Utile seulement si joué avec [[weapon:favonius-lance]]."
+                "fr": "Utile seulement si joué avec [[weapon:favonius-lance]].",
+                "it": "Utile solo nel caso tu stia utilizzando [[weapon:favonius-lance]]."
             }
         }
     ]
