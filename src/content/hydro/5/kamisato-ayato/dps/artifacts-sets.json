@@ -24,8 +24,8 @@
                             "name": "nymphs-dream",
                             "pieces": 4,
                             "note": {
-                                "en": "Reliant on **[[character:kamisato-ayato]]'s Water Illusion hitting enemies** which can be inconsistent against some content. Without the third stack of the passive, this set becomes about **equal to [[set:atk-set]] (2) [[set:hydro-set]] (2)**.",
-                                "fr": "Repose sur le fait que **l'Illusion Aqueuse de [[character:kamisato-ayato]] touche un ennemi**, ce qui peut ne pas être voulu dans certains contenus. Sans le 3ème stack du passif, ce set devient **équivalent à [[set:atk-set]] (2) [[set:hydro-set]] (2)**."
+                                "en": "Reliant on **[[character:kamisato-ayato]]'s Water Illusion hitting enemies** which can be inconsistent against some content. Without the third stack of the passive, this set becomes about **equal to [[stat:atk-set]] (2) [[stat:hydro-set]] (2)**.",
+                                "fr": "Repose sur le fait que **l'Illusion Aqueuse de [[character:kamisato-ayato]] touche un ennemi**, ce qui peut ne pas être voulu dans certains contenus. Sans le 3ème stack du passif, ce set devient **équivalent à [[stat:atk-set]] (2) [[stat:hydro-set]] (2)**."
                             }
                         }
                     ]

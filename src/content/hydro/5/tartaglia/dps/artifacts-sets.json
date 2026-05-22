@@ -36,8 +36,8 @@
                             "name": "atk-set",
                             "pieces": 2,
                             "note": {
-                                "en": "This set with **[[set:hydro-set]] (2)** is only about 1-2 substats behind **[[set:heart-of-depth]] (4)**, you can opt out for this option instead if you already have decent pieces.",
-                                "fr": "Ce set avec **[[set:hydro-set]] (2)** n'est qu'une à deux substats derrière **[[set:heart-of-depth]] (4)**, vous pouvez donc vous rabattre sur cette option si vous avez déjà de bonnes pièces."
+                                "en": "This set with **[[stat:hydro-set]] (2)** is only about 1-2 substats behind **[[set:heart-of-depth]] (4)**, you can opt out for this option instead if you already have decent pieces.",
+                                "fr": "Ce set avec **[[stat:hydro-set]] (2)** n'est qu'une à deux substats derrière **[[set:heart-of-depth]] (4)**, vous pouvez donc vous rabattre sur cette option si vous avez déjà de bonnes pièces."
                             }
                         }
                     ]
