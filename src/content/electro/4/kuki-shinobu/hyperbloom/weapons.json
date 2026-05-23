@@ -1,0 +1,40 @@
+{
+    "weapons": [
+        {
+            "items": [
+                "freedom-sworn"
+            ]
+        },
+        {
+            "items": [
+                "xiphos-moonlight"
+            ]
+        },
+        {
+            "items": [
+                "iron-sting",
+                {
+                    "name": "key-of-khaj-nisut",
+                    "note": {
+                        "en": "This becomes a better choice than **[[weapon:iron-sting]] at [C4]** when you can gain the **3rd passive stack without extending your rotation time or taking extra field time**. It can also **net more [[stat:em]] than [[weapon:freedom-sworn]] at 3 stacks**, assuming you have actually built some **[[stat:hp%]] Substats on your Sands/Goblet/Circlet**, but this is usually **not enough to out-perform the overall gains from [[weapon:xiphos-moonlight]]/[[weapon:freedom-sworn]]'s respective passives.**",
+                        "fr": "Devient un meilleur choix que **[[weapon:iron-sting]] lorsque [[character:kuki-shinobu]] est [C4]** car vous gagnez **une 3ème stack du passif sans allonger la rotation ou prendre plus de temps sur le terrain**. Cela peut aussi **apporter plus de [[stat:em]] que [[weapon:freedom-sworn]] avec 3 stacks**, en supposant que vous avez plusieurs **sous-stats [[stat:hp%]] sur vos artéfacts**, bien que ça ne soit en général **pas suffisant pour dépasser l'apport global des passifs respectifs de [[weapon:xiphos-moonlight]]/[[weapon:freedom-sworn]].**"
+                    }
+                },
+                {
+                    "name": "toukabou-shigure",
+                    "refinement": 5,
+                    "note": {
+                        "en": "This weapon performs **very similarly in a [[element:hyperbloom]] focused build to [[weapon:iron-sting]]** since its **passive does not affect [[element:hyperbloom]] damage**.",
+                        "fr": "Cette arme performe **de façon très similaire à [[weapon:iron-sting]] dans un build centré sur [[element:hyperbloom]]** puisque son **passif n'affecte pas les dégâts d'[[element:hyperbloom]]**."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                "dark-iron-sword",
+                "sapwood-blade"
+            ]
+        }
+    ]
+}

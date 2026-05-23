@@ -1,0 +1,13 @@
+{
+    "substats_priority": [
+        {
+            "name": "em",
+            "note": {
+                "en": "Essentially your only priority",
+                "fr": "Principalement la seule priorité"
+            }
+        },
+        "hp%",
+        "er"
+    ]
+}

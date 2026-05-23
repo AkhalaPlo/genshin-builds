@@ -1,0 +1,16 @@
+{
+    "best": true,
+    "name": {
+        "en": "[[element:hyperbloom]]"
+    },
+    "notes": [
+        {
+            "en": "This is a [[element:dendro]] team that requires a **reliable [[element:electro]] trigger unit** to work, for which [[character:kuki-shinobu]] is **one of the best [[element:electro]] units** to perform this role.",
+            "fr": "Il s'agit d'une équipe [[element:dendro]] qui nécéssite **un déclencheur [[element:electro]] fiable** pour fonctionner, rôle dans lequel [[character:kuki-shinobu]] est **l'un des meilleurs personnages [[element:electro]]** que l'on pourrait avoir."
+        },
+        {
+            "en": "Aim for around 850-950+ [[stat:em]]. Depending on whether you use an [[stat:em]] weapon or not.",
+            "fr": "Visez autour des 850-950+ de [[stat:em]], selon si vous utilisez une arme [[stat:em]] ou pas."
+        }
+    ]
+}

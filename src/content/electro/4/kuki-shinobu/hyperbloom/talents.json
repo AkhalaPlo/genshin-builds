@@ -1,0 +1,15 @@
+{
+    "talents": [
+        {
+            "items": [
+                {
+                    "name": "skill",
+                    "note": {
+                        "en": "[[ability:skill]] levels help with comfort but are not compulsory for a [[element:hyperbloom]] build",
+                        "fr": "Le niveau du [[ability:skill]] aide pour le confort mais n'est pas une obligation pour un build [[element:hyperbloom]]"
+                    }
+                }
+            ]
+        }
+    ]
+}
