@@ -1,0 +1,95 @@
+{
+    "weapons": [
+        {
+            "items": [
+                "gest-of-the-mighty-wolf"
+            ]
+        },
+        {
+            "items": [
+                "a-thousand-blazing-suns"
+            ]
+        },
+        {
+            "items": [
+                "beacon-of-the-reed-sea",
+                "verdict",
+                "redhorn-stonethresher"
+            ]
+        },
+        {
+            "items": [
+                "fang-of-the-mountain-king"
+            ]
+        },
+        {
+            "items": [
+                "song-of-broken-pines"
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "talking-stick",
+                    "note": {
+                        "en": "Ranking assumes [[character:razor]] is being used with **[[character:bennett]]**. If [[character:razor]] is not used with [[character:bennett]], this weapon is much worse.",
+                        "fr": "Le classement suppose que [[character:razor]] est joué avec **[[character:bennett]]**. Dans le cas contraire, cette arme se classe beaucoup plus bas."
+                    }
+                },
+                "serpent-spine"
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "skyward-pride",
+                    "note": {
+                        "en": "Gains significant value in teams where [[character:razor]]'s [[stat:er]] requirements are higher.",
+                        "fr": "Gagne de la valeur dans les équipes où les besoins en [[stat:er]] de [[character:razor]] sont élevés."
+                    }
+                },
+                "wolfs-gravestone"
+            ]
+        },
+        {
+            "items": [
+                "the-unforged"
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "tidal-shadow",
+                    "refinement": 5,
+                    "note": {
+                        "en": "If [[character:razor]] cannot be **healed**, this weapon ranks lower than **[[weapon:earth-shaker]]**.",
+                        "fr": "Si [[character:razor]] ne peux pas **recevoir de soins**, cette arme se classe en dessous de **[[weapon:earth-shaker]]**."
+                    }
+                },
+                "blackcliff-slasher",
+                "akuoumaru"
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "earth-shaker",
+                    "refinement": 5,
+                    "note": {
+                        "en": "Assumes a teammate can trigger a [[element:pyro]] reaction, otherwise, use other weapons.",
+                        "fr": "Suppose qu'un membre de l'équipe peut déclencher des réactions [[element:pyro]]. Sinon, choisissez une autre arme."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                "prototype-archaic",
+                {
+                    "name": "ultimate-overlords-mega-magic-sword",
+                    "refinement": 5
+                }
+            ]
+        }
+    ]
+}

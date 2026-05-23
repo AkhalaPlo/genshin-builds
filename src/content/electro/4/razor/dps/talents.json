@@ -1,0 +1,31 @@
+{
+    "notes": [
+        {
+            "en": "All of [[character:razor]]'s talents are worth leveling",
+            "fr": "Tous les talents de [[character:razor]] valent le coup d'être améliorés"
+        }
+    ],
+    "talents": [
+        {
+            "items": [
+                {
+                    "name": "na"
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "skill"
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "burst"
+                }
+            ]
+        }
+    ]
+}

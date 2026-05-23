@@ -1,0 +1,39 @@
+{
+    "weapons": [
+        {
+            "items": [
+                {
+                    "name": "mailed-flower",
+                    "refinement": 5
+                },
+                "makhaira-aquamarine",
+                {
+                    "name": "flame-forged-insight",
+                    "refinement": 5
+                }
+            ]
+        },
+        {
+            "items": [
+                "rainslasher",
+                "bloodtainted-greatsword"
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "favonius-greatsword",
+                    "note": {
+                        "en": "This weapon sacrifices some of [[character:razor]]'s potential reaction damage for team energy",
+                        "fr": "Cette arme sacrifie une partie du potentiel de dégâts de réactions de [[character:razor]] pour l'énergie de l'équipe"
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                "forest-regalia"
+            ]
+        }
+    ]
+}

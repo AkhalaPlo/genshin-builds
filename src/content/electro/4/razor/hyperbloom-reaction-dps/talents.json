@@ -1,0 +1,31 @@
+{
+    "notes": [
+        {
+            "en": "[[stat:em]] [[character:razor]]'s Talent Levels are not a necessity.",
+            "fr": "Les talents d'un [[character:razor]] build [[stat:em]] ne sont pas une nécéssité."
+        }
+    ],
+    "talents": [
+        {
+            "items": [
+                {
+                    "name": "burst"
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "na"
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "skill"
+                }
+            ]
+        }
+    ]
+}

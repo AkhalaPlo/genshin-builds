@@ -1,0 +1,82 @@
+{
+    "artifact_sets": [
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "a-day-carved-from-rising-winds",
+                            "pieces": 4
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "echoes-of-an-offering",
+                            "pieces": 4
+                        }
+                    ]
+                },
+                {
+                    "items": [
+                        {
+                            "name": "emblem-of-severed-fate",
+                            "pieces": 4
+                        }
+                    ]
+                },
+                {
+                    "items": [
+                        {
+                            "name": "thundering-fury",
+                            "pieces": 4
+                        }
+                    ]
+                },
+                {
+                    "items": [
+                        {
+                            "name": "gladiators-finale",
+                            "pieces": 4
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "atk-set",
+                            "pieces": 2
+                        },
+                        {
+                            "name": "thundering-fury",
+                            "pieces": 2
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "conditional": [
+        {
+            "items": [
+                {
+                    "name": "marechaussee-hunter",
+                    "pieces": 4,
+                    "note": {
+                        "en": "If [[character:razor]] is used **with [[character:furina]]**, this artifact set is roughly equal to **[[set:a-day-carved-from-rising-winds]]**.",
+                        "fr": "Si [[character:razor]] est joué **avec [[character:furina]]**, ce set est équivalent à **[[set:a-day-carved-from-rising-winds]]**."
+                    }
+                }
+            ]
+        }
+    ]
+}
