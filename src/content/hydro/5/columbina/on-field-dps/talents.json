@@ -1,0 +1,25 @@
+{
+    "talents": [
+        {
+            "items": [
+                {
+                    "name": "skill"
+                },
+                {
+                    "name": "na",
+                    "note": {
+                        "en": "For [[element:lunar-bloom]] teams only",
+                        "fr": "Seulement pour les équipes [[element:lunar-bloom]]"
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "burst"
+                }
+            ]
+        }
+    ]
+}

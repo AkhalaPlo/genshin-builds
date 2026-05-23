@@ -1,0 +1,34 @@
+{
+    "weapons": [
+        {
+            "items": [
+                "nocturnes-curtain-call"
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "sacrificial-jade",
+                    "note": {
+                        "en": "With refines, this weapon pulls far ahead of similarly ranked options.",
+                        "fr": "Avec des raffinements, cette arme devient bien meilleure que les autres options classées au même niveau."
+                    }
+                },
+                "reliquary-of-truth",
+                "surfs-up",
+                "tome-of-the-eternal-flow"
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "prototype-amber",
+                    "refinement": 5
+                },
+                "dawning-frost",
+                "kaguras-verity",
+                "lost-prayer-to-the-sacred-winds"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,14 @@
+{
+    "substats_priority": [
+        {
+            "name": "er",
+            "note": {
+                "en": "Small amounts of [[stat:er]] might be needed for consistent [[ability:burst]] every other rotation",
+                "fr": "Un peu de [[stat:er]] peut être nécessaire pour pouvoir [[ability:burst]] une rotation sur deux"
+            }
+        },
+        "cr/cd",
+        "hp%",
+        "em"
+    ]
+}

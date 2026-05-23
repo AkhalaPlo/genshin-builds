@@ -13,7 +13,7 @@
   inset: 0;
   z-index: 0;
   background: radial-gradient(
-    circle at center,
+    circle at center 38%,
     color-mix(in srgb, var(--element) 30%, transparent),
     transparent 30%
   );

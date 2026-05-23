@@ -1,0 +1,57 @@
+{
+    "weapons": [
+        {
+            "items": [
+                "nocturnes-curtain-call"
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "reliquary-of-truth",
+                    "note": {
+                        "en": "If [[character:columbina]] can consistently trigger [[element:lunar-bloom]] for the full passive, this weapon performs close to **[[weapon:nocturnes-curtain-call]]**.",
+                        "fr": "Si [[character:columbina]] peut déclencher [[element:lunar-bloom]] à coup sûr pour le passif complet, cette arme est presque égale à **[[weapon:nocturnes-curtain-call]]**."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                "surfs-up",
+                "tome-of-the-eternal-flow"
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "blackmarrow-lantern",
+                    "refinement": 5,
+                    "note": {
+                        "en": "This weapon should only be used if the team is centered around [[element:lunar-bloom]].",
+                        "fr": "A n'utiliser que si l'équipe est centrée sur les [[element:lunar-bloom]]s."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "ash-graven-drinking-horn",
+                    "refinement": 5
+                },
+                "dawning-frost"
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "sacrificial-jade",
+                    "note": {
+                        "en": "At [R5], this weapon performs on par with [[weapon:surfs-up]] and [[weapon:tome-of-the-eternal-flow]]."
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,29 @@
+{
+    "weapons": [
+        {
+            "items": [
+                "nocturnes-curtain-call"
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "prototype-amber",
+                    "refinement": 5
+                },
+                "sacrificial-jade"
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "favonius-codex",
+                    "note": {
+                        "en": "This weapon is an option if the whole team is desperate for the Energy. For [[character:columbina]] herself, this weapon is outclassed by **[[weapon:prototype-amber]]** in all regards.",
+                        "fr": "Cette arme est une option si toute l'équipe a besoin d'énergie. Pour [[character:columbina]], cette arme est dépassée par **[[weapon:prototype-amber]]** sur tous les points."
+                    }
+                }
+            ]
+        }
+    ]
+}

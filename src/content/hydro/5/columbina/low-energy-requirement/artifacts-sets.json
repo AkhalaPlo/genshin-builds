@@ -1,0 +1,45 @@
+{
+    "artifact_sets": [
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "silken-moons-serenade",
+                            "pieces": 4
+                        }
+                    ]
+                },
+                {
+                    "items": [
+                        {
+                            "name": "aubade-of-morningstar-and-moon",
+                            "pieces": 4,
+                            "note": {
+                                "en": "Can be [[character:columbina]]'s best in slot as it is being preferred for her personal damage if another unit on the team already holds [[set:sms]].",
+                                "fr": "Peut être la meilleure option pour [[character:columbina]] puisqu'il est préféré pour ses dégâts personnels si un autre personnage de l'équipe porte déjà [[set:sms]]."
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "groups": [
+                {
+                    "choose": true,
+                    "items": [
+                        {
+                            "name": "hp-set",
+                            "pieces": 2
+                        },
+                        {
+                            "name": "em-set",
+                            "pieces": 2
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
