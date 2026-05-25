@@ -1,0 +1,24 @@
+{
+    "main_stats": {
+        "sands": [
+            {
+                "name": "er",
+                "note": {
+                    "en": "If optiing to [[ability:burst]] every rotation, [[stat:er]] should be prioirtized until the requirement is met."
+                    
+                }
+            }, "atk%"
+        ],
+        "goblet": [
+            "atk%"
+        ],
+        "circlet": [
+            "atk%", {
+                "name": "cr",
+                "note": {
+                    "en": "Only if using [[weapon:favonius-codex]]."
+                }
+            }
+        ]
+    }
+}

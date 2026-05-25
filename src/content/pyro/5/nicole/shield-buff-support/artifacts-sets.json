@@ -1,0 +1,64 @@
+{
+    "artifact_sets": [
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "celestial-gift",
+                            "pieces": 4
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "scroll",
+                            "pieces": 4
+                        }
+                    ]
+                },
+                {
+                    "items":[
+                        {
+                            "name": "noblesse",
+                            "pieces": 4
+                        }
+                    ]
+                }
+            ]
+        },
+        {"choose":true, "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "atk-set",
+                            "pieces": 2
+                        }
+                    ]
+                },
+                {
+                    "items":[
+                        {
+                            "name": "atk-set",
+                            "pieces": 2
+                        }
+                    ]
+                },
+                {
+                    "items":[
+                        {
+                            "name": "er-set",
+                            "pieces": 2
+                        }
+                    ]
+                }
+            ]
+        }
+        
+    ]
+}
