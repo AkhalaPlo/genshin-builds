@@ -1,29 +1,35 @@
 {
     "name": {
         "en": "Reaction Support",
-        "fr": "Support Réactions"
+        "fr": "Support Réactions",
+        "it": "Supporto Reazioni"
     },
     "best": true,
     "notes": [
         {
             "en": "[[character:collei]] is a Bow User who provides off-field [[element:dendro]] application and some damage.",
             "fr": "[[character:collei]] est une archère qui fournit de l'application [[element:dendro]] off-field et des dégâts."
+            "it": "[[character:collei]] è un personaggio che fornisce applicazione [[element:dendro]], infliggendo danni discreti."
         },
         {
-            "en": "**Typical [[character:collei]] Rotation:**:",
-            "fr": "**Rotation typique de [[character:collei]]:**:"
+            "en": "**Typical [[character:collei]] Rotation:**",
+            "fr": "**Rotation typique de [[character:collei]]:**",
+            "it": "**Rotazione:**"
         },
         {
             "en": "{rot:E > Q > Swap}",
-            "fr": "{rot:E > A > Swap}"
+            "fr": "{rot:E > A > Swap}",
+            "it": "{rot:E > Q > Cambio}"
         },
         {
             "en": "**Rotation with [[weapon:polar-star]]:**",
-            "fr": "**Rotation avec [[weapon:polar-star]]:**"
+            "fr": "**Rotation avec [[weapon:polar-star]]:**",
+            "it": "**Rotazione con [[weapon:polar-star]]:**:"
         },
         {
             "en": "{rot:N1 > tap CA > E > Q > Swap}",
-            "fr": "{rot:N1 > tap CA > E > A > Swap}"
+            "fr": "{rot:N1 > tap CA > E > A > Swap}",
+            "it": "{rot:N1 > CA breve > E > Q > Cambio}"
         }
     ]
 }
