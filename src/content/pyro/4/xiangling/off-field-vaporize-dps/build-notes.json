@@ -1,15 +1,18 @@
 {
     "name": {
         "en": "Off-Field [[element:vaporize]] DPS",
-        "fr": "DPS [[element:vaporize]] Off-Field"
+        "fr": "DPS [[element:vaporize]] Off-Field",
+        "it": "DPS [[element:vaporize]] Fuori Campo"
     },
     "best": true,
     "notes": [
         {
-            "en": "This ranking assumes [[character:xiangling]] is run with [[character:bennett]] and a buffer."
+            "en": "This ranking assumes [[character:xiangling]] is run with [[character:bennett]] and a buffer.",
+            "it": "Questa sezione presuppone che [[character:xiangling]] sia utilizzata con [[character:bennett]] ed un buffer"
         },
         {
-            "en": "Weapons and artifacts with Elemental Mastery, such as [[weapon:dragons-bane]], [[weapon:kitain-cross-spear]], and EM substats, gain value in team comps where [[character:xiangling]] can trigger both [[element:vaporize]] and [[element:overload]] at the same time, such as Raiden National."
+            "en": "Artifacts and weapons with [[stat:em]], such as [[weapon:dragons-bane]], [[weapon:kitain-cross-spear]], gain value in team comps where [[character:xiangling]] can trigger both [[element:vaporize]] and [[element:overload]] at the same time, such as Raiden National.",
+            "it": "Manufatti ed armi con [[stat:em]], come [[weapon:dragons-bane]], [[weapon:kitain-cross-spear]], guadagnano valore in team in cui [[character:xiangling]] provoca sia [[element:vaporize]] che [[element:overload]], ad esempio Raiden National."
         }
     ],
     "weapons": {
