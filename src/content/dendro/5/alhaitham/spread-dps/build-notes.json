@@ -1,0 +1,27 @@
+{
+    "name": {
+        "en": "[[element:spread]] DPS",
+        "fr": "DPS [[element:spread]]"
+    },
+    "best": true,
+    "notes": [
+        {
+            "en": "This playstyle maximizes [[character:alhaitham]]'s kit, leveraging both [[element:spread]] reactions and his [[stat:em]]-scaling [[ability:skill]] for significant damage. As a [[element:spread]] DPS with a high rate of on-field [[element:dendro]] application and flexible team compositions, he excels in [[element:quicken]]/Quickbloom teams. To further maximise his performance it's highly recommended to prioritize levelling him to 90/90.",
+            "fr": "Ce style de jeu maximise le kit d'[[character:alhaitham]] en exploitant à la fois les réactions de [[element:spread]] et son [[ability:skill]] qui scale avec la [[stat:em]] pour des dégâts significatifs. En tant que DPS [[element:spread]] avec une fréquence élevée d'application [[element:dendro]] on-field et des compositions d'équipe flexibles, il excelle dans les équipes [[element:quicken]]/Quickbloom. Pour améliorer davantage ses performances, il est fortement recommandé de prioriser son passage au niveau 90/90."
+        },
+        {
+            "en": "Basic Rotations:",
+            "fr": "Rotations de base :"
+        },
+        {
+            "en": "- [[ability:burst]] up = {rot:Q > E > N2D + 2N3D + N1C + 2N2C}\n- [[ability:burst]] down = {rot:E > N1C + 5N2C + N1}",
+            "fr": "- [[ability:burst]] disponible = {rot:A > E > N2D + 2N3D + N1C + 2N2C}\n- [[ability:burst]] indisponible = {rot:E > N1C + 5N2C + N1}"
+        }
+    ],
+    "weapons": [
+        {
+            "author": "Kaori",
+            "link": "https://docs.google.com/spreadsheets/d/1beoRsLX1X0YoKJMDJ9UYhp272sgsHVCFmMk48y68_qE/edit?gid=848665920#gid=848665920"
+        }
+    ]
+}

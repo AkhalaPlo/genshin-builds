@@ -1,0 +1,71 @@
+{
+    "artifact_sets": [
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "gilded-dreams",
+                            "pieces": 4,
+                            "note": {
+                                "en": "This ranking assumes that you already have another **[[set:deepwood-memories]]** holder on the team, if not then **[[set:deepwood-memories]]** becomes his best set.",
+                                "fr": "Ce classement suppose que vous avez déjà un autre porteur de **[[set:deepwood-memories]]** dans l'équipe, sinon **[[set:deepwood-memories]]** devient son meilleur set."
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "groups": [
+                {
+                    "choose": true,
+                    "items": [
+                        {
+                            "name": "deepwood-memories",
+                            "pieces": 2
+                        },
+                        {
+                            "name": "emblem-of-severed-fate",
+                            "pieces": 2
+                        },
+                        {
+                            "name": "em-set",
+                            "pieces": 2,
+                            "note": {
+                                "en": "These split set options can actually perform similarly to **[[set:gilded-dreams]] (4)** or even surpass it in situations where you have higher [[stat:er]] requirements or want to [[ability:burst]] every rotation. Or even if they just have better substat rolls on them.",
+                                "fr": "Ces options de sets 2p peuvent en fait être comparables à **[[set:gilded-dreams]] (4)** -voire les dépasser- dans les situations où vous avez des besoins en [[stat:er]] plus élevés, si voulez utiliser l'[[ability:burst]] à chaque rotation, ou bien même si elles ont simplement de meilleures sous stats."
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "deepwood-memories",
+                            "pieces": 4
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "conditional": [
+        {
+            "items": [
+                {
+                    "name": "marechaussee-hunter",
+                    "pieces": 4,
+                    "note": {
+                        "en": "If played with [[character:furina]], this is [[character:alhaitham]]'s best set.",
+                        "fr": "Si joué avec [[character:furina]], c'est le meilleur set d'[[character:alhaitham]]."
+                    }
+                }
+            ]
+        }
+    ]
+}

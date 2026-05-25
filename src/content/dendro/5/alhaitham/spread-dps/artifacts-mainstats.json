@@ -1,0 +1,20 @@
+{
+    "main_stats": {
+        "sands": [
+            "em",
+            "atk%"
+        ],
+        "goblet": [
+            "dendro-dmg"
+        ],
+        "circlet": [
+            "cr/cd"
+        ]
+    },
+    "notes": [
+        {
+            "en": "Usually in [[element:quicken]]/Quickbloom teams [[character:alhaitham]] leans towards [[stat:em]] sands (roughly 5% or so difference usually). But in [[element:bloom]]/[[element:burgeon]]/[[element:hyperbloom]] teams with, fewer to no [[element:spread]] reactions, he skews more towards [[stat:atk%]] sands (unless you're using **[[weapon:light-of-foliar-incision]]**). Or even [[stat:er]] sands if you're trying to [[ability:burst]] every rotation for increased [[element:dendro]] seed generation in those teams.",
+            "fr": "Habituellement, dans les équipes [[element:quicken]]/Quickbloom, [[character:alhaitham]] préfère un sablier [[stat:em]] (généralement ~5% de différence). Mais dans les équipes [[element:bloom]]/[[element:burgeon]]/[[element:hyperbloom]] avec moins -voire aucune- réaction de [[element:spread]], il penche davantage vers un sablier [[stat:atk%]] (sauf si vous utilisez **[[weapon:light-of-foliar-incision]]**), voire même un sablier [[stat:er]] si vous essayez d'utiliser l'[[ability:burst]] à chaque rotation pour augmenter la génération de graines [[element:dendro]] dans ces équipes."
+        }
+    ]
+}
