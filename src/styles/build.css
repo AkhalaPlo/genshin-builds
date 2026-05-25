@@ -15,7 +15,7 @@
   background: radial-gradient(
     circle at center 38%,
     color-mix(in srgb, var(--element) 30%, transparent),
-    transparent 30%
+    transparent 25%
   );
 }
 
