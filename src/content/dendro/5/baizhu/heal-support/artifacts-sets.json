@@ -1,0 +1,85 @@
+{
+    "artifact_sets": [
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "deepwood-memories",
+                            "pieces": 4,
+                            "note": {
+                                "en": "Under AoE situations, it may be better for another party member to hold this set as [[character:baizhu]] has lackluster AoE.",
+                                "fr": "En situation d'AoE, il peut être préférable qu'un autre personnage porte ce set, car [[character:baizhu]] a une AoE assez limitée."
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "ocean-hued-clam",
+                            "pieces": 4
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "instructor",
+                            "pieces": 4,
+                            "note": {
+                                "en": "The [[stat:em]] gained from this set outweighs the reduction in A4 passive bonus from lower main stat values.",
+                                "fr": "La [[stat:em]] gagnée grâce à ce set compense la réduction du bonus de son passif A4 due aux valeurs plus faibles des stats principales."
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "noblesse-oblige",
+                            "pieces": 4,
+                            "note": {
+                                "en": "In teams that benefit from [[stat:atk%]], this set can be run over **[[set:instructor]] (4)** if the additional sustain from higher HP values is preferred.",
+                                "fr": "Dans les équipes qui profitent de l'[[stat:atk%]], ce set peut être joué à la place d'**[[set:instructor]] (4)** si le sustain supplémentaire apporté par des PV plus élevés est préféré."
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "groups": [
+                {
+                    "choose": true,
+                    "items": [
+                        {
+                            "name": "tenacity-of-the-millelith",
+                            "pieces": 2
+                        },
+                        {
+                            "name": "vourukashas-glow",
+                            "pieces": 2
+                        },
+                        {
+                            "name": "emblem-of-severed-fate",
+                            "pieces": 2
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

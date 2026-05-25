@@ -1,0 +1,21 @@
+{
+    "main_stats": {
+        "sands": [
+            "hp%",
+            "er"
+        ],
+        "goblet": [
+            "hp%"
+        ],
+        "circlet": [
+            "hp%",
+            {
+                "name": "healing-bonus",
+                "note": {
+                    "en": "While generally in teams that can benefit from [[character:baizhu]]'s Ascension 4 passive you want to build high HP (up to 50k) to maximize the buff it can provide, [[stat:healing-bonus]] circlet can be considered over [[stat:hp%]] in teams where having more healing would be valuable. For example, using [[stat:healing-bonus]] circlet can allow for building Fanfare points faster when using [[character:baizhu]] with [[character:furina]], moreover [[stat:healing-bonus]] circlet synergizes well with **[[weapon:prototype-amber]]**'s passive.",
+                    "fr": "Les équipes qui peuvent profiter du passif A4 de [[character:baizhu]] préfèrent généralement build jusqu'à 50k PV pour maximiser le buff qu'il peut fournir. Cependant, un diadème [[stat:healing-bonus]] peut être envisagé à la place d'un diadème [[stat:hp%]] si le soin est plus utile, comme par exemple pour générer plus vite les points de Fanfare avec [[character:baizhu]] et [[character:furina]]. Le diadème [[stat:healing-bonus]] synergise aussi plutôt bien avec le passif de **[[weapon:prototype-amber]]**."
+                }
+            }
+        ]
+    }
+}

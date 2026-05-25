@@ -1,0 +1,20 @@
+{
+    "substats_priority": [
+        {
+            "name": "er",
+            "note": {
+                "en": "Prioritize until requirement is met.",
+                "fr": "A prioriser jusqu'à ce que les besoins soient atteints."
+            }
+        },
+        "hp%",
+        "hp",
+        {
+            "name": "cr",
+            "note": {
+                "en": "Only recommended when using **[[weapon:favonius-codex]]**.",
+                "fr": "Seulement recommandé lorsque vous utilisez **[[weapon:favonius-codex]]**."
+            }
+        }
+    ]
+}
