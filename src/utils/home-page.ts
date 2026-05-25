@@ -4,6 +4,7 @@ import {
   getPublicCharacterName,
   getPublicCharacterSlug,
 } from './character-slugs';
+import { readJSONFile } from './content';
 import { getLocale } from './i18n';
 
 /**
@@ -48,9 +49,7 @@ export function getHomePageData(lang = 'en') {
                 return [];
               }
 
-              const metadata = JSON.parse(
-                fs.readFileSync(metadataPath, 'utf-8'),
-              );
+              const metadata = readJSONFile(metadataPath);
               const name = getPublicCharacterName(locale, {
                 character: character.name,
                 element: element.name,
