@@ -1,13 +1,15 @@
 {
     "name": {
         "en": "Off-Field DPS",
-        "fr": "DPS Off-Field"
+        "fr": "DPS Off-Field",
+        "it": "DPS Fuori Campo"
     },
     "best": true,
     "notes": [
         {
             "en": "This build treats [[character:xiangling]] as a reactionless off-field DPS used for her utility as well as her damage.",
-            "fr": "Ce build considère [[character:xiangling]] comme un DPS off-field sans réaction utilisée pour ses commodités et ses dégâts."
+            "fr": "Ce build considère [[character:xiangling]] comme un DPS off-field sans réaction utilisée pour ses commodités et ses dégâts.",
+            "it": "Questa build si concentra su [[character:xiangling]] come DPS Fuori Campo utilizzato per la sua utilità generale e per i suoi danni senza reazioni."
         }
     ],
     "weapons": {
