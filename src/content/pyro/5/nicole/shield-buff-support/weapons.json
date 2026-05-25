@@ -1,14 +1,64 @@
 {
     "weapons": [
         {
-            "items": []
+            "items": [
+                "angelos'-heptades"
+            ]
         },
         {
             "items": [
                 {
-                    "name": "",
+                    "name": "memory-of-dust",
                     "note": {
-                        "en": ""
+                        "en": "As [[character:nicole]] snapshots her own Attack when pressing [[ability:skill]], it is advised to attack a few times before using [[ability:skill]] to benefit from this weapon's passive."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                "cranes-echoing-call",
+                "skyward-atlas",
+                {
+                    "name": "starcallers-watch",
+                    "note": {
+                        "en": "While not contributing a lot to high Attack, this weapon provides a reliable Damage Bonus to your onfielder."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                "oathsworn-eye"
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "hakushin-ring",
+                    "note": {
+                        "en": "In teams where this weapon's passive becomes applicable, it increases in value and appreciates refinements."
+                    }
+                },
+                "flowing-purity"
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "favonius-codex",
+                    "note": {
+                        "en": "This weapon can have significantly more value if the teams [[stat:er]] requirements are dire."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "ttds",
+                    "note": {
+                        "en": "This weapon severely reduces the potency of [[character:nicole]]'s buff, but brings a hefty buff of its own to the onfielder. Depending on the team, this weapon can be one of [[character:nicole]]'s best choices."
                     }
                 }
             ]
