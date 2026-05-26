@@ -1,6 +1,6 @@
 ---
 import { t } from '../utils/i18n';
-import ArtifactSetItems from './ArtifactSetItems.astro';
+import ArtifactSetInfoPopover from './ArtifactSetInfoPopover.astro';
 
 type ArtifactSetItem = {
   name: string;
@@ -22,6 +22,15 @@ type ArtifactSetGroup = {
   choices?: { items: ArtifactSetItem[] }[];
 };
 
+type ArtifactSetRow = {
+  items?: ArtifactSetItem[];
+  alt?: boolean;
+  bold?: boolean;
+  label?: string;
+  prefix?: string;
+  chooseOne?: boolean;
+};
+
 const {
   group,
   locale,
@@ -33,48 +42,72 @@ const {
 };
 
 const groupItems = group.items ?? [];
+const rows: ArtifactSetRow[] = group.choose
+  ? [
+      ...groupItems.map((item, index) => ({
+        items: [item],
+        alt: index > 0,
+      })),
+      {
+        alt: true,
+        bold: true,
+        label: t(locale, 'ui', 'Choose Two'),
+      },
+    ]
+  : group.choices
+    ? group.choices.map((choice, index) => ({
+        items: choice.items,
+        alt: index > 0,
+        prefix: index > 0 ? '+ ' : '',
+        chooseOne: true,
+      }))
+    : [{ items: groupItems }];
 ---
 
 {
   /* Choose-two groups render extra items as `.alt` rows to match approximate ties. */
 }
 {
-  group.choose ? (
-    <>
-      {groupItems[0] && (
-        <ArtifactSetItems items={[groupItems[0]]} locale={locale} lang={lang} />
-      )}
-      {groupItems.slice(1).map((item) => (
-        <div class="alt">
-          <ArtifactSetItems items={[item]} locale={locale} lang={lang} />
-        </div>
-      ))}
-      <div class="alt bold">{t(locale, 'ui', 'Choose Two')}</div>
-    </>
-  ) : group.choices ? (
-    <>
-      {group.choices.map((choice, choiceIndex) =>
-        choiceIndex === 0 ? (
-          <ArtifactSetItems
-            items={choice.items}
-            locale={locale}
-            lang={lang}
-            chooseOne={true}
-          />
-        ) : (
-          <div class="alt">
-            &{' '}
-            <ArtifactSetItems
-              items={choice.items}
-              locale={locale}
-              lang={lang}
-              chooseOne={true}
-            />
-          </div>
-        ),
-      )}
-    </>
-  ) : (
-    <ArtifactSetItems items={groupItems} locale={locale} lang={lang} />
-  )
+  rows.map((row) => {
+    const content = row.label ? (
+      row.label
+    ) : (
+      <>
+        {row.prefix}
+        {row.items?.map((item, itemIndex) => (
+          <>
+            {itemIndex > 0 && ' / '}
+            <span class="inline-info-label artifact-info-label">
+              <ArtifactSetInfoPopover
+                artifact={item}
+                suffix={`(${item.pieces})`}
+                lang={lang}
+              />
+            </span>
+            {item.noteId ? (
+              <a class="note-link" href={`#${item.noteId}`}>
+                *
+              </a>
+            ) : item.note ? (
+              '*'
+            ) : (
+              ''
+            )}
+          </>
+        ))}
+        {row.chooseOne && row.items?.length > 0 && (
+          <>
+            {' '}
+            <span class="bold">{t(locale, 'ui', 'Choose One')}</span>
+          </>
+        )}
+      </>
+    );
+
+    return row.alt ? (
+      <div class={row.bold ? 'alt bold' : 'alt'}>{content}</div>
+    ) : (
+      <>{content}</>
+    );
+  })
 }
