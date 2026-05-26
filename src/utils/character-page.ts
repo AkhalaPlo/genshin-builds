@@ -343,15 +343,31 @@ function translateArtifactSetGroup(
 ) {
   return {
     ...group,
-    items: group.items.map((item: any) =>
-      translateArtifactSetItem(
-        translator,
-        locale,
-        item,
-        sourceFile,
-        artifactSetData,
-      ),
-    ),
+    items: Array.isArray(group.items)
+      ? group.items.map((item: any) =>
+          translateArtifactSetItem(
+            translator,
+            locale,
+            item,
+            sourceFile,
+            artifactSetData,
+          ),
+        )
+      : group.items,
+    choices: Array.isArray(group.choices)
+      ? group.choices.map((choice: any) => ({
+          ...choice,
+          items: (choice.items ?? []).map((item: any) =>
+            translateArtifactSetItem(
+              translator,
+              locale,
+              item,
+              sourceFile,
+              artifactSetData,
+            ),
+          ),
+        }))
+      : group.choices,
   };
 }
 

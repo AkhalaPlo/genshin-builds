@@ -1,6 +1,6 @@
 ---
 import { t } from '../utils/i18n';
-import ArtifactSetInfoPopover from './ArtifactSetInfoPopover.astro';
+import ArtifactSetItems from './ArtifactSetItems.astro';
 
 type ArtifactSetItem = {
   name: string;
@@ -17,8 +17,9 @@ type ArtifactSetItem = {
 };
 
 type ArtifactSetGroup = {
-  items: ArtifactSetItem[];
+  items?: ArtifactSetItem[];
   choose?: boolean;
+  choices?: { items: ArtifactSetItem[] }[];
 };
 
 const {
@@ -30,6 +31,8 @@ const {
   locale: any;
   lang?: string;
 };
+
+const groupItems = group.items ?? [];
 ---
 
 {
@@ -38,71 +41,40 @@ const {
 {
   group.choose ? (
     <>
-      {group.items[0] && (
-        <>
-          <span class="inline-info-label artifact-info-label">
-            <ArtifactSetInfoPopover
-              artifact={group.items[0]}
-              suffix={`(${group.items[0].pieces})`}
-              lang={lang}
-            />
-          </span>
-          {group.items[0].noteId ? (
-            <a class="note-link" href={`#${group.items[0].noteId}`}>
-              *
-            </a>
-          ) : group.items[0].note ? (
-            '*'
-          ) : (
-            ''
-          )}
-        </>
+      {groupItems[0] && (
+        <ArtifactSetItems items={[groupItems[0]]} locale={locale} lang={lang} />
       )}
-      {group.items.slice(1).map((item) => (
+      {groupItems.slice(1).map((item) => (
         <div class="alt">
-          <span class="inline-info-label artifact-info-label">
-            <ArtifactSetInfoPopover
-              artifact={item}
-              suffix={`(${item.pieces})`}
-              lang={lang}
-            />
-          </span>
-          {item.noteId ? (
-            <a class="note-link" href={`#${item.noteId}`}>
-              *
-            </a>
-          ) : item.note ? (
-            '*'
-          ) : (
-            ''
-          )}
+          <ArtifactSetItems items={[item]} locale={locale} lang={lang} />
         </div>
       ))}
       <div class="alt bold">{t(locale, 'ui', 'Choose Two')}</div>
     </>
-  ) : (
+  ) : group.choices ? (
     <>
-      {group.items.map((item, itemIndex) => (
-        <>
-          {itemIndex > 0 && ' / '}
-          <span class="inline-info-label artifact-info-label">
-            <ArtifactSetInfoPopover
-              artifact={item}
-              suffix={`(${item.pieces})`}
+      {group.choices.map((choice, choiceIndex) =>
+        choiceIndex === 0 ? (
+          <ArtifactSetItems
+            items={choice.items}
+            locale={locale}
+            lang={lang}
+            chooseOne={true}
+          />
+        ) : (
+          <div class="alt">
+            &{' '}
+            <ArtifactSetItems
+              items={choice.items}
+              locale={locale}
               lang={lang}
+              chooseOne={true}
             />
-          </span>
-          {item.noteId ? (
-            <a class="note-link" href={`#${item.noteId}`}>
-              *
-            </a>
-          ) : item.note ? (
-            '*'
-          ) : (
-            ''
-          )}
-        </>
-      ))}
+          </div>
+        ),
+      )}
     </>
+  ) : (
+    <ArtifactSetItems items={groupItems} locale={locale} lang={lang} />
   )
 }

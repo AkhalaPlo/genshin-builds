@@ -115,7 +115,12 @@ export function collectNotes(
 
   // Mutating noteId here lets recommendation cards link to their note entries.
   groups.forEach((group) => {
-    group.items.forEach((item: any) => {
+    const groupItems = [
+      ...(group.items ?? []),
+      ...(group.choices ?? []).flatMap((choice: any) => choice.items ?? []),
+    ];
+
+    groupItems.forEach((item: any) => {
       const localizedNote = getLocalizedNote(item, lang);
 
       if (localizedNote) {

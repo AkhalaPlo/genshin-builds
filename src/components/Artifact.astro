@@ -11,8 +11,9 @@ type ArtifactSetItem = {
 };
 
 type ArtifactSetGroup = {
-  items: ArtifactSetItem[];
+  items?: ArtifactSetItem[];
   choose?: boolean;
+  choices?: { items: ArtifactSetItem[] }[];
 };
 
 type ArtifactSetRank = {

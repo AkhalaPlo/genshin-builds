@@ -1,0 +1,64 @@
+---
+import { t } from '../utils/i18n';
+import ArtifactSetInfoPopover from './ArtifactSetInfoPopover.astro';
+
+type ArtifactSetItem = {
+  name: string;
+  pieces: number;
+  note?: string;
+  noteId?: string;
+  id?: string;
+  info?: {
+    rarity: number;
+    '1p'?: { en?: string; [lang: string]: string | undefined };
+    '2p'?: { en?: string; [lang: string]: string | undefined };
+    '4p'?: { en?: string; [lang: string]: string | undefined };
+  };
+};
+
+const {
+  items = [],
+  locale,
+  lang = 'en',
+  chooseOne = false,
+} = Astro.props as {
+  items: ArtifactSetItem[];
+  locale: any;
+  lang?: string;
+  chooseOne?: boolean;
+};
+---
+
+<>
+  {
+    items.map((item, itemIndex) => (
+      <>
+        {itemIndex > 0 && ' / '}
+        <span class="inline-info-label artifact-info-label">
+          <ArtifactSetInfoPopover
+            artifact={item}
+            suffix={`(${item.pieces})`}
+            lang={lang}
+          />
+        </span>
+        {item.noteId ? (
+          <a class="note-link" href={`#${item.noteId}`}>
+            *
+          </a>
+        ) : item.note ? (
+          '*'
+        ) : (
+          ''
+        )}
+      </>
+    ))
+  }
+  {
+    chooseOne && items.length > 0 && (
+      <>
+        {' '}
+        <span class="bold">{t(locale, 'ui', 'Choose One')}</span>
+      </>
+    )
+  }
+</>

@@ -64,6 +64,34 @@ src/content/<element>/<rarity>/<character>/<build>/artifacts-sets.json
               "pieces": 2
             }
           ]
+        },
+        {
+          "choices": [
+            {
+              "items": [
+                {
+                  "name": "noblesse-oblige",
+                  "pieces": 2
+                },
+                {
+                  "name": "cryo-set",
+                  "pieces": 2
+                }
+              ]
+            },
+            {
+              "items": [
+                {
+                  "name": "atk-set",
+                  "pieces": 2
+                },
+                {
+                  "name": "em-set",
+                  "pieces": 2
+                }
+              ]
+            }
+          ]
         }
       ]
     }
@@ -99,6 +127,7 @@ src/content/<element>/<rarity>/<character>/<build>/artifacts-sets.json
     - `artifact_sets[].groups[].choose`: Optional boolean. Use `true` when this
       group is a choose-two mix.
     - `artifact_sets[].groups[].items`: Artifact set items shown in this group.
+      Required unless the group uses `choices`.
       - `artifact_sets[].groups[].items[].name`: Artifact set ID or alias from
         `src/i18n/<lang>/artifact-sets.json`, or a stat pseudo-set ID from
         `src/i18n/<lang>/stats.json`, such as `atk-set` or `em-set`.
@@ -107,6 +136,13 @@ src/content/<element>/<rarity>/<character>/<build>/artifacts-sets.json
       - `artifact_sets[].groups[].items[].note`: Optional localized editorial
         note. Adds a `*` marker beside the item and renders in the artifact
         notes section.
+    - `artifact_sets[].groups[].choices`: Optional array of choose-one item
+      pools. Use this for 2p/2p combinations where the player should choose one
+      item from each pool, such as one DMG set and one ATK/EM set.
+      - `artifact_sets[].groups[].choices[].items`: Artifact set items shown in
+        that choose-one pool.
+      - Choice items use the same `name`, `pieces`, and `note` fields as normal
+        group items.
 - `conditional`: Optional unranked artifact set groups shown below the ranking
   under `Conditional (See Notes):`.
   - `conditional[].choose`: Optional boolean. Works the same way as
@@ -205,6 +241,46 @@ This renders as:
    Choose Two
 ```
 
+### Choose-One Pools
+
+Use `choices` when the player should choose one item from each pool. This is
+for recommendations such as:
+
+```txt
+Noblesse Oblige (2) / Cryo DMG Bonus (2) [Choose One] and
+ATK (2) / EM (2) [Choose One]
+```
+
+```json
+{
+  "groups": [
+    {
+      "choices": [
+        {
+          "items": [
+            { "name": "noblesse-oblige", "pieces": 2 },
+            { "name": "cryo-set", "pieces": 2 }
+          ]
+        },
+        {
+          "items": [
+            { "name": "atk-set", "pieces": 2 },
+            { "name": "em-set", "pieces": 2 }
+          ]
+        }
+      ]
+    }
+  ]
+}
+```
+
+This renders as:
+
+```txt
+3. Noblesse Oblige (2) / Cryo DMG Bonus (2) [Choose One]
+   + ATK (2) / EM (2) [Choose One]
+```
+
 Do not put `items` or `choose` directly on an `artifact_sets[]` entry.
 They must be inside `artifact_sets[].groups[]`.
 
@@ -249,6 +325,9 @@ group objects directly and do not use a `groups` wrapper:
 - Non-`choose` groups with multiple items render on one line separated by `/`.
 - `choose: true` groups render the first item on the main line, the remaining
   items as approximate alternatives, and a `Choose Two` label below them.
+- `choices` groups render each item pool on its own line with a `Choose One`
+  label. Use them instead of a flat `items` array when separate pools must be
+  chosen independently.
 
 Example with the same note translated in different languages:
 
