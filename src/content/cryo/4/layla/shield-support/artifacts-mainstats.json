@@ -1,0 +1,21 @@
+{
+    "main_stats": {
+        "sands": [
+            "hp%",
+            "er"
+        ],
+        "goblet": [
+            "hp%"
+        ],
+        "circlet": [
+            "hp%",
+            {
+                "name": "cr",
+                "note": {
+                    "en": "[[stat:cr]] is only recommended if using **[[weapon:favonius-sword]]**",
+                    "fr": "La [[stat:cr]] est uniquement recommandée avec **[[weapon:favonius-sword]]**."
+                }
+            }
+        ]
+    }
+}

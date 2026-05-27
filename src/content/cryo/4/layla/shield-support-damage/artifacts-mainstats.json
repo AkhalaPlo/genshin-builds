@@ -1,0 +1,23 @@
+{
+    "main_stats": {
+        "sands": [
+            "hp%",
+            {
+                "name": "er",
+                "note": {
+                    "en": "[[character:layla]]'s [[stat:er]] requirements will generally be low enough (especially with C2 or other [[element:cryo]] characters) that an [[stat:er]] sands is not justified",
+                    "fr": "Les besoins en [[stat:er]] de [[character:layla]] seront généralement assez bas (surtout avec la C2 ou d'autres personnages [[element:cryo]]) pour qu'un sablier [[stat:er]] ne soit pas justifié."
+                }
+            }
+        ],
+        "goblet": [
+            "cryo-dmg",
+            "hp%"
+        ],
+        "circlet": [
+            "cr",
+            "cd",
+            "hp%"
+        ]
+    }
+}

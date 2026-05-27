@@ -1,0 +1,60 @@
+{
+    "artifact_sets": [
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "tenacity-of-the-millelith",
+                            "pieces": 4,
+                            "note": {
+                                "en": "This set is by far the best option for [[character:layla]], it complements her kit perfectly by providing [[stat:hp%]] along with a teamwide [[stat:atk%]] and Shield Strength buff.",
+                                "fr": "Ce set est de loin la meilleure option pour [[character:layla]], il complète parfaitement son kit en fournissant des [[stat:hp%]] ainsi qu'un buff d'[[stat:atk%]] et de force de bouclier à toute l'équipe."
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "scroll-of-the-hero-of-cinder-city",
+                            "pieces": 4
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "vourukashas-glow",
+                            "pieces": 2
+                        },
+                        {
+                            "name": "tenacity-of-the-millelith",
+                            "pieces": 2
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "noblesse-oblige",
+                            "pieces": 4
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

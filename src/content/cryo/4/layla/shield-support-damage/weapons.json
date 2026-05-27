@@ -1,0 +1,57 @@
+{
+    "weapons": [
+        {
+            "items": [
+                "primordial-jade-cutter"
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "harbinger-of-dawn",
+                    "refinement": 5,
+                    "note": {
+                        "en": "Weapon ranking is assuming [[character:layla]] is above 90% HP. As [[character:layla]] is primarily used as an off-field character, she can usually have good uptime on the **[[weapon:harbinger-of-dawn]]** passive. Though it's possible that good uptime may be unrealistic depending on your team, or if you're facing enemies where corrosion is present.",
+                        "fr": "Le classement de l'arme suppose que [[character:layla]] est au-dessus de 90% de PV. Comme [[character:layla]] est principalement utilisée comme personnage off-field, elle peut généralement maintenir un bon uptime sur le passif de **[[weapon:harbinger-of-dawn]]**. Il est toutefois possible qu'un bon uptime soit irréaliste selon votre équipe, ou si vous affrontez des ennemis avec de la corrosion."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                "uraku-misugiri",
+                "splendor-of-tranquil-waters",
+                "light-of-foliar-incision",
+                "lightbearing-moonshard"
+            ]
+        },
+        {
+            "items": [
+                "mistsplitter-reforged",
+                {
+                    "name": "wolf-fang",
+                    "note": {
+                        "en": "At [R5] this weapon performs similarly to **[[weapon:harbinger-of-dawn]] [R5]**.",
+                        "fr": "Une fois [R5], cette arme équivaut à **[[weapon:harbinger-of-dawn]] [R5]**."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                "key-of-khaj-nisut"
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "favonius-sword",
+                    "note": {
+                        "en": "This weapon performs significantly worse than other listed options in terms of personal damage, but the extra particles for your team could be valuable.",
+                        "fr": "Cette arme est nettement moins performante que les autres options listées en termes de dégâts personnels, mais les particules supplémentaires pour votre équipe peuvent avoir de la valeur."
+                    }
+                }
+            ]
+        }
+    ]
+}

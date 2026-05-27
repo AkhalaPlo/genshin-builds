@@ -1,0 +1,81 @@
+{
+    "artifact_sets": [
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "tenacity-of-the-millelith",
+                            "pieces": 4,
+                            "note": {
+                                "en": "This set is by far the best option for [[character:layla]]'s shield durability, and very often the best set for team damage.",
+                                "fr": "Ce set est de loin la meilleure option pour la résistance du bouclier de [[character:layla]], et très souvent le meilleur set pour les dégâts de l'équipe."
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "blizzard-strayer",
+                            "pieces": 4,
+                            "note": {
+                                "en": "This is [[character:layla]]'s best set for personal damage in teams where enemies are affected by [[element:cryo]] or Frozen.",
+                                "fr": "C'est le meilleur set de [[character:layla]] pour ses dégâts personnels dans les équipes où les ennemis sont affectés par [[element:cryo]] ou Gelés."
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "groups": [
+                {
+                    "choose": true,
+                    "items": [
+                        {
+                            "name": "vourukashas-glow",
+                            "pieces": 2
+                        },
+                        {
+                            "name": "tenacity-of-the-millelith",
+                            "pieces": 2
+                        },
+                        {
+                            "name": "blizzard-strayer",
+                            "pieces": 2
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "noblesse-oblige",
+                            "pieces": 4
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "emblem-of-severed-fate",
+                            "pieces": 4
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

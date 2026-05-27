@@ -1,0 +1,20 @@
+{
+    "substats_priority": [
+        {
+            "name": "er",
+            "note": {
+                "en": "[[stat:er]] until requirement is met",
+                "fr": "La [[stat:er]] jusqu'à atteindre le besoin requis."
+            }
+        },
+        "hp%",
+        {
+            "name": "cr",
+            "note": {
+                "en": "Only recommended if using **[[weapon:favonius-sword]]**",
+                "fr": "Uniquement recommandé avec **[[weapon:favonius-sword]]**."
+            }
+        },
+        "hp"
+    ]
+}
