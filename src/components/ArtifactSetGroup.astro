@@ -19,11 +19,16 @@ type ArtifactSetItem = {
 type ArtifactSetGroup = {
   items?: ArtifactSetItem[];
   choose?: boolean;
-  choices?: { items: ArtifactSetItem[] }[];
+  choices?: ArtifactChoicePool[];
+};
+
+type ArtifactChoicePool = {
+  items: ArtifactSetItem[];
 };
 
 type ArtifactSetRow = {
   items?: ArtifactSetItem[];
+  choicePools?: ArtifactChoicePool[];
   alt?: boolean;
   bold?: boolean;
   label?: string;
@@ -54,14 +59,16 @@ const rows: ArtifactSetRow[] = group.choose
         label: t(locale, 'ui', 'Choose Two'),
       },
     ]
-  : group.choices
-    ? group.choices.map((choice, index) => ({
-        items: choice.items,
-        alt: index > 0,
-        prefix: index > 0 ? '+ ' : '',
-        chooseOne: true,
-      }))
-    : [{ items: groupItems }];
+  : group.choices && groupItems.length > 0
+    ? [{ items: groupItems, choicePools: group.choices }]
+    : group.choices
+      ? group.choices.map((choice, index) => ({
+          items: choice.items,
+          alt: index > 0,
+          prefix: index > 0 ? 'and ' : '',
+          chooseOne: true,
+        }))
+      : [{ items: groupItems }];
 ---
 
 {
@@ -70,10 +77,10 @@ const rows: ArtifactSetRow[] = group.choose
 {
   rows.map((row) => {
     const content = row.label ? (
-      row.label
+      <span class="accent-text bold">{row.label}</span>
     ) : (
       <>
-        {row.prefix}
+        {row.prefix && <span class="accent-text">{row.prefix}</span>}
         {row.items?.map((item, itemIndex) => (
           <>
             {itemIndex > 0 && ' / '}
@@ -95,10 +102,49 @@ const rows: ArtifactSetRow[] = group.choose
             )}
           </>
         ))}
-        {row.chooseOne && row.items?.length > 0 && (
+        {row.choicePools?.map((choice) => (
           <>
             {' '}
-            <span class="bold">{t(locale, 'ui', 'Choose One')}</span>
+            <span class="accent-text">
+              {t(locale, 'ui', 'and', undefined, false)}
+            </span>{' '}
+            {choice.items.map((item, itemIndex) => (
+              <>
+                {itemIndex > 0 && ' / '}
+                <span class="inline-info-label artifact-info-label">
+                  <ArtifactSetInfoPopover
+                    artifact={item}
+                    suffix={`(${item.pieces})`}
+                    lang={lang}
+                  />
+                </span>
+                {item.noteId ? (
+                  <a class="note-link" href={`#${item.noteId}`}>
+                    *
+                  </a>
+                ) : item.note ? (
+                  '*'
+                ) : (
+                  ''
+                )}
+              </>
+            ))}
+            {choice.items.length > 0 && (
+              <>
+                {' '}
+                <span class="accent-text bold">
+                  {t(locale, 'ui', 'Choose One')}
+                </span>
+              </>
+            )}
+          </>
+        ))}
+        {row.chooseOne && (row.items?.length ?? 0) > 0 && (
+          <>
+            {' '}
+            <span class="accent-text bold">
+              {t(locale, 'ui', 'Choose One')}
+            </span>
           </>
         )}
       </>

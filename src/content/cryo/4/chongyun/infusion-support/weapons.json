@@ -1,0 +1,27 @@
+{
+    "weapons": [
+        {
+            "items": [
+                {
+                    "name": "sacrificial-greatsword",
+                    "refinement": 5
+                }
+            ]
+        },
+        {
+            "items": [
+                "wolfs-gravestone"
+            ]
+        },
+        {
+            "items": [
+                "favonius-greatsword"
+            ]
+        },
+        {
+            "items": [
+                "makhaira-aquamarine"
+            ]
+        }
+    ]
+}

@@ -19,27 +19,32 @@
         {
             "groups": [
                 {
-                    "choose": true,
                     "items": [
                         {
                             "name": "archaic-petra",
                             "pieces": 2
-                        },
+                        }
+                    ],
+                    "choices": [
                         {
-                            "name": "noblesse-oblige",
-                            "pieces": 2
-                        },
-                        {
-                            "name": "atk-set",
-                            "pieces": 2
-                        },
-                        {
-                            "name": "emblem-of-severed-fate",
-                            "pieces": 2,
-                            "note": {
-                                "en": "This set performs worse than other options when [[character:ningguang]] does not need to build [[stat:er]].",
-                                "fr": "Ce set est moins bon que les autres options quand [[character:ningguang]] n'a pas besoin de [[stat:er]]."
-                            }
+                            "items": [
+                                {
+                                    "name": "noblesse-oblige",
+                                    "pieces": 2
+                                },
+                                {
+                                    "name": "atk-set",
+                                    "pieces": 2
+                                },
+                                {
+                                    "name": "emblem-of-severed-fate",
+                                    "pieces": 2,
+                                    "note": {
+                                        "en": "This set performs worse than other options when [[character:ningguang]] does not need to build [[stat:er]].",
+                                        "fr": "Ce set est moins bon que les autres options quand [[character:ningguang]] n'a pas besoin de [[stat:er]]."
+                                    }
+                                }
+                            ]
                         }
                     ]
                 },

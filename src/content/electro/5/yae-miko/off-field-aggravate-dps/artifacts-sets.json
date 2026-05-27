@@ -39,27 +39,32 @@
         {
             "groups": [
                 {
-                    "choose": true,
                     "items": [
                         {
                             "name": "thundering-fury",
                             "pieces": 2
-                        },
+                        }
+                    ],
+                    "choices": [
                         {
-                            "name": "em-set",
-                            "pieces": 2
-                        },
-                        {
-                            "name": "atk-set",
-                            "pieces": 2
-                        },
-                        {
-                            "name": "golden-troupe",
-                            "pieces": 2
-                        },
-                        {
-                            "name": "noblesse-oblige",
-                            "pieces": 2
+                            "items": [
+                                {
+                                    "name": "em-set",
+                                    "pieces": 2
+                                },
+                                {
+                                    "name": "atk-set",
+                                    "pieces": 2
+                                },
+                                {
+                                    "name": "golden-troupe",
+                                    "pieces": 2
+                                },
+                                {
+                                    "name": "noblesse-oblige",
+                                    "pieces": 2
+                                }
+                            ]
                         }
                     ]
                 }

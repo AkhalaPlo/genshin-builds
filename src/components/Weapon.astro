@@ -5,9 +5,9 @@ import type {
   WeaponPassiveText,
   WeaponPassiveValue,
 } from '../utils/weapon-passive';
-const { weapons, locale, lang = 'en' } = Astro.props;
 
 type WeaponItem = {
+  id?: string;
   name: string;
   rarity: number;
   info?: {
@@ -23,14 +23,33 @@ type WeaponItem = {
       base_attack?: number;
       substat_value?: string;
     };
-  };
-  level_max?: {
-    base_attack?: number;
-    substat_value?: string;
+    level_max?: {
+      base_attack?: number;
+      substat_value?: string;
+    };
   };
   refinement?: number | string;
   note?: string;
   noteId?: string;
+};
+
+type WeaponRank = {
+  items: WeaponItem[];
+};
+
+type WeaponRecommendations = {
+  weapons: WeaponRank[];
+  conditional?: WeaponItem[];
+};
+
+const {
+  weapons,
+  locale,
+  lang = 'en',
+} = Astro.props as {
+  weapons: WeaponRecommendations;
+  locale: any;
+  lang?: string;
 };
 
 /**
@@ -41,6 +60,18 @@ type WeaponItem = {
  */
 const formatRefinement = (refinement?: number | string) =>
   refinement ? ` [R${refinement}]` : '';
+
+const hasNoteMarker = (item: WeaponItem) => item.noteId || item.note;
+const conditionalWeapons = weapons.conditional ?? [];
+const rankedWeaponGroups = weapons.weapons.map(
+  (position: WeaponRank, index: number) => ({
+    rank: index + 1,
+    rows: position.items.map((weapon, weaponIndex) => ({
+      weapon,
+      isAlternative: weaponIndex > 0,
+    })),
+  }),
+);
 ---
 
 <div class="card weapon-card">
@@ -50,37 +81,10 @@ const formatRefinement = (refinement?: number | string) =>
     /* Ranked weapon groups. Extra items in one rank render as approximate ties. */
   }
   {
-    weapons.weapons.map((position: { items: WeaponItem[] }, i: number) => (
+    rankedWeaponGroups.map((position) => (
       <div style="margin-bottom: 10px;">
-        <div>
-          <strong class="accent-text">{i + 1}.</strong>&#8239;
-          {position.items[0] && (
-            <span class="inline-info-label">
-              <WeaponInfoPopover
-                weapon={position.items[0]}
-                locale={locale}
-                lang={lang}
-              />
-              <span class="bold">
-                ({position.items[0].rarity}
-                {'\u2605'}){formatRefinement(position.items[0].refinement)}
-                {position.items[0].noteId ? (
-                  <a class="note-link" href={`#${position.items[0].noteId}`}>
-                    *
-                  </a>
-                ) : position.items[0].note ? (
-                  '*'
-                ) : (
-                  ''
-                )}
-              </span>
-            </span>
-          )}
-        </div>
-
-        {position.items.slice(1).map((weapon) => (
-          <div class="alt">
-            &asymp;{' '}
+        {position.rows.map(({ weapon, isAlternative }) => {
+          const content = (
             <span class="inline-info-label">
               <WeaponInfoPopover weapon={weapon} locale={locale} lang={lang} />
               <span class="bold">
@@ -90,26 +94,37 @@ const formatRefinement = (refinement?: number | string) =>
                   <a class="note-link" href={`#${weapon.noteId}`}>
                     *
                   </a>
-                ) : weapon.note ? (
+                ) : hasNoteMarker(weapon) ? (
                   '*'
                 ) : (
                   ''
                 )}
               </span>
             </span>
-          </div>
-        ))}
+          );
+
+          return isAlternative ? (
+            <div class="alt">
+              <span class="accent-text">&asymp;</span> {content}
+            </div>
+          ) : (
+            <div>
+              <strong class="accent-text">{position.rank}.</strong>&#8239;
+              {content}
+            </div>
+          );
+        })}
       </div>
     ))
   }
 
   {/* Optional unranked recommendations that depend on build notes. */}
   {
-    weapons.conditional?.length > 0 && (
+    conditionalWeapons.length > 0 && (
       <div style="margin-top: 14px;">
         <div class="bold">{t(locale, 'ui', 'Conditional (See Notes):')}</div>
 
-        {weapons.conditional.map((weapon: WeaponItem) => (
+        {conditionalWeapons.map((weapon: WeaponItem) => (
           <div>
             <span class="inline-info-label">
               <WeaponInfoPopover weapon={weapon} locale={locale} lang={lang} />
@@ -120,7 +135,7 @@ const formatRefinement = (refinement?: number | string) =>
                   <a class="note-link" href={`#${weapon.noteId}`}>
                     *
                   </a>
-                ) : weapon.note ? (
+                ) : hasNoteMarker(weapon) ? (
                   '*'
                 ) : (
                   ''
