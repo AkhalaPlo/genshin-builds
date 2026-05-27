@@ -104,7 +104,9 @@ const rankedWeaponGroups = weapons.weapons.map(
           );
 
           return isAlternative ? (
-            <div class="alt">&asymp; {content}</div>
+            <div class="alt">
+              <span class="accent-text">&asymp;</span> {content}
+            </div>
           ) : (
             <div>
               <strong class="accent-text">{position.rank}.</strong>&#8239;

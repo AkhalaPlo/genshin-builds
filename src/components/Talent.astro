@@ -60,7 +60,7 @@ const talentRows = talents.talents.map(
 
         {talent.alternativeItems.map((item) => (
           <div class="alt">
-            &asymp; {item.name}
+            <span class="accent-text">&asymp;</span> {item.name}
             {item.noteId ? (
               <a class="note-link" href={`#${item.noteId}`}>
                 *

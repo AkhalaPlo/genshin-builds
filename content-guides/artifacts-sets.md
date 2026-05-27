@@ -139,6 +139,8 @@ src/content/<element>/<rarity>/<character>/<build>/artifacts-sets.json
     - `artifact_sets[].groups[].choices`: Optional array of choose-one item
       pools. Use this for 2p/2p combinations where the player should choose one
       item from each pool, such as one DMG set and one ATK/EM set.
+      If the group also has `items`, those items are fixed and the choice pools
+      render after them on the same line.
       - `artifact_sets[].groups[].choices[].items`: Artifact set items shown in
         that choose-one pool.
       - Choice items use the same `name`, `pieces`, and `note` fields as normal
@@ -278,7 +280,38 @@ This renders as:
 
 ```txt
 3. Noblesse Oblige (2) / Cryo DMG Bonus (2) [Choose One]
-   + ATK (2) / EM (2) [Choose One]
+   and ATK (2) / EM (2) [Choose One]
+```
+
+### Fixed Entry With Choose-One Pool
+
+Use both `items` and `choices` when part of a 2p/2p recommendation is fixed and
+the remaining 2-piece set should be chosen from a pool.
+
+```json
+{
+  "groups": [
+    {
+      "items": [{ "name": "thundering-fury", "pieces": 2 }],
+      "choices": [
+        {
+          "items": [
+            { "name": "em-set", "pieces": 2 },
+            { "name": "atk-set", "pieces": 2 },
+            { "name": "golden-troupe", "pieces": 2 },
+            { "name": "noblesse-oblige", "pieces": 2 }
+          ]
+        }
+      ]
+    }
+  ]
+}
+```
+
+This renders as:
+
+```txt
+2. Thundering Fury (2) and EM (2) / ATK (2) / Golden Troupe (2) / Noblesse Oblige (2) [Choose One]
 ```
 
 Do not put `items` or `choose` directly on an `artifact_sets[]` entry.
@@ -325,9 +358,9 @@ group objects directly and do not use a `groups` wrapper:
 - Non-`choose` groups with multiple items render on one line separated by `/`.
 - `choose: true` groups render the first item on the main line, the remaining
   items as approximate alternatives, and a `Choose Two` label below them.
-- `choices` groups render each item pool on its own line with a `Choose One`
-  label. Use them instead of a flat `items` array when separate pools must be
-  chosen independently.
+- `choices` groups render each item pool with a `Choose One` label. Without
+  fixed `items`, each pool renders on its own line. With fixed `items`, the
+  fixed item list and choice pool render together on one line.
 
 Example with the same note translated in different languages:
 

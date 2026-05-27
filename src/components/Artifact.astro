@@ -102,7 +102,7 @@ const substatRows = artifacts.substats.substats_priority.map(
 
             {rank.groups.slice(1).map((group) => (
               <div class="alt">
-                &asymp;{' '}
+                <span class="accent-text">&asymp;</span>{' '}
                 <span>
                   <ArtifactSetGroup group={group} locale={locale} lang={lang} />
                 </span>
@@ -183,7 +183,7 @@ const substatRows = artifacts.substats.substats_priority.map(
           {row.hasAlternatives &&
             row.items.slice(1).map((item) => (
               <div class="alt">
-                &asymp; {item.name}
+                <span class="accent-text">&asymp;</span> {item.name}
                 {item.noteId ? (
                   <a class="note-link" href={`#${item.noteId}`}>
                     *
