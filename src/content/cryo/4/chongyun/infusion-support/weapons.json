@@ -15,7 +15,11 @@
         },
         {
             "items": [
-                "favonius-greatsword",
+                "favonius-greatsword"
+            ]
+        },
+        {
+            "items": [
                 "makhaira-aquamarine"
             ]
         }
