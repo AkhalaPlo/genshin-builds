@@ -1,0 +1,62 @@
+{
+    "weapons": [
+        {
+            "items": [
+                {
+                    "name": "symphonist-of-scents",
+                    "note": {
+                        "en": "Keep in mind that without his C4, it can be very difficult to meet his [[stat:er]] needs to [[ability:burst]] every rotation and make full use of this weapon.",
+                        "fr": "Gardez en tête que sans sa C4, il peut être très difficile d'atteindre ses besoins en [[stat:er]] pour utiliser son [[ability:burst]] à chaque rotation et exploiter pleinement cette arme."
+                    }
+                },
+                {
+                    "name": "favonius-lance",
+                    "note": {
+                        "en": "This is often [[character:mika]]'s best in slot option, as both an [[stat:er]] weapon and one with a useful passive which generates particles on Crit. Weapons which provide [[stat:er]] are prioritized to ensure good [[ability:burst]] uptime.",
+                        "fr": "C'est souvent la meilleure option de [[character:mika]], à la fois comme arme de [[stat:er]] et comme arme au passif utile qui génère des particules sur coup CRIT. Les armes qui fournissent de la [[stat:er]] sont priorisées pour assurer un bon uptime de l'[[ability:burst]]."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                "dialogues-of-the-desert-sages"
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "engulfing-lightning",
+                    "note": {
+                        "en": "Weapons which provide [[stat:er]] are prioritized to ensure good [[ability:burst]] uptime.",
+                        "fr": "Les armes qui fournissent de la [[stat:er]] sont priorisées pour assurer un bon uptime de l'[[ability:burst]]."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "prototype-starglitter",
+                    "note": {
+                        "en": "Weapons which provide [[stat:er]] are prioritized to ensure good [[ability:burst]] uptime.",
+                        "fr": "Les armes qui fournissent de la [[stat:er]] sont priorisées pour assurer un bon uptime de l'[[ability:burst]]."
+                    }
+                },
+                {
+                    "name": "the-catch",
+                    "note": {
+                        "en": "Weapons which provide [[stat:er]] are prioritized to ensure good [[ability:burst]] uptime.",
+                        "fr": "Les armes qui fournissent de la [[stat:er]] sont priorisées pour assurer un bon uptime de l'[[ability:burst]]."
+                    }
+                },
+                "rightful-reward"
+            ]
+        },
+        {
+            "items": [
+                "black-tassel"
+            ]
+        }
+    ]
+}
