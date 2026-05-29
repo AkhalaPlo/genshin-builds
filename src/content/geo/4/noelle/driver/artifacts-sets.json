@@ -1,0 +1,27 @@
+{
+    "artifact_sets": [
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "archaic-petra",
+                            "pieces": 4
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "Other damaging options (see DPS)"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

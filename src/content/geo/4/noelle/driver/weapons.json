@@ -1,16 +1,13 @@
 {
     "weapons": [
         {
-            "items": []
+            "items": [
+                "favonius-greatsword"
+            ]
         },
         {
             "items": [
-                {
-                    "name": "",
-                    "note": {
-                        "en": ""
-                    }
-                }
+                "Other damaging options (see DPS)"
             ]
         }
     ]
