@@ -943,7 +943,8 @@ body.info-popover-locked .info-popover.is-open .info-popover-card {
   }
 
   .character-art-stage {
-    min-height: 300px;
+    min-height: 0;
+    align-items: flex-end;
     justify-content: center;
     margin-left: 0;
     mask-image: none;
@@ -954,7 +955,8 @@ body.info-popover-locked .info-popover.is-open .info-popover-card {
   .character-image {
     width: min(118vw, 460px);
     max-width: none;
-    height: clamp(320px, 78vw, 430px);
+    height: auto;
+    max-height: min(70vh, 430px);
     margin-inline: auto;
   }
 
@@ -980,13 +982,9 @@ body.info-popover-locked .info-popover.is-open .info-popover-card {
     gap: 2px;
   }
 
-  .character-art-stage {
-    min-height: 280px;
-  }
-
   .character-image {
     width: min(126vw, 420px);
-    height: clamp(300px, 88vw, 380px);
+    max-height: min(68vh, 380px);
   }
 
   .build-title {
