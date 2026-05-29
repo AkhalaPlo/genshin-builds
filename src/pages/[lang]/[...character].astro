@@ -23,7 +23,6 @@ const {
   warnings,
 } = getCharacterPageData({ lang, characterPath });
 
-const availableBuildsLabel = t(locale, 'ui', 'Available builds');
 const defaultBuildSlug =
   builds.find((build) => build.isBest)?.slug ?? builds[0]?.slug;
 ---
@@ -37,34 +36,6 @@ const defaultBuildSlug =
   locale={locale}
 >
   <div class="character-builds-layout" data-default-build={defaultBuildSlug}>
-    <aside class="build-index" aria-labelledby="build-index-title">
-      <h2 id="build-index-title">{availableBuildsLabel}</h2>
-      <div class="build-index-list" role="list">
-        {
-          builds.map((build, index) => (
-            <button
-              class="build-index-item"
-              type="button"
-              data-build-nav={build.slug}
-              aria-current="false"
-            >
-              <span class="build-index-number">
-                {String(index + 1).padStart(2, '0')}
-              </span>
-              <span class="build-index-copy">
-                <span class="build-index-name">{build.name}</span>
-                {build.isBest && (
-                  <span class="build-index-badge">
-                    {t(locale, 'ui', 'Best Role')}
-                  </span>
-                )}
-              </span>
-            </button>
-          ))
-        }
-      </div>
-    </aside>
-
     <div class="build-list">
       {
         builds.map((build) => {

@@ -150,107 +150,10 @@
 
 .character-builds-layout {
   display: grid;
-  grid-template-columns: 286px minmax(0, 1fr);
   gap: 14px;
   align-items: start;
 }
 
-.build-index {
-  position: sticky;
-  top: 16px;
-  overflow: hidden;
-  border-radius: 8px;
-  padding: 12px;
-  background:
-    linear-gradient(
-      180deg,
-      rgba(255, 255, 255, 0.06),
-      rgba(255, 255, 255, 0.02)
-    ),
-    rgba(5, 8, 12, 0.24);
-  box-shadow:
-    inset 0 0 0 1px rgba(255, 255, 255, 0.1),
-    0 18px 44px rgba(0, 0, 0, 0.14);
-  backdrop-filter: blur(8px);
-}
-
-.build-index h2 {
-  margin: 0 0 10px;
-  color: var(--accent);
-  font-size: 0.86rem;
-  font-weight: 850;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
-
-.build-index-list {
-  display: grid;
-  gap: 8px;
-}
-
-.build-index-item {
-  display: grid;
-  width: 100%;
-  min-width: 0;
-  grid-template-columns: auto minmax(0, 1fr);
-  gap: 10px;
-  align-items: center;
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 8px;
-  padding: 9px;
-  background: rgba(7, 10, 15, 0.28);
-  color: var(--text);
-  cursor: pointer;
-  font: inherit;
-  text-align: left;
-  transition:
-    border-color 0.16s ease,
-    background 0.16s ease,
-    transform 0.16s ease;
-}
-
-.build-index-item:hover,
-.build-index-item:focus-visible,
-.build-index-item[aria-current='true'] {
-  border-color: color-mix(in srgb, var(--element) 62%, white 5%);
-  background: color-mix(in srgb, var(--element) 18%, rgba(8, 10, 14, 0.72));
-  outline: none;
-}
-
-.build-index-item:hover {
-  transform: translateY(-1px);
-}
-
-.build-index-number {
-  display: grid;
-  width: 34px;
-  min-height: 34px;
-  place-items: center;
-  border: 1px solid color-mix(in srgb, var(--element) 28%, transparent);
-  border-radius: 8px;
-  background: color-mix(in srgb, var(--element) 13%, rgba(0, 0, 0, 0.26));
-  color: color-mix(in srgb, #fff 84%, var(--element) 16%);
-  font-size: 0.76rem;
-  font-weight: 900;
-}
-
-.build-index-copy {
-  display: grid;
-  min-width: 0;
-  gap: 4px;
-}
-
-.build-index-name {
-  display: -webkit-box;
-  font-size: 0.88rem;
-  font-weight: 800;
-  line-height: 1.12;
-  overflow: hidden;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2;
-}
-
-.build-index-badge,
 .build-badge {
   display: inline-flex;
   width: fit-content;
@@ -264,7 +167,9 @@
   font-size: 0.72rem;
   font-weight: 850;
   line-height: 1;
-  white-space: nowrap;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+  white-space: normal;
 }
 
 .build-list {
@@ -307,7 +212,7 @@
   display: grid;
   width: 100%;
   min-height: 66px;
-  grid-template-columns: auto minmax(0, 1fr) auto;
+  grid-template-columns: minmax(0, 1fr) auto;
   gap: 12px;
   align-items: center;
   border: 0;
@@ -986,27 +891,6 @@ body.info-popover-locked .info-popover.is-open .info-popover-card {
     font-size: 3.4rem;
   }
 
-  .character-builds-layout {
-    grid-template-columns: 1fr;
-  }
-
-  .build-index {
-    position: static;
-  }
-
-  .build-index-list {
-    display: flex;
-    gap: 8px;
-    overflow-x: auto;
-    padding-bottom: 2px;
-    scrollbar-color: color-mix(in srgb, var(--accent) 42%, transparent)
-      transparent;
-  }
-
-  .build-index-item {
-    width: min(260px, 76vw);
-    flex: 0 0 auto;
-  }
 
   .grid {
     grid-template-columns: 1fr;
@@ -1059,23 +943,24 @@ body.info-popover-locked .info-popover.is-open .info-popover-card {
   }
 
   .character-art-stage {
-    min-height: 260px;
+    min-height: 300px;
+    justify-content: center;
+    margin-left: 0;
     mask-image: none;
-    padding: 18px 16px 0;
+    padding: 18px 0 0;
     -webkit-mask-image: none;
   }
 
   .character-image {
-    max-width: 100%;
-    height: 300px;
-  }
-
-  .build-header {
-    grid-template-columns: auto minmax(0, 1fr);
+    width: min(118vw, 460px);
+    max-width: none;
+    height: clamp(320px, 78vw, 430px);
+    margin-inline: auto;
   }
 
   .build-badge {
-    grid-column: 2;
+    grid-column: 1 / -1;
+    justify-self: start;
   }
 
   .rank-row,
@@ -1096,11 +981,12 @@ body.info-popover-locked .info-popover.is-open .info-popover-card {
   }
 
   .character-art-stage {
-    min-height: 220px;
+    min-height: 280px;
   }
 
   .character-image {
-    height: 250px;
+    width: min(126vw, 420px);
+    height: clamp(300px, 88vw, 380px);
   }
 
   .build-title {
