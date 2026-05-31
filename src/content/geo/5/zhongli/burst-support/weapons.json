@@ -1,0 +1,82 @@
+{
+    "weapons": [
+        {
+            "items": [
+                "staff-of-homa"
+            ]
+        },
+        {
+            "items": [
+                "lumidouce-elegy"
+            ]
+        },
+        {
+            "items": [
+                "primordial-jade-winged-spear"
+            ]
+        },
+        {
+            "items": [
+                "skyward-spine",
+                "vortex-vanquisher",
+                "calamity-queller"
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "the-catch",
+                    "refinement": 5
+                }
+            ]
+        },
+        {
+            "items": [
+                "deathmatch"
+            ]
+        },
+        {
+            "items": [
+                "engulfing-lightning"
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "lithic-spear",
+                    "note": {
+                        "en": "Assumes 3 stacks.",
+                        "fr": "Suppose 3 stacks."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "blackcliff-pole",
+                    "note": {
+                        "en": "Assumes 0 stacks.",
+                        "fr": "Suppose 0 stack."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                "missive-windspear"
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "favonius-lance",
+                    "note": {
+                        "en": "If the team values the particles from this weapon, then it can be better than all the other options mentioned for overall team damage (Note that you need to build some amount of [[stat:cr]] if you are running **[[weapon:favonius-lance]]** to trigger the passive)",
+                        "fr": "Si l'équipe valorise les particules de cette arme, elle peut être meilleure que toutes les autres options mentionnées pour les dégâts globaux de l'équipe (notez que vous devez build une certaine quantité de [[stat:cr]] si vous jouez **[[weapon:favonius-lance]]** pour déclencher le passif)."
+                    }
+                }
+            ]
+        }
+    ]
+}

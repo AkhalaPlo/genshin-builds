@@ -1,0 +1,92 @@
+{
+    "artifact_sets": [
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "archaic-petra",
+                            "pieces": 4,
+                            "note": {
+                                "en": "Can be more useful than **[[set:tenacity-of-the-millelith]]** (4) in teams that don't scale as well with [[stat:atk|ATK]] buffs or already have another **[[set:tenacity-of-the-millelith]]** holder. Though it can be an awkward set to utilize well without extending rotation times, since the Holder of the set ([[character:zhongli]] in this case) has to pickup the shard for the buff to take effect.",
+                                "fr": "Peut être plus utile que **[[set:tenacity-of-the-millelith]]** (4) dans les équipes qui ne scalent pas aussi bien avec les buffs d'[[stat:atk]], ou qui ont déjà un autre porteur de **[[set:tenacity-of-the-millelith]]**. Cela dit, ce set peut être compliqué à bien utiliser sans allonger les rotations, puisque le porteur du set ([[character:zhongli]] dans ce cas) doit ramasser le fragment pour que le buff prenne effet."
+                            }
+                        }
+                    ]
+                },
+                {
+                    "items": [
+                        {
+                            "name": "scroll-of-the-hero-of-cinder-city",
+                            "pieces": 4,
+                            "note": {
+                                "en": "Preferred over **[[set:archaic-petra]]** if there are multiple [[element:crystallize]]-compatible Elements or [[element:geo]] characters that want DMG% bonus.",
+                                "fr": "Préféré à **[[set:archaic-petra]]** s'il y a plusieurs éléments compatibles avec [[element:crystallize]] ou des personnages [[element:geo]] qui veulent un bonus de DGT%."
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "deepwood-memories",
+                            "pieces": 4,
+                            "note": {
+                                "en": "This set works best in [[element:dendro]] reaction focused teams ([[element:bloom]]/[[element:burgeon]]/[[element:hyperbloom]]/[[element:spread]]) that prefer having **[[set:deepwood-memories]]** on [[character:zhongli]] so that they can run more damage focused sets such as **[[set:gilded-dreams]]** / **[[set:flower-of-paradise-lost]]** instead for the highest overall damage gain. That said it means keeping the enemies near your pillars to have good uptime on the [[element:dendro]] resistance shred effect, which can be difficult with no grouping abilities in a team.",
+                                "fr": "Ce set fonctionne mieux dans les équipes centrées sur les réactions [[element:dendro]] ([[element:bloom]]/[[element:burgeon]]/[[element:hyperbloom]]/[[element:spread]]) qui préfèrent avoir **[[set:deepwood-memories]]** sur [[character:zhongli]] afin de pouvoir jouer des sets plus orientés dégâts comme **[[set:gilded-dreams]]** / **[[set:flower-of-paradise-lost]]**, pour le meilleur gain de dégâts global. Cela implique cependant de garder les ennemis près de vos piliers pour maintenir une bonne disponibilité de la baisse de RES [[element:dendro]], ce qui peut être difficile sans capacité de regroupement dans l'équipe."
+                            }
+                        }
+                    ]
+                },
+                {
+                    "items": [
+                        {
+                            "name": "instructor",
+                            "pieces": 4,
+                            "note": {
+                                "en": "This set is usually only used in a few heavily reaction focused teams, such as [[character:ganyu]] [[element:melt]] or [[character:hu-tao]] [[element:vaporize|Vape]], where you're maximising your damage in exchange for a weaker shield. Though [[character:zhongli]]'s shield is still usually more than strong enough even with fewer substat rolls to strengthen it.",
+                                "fr": "Ce set n'est généralement utilisé que dans quelques équipes très centrées sur les réactions, comme [[character:ganyu]] [[element:melt]] ou [[character:hu-tao]] [[element:vaporize]], où vous maximisez vos dégâts en échange d'un bouclier plus faible. Le bouclier de [[character:zhongli]] reste cependant généralement plus qu'assez solide, même avec moins de rolls de substats pour le renforcer."
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "tenacity-of-the-millelith",
+                            "pieces": 4,
+                            "note": {
+                                "en": "This set is best in slot for Shield HP, but it's usually inconsistent against Bosses and needs good Construct placement, due to it's inconsistency, it's better to use other buffing sets that are mentioned if they work for the team.",
+                                "fr": "Ce set est le meilleur choix pour les PV du bouclier, mais il est généralement inconsistant contre les boss et demande un bon placement de construction. En raison de son inconsistance, il vaut mieux utiliser les autres sets de buff mentionnés s'ils fonctionnent dans l'équipe."
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "vourukashas-glow",
+                            "pieces": 2
+                        },
+                        {
+                            "name": "tenacity-of-the-millelith",
+                            "pieces": 2
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,20 @@
+{
+    "main_stats": {
+        "sands": [
+            "hp%"
+        ],
+        "goblet": [
+            "hp%"
+        ],
+        "circlet": [
+            "hp%",
+            {
+                "name": "cr",
+                "note": {
+                    "en": "Should only be considered when [[character:zhongli]] is equipping **[[weapon:favonius-lance]]** to reliably proc the passive.",
+                    "fr": "Ne devrait être envisagé que si [[character:zhongli]] équipe **[[weapon:favonius-lance]]**, afin de déclencher le passif de manière fiable."
+                }
+            }
+        ]
+    }
+}

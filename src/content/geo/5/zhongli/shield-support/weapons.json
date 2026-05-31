@@ -1,0 +1,16 @@
+{
+    "weapons": [
+        {
+            "items": [
+                "black-tassel",
+                {
+                    "name": "favonius-lance",
+                    "note": {
+                        "en": "Use this weapon over **[[weapon:black-tassel]]** if you value the team energy (Note that you need to build some amount of [[stat:cr]] if you are running **[[weapon:favonius-lance]]** to trigger the passive)",
+                        "fr": "Utilisez cette arme plutôt que **[[weapon:black-tassel]]** si vous valorisez l'énergie d'équipe (notez que vous devez build une certaine quantité de [[stat:cr]] si vous jouez **[[weapon:favonius-lance]]** pour déclencher le passif)."
+                    }
+                }
+            ]
+        }
+    ]
+}
