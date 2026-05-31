@@ -1,0 +1,24 @@
+{
+    "name": {
+        "en": "Off-Field DPS & Buff and Heal Support"
+    },
+    "best": true,
+    "notes": [
+        {
+            "en": "[[character:linnea]] is a potent support for [[element:geo]] units, providing Off-Field Damage with her companion Lumi, [[element:lunar-crystallize]] DMG when Moondrifts are present, and also providing [[element:geo]] Resistance shredding and teamwide healing. In addition, when Ascendant Gleam is active, Lumi can also boost the team's [[stat:em]], and further amplifies the [[element:geo]] Resistance shredding."
+        },
+        {
+            "en": "[[character:linnea]] can feed Lumi into her Ultimate Power form to execute the Million Ton Crush, a huge [[element:lunar-crystallize]] DMG nuke."
+        },
+        {
+            "en": "After inputting {rot:[1E]}, Lumi will continuously deal [[element:lunar-crystallize]] and [[element:geo]] DMG. Inputting {rot:[4E]} will lead to Lumi dealing all of her [[element:lunar-crystallize]] DMG via the Million Ton Crush, after which she will only deal continuous [[element:geo]] DMG."
+        },
+        {
+            "en": "Both modes yield pretty similar damage, however using {rot:[1E]} is generally more advisable in most teams."
+        }
+    ],
+    "weapons": {
+        "link": "https://docs.google.com/spreadsheets/d/15Jvom5AGV3RGPH0lEiY167sUPREjcCMxgmvLlgnrO9Y/edit?gid=848665920#gid=848665920",
+        "author": "Chiston"
+    }
+}

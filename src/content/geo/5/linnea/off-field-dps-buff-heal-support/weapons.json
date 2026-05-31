@@ -1,1 +1,34 @@
+{
+    "weapons": [
+        {
+            "items": [
+                "golden-frostbound-oath"
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "elegy-for-the-end",
+                    "notes": {
+                        "en": "This weapon is not worth considering outside of [[character:zibai]] teams."
+                    }
+                },
+                "aqua-simulacra",
+                "hunters-path"
+            ]
+        },
+        {
+            "items": [
+                "slingshot",
+                "astral-vultures-crimson-plumage",
+                "the-first-great-magic",
+                "thundering-pulse",
+                "skyward-harp",
+                "polar-star"
+            ]
+        }
+    ]
+}
+
+
 

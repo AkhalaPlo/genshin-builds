@@ -1,0 +1,19 @@
+{
+    "main_stats": {
+        "sands": [
+            "def%",
+            {
+                "name": "er",
+                "note": {
+                    "en": "[[stat:er]] is only necessary if you need to use [[character:linnea]]'s [[ability:burst]] to the heal the team."
+                }
+            }
+        ],
+        "goblet": [
+            "def%"
+        ],
+        "circlet": [
+            "cr/cd"
+        ]
+    }
+}
