@@ -1,0 +1,19 @@
+{
+    "main_stats": {
+        "sands": [
+            "er"
+        ],
+        "goblet": [
+            {
+                "name": "anemo-dmg",
+                "note": {
+                    "en": "Due to [[character:faruzan]]'s high [[stat:er]] requirements pre-C6, it is acceptable to disregard running an [[element:anemo]] goblet in favor of a goblet which provides more [[stat:er]]. A [[stat:cr]] circlet should still be taken to ensure Favonius procs.",
+                    "fr": "À cause des besoins élevés en [[stat:er]] de [[character:faruzan]] pré-C6, il est acceptable d'ignorer une coupe [[element:anemo]] au profit d'une coupe qui apporte plus de [[stat:er]]. Un diadème [[stat:cr]] devrait tout de même être pris pour assurer les procs Favonius."
+                }
+            }
+        ],
+        "circlet": [
+            "cr/cd"
+        ]
+    }
+}

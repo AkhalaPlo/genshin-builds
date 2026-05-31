@@ -1,0 +1,14 @@
+{
+    "substats_priority": [
+        "er",
+        {
+            "name": "cr",
+            "note": {
+                "en": "Only assumes higher priority than [[stat:cd]] when using **[[weapon:favonius-warbow]]**",
+                "fr": "Ne suppose une priorité plus élevée que [[stat:cd]] qu'avec **[[weapon:favonius-warbow]]**"
+            }
+        },
+        "cd",
+        "atk%"
+    ]
+}
