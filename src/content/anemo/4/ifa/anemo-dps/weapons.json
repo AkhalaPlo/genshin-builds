@@ -1,0 +1,53 @@
+{
+    "weapons": [
+        {
+            "items": [
+                "tulaytullahs-remembrance"
+            ]
+        },
+        {
+            "items": [
+                "vivid-notions"
+            ]
+        },
+        {
+            "items": [
+                "skyward-atlas",
+                "surfs-up"
+            ]
+        },
+        {
+            "items": [
+                "tome-of-the-eternal-flow",
+                "a-thousand-floating-dreams",
+                "kaguras-verity",
+                "lost-prayer-to-the-sacred-winds",
+                {
+                    "name": "cashflow-supervision",
+                    "note": {
+                        "en": "When HP loss is present (notably with [[character:furina]]), this weapon becomes [[character:ifa]]'s best in slot.",
+                        "fr": "Lorsqu'une perte de PV est présente (notamment avec [[character:furina]]), cette arme devient le best in slot de [[character:ifa]]."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                "flowing-purity",
+                "sunny-morning-sleep-in",
+                {
+                    "name": "mappa-mare",
+                    "refinement": 5
+                },
+                {
+                    "name": "the-widsith",
+                    "note": {
+                        "en": "At [R5], this weapon will perform roughly equal to **[[weapon:surfs-up]]** and its similar ranking options.",
+                        "fr": "Une fois [R5], cette arme équivaut à peu près à **[[weapon:surfs-up]]** et aux options au classement similaire."
+                    }
+                },
+                "memory-of-dust"
+            ]
+        }
+    ]
+}

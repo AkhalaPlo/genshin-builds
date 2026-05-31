@@ -1,0 +1,12 @@
+{
+    "name": {
+        "en": "Reaction DPS",
+        "fr": "DPS Réaction"
+    },
+    "notes": [
+        {
+            "en": "[[character:ifa]] uses his [[stat:em]] scalings to provide teamwide healing while driving reactions on-field. He can assist in permanently tranquilizing his foes by buffing the [[element:swirl]] and [[element:electrocharged]] reactions, based on the total number of [[ability:nightsoul-point]]s shared across the entire team, up to a maximum of 150 points (200 if [[character:ifa]] is [C2]). For this reason, it is highly recommended to pair [[character:ifa]] with [[character:ororon]].",
+            "fr": "[[character:ifa]] utilise ses scalings en [[stat:em]] pour fournir du soin à toute l'équipe tout en drivant des réactions on-field. Il peut aider à tranquilliser ses ennemis de façon permanente en buffant les réactions de [[element:swirl]] et d'[[element:electrocharged]], en fonction du nombre total de [[ability:nightsoul-point|points de noctâme]] partagés dans toute l'équipe, jusqu'à un maximum de 150 points (200 si [[character:ifa]] est [C2]). Pour cette raison, il est fortement recommandé de jouer [[character:ifa]] avec [[character:ororon]]."
+        }
+    ]
+}

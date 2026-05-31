@@ -1,0 +1,60 @@
+{
+    "notes": [
+        {
+            "en": "Weapon options below **[[weapon:mappa-mare]]** do not improve [[character:ifa]]'s healing capabilities.",
+            "fr": "Les options d'armes en dessous de **[[weapon:mappa-mare]]** n'améliorent pas les capacités de soin de [[character:ifa]]."
+        }
+    ],
+    "weapons": [
+        {
+            "items": [
+                "sunny-morning-sleep-in",
+                "starcallers-watch"
+            ]
+        },
+        {
+            "items": [
+                "a-thousand-floating-dreams"
+            ]
+        },
+        {
+            "items": [
+                "wandering-evenstar"
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "sacrificial-fragments",
+                    "note": {
+                        "en": "While having a similar DMG output as **[[weapon:mappa-mare]]**, this weapon will provide more total healing over your rotations.",
+                        "fr": "Tout en ayant des dégâts similaires à **[[weapon:mappa-mare]]**, cette arme fournira plus de soin total sur vos rotations."
+                    }
+                },
+                {
+                    "name": "mappa-mare",
+                    "refinement": 5
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "hakushin-ring",
+                    "refinement": 5
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "thrilling-tales-of-dragon-slayers",
+                    "note": {
+                        "en": "This weapon is a support option to help boost the [[stat:atk%]] of your other off-field DPS's, notably [[character:fischl]], [[character:xingqiu]], and [[character:ororon]].",
+                        "fr": "Cette arme est une option de support pour aider à augmenter l'[[stat:atk%]] de vos autres DPS off-field, notamment [[character:fischl]], [[character:xingqiu]] et [[character:ororon]]."
+                    }
+                }
+            ]
+        }
+    ]
+}
