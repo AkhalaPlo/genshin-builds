@@ -1,0 +1,9 @@
+{
+    "substats_priority": [
+        "cr/cd",
+        "atk%",
+        "atk",
+        "em",
+        "er"
+    ]
+}

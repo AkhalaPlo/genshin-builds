@@ -1,0 +1,29 @@
+{
+    "talents": [
+        {
+            "items": [
+                {
+                    "name": "na"
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "skill"
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "burst",
+                    "note": {
+                        "en": "If [[character:wanderer]] is [C2], prioritize [[ability:burst]] over [[ability:skill]]",
+                        "fr": "Si [[character:wanderer]] est [C2], priorisez l'[[ability:burst]] avant le [[ability:skill]]"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,41 @@
+{
+    "name": {
+        "en": "DPS (With External [[stat:atk|ATK]] Buffs)",
+        "fr": "DPS (Avec buffs d'[[stat:atk]])"
+    },
+    "best": true,
+    "notes": [
+        {
+            "en": "[[character:wanderer]] focuses on doing damage by activating his [[ability:skill]] and performing boosted [[ability:na]]s. It should be noted that in this state, he does not have knockback resistance so a shielder or other form of knockback immunity is recommended. It is not worth building [[stat:er]] to [[ability:burst]] every rotation unless [[character:wanderer]] is C2. Instead, bursting every other rotation is preferred.",
+            "fr": "[[character:wanderer]] se concentre sur les dégâts en activant son [[ability:skill]] et en effectuant des [[ability:na|attaques normales]] boostées. Il faut noter que dans cet état, il n'a pas de résistance à l'interruption, donc il est recommandé d'avoir un bouclier ou une autre forme de résistance à l'interruption. Cela ne vaut pas la peine de build de la [[stat:er]] pour utiliser son [[ability:burst]] à chaque rotation sauf si [[character:wanderer]] est C2. Il est plutôt préférable d'utiliser son [[ability:burst]] une rotation sur deux."
+        },
+        {
+            "en": "External Buffs means the existence of a unit that provides [[stat:atk|ATK]], or makes [[stat:atk|ATK]] less necessary (e.g. [[character:bennett]], [[character:yun-jin]])",
+            "fr": "Les buffs externes désignent la présence d'un personnage qui fournit de l'[[stat:atk]], ou rend l'[[stat:atk]] moins nécessaire (par ex. [[character:bennett]], [[character:yun-jin]])."
+        },
+        {
+            "en": "- **[[set:desert-pavilion-chronicle]] and Signature Weapon Rotation**: {rot:(Q) E CA (N3 repeat)}",
+            "fr": "- **Rotation [[set:desert-pavilion-chronicle]] et arme signature**: {rot:(Q) E CA (N3 repeat)}"
+        },
+        {
+            "en": "- **Signature Weapon Rotation (non [[set:desert-pavilion-chronicle]])**: {rot:(Q) E (N3 repeat)}",
+            "fr": "- **Rotation avec l'arme signature (sans [[set:desert-pavilion-chronicle]])**: {rot:(Q) E (N3 repeat)}"
+        },
+        {
+            "en": "- **[[set:desert-pavilion-chronicle]] Rotation**: {rot:(Q) E CA (N2C repeat)}",
+            "fr": "- **Rotation [[set:desert-pavilion-chronicle]]**: {rot:(Q) E CA (N2C repeat)}"
+        },
+        {
+            "en": "- **Other Artifact Sets Rotation:** {rot:(Q) E (N2C repeat)}",
+            "fr": "- **Rotation avec les autres sets d'artéfacts**: {rot:(Q) E (N2C repeat)}"
+        },
+        {
+            "en": "- **[[set:shimenawas-reminiscence]] Rotation**: {rot:E (N2C repeat) (Q)}",
+            "fr": "- **Rotation [[set:shimenawas-reminiscence]]** : {rot:E (N2C repeat) (Q)}"
+        },
+        {
+            "en": "- **[[element:swirl]] Driver Rotation**: {rot:E (N3C repeat)}",
+            "fr": "- **Rotation Driver [[element:swirl]]**: {rot:E (N3C repeat)}"
+        }
+    ]
+}

@@ -1,0 +1,115 @@
+{
+    "artifact_sets": [
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "desert-pavilion-chronicle",
+                            "pieces": 4
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "shimenawas-reminiscence",
+                            "pieces": 4,
+                            "note": {
+                                "en": "If [[character:wanderer]] is [C2] or higher it is not recommended to run this set.",
+                                "fr": "Si [[character:wanderer]] est [C2] ou plus, il n'est pas recommandé d'utiliser ce set."
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "echoes-of-an-offering",
+                            "pieces": 4,
+                            "note": {
+                                "en": "If your ping is above 100, it is not recommended to run this set specifically",
+                                "fr": "Si votre ping est supérieur à 100, il n'est pas recommandé d'utiliser ce set en particulier."
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "groups": [
+                {
+                    "choose": true,
+                    "items": [
+                        {
+                            "name": "anemo-set",
+                            "pieces": 2
+                        },
+                        {
+                            "name": "anemo-set",
+                            "pieces": 2
+                        },
+                        {
+                            "name": "atk-set",
+                            "pieces": 2
+                        },
+                        {
+                            "name": "atk-set",
+                            "pieces": 2
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "viridescent-venerer",
+                            "pieces": 4,
+                            "note": {
+                                "en": "In teams where the majority of the damage share is not linked to [[character:wanderer]], and there is no other viable holder of the set, he may use **[[set:viridescent-venerer]]** (4).",
+                                "fr": "Dans les équipes où la majorité de la part de dégâts n'est pas liée à [[character:wanderer]], et où il n'y a aucun autre porteur viable du set, il peut utiliser **[[set:viridescent-venerer]]** (4)."
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "conditional": [
+        {
+            "items": [
+                {
+                    "name": "blizzard-strayer",
+                    "pieces": 4,
+                    "note": {
+                        "en": "This set synergizes well with the 20% [[stat:cr]] that [[character:wanderer]] gets from swirling [[element:cryo]]. It is only recommended if you have close to 100% uptime on [[element:freeze]], which requires very specific teams. Despite this, with 100% [[element:freeze]] uptime, this set is still worse than **[[set:desert-pavilion-chronicle]]** (4).",
+                        "fr": "Ce set se synergise bien avec les 20 % de [[stat:cr]] que [[character:wanderer]] obtient en dispersant du [[element:cryo]]. Il est seulement recommandé si vous avez près de 100 % d'uptime sur le [[element:freeze]], ce qui demande des équipes très spécifiques. Malgré cela, même avec 100 % d'uptime sur le [[element:freeze]], ce set reste moins bon que **[[set:desert-pavilion-chronicle]]** (4)."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "lavawalker",
+                    "pieces": 4,
+                    "note": {
+                        "en": "In teams with consistent [[element:pyro]] application, this set is about equal to **[[set:echoes-of-an-offering]]** (4).",
+                        "fr": "Dans les équipes avec une application [[element:pyro]] constante, ce set est à peu près équivalent à **[[set:echoes-of-an-offering]]** (4)."
+                    }
+                }
+            ]
+        }
+    ]
+}
