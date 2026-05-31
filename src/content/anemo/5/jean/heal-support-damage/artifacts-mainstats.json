@@ -1,0 +1,26 @@
+{
+    "notes": [
+        {
+            "en": "While typically [[character:jean]] will heal enough that you do not need to try and build for as much healing as possible, when paired with [[character:furina]] it can be beneficial swapping to an [[stat:atk%]] goblet and [[stat:healing-bonus]] circlet. This is to aid in building Fanfare points faster, and [[character:jean]]'s personal damage is not particularly significant to begin with. When building [[character:jean]] in such a way, prioritize weapons which provide [[stat:atk%]] or [[stat:er]]. If using **[[weapon:favonius-sword]]**, a [[stat:cr]] circlet can be taken to ensure more consistent procs.",
+            "fr": "En général, [[character:jean]] soigne suffisamment pour que vous n'ayez pas besoin de chercher autant de soin que possible, mais avec [[character:furina]], il peut être intéressant de passer sur une coupe [[stat:atk%]] et un diadème [[stat:healing-bonus]]. Cela aide à générer les points de Fanfare plus vite, et les dégâts personnels de [[character:jean]] ne sont pas particulièrement significatifs de base. Lorsque [[character:jean]] est build de cette façon, priorisez les armes qui apportent de l'[[stat:atk%]] ou de la [[stat:er]]. Avec **[[weapon:favonius-sword]]**, un diadème [[stat:cr]] peut être pris pour assurer des procs plus constants."
+        },
+        {
+            "en": "For Support [[character:jean]], you can either go for more [[stat:atk|ATK]] for stronger heals, but relatively lower [[ability:burst]] uptime, or more [[stat:er|ER]] for lower heals, but higher [[ability:burst]] uptime. Choosing between these two is up to personal preference, although if another [[element:anemo]] character is on the team, [[character:jean]] has very few energy problems and can potentially go for a full Sub DPS build.",
+            "fr": "Pour [[character:jean]] Support, vous pouvez soit chercher plus d'[[stat:atk]] pour des soins plus puissants, mais avec un uptime d'[[ability:burst]] relativement plus faible, soit plus de [[stat:er]] pour des soins plus faibles, mais un meilleur uptime d'[[ability:burst]]. Le choix entre les deux dépend de vos préférences, même si avec un autre personnage [[element:anemo]] dans l'équipe, [[character:jean]] a très peu de problèmes d'énergie et peut potentiellement partir sur un build full Sub DPS."
+        }
+    ],
+    "main_stats": {
+        "sands": [
+            "atk%",
+            "er"
+        ],
+        "goblet": [
+            "anemo-dmg",
+            "atk%"
+        ],
+        "circlet": [
+            "cr/cd",
+            "healing-bonus"
+        ]
+    }
+}

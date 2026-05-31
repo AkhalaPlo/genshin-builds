@@ -1,0 +1,12 @@
+{
+    "name": {
+        "en": "Reaction DPS",
+        "fr": "DPS Réaction"
+    },
+    "notes": [
+        {
+            "en": "Reaction DPS [[character:jean]] relies on her unique interaction regarding her [[ability:burst]]. If the active character if afflicted by [[element:hydro]] / [[element:pyro]] / [[element:electro]] / [[element:cryo]], [[character:jean]]'s [[ability:burst]] will infuse them with [[element:anemo]] and create a [[element:swirl]] trigger around the character. This interaction can be abused by using [[character:bennett]] to consistently infuse the active character with [[element:pyro]]. This allows for an extremely high amount of [[element:pyro]] [[element:swirl]] triggers. These [[element:swirl]]'s damage scales off of [[character:jean]]'s [[stat:em]].",
+            "fr": "[[character:jean]] DPS Réaction repose sur son interaction unique avec son [[ability:burst]]. Si le personnage actif est affecté par [[element:hydro]] / [[element:pyro]] / [[element:electro]] / [[element:cryo]], l'[[ability:burst]] de [[character:jean]] l'infusera avec [[element:anemo]] et créera un déclenchement de [[element:swirl]] autour du personnage. Cette interaction peut être exploitée en utilisant [[character:bennett]] pour infuser constamment le personnage actif avec [[element:pyro]]. Cela permet d'obtenir une quantité extrêmement élevée de déclenchements de [[element:swirl]] [[element:pyro]]. Les dégâts de ces [[element:swirl]] dépendent de la [[stat:em]] de [[character:jean]]."
+        }
+    ]
+}

@@ -1,0 +1,30 @@
+{
+    "weapons": [
+        {
+            "items": [
+                "freedom-sworn"
+            ]
+        },
+        {
+            "items": [
+                "xiphos-moonlight"
+            ]
+        },
+        {
+            "items": [
+                "iron-sting",
+                "toukabou-shigure"
+            ]
+        },
+        {
+            "items": [
+                "favonius-sword"
+            ]
+        },
+        {
+            "items": [
+                "dark-iron-sword"
+            ]
+        }
+    ]
+}

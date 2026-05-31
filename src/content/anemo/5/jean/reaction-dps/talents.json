@@ -1,0 +1,20 @@
+{
+    "talents": [
+        {
+            "items": [
+                {
+                    "name": "burst"
+                },
+                {
+                    "name": "skill"
+                }
+            ]
+        }
+    ],
+    "notes": [
+        {
+            "en": "Talents are not large upgrades for Reaction DPS [[character:jean]]",
+            "fr": "Les aptitudes ne sont pas une grosse amélioration pour [[character:jean]] DPS Réaction."
+        }
+    ]
+}
