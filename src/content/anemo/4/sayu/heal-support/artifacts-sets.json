@@ -1,0 +1,64 @@
+{
+    "artifact_sets": [
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "viridescent-venerer",
+                            "pieces": 4,
+                            "note": {
+                                "en": "The bread and butter artifact set for [[element:anemo]] units, this set provides the ability to shred the enemy's elemental resistance while also buffing [[character:sayu]]'s [[element:swirl]] damage output.",
+                                "fr": "Le set d'artéfacts de base pour les personnages [[element:anemo]], ce set permet de réduire la résistance élémentaire des ennemis tout en buffant les dégâts de [[element:swirl]] de [[character:sayu]]."
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "noblesse-oblige",
+                            "pieces": 4
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "emblem-of-severed-fate",
+                            "pieces": 2
+                        },
+                        {
+                            "name": "healing-set",
+                            "pieces": 2
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "ocean-hued-clam",
+                            "pieces": 4,
+                            "note": {
+                                "en": "This artifact set trades [[character:sayu]]'s utility in favor of stronger healing and some extra damage. It is generally not recommended to farm this set for [[character:sayu]] specifically.",
+                                "fr": "Ce set d'artéfacts échange les commodités de [[character:sayu]] contre des soins plus puissants et quelques dégâts supplémentaires. Il n'est généralement pas recommandé de farmer ce set spécifiquement pour [[character:sayu]]."
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

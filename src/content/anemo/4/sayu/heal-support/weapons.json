@@ -1,0 +1,72 @@
+{
+    "weapons": [
+        {
+            "items": [
+                "favonius-greatsword"
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "wolfs-gravestone",
+                    "note": {
+                        "en": "This is a universal claymore that is capable of buffing your teammates along with providing more healing in [[character:sayu]]'s case. It is best used once you achieve your [[stat:er]] threshold.",
+                        "fr": "C'est une claymore universelle capable de buff vos coéquipiers tout en apportant plus de soins dans le cas de [[character:sayu]]. Elle est à utiliser de préférence une fois votre seuil de [[stat:er]] atteint."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                "katsuragikiri-nagamasa"
+            ]
+        },
+        {
+            "items": [
+                "skyward-pride"
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "sacrificial-greatsword",
+                    "refinement": "3+"
+                }
+            ]
+        },
+        {
+            "items": [
+                "makhaira-aquamarine"
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "mailed-flower",
+                    "refinement": 5
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "forest-regalia",
+                    "note": {
+                        "en": "When used in its niche with [[element:aggravate]] teams it can outperform **[[weapon:katsuragikiri-nagamasa]]**. Outside of that its just an [[stat:er]] stat stick.",
+                        "fr": "Dans sa niche avec les équipes [[element:aggravate]], cette arme peut dépasser **[[weapon:katsuragikiri-nagamasa]]**. En dehors de cela, elle n'est qu'une stat stick de [[stat:er]]."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                "rainslasher"
+            ]
+        },
+        {
+            "items": [
+                "bloodtainted-greatsword"
+            ]
+        }
+    ]
+}

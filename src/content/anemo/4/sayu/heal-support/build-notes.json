@@ -1,0 +1,17 @@
+{
+    "name": {
+        "en": "Heal Support",
+        "fr": "Support Soins"
+    },
+    "best": true,
+    "notes": [
+        {
+            "en": "[[character:sayu]] does more damage with [[stat:em]] builds and heals more with ATK hybrid builds, [[stat:healing-bonus]] circlet's can be used for better heals while maintaining respectable damage. Note that [[character:sayu]] wants a large amount of [[stat:er]] when used as the only [[element:anemo]] slot on the team.",
+            "fr": "[[character:sayu]] inflige plus de dégâts avec les builds [[stat:em]] et soigne davantage avec les builds hybrides ATQ. Les diadèmes [[stat:healing-bonus]] peuvent être utilisés pour de meilleurs soins tout en gardant des dégâts respectables. Notez que [[character:sayu]] veut une grande quantité de [[stat:er]] lorsqu'elle est utilisée comme seul personnage [[element:anemo]] de l'équipe."
+        },
+        {
+            "en": "Use hold [[ability:skill]] then immediately press it to generate more particles.",
+            "fr": "Utilisez le [[ability:skill]] maintenu puis appuyez immédiatement à nouveau pour générer plus de particules."
+        }
+    ]
+}
