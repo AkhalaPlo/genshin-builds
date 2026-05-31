@@ -1,0 +1,91 @@
+{
+    "weapons": [
+        {
+            "items": [
+                "symphonist-of-scents"
+            ]
+        },
+        {
+            "items": [
+                "engulfing-lightning"
+            ]
+        },
+        {
+            "items": [
+                "calamity-queller"
+            ]
+        },
+        {
+            "items": [
+                "staff-of-homa",
+                "fractured-halo"
+            ]
+        },
+        {
+            "items": [
+                "lumidouce-elegy"
+            ]
+        },
+        {
+            "items": [
+                "staff-of-the-scarlet-sands",
+                "vortex-vanquisher",
+                {
+                    "name": "kitain-cross-spear",
+                    "refinement": 5
+                },
+                {
+                    "name": "deathmatch",
+                    "note": {
+                        "en": "Ranking assumes one enemy. At **[R5]**, this weapon performs better than **[[weapon:staff-of-homa]]**.",
+                        "fr": "Le classement suppose 1 ennemi. Une fois **[R5]**, cette arme dépasse **[[weapon:staff-of-homa]]**."
+                    }
+                },
+                {
+                    "name": "favonius-lance",
+                    "note": {
+                        "en": "While inferior to a number of weapons in terms of personal damage, this weapon can be very good thanks to helping the team with Energy.",
+                        "fr": "Bien qu'elle soit inférieure à plusieurs armes en termes de dégâts personnels, cette arme peut être très bonne grâce à son aide pour l'énergie de l'équipe."
+                    }
+                },
+                "skyward-spine",
+                {
+                    "name": "sacrificers-staff",
+                    "note": {
+                        "en": "At **[R5]**, this weapon performs similar to **[[weapon:engulfing-lightning]]**.",
+                        "fr": "Une fois **[R5]**, cette arme se rapproche de **[[weapon:engulfing-lightning]]**."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                "primordial-jade-winged-spear",
+                "crimson-moons-semblance",
+                {
+                    "name": "prospectors-drill",
+                    "note": {
+                        "en": "[[character:escoffier]] can reliably get high stacks starting from second rotation onward. Performs close to **[[weapon:lumidouce-elegy]]** at **[R5]**.",
+                        "fr": "[[character:escoffier]] peut obtenir des stacks élevés de façon fiable à partir de la deuxième rotation. Une fois **[R5]**, elle se rapproche de **[[weapon:lumidouce-elegy]]**."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "tamayuratei-no-ohanashi",
+                    "refinement": 5
+                },
+                {
+                    "name": "mountain-bracing-bolt",
+                    "note": {
+                        "en": "At **[R5]** this weapon performs slightly better than similar ranking options.",
+                        "fr": "Une fois **[R5]**, cette arme fait légèrement mieux que les options classées de façon similaire."
+                    }
+                },
+                "wavebreakers-fin"
+            ]
+        }
+    ]
+}
