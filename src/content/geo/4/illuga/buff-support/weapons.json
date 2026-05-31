@@ -10,7 +10,8 @@
                 {
                     "name": "dragons-bane",
                     "note": {
-                        "en": "An [[stat:er]] sands may be necessary if you are unable to get enough [[stat:er|ER]] from substats alone."
+                        "en": "An [[stat:er]] sands may be necessary if you are unable to get enough [[stat:er|ER]] from substats alone.",
+                        "fr": "Un sablier [[stat:er]] peut être nécessaire si vous n'arrivez pas à avoir assez de [[stat:er]] seulement avec les substats."
                     }
                 }
             ]
@@ -30,4 +31,3 @@
         }
     ]
 }
-

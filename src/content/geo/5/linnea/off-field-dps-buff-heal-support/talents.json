@@ -12,7 +12,8 @@
                 {
                     "name": "burst",
                     "notes": {
-                        "en": "[[ability:burst|Burst]] talent levels are not required if you do not need to use [[character:linnea]]'s [[ability:burst]] to heal the team."
+                        "en": "[[ability:burst]] talent levels are not required if you do not need to use [[character:linnea]]'s [[ability:burst]] to heal the team.",
+                        "fr": "Les niveaux de l'[[ability:burst]] ne sont pas nécessaires si vous n'avez pas besoin de l'utiliser pour soigner l'équipe."
                     }
                 }
             ]

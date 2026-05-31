@@ -15,13 +15,16 @@
     },
     "notes": [
         {
-            "en": "[[stat:def%]] Main stats and substats (and potentially a [[stat:healing-bonus]] Main Stat on Circlet) can be considered at **[C4]** due to being able to heal the active character based on his [[stat:def|DEF]] during [[ability:burst]]. This is useful if you plan to use him as a solo healer."
+            "en": "[[stat:def%]] Main stats and substats (and potentially a [[stat:healing-bonus]] Main Stat on Circlet) can be considered at **[C4]** due to being able to heal the active character based on his [[stat:def|DEF]] during [[ability:burst]]. This is useful if you plan to use him as a solo healer.",
+            "fr": "Les Stats Principales et Sous Stats [[stat:def%]] (et potentiellement [[stat:healing-bonus]] sur un Diadème) peuvent être considérées avec la **[C4]** car [[character:gorou]] peut soigner le personnage actif en fonction de sa [[stat:def]] avec son [[ability:burst]]. C'est utile si vous souhaitez le jouer comme seul soin de l'équipe."
         },
         {
-            "en": "[[stat:cr]] circlet and substats can be considered when [[character:gorou]] is using [[weapon:favonius-warbow]] to trigger the passive comfortably."
+            "en": "[[stat:cr]] circlet and substats can be considered when [[character:gorou]] is using [[weapon:favonius-warbow]] to trigger the passive comfortably.",
+            "fr": "Un diadème [[stat:cr]] peut être considéré si [[character:gorou]] utilise [[weapon:favonius-warbow]] afin de pouvoir déclencher le passif confortablement."
         },
         {
-            "en": "[[stat:er]] substats can usually be more important than getting the right Main Stat, as [[character:gorou]]'s damage contribution to a team is negligible, while being able to get Energy for his [[ability:burst]] is a lot more important."
+            "en": "[[stat:er]] substats can usually be more important than getting the right Main Stat, as [[character:gorou]]'s damage contribution to a team is negligible, while being able to get Energy for his [[ability:burst]] is a lot more important.",
+            "fr": "Les sous-stats [[stat:er]] sont généralement plus important qu'avoir la bonne Stat Principale puisque la part de dégâts de [[character:gorou]] dans l'équipe est négligeable, tandis qu'avoir de l'énergie pour son [[ability:burst]] est beaucoup plus important."
         }
     ]
 }
