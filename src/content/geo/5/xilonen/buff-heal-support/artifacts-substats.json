@@ -12,7 +12,8 @@
         {
             "name": "cr",
             "note": {
-                "en": "Only if using [[weapon:favonius-sword]]."
+                "en": "Only if using [[weapon:favonius-sword]].",
+                "fr": "Seulement si vous utilisez [[weapon:favonius-sword]]."
             }
         }
     ]

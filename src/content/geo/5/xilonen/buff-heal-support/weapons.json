@@ -1,16 +1,18 @@
 {
     "notes": [
         {
-            "en": "Weapon options below [[weapon:favonius-sword]] do not really affect [[character:xilonen]]'s performance as a Support."
+            "en": "Weapon options below [[weapon:favonius-sword]] do not really affect [[character:xilonen]]'s performance as a Support.",
+            "fr": "Les options en dessous de [[weapon:favonius-sword]] n'affectent pas vraiment les performances de [[character:xilonen]]en tant que Support."
         }
     ],
-"weapons": [
+    "weapons": [
         {
             "items": [
                 {
                     "name": "peak-patrol-song",
                     "note": {
-                        "en": "The buff from this weapon caps out once [[character:xilonen]] reaches 3,200 [[stat:def%|DEF]]."
+                        "en": "The buff from this weapon caps out once [[character:xilonen]] reaches 3,200 [[stat:def|DEF]].",
+                        "fr": "Le buff de cette arme est au maximum lorsque [[character:xilonen]] atteint 3,200 de [[stat:def]]."
                     }
                 }
             ]
@@ -20,7 +22,8 @@
                 {
                     "name": "freedom-sworn",
                     "note": {
-                        "en": "This option is competitive with [[weapon:peak-patrol-song]] if the team can utilize both of its buffs. To proc it consistently, you either need to [[ability:burst|burst]] every rotation, or add a delay between the initial [[ability:skill|skill]] hit and [[ability:na|normal attacking]]. It is not needed to level this weapon for [[character:xilonen]]."
+                        "en": "This option is competitive with [[weapon:peak-patrol-song]] if the team can utilize both of its buffs. To proc it consistently, you either need to [[ability:burst]] every rotation, or add a delay between the initial [[ability:skill]] hit and [[ability:na|normal attacking]]. It is not needed to level this weapon for [[character:xilonen]].",
+                        "fr": "Cette option rivalise [[weapon:peak-patrol-song]] si l'équipe peut profiter de ses deux buffs. Pour les déclencher de façon consistante, vous devez soit [[ability:burst]] à chaque rotation, soit attendre un peu entre le premier coup du [[ability:skill]] et vos [[ability:na|attaques normales]]. Il n'est pas nécessaire de monter de niveau cette arme pour [[character:xilonen]]."
                     }
                 }
             ]
@@ -35,7 +38,8 @@
                 {
                     "name": "flute-of-ezpitzal",
                     "note": {
-                        "en": "Refinements for this weapon are insignificant on [[character:xilonen]]."
+                        "en": "Refinements for this weapon are insignificant on [[character:xilonen]].",
+                        "fr": "Les raffinements sur cette arme sont insignifiants pour [[character:xilonen]]."
                     }
                 }
             ]
