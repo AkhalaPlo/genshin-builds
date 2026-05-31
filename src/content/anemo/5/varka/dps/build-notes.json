@@ -1,0 +1,21 @@
+{
+    "name": {
+        "en": "DPS",
+        "fr": "DPS"
+    },
+    "best": true,
+    "global": {
+        "link": "https://docs.google.com/spreadsheets/d/104igYmPqjx13P5cNdQ97r10ok-n1nyBRrtwTHN6U4Bs/edit?usp=sharing",
+        "author": "Chiston"
+    },
+    "notes": [
+        {
+            "en": "[[character:varka]] is a dual element wielding DPS who adapts his weapon based on your team.",
+            "fr": "[[character:varka]] est un DPS à double élément qui adapte son arme selon votre équipe."
+        },
+        {
+            "en": "[[character:varka]] always wants a second [[ability:hexerei|Hex]] character, a second [[element:anemo]] character and two characters of the same PHEC type ([[element:pyro]]/[[element:hydro]]/[[element:electro]]/[[element:cryo]]) on the team. Not fulfilling these conditions will make his damage plummet.",
+            "fr": "[[character:varka]] veut toujours un deuxième personnage [[ability:hexerei]], un deuxième personnage [[element:anemo]] et deux personnages du même type PHEC ([[element:pyro]]/[[element:hydro]]/[[element:electro]]/[[element:cryo]]) dans l'équipe. Ne pas remplir ces conditions fera chuter ses dégâts."
+        }
+    ]
+}
