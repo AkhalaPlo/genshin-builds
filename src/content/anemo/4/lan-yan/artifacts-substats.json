@@ -1,0 +1,14 @@
+{
+    "substats_priority": [
+        "er",
+        "atk%",
+        "em",
+        {
+            "name": "cr",
+            "note": {
+                "en": "Only if using **[[weapon:favonius-codex]]**",
+                "fr": "Seulement avec **[[weapon:favonius-codex]]**"
+            }
+        }
+    ]
+}

@@ -1,0 +1,45 @@
+{
+    "weapons": [
+        {
+            "items": [
+                "angelos-heptades"
+            ]
+        },
+        {
+            "items": [
+                "starcallers-watch"
+            ]
+        },
+        {
+            "items": [
+                "thrilling-tales-of-dragon-slayers"
+            ]
+        },
+        {
+            "items": [
+                "favonius-codex"
+            ]
+        },
+        {
+            "items": [
+                "cranes-echoing-call"
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "hakushin-ring",
+                    "note": {
+                        "en": "This weapon excels when [[character:lan-yan]] is in an [[element:electro]]-based team.",
+                        "fr": "Cette arme excelle lorsque [[character:lan-yan]] est dans une équipe basée sur l'[[element:electro]]."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                "prototype-amber"
+            ]
+        }
+    ]
+}

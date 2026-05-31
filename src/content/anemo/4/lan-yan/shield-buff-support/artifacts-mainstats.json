@@ -1,0 +1,21 @@
+{
+    "main_stats": {
+        "sands": [
+            "atk%",
+            "er"
+        ],
+        "goblet": [
+            "atk%"
+        ],
+        "circlet": [
+            "atk%",
+            {
+                "name": "cr",
+                "note": {
+                    "en": "Only if using **[[weapon:favonius-codex]]**",
+                    "fr": "Seulement avec **[[weapon:favonius-codex]]**"
+                }
+            }
+        ]
+    }
+}
