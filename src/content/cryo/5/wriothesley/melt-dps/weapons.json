@@ -1,0 +1,49 @@
+{
+    "notes": [
+        {
+            "en": "Weapon rankings assume you use [[character:bennett]].",
+            "fr": "Le classement des armes suppose que vous utilisez [[character:bennett]]."
+        }
+    ],
+    "weapons": [
+        {
+            "items": [
+                "cashflow-supervision",
+                "tulaytullahs-remembrance"
+            ]
+        },
+        {
+            "items": [
+                "a-thousand-floating-dreams",
+                "lost-prayer-to-the-sacred-winds",
+                "tome-of-the-eternal-flow"
+            ]
+        },
+        {
+            "items": [
+                "skyward-atlas"
+            ]
+        },
+        {
+            "items": [
+                "mappa-mare",
+                "the-widsith",
+                {
+                    "name": "ballad-of-the-boundless-blue",
+                    "refinement": 5
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "flowing-purity",
+                    "note": {
+                        "en": "This weapon is more potent if you can reliably clear the [[ability:bol]]. If you can, this weapon is equal or better than **[[weapon:ballad-of-the-boundless-blue]]** [R5].",
+                        "fr": "Cette arme est plus puissante si vous pouvez retirer l'[[ability:bol]] de façon fiable. Si vous le pouvez, cette arme équivaut à **[[weapon:ballad-of-the-boundless-blue]]** une fois [R5], voire la dépasse."
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,39 @@
+{
+    "weapons": [
+        {
+            "items": [
+                "cashflow-supervision",
+                "tulaytullahs-remembrance"
+            ]
+        },
+        {
+            "items": [
+                "memory-of-dust",
+                "tome-of-the-eternal-flow",
+                "kaguras-verity",
+                "lost-prayer-to-the-sacred-winds",
+                "skyward-atlas"
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "ballad-of-the-boundless-blue",
+                    "refinement": 5
+                },
+                "the-widsith"
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "flowing-purity",
+                    "note": {
+                        "en": "This weapon is more potent if you can reliably clear the [[ability:bol]]. If you can, this weapon is equal or better than **[[weapon:the-widsith]]**.",
+                        "fr": "Cette arme est plus puissante si vous pouvez retirer l'[[ability:bol]] de façon fiable. Si vous le pouvez, cette arme équivaut à **[[weapon:the-widsith]]**, voire la dépasse."
+                    }
+                }
+            ]
+        }
+    ]
+}

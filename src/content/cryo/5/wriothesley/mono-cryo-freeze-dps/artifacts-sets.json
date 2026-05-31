@@ -1,0 +1,61 @@
+{
+    "artifact_sets": [
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "marechaussee-hunter",
+                            "pieces": 4
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "blizzard-strayer",
+                            "pieces": 4,
+                            "note": {
+                                "en": "**[[character:wriothesley]] shatters [[element:freeze]]** which makes this set lose valuable uptime. Unlike **[[set:marechaussee-hunter]] (4)**, it cannot be used in [[element:melt]] teams, and loses versatility.",
+                                "fr": "**[[character:wriothesley]] brise le [[element:freeze]]**, ce qui fait perdre à ce set un uptime précieux. Contrairement à **[[set:marechaussee-hunter]] (4)**, il ne peut pas être utilisé dans les équipes [[element:melt]], ce qui lui fait perdre en polyvalence."
+                            }
+                        }
+                    ]
+                },
+                {
+                    "items": [
+                        {
+                            "name": "shimenawas-reminiscence",
+                            "pieces": 4
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "groups": [
+                {
+                    "choose": true,
+                    "items": [
+                        {
+                            "name": "blizzard-strayer",
+                            "pieces": 2
+                        },
+                        {
+                            "name": "atk-set",
+                            "pieces": 2
+                        },
+                        {
+                            "name": "marechaussee-hunter",
+                            "pieces": 2
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
