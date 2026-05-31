@@ -23,7 +23,7 @@
                     ]
                 },
                 {
-                    "items":[
+                    "items": [
                         {
                             "name": "noblesse",
                             "pieces": 4
@@ -32,25 +32,19 @@
                 }
             ]
         },
-        {"choose":true, "groups": [
+        {
+            "groups": [
                 {
+                    "choose": true,
                     "items": [
                         {
                             "name": "atk-set",
                             "pieces": 2
-                        }
-                    ]
-                },
-                {
-                    "items":[
+                        },
                         {
                             "name": "atk-set",
                             "pieces": 2
-                        }
-                    ]
-                },
-                {
-                    "items":[
+                        },
                         {
                             "name": "er-set",
                             "pieces": 2
@@ -59,6 +53,5 @@
                 }
             ]
         }
-        
     ]
 }
