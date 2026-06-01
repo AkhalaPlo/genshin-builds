@@ -4,10 +4,6 @@
         "fr": "Support Buff & Dégâts"
     },
     "best": true,
-    "weapons": {
-        "author": "XXXX",
-        "link": "https://docs.google.com/spreadsheets/d/1StIt66xnGVW_vVzJjV0LfYK8l69eVEQgzt9b4G9JNoU/edit?usp=sharing"
-    },
     "notes": [
         {
             "en": "[[character:kujou-sara]] is a quickswap support who is able to buff your active character via her Crowfeather mechanic while dealing a decent amount of personal damage. When [[character:kujou-sara]] uses her [[ability:skill]], her next Charged Shot will leave a Crowfeather at the target location which explodes after a short while, granting **the active character in its AoE an attack buff based on [[character:kujou-sara]]'s Base ATK**. Active characters within her [[ability:burst]]'s AoE will also receive the same buff or have its duration refreshed.",
