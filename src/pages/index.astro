@@ -10,7 +10,8 @@ import { getHomePageData } from '../utils/home-page';
 import { t } from '../utils/i18n';
 import { sitePath } from '../utils/paths';
 
-const { characters, locale } = getHomePageData('en');
+const { characters, latestVersion, locale, recentlyUpdatedCharacters } =
+  getHomePageData('en');
 ---
 
 <html lang="en">
@@ -33,7 +34,11 @@ const { characters, locale } = getHomePageData('en');
         >{' '}
         {t(locale, 'ui', 'Home source intro after link')}
       </p>
-      <HomeFilters locale={locale} />
+      <HomeFilters
+        latestVersion={latestVersion}
+        locale={locale}
+        recentlyUpdatedCount={recentlyUpdatedCharacters.length}
+      />
       <HomeRoster characters={characters} locale={locale} lang="en" />
     </main>
     <Footer lang="en" />

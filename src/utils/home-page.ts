@@ -9,6 +9,27 @@ import { readJSONFile, toTitleCase } from './content';
 import { getLocale } from './i18n';
 import { TranslationHelper } from './translator';
 
+function normalizeVersion(version: unknown) {
+  return typeof version === 'string'
+    ? version
+        .trim()
+        .replace(/\s*\/\s*/g, ' / ')
+        .replace(/\s+/g, ' ')
+    : '';
+}
+
+function getLatestChangelogVersion(contentPath: string) {
+  const changelogPath = path.join(contentPath, 'site', 'changelog.json');
+
+  if (!fs.existsSync(changelogPath)) {
+    return '';
+  }
+
+  const changelog = readJSONFile(changelogPath);
+
+  return normalizeVersion(changelog?.groups?.[0]?.version);
+}
+
 function getBuildSummaries(
   characterPath: string,
   lang: string,
@@ -50,6 +71,7 @@ export function getHomePageData(lang = 'en') {
   const locale = getLocale(lang);
   const contentPath = path.join(process.cwd(), 'src', 'content');
   const translator = new TranslationHelper(locale, {}, lang);
+  const latestVersion = getLatestChangelogVersion(contentPath);
 
   // Walk element/rarity/character folders so new content appears automatically.
   const characters = fs
@@ -74,10 +96,7 @@ export function getHomePageData(lang = 'en') {
                 rarity.name,
                 character.name,
               );
-              const metadataPath = path.join(
-                characterPath,
-                'metadata.json',
-              );
+              const metadataPath = path.join(characterPath, 'metadata.json');
 
               if (!fs.existsSync(metadataPath)) {
                 return [];
@@ -94,6 +113,7 @@ export function getHomePageData(lang = 'en') {
                 character: character.name,
                 element: element.name,
               });
+              const lastUpdated = normalizeVersion(metadata.last_updated);
 
               return {
                 name,
@@ -104,6 +124,10 @@ export function getHomePageData(lang = 'en') {
                 element: element.name,
                 rarity: rarity.name,
                 weapon: metadata.weapon,
+                lastUpdated,
+                isRecentlyUpdated: latestVersion
+                  ? lastUpdated === latestVersion
+                  : false,
                 image: resolveCharacterAssetUrl(
                   assetContext,
                   metadata.image,
@@ -121,8 +145,14 @@ export function getHomePageData(lang = 'en') {
     )
     .sort((a, b) => a.name.localeCompare(b.name));
 
+  const recentlyUpdatedCharacters = latestVersion
+    ? characters.filter((character) => character.lastUpdated === latestVersion)
+    : [];
+
   return {
     characters,
+    latestVersion,
+    recentlyUpdatedCharacters,
     lang,
     locale,
   };

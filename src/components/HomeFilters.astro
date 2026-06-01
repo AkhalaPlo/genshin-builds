@@ -1,12 +1,57 @@
 ---
 import { t } from '../utils/i18n';
 
-const { locale } = Astro.props;
+const { latestVersion = '', locale, recentlyUpdatedCount = 0 } = Astro.props;
+const hasRecentUpdates = recentlyUpdatedCount > 0;
+const recentlyUpdatedLabel = t(
+  locale,
+  'ui',
+  'Recently updated',
+  undefined,
+  false,
+);
+const versionLabel = t(locale, 'ui', 'Version', undefined, false);
+const versionText = latestVersion ? `${versionLabel} ${latestVersion}` : '';
 
 // Filter options mirror metadata values written onto each character card.
 const elements = ['anemo', 'cryo', 'dendro', 'electro', 'geo', 'hydro', 'pyro'];
 const rarities = ['4', '5'];
 const weapons = ['bow', 'catalyst', 'claymore', 'polearm', 'sword'];
+const elementColors = {
+  anemo: '#30d8a0',
+  cryo: '#7af0f0',
+  dendro: '#9de43b',
+  electro: '#c87fff',
+  geo: '#f3b530',
+  hydro: '#02c0ff',
+  pyro: '#ff6640',
+};
+const allLabel = t(locale, 'ui', 'All');
+
+const elementOptions = [
+  { value: '', label: allLabel, color: 'var(--accent)' },
+  ...elements.map((element) => ({
+    value: element,
+    label: t(locale, 'element', element),
+    color: elementColors[element as keyof typeof elementColors],
+  })),
+];
+const rarityOptions = [
+  { value: '', label: allLabel, color: 'var(--accent)' },
+  ...rarities.map((rarity) => ({
+    value: rarity,
+    label: `${rarity}\u2605`,
+    color: '#f3b530',
+  })),
+];
+const weaponOptions = [
+  { value: '', label: allLabel, color: 'var(--accent)' },
+  ...weapons.map((weapon) => ({
+    value: weapon,
+    label: t(locale, 'ui', weapon),
+    color: '#8fb7ff',
+  })),
+];
 ---
 
 <form class="home-filters" data-character-filters>
@@ -20,39 +65,114 @@ const weapons = ['bow', 'catalyst', 'claymore', 'polearm', 'sword'];
     />
   </label>
 
-  <label>
+  <div class="home-select-filter" data-filter-select>
     {t(locale, 'ui', 'Element')}
-    <select name="element">
-      <option value="">{t(locale, 'ui', 'All')}</option>
+    <input type="hidden" name="element" value="" data-filter-select-value />
+    <button
+      class="home-select-trigger"
+      type="button"
+      aria-haspopup="listbox"
+      aria-expanded="false"
+      data-filter-select-trigger
+    >
+      <span data-filter-select-label>{allLabel}</span>
+    </button>
+    <div class="home-select-menu" role="listbox" data-filter-select-menu>
       {
-        elements.map((element) => (
-          <option value={element}>{t(locale, 'element', element)}</option>
+        elementOptions.map((option) => (
+          <button
+            class="home-select-option"
+            type="button"
+            role="option"
+            data-value={option.value}
+            style={`--option-color: ${option.color}`}
+            aria-selected={option.value === '' ? 'true' : 'false'}
+          >
+            <span class="home-select-option-label">{option.label}</span>
+          </button>
         ))
       }
-    </select>
-  </label>
+    </div>
+  </div>
 
-  <label>
+  <div class="home-select-filter" data-filter-select>
     {t(locale, 'ui', 'Rarity')}
-    <select name="rarity">
-      <option value="">{t(locale, 'ui', 'All')}</option>
+    <input type="hidden" name="rarity" value="" data-filter-select-value />
+    <button
+      class="home-select-trigger"
+      type="button"
+      aria-haspopup="listbox"
+      aria-expanded="false"
+      data-filter-select-trigger
+    >
+      <span data-filter-select-label>{allLabel}</span>
+    </button>
+    <div class="home-select-menu" role="listbox" data-filter-select-menu>
       {
-        rarities.map((rarity) => (
-          <option value={rarity}>{`${rarity}\u2605`}</option>
+        rarityOptions.map((option) => (
+          <button
+            class="home-select-option"
+            type="button"
+            role="option"
+            data-value={option.value}
+            style={`--option-color: ${option.color}`}
+            aria-selected={option.value === '' ? 'true' : 'false'}
+          >
+            <span class="home-select-option-label">{option.label}</span>
+          </button>
         ))
       }
-    </select>
-  </label>
+    </div>
+  </div>
 
-  <label>
+  <div class="home-select-filter" data-filter-select>
     {t(locale, 'ui', 'Weapon')}
-    <select name="weapon">
-      <option value="">{t(locale, 'ui', 'All')}</option>
+    <input type="hidden" name="weapon" value="" data-filter-select-value />
+    <button
+      class="home-select-trigger"
+      type="button"
+      aria-haspopup="listbox"
+      aria-expanded="false"
+      data-filter-select-trigger
+    >
+      <span data-filter-select-label>{allLabel}</span>
+    </button>
+    <div class="home-select-menu" role="listbox" data-filter-select-menu>
       {
-        weapons.map((weapon) => (
-          <option value={weapon}>{t(locale, 'ui', weapon)}</option>
+        weaponOptions.map((option) => (
+          <button
+            class="home-select-option"
+            type="button"
+            role="option"
+            data-value={option.value}
+            style={`--option-color: ${option.color}`}
+            aria-selected={option.value === '' ? 'true' : 'false'}
+          >
+            <span class="home-select-option-label">{option.label}</span>
+          </button>
         ))
       }
-    </select>
-  </label>
+    </div>
+  </div>
+
+  {
+    hasRecentUpdates && (
+      <label class="home-updated-toggle">
+        <input
+          class="home-updated-toggle-input"
+          type="checkbox"
+          name="updated"
+          value="latest"
+        />
+        <span class="home-updated-toggle-mark" aria-hidden="true" />
+        <span class="home-updated-text">
+          <span class="home-updated-toggle-title">{recentlyUpdatedLabel}</span>
+          {versionText && (
+            <span class="home-updated-toggle-version">{versionText}</span>
+          )}
+        </span>
+        <span class="home-updated-toggle-count">{recentlyUpdatedCount}</span>
+      </label>
+    )
+  }
 </form>
