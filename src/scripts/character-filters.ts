@@ -1,6 +1,7 @@
 const filters = document.querySelector<HTMLFormElement>(
   '[data-character-filters]',
 );
+const rosterList = document.querySelector<HTMLElement>('[data-roster-list]');
 const cards = Array.from(
   document.querySelectorAll<HTMLElement>('[data-character-card]'),
 );
@@ -21,6 +22,9 @@ const previewBuilds = document.querySelector<HTMLUListElement>(
 );
 const previewLink = document.querySelector<HTMLAnchorElement>(
   '[data-preview-link]',
+);
+const lazyPortraits = Array.from(
+  document.querySelectorAll<HTMLImageElement>('[data-roster-portrait-src]'),
 );
 
 type BuildSummary = {
@@ -49,6 +53,57 @@ function setText(element: HTMLElement | null, value: string | undefined) {
 
 function formatTemplate(template: string | undefined, name: string) {
   return (template ?? '{name} character art').replace('{name}', name);
+}
+
+/**
+ * Attaches the real image URL to one deferred roster portrait.
+ *
+ * @param image Portrait image element rendered without a src.
+ */
+function loadPortrait(image: HTMLImageElement) {
+  const src = image.dataset.rosterPortraitSrc;
+
+  if (!src || image.currentSrc || image.getAttribute('src')) {
+    return;
+  }
+
+  image.src = src;
+  delete image.dataset.rosterPortraitSrc;
+}
+
+/**
+ * Defers roster portrait requests until cards approach the roster scroll area.
+ */
+function initializePortraitLoading() {
+  if (!lazyPortraits.length) {
+    return;
+  }
+
+  if (!('IntersectionObserver' in window)) {
+    lazyPortraits.forEach(loadPortrait);
+    return;
+  }
+
+  const portraitObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) {
+          return;
+        }
+
+        const image = entry.target as HTMLImageElement;
+        loadPortrait(image);
+        portraitObserver.unobserve(image);
+      });
+    },
+    {
+      root: rosterList,
+      rootMargin: '320px 0px',
+      threshold: 0.01,
+    },
+  );
+
+  lazyPortraits.forEach((image) => portraitObserver.observe(image));
 }
 
 function getBuilds(card: HTMLElement) {
@@ -171,5 +226,7 @@ cards.forEach((card) => {
   card.addEventListener('click', () => setSelectedCard(card));
   card.addEventListener('focus', () => setSelectedCard(card));
 });
+
+initializePortraitLoading();
 
 export {};

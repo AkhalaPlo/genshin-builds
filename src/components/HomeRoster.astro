@@ -12,6 +12,7 @@ const resultsLabel = t(locale, 'ui', 'Results');
 const availableBuildsLabel = t(locale, 'ui', 'Available builds');
 const characterArtAltTemplate = t(locale, 'ui', 'Character art alt');
 const characterPortraitAltTemplate = t(locale, 'ui', 'Character portrait alt');
+const eagerPortraitCount = 10;
 
 function formatUiTemplate(template: string, name: string) {
   return template.replace('{name}', name);
@@ -51,42 +52,51 @@ const selectedCharacter = rosterCharacters[0];
       </div>
     </div>
 
-    <div class="roster-list" role="list">
+    <div class="roster-list" role="list" data-roster-list>
       {
-        rosterCharacters.map((character, index) => (
-          <button
-            class={`roster-character ${character.element}`}
-            type="button"
-            aria-label={`${character.name}, ${character.weaponLabel}`}
-            aria-current={index === 0 ? 'true' : 'false'}
-            data-character-card
-            data-builds={JSON.stringify(character.builds)}
-            data-element={character.element}
-            data-href={character.href}
-            data-image={character.previewImage}
-            data-name={character.name}
-            data-rarity={character.rarity}
-            data-rarity-label={character.rarityLabel}
-            data-weapon={character.weapon}
-          >
-            <img
-              src={character.portrait}
-              alt={formatUiTemplate(
-                characterPortraitAltTemplate,
-                character.name,
-              )}
-              loading={index < 14 ? 'eager' : 'lazy'}
-              width="160"
-              height="180"
-            />
-            <span class="roster-character-copy">
-              <span class="roster-character-name">{character.name}</span>
-              <span class="roster-character-weapon">
-                {character.weaponLabel}
+        rosterCharacters.map((character, index) => {
+          const loadPortraitImmediately = index < eagerPortraitCount;
+
+          return (
+            <button
+              class={`roster-character ${character.element}`}
+              type="button"
+              aria-label={`${character.name}, ${character.weaponLabel}`}
+              aria-current={index === 0 ? 'true' : 'false'}
+              data-character-card
+              data-builds={JSON.stringify(character.builds)}
+              data-element={character.element}
+              data-href={character.href}
+              data-image={character.previewImage}
+              data-name={character.name}
+              data-rarity={character.rarity}
+              data-rarity-label={character.rarityLabel}
+              data-weapon={character.weapon}
+            >
+              <img
+                src={loadPortraitImmediately ? character.portrait : undefined}
+                data-roster-portrait-src={
+                  loadPortraitImmediately ? undefined : character.portrait
+                }
+                alt={formatUiTemplate(
+                  characterPortraitAltTemplate,
+                  character.name,
+                )}
+                loading={loadPortraitImmediately ? 'eager' : 'lazy'}
+                decoding="async"
+                fetchpriority="low"
+                width="160"
+                height="180"
+              />
+              <span class="roster-character-copy">
+                <span class="roster-character-name">{character.name}</span>
+                <span class="roster-character-weapon">
+                  {character.weaponLabel}
+                </span>
               </span>
-            </span>
-          </button>
-        ))
+            </button>
+          );
+        })
       }
     </div>
 
@@ -108,6 +118,7 @@ const selectedCharacter = rosterCharacters[0];
               selectedCharacter.name,
             )}
             loading="eager"
+            decoding="async"
             data-preview-alt-template={characterArtAltTemplate}
             data-preview-image
           />

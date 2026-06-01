@@ -301,6 +301,10 @@
     transform 0.16s ease;
 }
 
+.roster-character img[data-roster-portrait-src] {
+  opacity: 0;
+}
+
 .roster-character:hover img,
 .roster-character:focus-visible img,
 .roster-character[aria-current='true'] img {
@@ -349,6 +353,7 @@
   overflow: hidden;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
+  line-clamp: 2;
 }
 
 .roster-character-weapon {
