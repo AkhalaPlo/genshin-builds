@@ -44,77 +44,377 @@
 
 .home-filters {
   display: grid;
-  grid-template-columns: minmax(280px, 1fr) repeat(3, minmax(130px, 0.45fr));
-  gap: 10px;
+  grid-template-columns:
+    minmax(240px, 1fr) repeat(3, minmax(112px, 0.38fr))
+    minmax(168px, 0.56fr);
+  gap: 8px;
   margin: 0 0 14px;
-  border: 1px solid rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.09);
   border-radius: 8px;
-  padding: 10px;
+  padding: 8px;
   background:
     linear-gradient(
-      135deg,
-      rgba(255, 255, 255, 0.08),
-      rgba(255, 255, 255, 0.025)
+      180deg,
+      rgba(255, 255, 255, 0.055),
+      rgba(255, 255, 255, 0.015)
     ),
-    rgba(5, 8, 12, 0.32);
+    rgba(5, 8, 12, 0.28);
   box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.08),
-    0 16px 38px rgba(0, 0, 0, 0.13);
+    inset 0 1px 0 rgba(255, 255, 255, 0.06),
+    0 14px 32px rgba(0, 0, 0, 0.12);
 }
 
 .home-search {
   grid-column: auto;
 }
 
-.home-filters label {
+.home-filters label,
+.home-filters .home-select-filter {
+  position: relative;
   display: grid;
   min-width: 0;
-  gap: 3px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  gap: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.085);
   border-radius: 8px;
   padding: 8px 10px;
-  background: rgba(7, 10, 15, 0.42);
-  color: color-mix(in srgb, var(--text) 58%, transparent);
-  font-size: 0.72rem;
-  font-weight: 800;
-  letter-spacing: 0.06em;
+  background:
+    linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.055),
+      rgba(255, 255, 255, 0.018)
+    ),
+    rgba(8, 11, 16, 0.52);
+  color: color-mix(in srgb, var(--text) 54%, transparent);
+  font-size: 0.68rem;
+  font-weight: 780;
+  letter-spacing: 0.045em;
   text-transform: uppercase;
+  transition:
+    border-color 0.16s ease,
+    background 0.16s ease,
+    box-shadow 0.16s ease;
+}
+
+.home-filters label:hover,
+.home-filters .home-select-filter:hover,
+.home-filters .home-select-filter[data-open='true'] {
+  border-color: rgba(255, 255, 255, 0.14);
+  background:
+    linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.07),
+      rgba(255, 255, 255, 0.026)
+    ),
+    rgba(9, 13, 19, 0.58);
 }
 
 .home-filters input,
-.home-filters select {
+.home-filters select,
+.home-select-trigger {
   width: 100%;
-  min-height: 28px;
+  min-height: 30px;
   border: 0;
   border-radius: 0;
   padding: 0;
   background: transparent;
-  color: var(--text);
+  color: color-mix(in srgb, var(--text) 94%, white 6%);
   font: inherit;
-  font-size: 0.95rem;
-  font-weight: 750;
+  font-size: 0.94rem;
+  font-weight: 720;
   letter-spacing: 0;
   text-transform: none;
+}
+
+.home-select-trigger {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  text-align: left;
+}
+
+.home-filters select {
+  padding-right: 18px;
+  -webkit-appearance: none;
+  appearance: none;
+  cursor: pointer;
+}
+
+.home-select-filter {
+  padding-right: 34px;
+}
+
+.home-select-filter[data-open='true'] {
+  z-index: 40;
+}
+
+.home-select-filter::after {
+  position: absolute;
+  right: 13px;
+  bottom: 19px;
+  width: 7px;
+  height: 7px;
+  border-right: 2px solid color-mix(in srgb, var(--text) 52%, transparent);
+  border-bottom: 2px solid color-mix(in srgb, var(--text) 52%, transparent);
+  pointer-events: none;
+  transform: rotate(45deg);
+  transition: border-color 0.16s ease;
+  content: '';
+}
+
+.home-select-filter[data-open='true']::after {
+  bottom: 15px;
+  transform: rotate(225deg);
+}
+
+.home-select-filter:hover::after,
+.home-select-filter:focus-within::after {
+  border-color: color-mix(in srgb, var(--accent) 78%, white 6%);
 }
 
 .home-filters input::placeholder {
   color: color-mix(in srgb, var(--text) 48%, transparent);
 }
 
-.home-filters option {
-  background: #151922;
-  color: #f2f4f8;
+.home-select-menu {
+  position: absolute;
+  z-index: 45;
+  top: calc(100% + 8px);
+  right: 8px;
+  left: 8px;
+  display: grid;
+  max-height: min(320px, 58vh);
+  gap: 3px;
+  overflow: auto;
+  border: 1px solid color-mix(in srgb, var(--accent) 34%, #cad2df 66%);
+  border-radius: 8px;
+  padding: 6px;
+  background:
+    linear-gradient(
+      180deg,
+      color-mix(in srgb, #fff 96%, var(--accent) 4%),
+      color-mix(in srgb, #f4f7fb 94%, var(--accent) 6%)
+    ),
+    #fff;
+  box-shadow:
+    0 18px 40px rgba(0, 0, 0, 0.32),
+    inset 0 1px 0 rgba(255, 255, 255, 0.9);
+  color: #151a22;
+  opacity: 0;
+  pointer-events: none;
+  scrollbar-color: color-mix(in srgb, var(--accent) 55%, #b8c1d0) transparent;
+  text-transform: none;
+  transform: translateY(-4px) scale(0.98);
+  transform-origin: top center;
+  transition:
+    opacity 0.14s ease,
+    transform 0.14s ease,
+    visibility 0.14s ease;
+  visibility: hidden;
+}
+
+.home-select-filter[data-open='true'] .home-select-menu {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0) scale(1);
+  visibility: visible;
+}
+
+.home-select-option {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 14px;
+  min-height: 34px;
+  align-items: center;
+  gap: 6px;
+  border: 0;
+  border-radius: 6px;
+  padding: 7px 8px 7px 10px;
+  background: transparent;
+  color: #182231;
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.86rem;
+  font-weight: 720;
+  line-height: 1.15;
+  text-align: left;
+  text-transform: none;
+  transition:
+    background 0.13s ease,
+    box-shadow 0.13s ease,
+    color 0.13s ease;
+}
+
+.home-select-option::after {
+  justify-self: center;
+  width: 6px;
+  height: 10px;
+  border-right: 2px solid
+    color-mix(in srgb, var(--option-color, var(--accent)) 72%, #111 18%);
+  border-bottom: 2px solid
+    color-mix(in srgb, var(--option-color, var(--accent)) 72%, #111 18%);
+  opacity: 0;
+  transform: rotate(45deg) translateY(-1px);
+  content: '';
+}
+
+.home-select-option:hover,
+.home-select-option:focus-visible {
+  background: color-mix(
+    in srgb,
+    var(--option-color, var(--accent)) 14%,
+    #fff 86%
+  );
+  box-shadow: inset 0 0 0 1px
+    color-mix(in srgb, var(--option-color, var(--accent)) 22%, transparent);
+  color: #0f1724;
+  outline: none;
+}
+
+.home-select-option[aria-selected='true'] {
+  background: color-mix(
+    in srgb,
+    var(--option-color, var(--accent)) 18%,
+    #fff 82%
+  );
+  box-shadow: inset 0 0 0 1px
+    color-mix(in srgb, var(--option-color, var(--accent)) 34%, transparent);
+  color: #0d1520;
+}
+
+.home-select-option[aria-selected='true']::after {
+  opacity: 1;
+}
+
+.home-select-option-label {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .home-filters input:focus,
-.home-filters select:focus {
+.home-filters select:focus,
+.home-select-trigger:focus {
   box-shadow: none;
   outline: none;
 }
 
-.home-filters label:focus-within {
+.home-filters label:focus-within,
+.home-filters .home-select-filter:focus-within,
+.home-filters .home-select-filter[data-open='true'] {
   border-color: color-mix(in srgb, var(--accent) 58%, transparent);
-  box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 18%, transparent);
+  background:
+    linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.075),
+      rgba(255, 255, 255, 0.024)
+    ),
+    color-mix(in srgb, var(--accent) 8%, rgba(8, 11, 16, 0.58));
+  box-shadow: 0 0 0 2px color-mix(in srgb, var(--accent) 18%, transparent);
+}
+
+.home-updated-toggle {
+  position: relative;
+  grid-template-columns: 22px minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.home-filters .home-updated-toggle-input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  min-height: 0;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  background: transparent;
+  white-space: nowrap;
+}
+
+.home-updated-toggle-mark {
+  display: block;
+  width: 22px;
+  height: 22px;
+  border: 1px solid color-mix(in srgb, var(--accent) 38%, transparent);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.045);
+  transition:
+    border-color 0.16s ease,
+    background 0.16s ease,
+    box-shadow 0.16s ease;
+}
+
+.home-updated-toggle-mark::before {
+  display: block;
+  width: 10px;
+  height: 10px;
+  margin: 5px;
+  border-radius: 4px;
+  background: var(--accent);
+  opacity: 0;
+  transform: scale(0.75);
+  transition:
+    opacity 0.16s ease,
+    transform 0.16s ease;
+  content: '';
+}
+
+.home-updated-toggle-input:checked + .home-updated-toggle-mark {
+  border-color: color-mix(in srgb, var(--accent) 72%, white 4%);
+  background: color-mix(in srgb, var(--accent) 14%, rgba(255, 255, 255, 0.04));
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 15%, transparent);
+}
+
+.home-updated-toggle-input:checked + .home-updated-toggle-mark::before {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.home-updated-text {
+  display: grid;
+  min-width: 0;
+  gap: 2px;
+  margin-left: 5px;
+}
+
+.home-updated-toggle-title {
+  overflow: hidden;
+  color: var(--text);
+  font-size: 0.84rem;
+  font-weight: 800;
+  line-height: 1.08;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.home-updated-toggle-version {
+  overflow: hidden;
+  color: color-mix(in srgb, var(--text) 58%, transparent);
+  font-size: 0.68rem;
+  font-weight: 700;
+  line-height: 1.1;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.home-updated-toggle-count {
+  display: inline-grid;
+  min-width: 26px;
+  height: 26px;
+  place-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.045);
+  color: var(--accent);
+  font-size: 0.78rem;
+  font-weight: 850;
+  line-height: 1;
 }
 
 .home-roster {
@@ -248,6 +548,7 @@
   font: inherit;
   isolation: isolate;
   text-align: center;
+  text-decoration: none;
   transition:
     border-color 0.16s ease,
     background 0.16s ease,
@@ -280,6 +581,7 @@
     rgba(8, 10, 14, 0.8)
   );
   outline: none;
+  text-decoration: none;
   transform: translateY(-2px);
 }
 
@@ -686,12 +988,18 @@
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
-  .home-filters label {
+  .home-updated-toggle {
+    grid-column: span 2;
+  }
+
+  .home-filters label,
+  .home-filters .home-select-filter {
     padding: 7px 8px;
   }
 
   .home-filters input,
-  .home-filters select {
+  .home-filters select,
+  .home-select-trigger {
     font-size: 0.86rem;
   }
 
