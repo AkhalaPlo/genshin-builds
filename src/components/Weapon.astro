@@ -5,6 +5,7 @@ import type {
   WeaponPassiveText,
   WeaponPassiveValue,
 } from '../utils/weapon-passive';
+import { isFreeWeaponSource } from '../utils/weapon-source';
 
 type WeaponItem = {
   id?: string;
@@ -12,6 +13,7 @@ type WeaponItem = {
   rarity: number;
   info?: {
     rarity: number;
+    source?: string;
     passive?: WeaponPassiveText;
     r1?: WeaponPassiveValue[];
     r2?: WeaponPassiveValue[];
@@ -62,6 +64,8 @@ const formatRefinement = (refinement?: number | string) =>
   refinement ? ` [R${refinement}]` : '';
 
 const hasNoteMarker = (item: WeaponItem) => item.noteId || item.note;
+const isFreeWeapon = (item: WeaponItem) =>
+  isFreeWeaponSource(item.info?.source);
 const conditionalWeapons = weapons.conditional ?? [];
 const rankedWeaponGroups = weapons.weapons.map(
   (position: WeaponRank, index: number) => ({
@@ -72,12 +76,23 @@ const rankedWeaponGroups = weapons.weapons.map(
     })),
   }),
 );
+const hasFreeWeapon = rankedWeaponGroups.some((position) =>
+  position.rows.some(({ weapon }) => isFreeWeapon(weapon)),
+) || conditionalWeapons.some((weapon) => isFreeWeapon(weapon));
 ---
 
 <div class="card recommendation-card weapon-card">
   <h2>{t(locale, 'ui', 'Weapons')}</h2>
 
   <div class="recommendation-card-body">
+        {
+      hasFreeWeapon && (
+        <p class="free-weapon-note">
+          <span class="free-weapon-note-mark" aria-hidden="true" />
+          {t(locale, 'ui', 'Highlighted weapons are free options.')}
+        </p>
+      )
+    }
     {
       /* Ranked weapon groups. Extra items in one rank render as approximate ties. */
     }
@@ -86,6 +101,7 @@ const rankedWeaponGroups = weapons.weapons.map(
         rankedWeaponGroups.map((position) => (
           <div class="rank-group">
             {position.rows.map(({ weapon, isAlternative }) => {
+              const isFree = isFreeWeapon(weapon);
               const content = (
                 <span class="inline-info-label">
                   <WeaponInfoPopover
@@ -103,12 +119,12 @@ const rankedWeaponGroups = weapons.weapons.map(
               );
 
               return isAlternative ? (
-                <div class="rank-row alt">
+                <div class={`rank-row alt${isFree ? ' is-free-weapon' : ''}`}>
                   <span class="rank-approx">&asymp;</span>
                   <span class="rank-content">{content}</span>
                 </div>
               ) : (
-                <div class="rank-row">
+                <div class={`rank-row${isFree ? ' is-free-weapon' : ''}`}>
                   <strong class="rank-number">{position.rank}</strong>
                   <span class="rank-content">{content}</span>
                 </div>
@@ -128,26 +144,32 @@ const rankedWeaponGroups = weapons.weapons.map(
           </div>
 
           <div class="rank-list">
-            {conditionalWeapons.map((weapon: WeaponItem) => (
-              <div class="rank-row conditional-row">
-                <span class="rank-marker" aria-hidden="true" />
-                <span class="rank-content">
-                  <span class="inline-info-label">
-                    <WeaponInfoPopover
-                      weapon={weapon}
-                      locale={locale}
-                      lang={lang}
-                      noteId={weapon.noteId}
-                      hasNote={Boolean(hasNoteMarker(weapon))}
-                    />
-                    <span class="bold">
-                      ({weapon.rarity}
-                      {'\u2605'}){formatRefinement(weapon.refinement)}
+            {conditionalWeapons.map((weapon: WeaponItem) => {
+              const isFree = isFreeWeapon(weapon);
+
+              return (
+                <div
+                  class={`rank-row conditional-row${isFree ? ' is-free-weapon' : ''}`}
+                >
+                  <span class="rank-marker" aria-hidden="true" />
+                  <span class="rank-content">
+                    <span class="inline-info-label">
+                      <WeaponInfoPopover
+                        weapon={weapon}
+                        locale={locale}
+                        lang={lang}
+                        noteId={weapon.noteId}
+                        hasNote={Boolean(hasNoteMarker(weapon))}
+                      />
+                      <span class="bold">
+                        ({weapon.rarity}
+                        {'\u2605'}){formatRefinement(weapon.refinement)}
+                      </span>
                     </span>
                   </span>
-                </span>
-              </div>
-            ))}
+                </div>
+              );
+            })}
           </div>
         </div>
       )

@@ -16,6 +16,7 @@
     },
     "ash-graven-drinking-horn": {
         "rarity": 4,
+        "source": "Event",
         "passive": {
             "en": "When an attack hits an opponent, deal AoE DMG equal to {{value}}% of Max HP at the target location. This effect can be triggered once every 15s.",
             "de": "Verursacht beim Treffen von Gegnern mit Angriffen an der Stelle des Ziels Flächenschaden basierend auf {{value}}% der max. LP, 15 s Abklingzeit.",
@@ -96,6 +97,7 @@
     },
     "ballad-of-the-boundless-blue": {
         "rarity": 4,
+        "source": "Event",
         "passive": {
             "en": "Within 6s after Normal or Charged Attacks hit an opponent, Normal Attack DMG will be increased by {{value}}% and Charged Attack DMG will be increased by {{value}}%. Max 3 stacks. This effect can be triggered once every 0.3s.",
             "de": "Erhöht den mit Standardangriffen verursachten Schaden nach dem Treffen von Gegnern mit Standardangriffen oder heftigen Schlägen 6 s lang um {{value}}% und den mit heftigen Schlägen verursachten Schaden um {{value}}%. 3-fach stapelbar, 0,3 s Abklingzeit.",
@@ -136,6 +138,7 @@
     },
     "blackcliff-agate": {
         "rarity": 4,
+        "source": "Paimon's Bargains",
         "passive": {
             "en": "After defeating an enemy, ATK is increased by {{value}}% for 30s. This effect has a maximum of 3 stacks, and the duration of each stack is independent of the others.",
             "de": "Erhöht den ANG beim Besiegen von Gegnern 30 s lang um {{value}}%. 3-fach stapelbar, Wirkungsdauer jeder Stapelung ist unabhängig.",
@@ -171,6 +174,7 @@
     },
     "blackmarrow-lantern": {
         "rarity": 4,
+        "source": "Craft",
         "passive": {
             "en": "Bloom DMG is increased by 48%/60%/72%/84%/96%, and Lunar-Bloom DMG is increased by 12%/15%/18%/21%/24%. Moonsign: Ascendant Gleam: Lunar-Bloom DMG is increased by an additional 12%/15%/18%/21%/24%.",
             "de": "Erhöht den durch die Reaktion „Sprießen“ verursachten Schaden um {{value}}% und den Schaden durch die Reaktion „Mondspross“ um {{value}}%. Mondomen &ndash; Reifer Glanz: Erhöht den Schaden durch die Reaktion „Mondspross“ zusätzlich um {{value}}%.",
@@ -346,6 +350,7 @@
     },
     "dodoco-tales": {
         "rarity": 4,
+        "source": "Event",
         "passive": {
             "en": "Normal Attack hits on opponents increase Charged Attack DMG by 16%/20%/24%/28%/32% for 6s. Charged Attack hits on opponents increase ATK by 8%/10%/12%/14%/16% for 6s.",
             "de": "Erhöht den mit heftigen Schlägen verursachten Schaden nach dem Treffen von Gegnern mit Standardangriffen 6 s lang um {{value}}%. Erhöht den ANG nach dem Treffen von Gegnern mit heftigen Schlägen 6 s lang um {{value}}%.",
@@ -421,6 +426,7 @@
     },
     "etherlight-spindlelute": {
         "rarity": 4,
+        "source": "Event",
         "passive": {
             "en": "For 20s after using an Elemental Skill, the equipping character's Elemental Mastery is increased by {{value}}.",
             "de": "Erhöht nach Anwenden der Elementarfähigkeit die Elementarkunde des Trägers 20 s lang um {{value}} Punkte.",
@@ -571,6 +577,7 @@
     },
     "flowing-purity": {
         "rarity": 4,
+        "source": "Craft",
         "passive": {
             "en": "When using an Elemental Skill, All Elemental DMG Bonus will be increased by {{value}}% for 15s, and a Bond of Life worth 24% of Max HP will be granted. This effect can be triggered once every 10s. When the Bond of Life is cleared, every 1,000 HP cleared in the process will provide {{value}}% All Elemental DMG Bonus, up to a maximum of {{value}}%. This effect lasts 15s.",
             "de": "Erhöht beim Auslösen der Elementarfähigkeit den Elementar-SCH-Bonus aller Elemente um {{value}}%, hält 15 s. Es entsteht gleichzeitig ein Eid des Lebens mit einem Basiswert in Höhe von 24 % der max. LP. 10 s Abklingzeit. Wenn der Eid des Lebens entfernt wird, wird der Elementar-SCH-Bonus aller Elemente pro 1.000 Punkte entfernter Summe um jeweils {{value}}%, max. {{value}}%, erhöht. Hält 15 s.",
@@ -616,6 +623,7 @@
     },
     "frostbearer": {
         "rarity": 4,
+        "source": "Craft",
         "passive": {
             "en": "Hitting an opponent with Normal and Charged Attacks has a /Hitting an opponent with Normal and Charged Attacks has a /Hitting an opponent with Normal and Charged Attacks has an /Hitting an opponent with Normal and Charged Attacks has a /Hitting an opponent with Normal and Charged Attacks has a 60%/70%/80%/90%/100% chance of forming and dropping an Everfrost Icicle above them, dealing AoE DMG equal to 80%/95%/110%/125%/140% of ATK. Opponents affected by Cryo are instead dealt DMG equal to 200%/240%/280%/320%/360% of ATK. Can only occur once every 10s.",
             "de": "Erstellt beim Treffen von Gegnern mit Standardangriffen und heftigen Schlägen mit einer Wahrscheinlichkeit von {{value}}% über den Gegnern einen Kristallkern ewigen Eises, der herunterfällt und Flächenschaden in Höhe von {{value}}% ANG verursacht. Verursacht Schaden in Höhe von {{value}}% ANG, wenn die Gegner von Kryo-Effekten betroffen sind. 10 s Abklingzeit.",
@@ -661,6 +669,7 @@
     },
     "fruit-of-fulfillment": {
         "rarity": 4,
+        "source": "Craft",
         "passive": {
             "en": "Obtain the \"Wax and Wane\" effect after an Elemental Reaction is triggered, gaining {{value}} Elemental Mastery while losing 5% ATK. For every 0.3s, 1 stack of Wax and Wane can be gained. Max 5 stacks. For every 6s that go by without an Elemental Reaction being triggered, 1 stack will be lost. This effect can be triggered even when the character is off-field.",
             "de": "Erhält nach dem Auslösen einer Elementarreaktion den Effekt „Mondphase“: Erhöht die Elementarkunde um {{value}} Punkte und verringert den ANG um 5 %. Alle 0,3 s kann nur eine Stapelung dieses Effekts erhalten werden, 5-fach stapelbar. Wenn innerhalb von 6 s keine Elementarreaktion ausgelöst wird, wird eine Stapelung entfernt. Dieser Effekt tritt auch in Kraft, wenn sich die Figur inaktiv in der Truppe befindet.",
@@ -696,6 +705,7 @@
     },
     "hakushin-ring": {
         "rarity": 4,
+        "source": "Craft",
         "passive": {
             "en": "After the character equipped with this weapon triggers an Electro elemental reaction, nearby party members of an Elemental Type involved in the elemental reaction receive a {{value}}% Elemental DMG Bonus for their element, lasting 6s. Elemental Bonuses gained in this way cannot be stacked.",
             "de": "Erhöht beim Auslösen von Elektro-Reaktionen durch die mit dieser Waffe ausgerüsteten Figur den Elementar-SCH von Truppenmitgliedern mit dem an der Elementarreaktion beteiligten Element in der Nähe 6 s lang um {{value}}%. Der auf diese Weise durch die Figur erhaltene Elementar-SCH-Bonus ist nicht stapelbar.",
@@ -886,6 +896,7 @@
     },
     "mappa-mare": {
         "rarity": 4,
+        "source": "Craft",
         "passive": {
             "en": "Triggering an Elemental reaction grants a 8%/10%/12%/14%/16% Elemental DMG Bonus for 10s. Max 2 stacks.",
             "de": "Erhöht den Elementar-SCH beim Auslösen von Elementarreaktionen 10 s lang um {{value}}%. 2-fach stapelbar.",
@@ -1066,6 +1077,7 @@
     },
     "oathsworn-eye": {
         "rarity": 4,
+        "source": "Event",
         "passive": {
             "en": "Increases Energy Recharge by 24%/30%/36%/42%/48% for 10s after using an Elemental Skill.",
             "de": "Erhöht bei Anwendung von Elementarfähigkeiten die Aufladerate 10 s lang um {{value}}%.",
@@ -1101,6 +1113,7 @@
     },
     "otherworldly-story": {
         "rarity": 3,
+        "source": "Exploration",
         "passive": {
             "en": "Picking up an Elemental Energy Orb/Particle recovers /Each Elemental Orb or Particle collected restores /Each Elemental Orb or Particle collected restores /Each Elemental Orb or Particle collected restores /Each Elemental Orb or Particle collected restores {{value}}% HP.",
             "de": "Stellt beim Erhalten von Elementarteilchen oder Elementarkristallen {{value}}% LP wieder her.",
@@ -1136,6 +1149,7 @@
     },
     "prototype-amber": {
         "rarity": 4,
+        "source": "Craft",
         "passive": {
             "en": "Using an Elemental Burst regenerates {{value}} Energy every 2s for 6s. All party members will regenerate {{value}}% HP every 2s for this duration.",
             "de": "Stellt nach Anwendung von Spezialfähigkeiten 6 s lang alle 2 s {{value}} Punkte Elementarenergie und allen Truppenmitgliedern alle 2 s {{value}}% LP wieder her.",
@@ -1221,6 +1235,7 @@
     },
     "ring-of-yaxche": {
         "rarity": 4,
+        "source": "Craft",
         "passive": {
             "en": "Using an Elemental Skill grants the Jade-Forged Crown effect: Every 1,000 Max HP will increase the Normal Attack DMG dealt by the equipping character by 0.6%/0.7%/0.8%/0.9%/1% for 10s. Normal Attack DMG can be increased this way by a maximum of 16%/20%/24%/28%/32%.",
             "de": "Verleiht beim Auslösen der Elementarfähigkeit den Effekt „Jadenes Haupt“: Erhöht für je 1.000 Punkte der max. LP den mit Standardangriffen verursachten Schaden 10 s lang um {{value}}%. Auf diese Weise kann der mit Standardangriffen verursachte Schaden um bis zu {{value}}% erhöht werden.",
@@ -1261,6 +1276,7 @@
     },
     "royal-grimoire": {
         "rarity": 4,
+        "source": "Paimon's Bargains",
         "passive": {
             "en": "Upon damaging an opponent, increases CRIT Rate by 8%/10%/12%/14%/16%. Max 5 stacks. A CRIT Hit removes all stacks.",
             "de": "Erhöht die KT beim Verursachen von Schaden um {{value}}%, 5-fach stapelbar. Effekt erlischt beim Verursachen eines KT.",
@@ -1336,6 +1352,7 @@
     },
     "sacrificial-jade": {
         "rarity": 4,
+        "source": "Battle Pass",
         "passive": {
             "en": "When not on the field for more than 5s, Max HP will be increased by {{value}}% and Elemental Mastery will be increased by {{value}}. These effects will be canceled after the wielder has been on the field for 10s.",
             "de": "Erhöht die max. LP um {{value}}% und die Elementarkunde um {{value}} Punkte, sobald sich die Figur mehr als 5 s inaktiv in der Truppe befindet. Der Effekt verschwindet nach 10 s, nachdem der Träger eingewechselt worden ist und sich dauerhaft aktiv auf dem Feld befunden hat.",
@@ -1416,6 +1433,7 @@
     },
     "solar-pearl": {
         "rarity": 4,
+        "source": "Battle Pass",
         "passive": {
             "en": "Normal Attack hits increase Elemental Skill and Elemental Burst DMG by {{value}}% for 6s. Likewise, Elemental Skill or Elemental Burst hits increase Normal Attack DMG by {{value}}% for 6s.",
             "de": "Erhöht den Schaden von Elementarfähigkeiten und Spezialfähigkeiten bei Treffern mit Standardangriffen 6 s lang um {{value}}%. Erhöht den Schaden von Standardangriffen bei Treffern mit Elementarfähigkeiten und Spezialfähigkeiten 6 s lang um {{value}}%.",
@@ -1756,6 +1774,7 @@
     },
     "twin-nephrite": {
         "rarity": 3,
+        "source": "Exploration",
         "passive": {
             "en": "Defeating an opponent increases Movement SPD and ATK by {{value}}% for 15s.",
             "de": "Erhöht die Bewegungs-GSW und den ANG beim Besiegen von Gegnern 15 s lang um {{value}}%.",

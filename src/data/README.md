@@ -63,6 +63,12 @@ src/data/weapons/<weapon-type>.json
 A weapon entry can include:
 
 - `rarity`: weapon rarity.
+- `source`: special availability source ID shown in the weapon popover footer,
+  when relevant. The display text is translated through
+  `src/i18n/<lang>/ui.json` using keys like `Weapon source Craft`. Omitted
+  sources display the translated `Weapon source Wish` value. `Craft`,
+  `Fishing`, and `Exploration` are also marked as free weapons in rankings and
+  inline weapon popovers.
 - `passive`: localized passive text.
 - `substat`: stat ID, usually from `src/i18n/<lang>/stats.json`.
 - `level_1`: base attack and substat value at level 1.

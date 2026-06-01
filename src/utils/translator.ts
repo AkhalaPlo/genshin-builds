@@ -5,6 +5,7 @@ import {
   type WeaponPassiveText,
   type WeaponPassiveValue,
 } from './weapon-passive';
+import { getWeaponSource } from './weapon-source';
 
 type TranslationCategory =
   | 'artifact'
@@ -26,6 +27,7 @@ const CATEGORIES: TranslationCategory[] = [
 
 type SharedWeaponData = {
   rarity: number;
+  source?: string;
   passive?: WeaponPassiveText;
   r1?: WeaponPassiveValue[];
   r2?: WeaponPassiveValue[];
@@ -120,6 +122,17 @@ function formatWeaponStatValue(
   }
 
   return `${level1Value} / ${levelMaxValue}`;
+}
+
+/**
+ * Translates a weapon source enum while falling back to the stored value.
+ */
+function translateWeaponSource(locale: any, source?: string) {
+  const sourceName = getWeaponSource(source);
+  const translationKey = `Weapon source ${sourceName}`;
+  const translatedSource = t(locale, 'ui', translationKey, undefined, false);
+
+  return translatedSource === translationKey ? sourceName : translatedSource;
 }
 
 /**
@@ -427,6 +440,16 @@ export class TranslationHelper {
           '</strong></span>',
         ].join('')
       : '';
+    const sourceName = translateWeaponSource(this.locale, info.source);
+    const sourceFooter = sourceName
+      ? [
+          '<span class="weapon-popover-source"><span>',
+          escapeHtml(t(this.locale, 'ui', 'Source', undefined, false)),
+          '</span><strong>',
+          escapeHtml(sourceName),
+          '</strong></span>',
+        ].join('')
+      : '';
 
     return [
       '<span class="info-popover weapon-popover">',
@@ -452,6 +475,7 @@ export class TranslationHelper {
       '<span class="weapon-popover-passive">',
       passivePanels,
       '</span>',
+      sourceFooter,
       '</span>',
       '</span>',
     ].join('');
