@@ -1,6 +1,7 @@
 {
     "ballad-of-the-fjords": {
         "rarity": 4,
+        "source": "Battle Pass",
         "passive": {
             "en": "When there are at least 3 different Elemental Types in your party, Elemental Mastery will be increased by {{value}}.",
             "de": "Erhöht die Elementarkunde um {{value}} Punkte, wenn sich mindestens drei Figuren verschiedener Elementartypen in der Truppe befinden.",
@@ -51,6 +52,7 @@
     },
     "blackcliff-pole": {
         "rarity": 4,
+        "source": "Paimon's Bargains",
         "passive": {
             "en": "After defeating an enemy, ATK is increased by {{value}}% for 30s. This effect has a maximum of 3 stacks, and the duration of each stack is independent of the others.",
             "de": "Erhöht den ANG beim Besiegen von Gegnern 30 s lang um {{value}}%. 3-fach stapelbar, Wirkungsdauer jeder Stapelung ist unabhängig.",
@@ -206,6 +208,7 @@
     },
     "crescent-pike": {
         "rarity": 4,
+        "source": "Craft",
         "passive": {
             "en": "After picking up an Elemental Orb/Particle, Normal and Charged Attacks deal additional DMG equal to {{value}}% of ATK for 5s.",
             "de": "Verursacht nach dem Erhalten von Elementarteilchen oder Elementarkristallen 5 s lang zusätzlichen Schaden in Höhe von {{value}} % ANG mit Standardangriffen und heftigen Schlägen.",
@@ -281,6 +284,7 @@
     },
     "deathmatch": {
         "rarity": 4,
+        "source": "Battle Pass",
         "passive": {
             "en": "If there are at least 2 opponents nearby, ATK is increased by {{value}}% and DEF is increased by {{value}}%. If there are fewer than 2 opponents nearby, ATK is increased by {{value}}%.",
             "de": "Erhöht den ANG bei Anwesenheit von mindestens 2 Gegnern um {{value}}% und die VTD um {{value}}%, erhöht den ANG bei weniger als 2 Gegnern stattdessen um {{value}}%.",
@@ -326,6 +330,7 @@
     },
     "dialogues-of-the-desert-sages": {
         "rarity": 4,
+        "source": "Event",
         "passive": {
             "en": "When the wielder performs healing, restore {{value}} Energy. This effect can be triggered once every 10s and can occur even when the character is not on the field.",
             "de": "Stellt bei aktiver Heilung durch den Träger {{value}} Punkte Energie wieder her, 10 s Abklingzeit. Der Effekt kann auch noch ausgelöst werden, wenn die Figur inaktiv in der Truppe ist.",
@@ -396,6 +401,7 @@
     },
     "dragonspine-spear": {
         "rarity": 4,
+        "source": "Craft",
         "passive": {
             "en": "Hitting an opponent with Normal and Charged Attacks has a /Hitting an opponent with Normal and Charged Attacks has a /Hitting an opponent with Normal and Charged Attacks has an /Hitting an opponent with Normal and Charged Attacks has a /Hitting an opponent with Normal and Charged Attacks has a {{value}}% chance of forming and dropping an Everfrost Icicle above them, dealing AoE DMG equal to {{value}}% of ATK. Opponents affected by Cryo are instead dealt DMG equal to {{value}}% of ATK. Can only occur once every 10s.",
             "de": "Erstellt beim Treffen von Gegnern mit Standardangriffen und heftigen Schlägen mit einer Wahrscheinlichkeit von {{value}}% über den Gegnern einen Kristallkern ewigen Eises, der herunterfällt und Flächenschaden in Höhe von {{value}}% ANG verursacht. Verursacht Schaden in Höhe von {{value}}% ANG, wenn die Gegner von Kryo-Effekten betroffen sind. 10 s Abklingzeit.",
@@ -526,6 +532,7 @@
     },
     "footprint-of-the-rainbow": {
         "rarity": 4,
+        "source": "Craft",
         "passive": {
             "en": "Using an Elemental Skill increases DEF by {{value}}% for 15s.",
             "de": "Erhöht beim Auslösen der Elementarfähigkeit die VTD 15 s lang um {{value}}%.",
@@ -601,6 +608,7 @@
     },
     "halberd": {
         "rarity": 3,
+        "source": "Exploration",
         "passive": {
             "en": "Normal Attacks deal an additional {{value}}% ATK as DMG. Can only occur once every / ATK as DMG. This effect can only occur once every / ATK as DMG. This effect can only occur once every / ATK as DMG. This effect can only occur once every / ATK as DMG. This effect can only occur once every 10s.",
             "de": "Fügt mit Standardangriffen getroffenen Gegnern zusätzlichen Schaden in Höhe von {{value}}% ANG zu. 10 s Abklingzeit.",
@@ -651,6 +659,7 @@
     },
     "kitain-cross-spear": {
         "rarity": 4,
+        "source": "Craft",
         "passive": {
             "en": "Increases Elemental Skill DMG by {{value}}%. After Elemental Skill hits an opponent, the character loses 3 Energy but regenerates {{value}} Energy every 2s for the next 6s. This effect can occur once every 10s. Can be triggered even when the character is not on the field.",
             "de": "Erhöht den mit Elementarfähigkeiten verursachten Schaden um {{value}}%. Zieht der Figur bei Treffern mit einer Elementarfähigkeit 3 Punkte Elementarenergie ab und stellt im Gegenzug 6 s lang alle 2 s {{value}} Punkte Elementarenergie wieder her. Dieser Effekt kann nur einmal alle 10 s ausgelöst werden, auch von Figuren, die sich in deiner Truppe, aber nicht im Kampf befinden.",
@@ -776,6 +785,7 @@
     },
     "missive-windspear": {
         "rarity": 4,
+        "source": "Event",
         "passive": {
             "en": "Within 10s after an Elemental Reaction is triggered, ATK is increased by {{value}}% and Elemental Mastery is increased by {{value}}.",
             "de": "Erhöht 10 s lang nach Auslösen einer Elementarreaktion den ANG um {{value}}% und die Elementarkunde um {{value}} Punkte.",
@@ -816,6 +826,7 @@
     },
     "moonpiercer": {
         "rarity": 4,
+        "source": "Craft",
         "passive": {
             "en": "After triggering Burning, Quicken, Aggravate, Spread, Bloom, Lunar-Bloom, Hyperbloom, or Burgeon, a Leaf of Revival will be created around the character for a maximum of 10s. When picked up, the Leaf will grant the character {{value}}% ATK for 12s. Only 1 Leaf can be generated this way every 20s. This effect can still be triggered if the character is not on the field.",
             "de": "Erzeugt nach dem Auslösen der Reaktionen wie „In Flammen“, „Urwuchs“, „Suprawuchs“, „Rankenwuchs“, „Sprießen“, „Mondspross“, „Supraspross“ oder „Flammenspross“ in der Umgebung der Figur ein Reinkarnations-Blatt, das höchstens 10 s lang bestehen bleibt. Erhöht 12 s lang den ANG der Figur, die das Reinkarnations-Blatt sammelt, um {{value}}%. Auf diese Weise kann alle 20 s nur ein Reinkarnations-Blatt erzeugt werden. Dieser Effekt tritt auch in Kraft, wenn sich die Figur inaktiv in der Truppe befindet.",
@@ -971,6 +982,7 @@
     },
     "prospectors-shovel": {
         "rarity": 4,
+        "source": "Craft",
         "passive": {
             "en": "Electro-Charged DMG is increased by {{value}}%, and Lunar-Charged DMG is increased by {{value}}%. Moonsign: Ascendant Gleam: Lunar-Charged DMG is increased by an additional {{value}}%.",
             "de": "Erhöht den durch die Reaktion „Unter Strom“ verursachten Schaden um {{value}}% und den durch die Reaktion „Mond unter Strom“ verursachten Schaden um {{value}}%. Mondomen &ndash; Reifer Glanz: Erhöht den durch die Reaktion „Mond unter Strom“ verursachten Schaden zusätzlich um {{value}}%.",
@@ -1016,6 +1028,7 @@
     },
     "prototype-starglitter": {
         "rarity": 4,
+        "source": "Craft",
         "passive": {
             "en": "After using an Elemental Skill, increases Normal and Charged Attack DMG by {{value}}% for 12s. Max 2 stacks.",
             "de": "Erhöht den mit Standardangriffen und heftigen Schlägen verursachten Schaden nach Anwendung von Elementarfähigkeiten 12 s lang um {{value}}%, 2-fach stapelbar.",
@@ -1051,6 +1064,7 @@
     },
     "rightful-reward": {
         "rarity": 4,
+        "source": "Craft",
         "passive": {
             "en": "When the wielder is healed, restore {{value}} Energy. This effect can be triggered once every 10s, and can occur even when the character is not on the field.",
             "de": "Stellt bei erhaltener Heilung {{value}} Punkte Energie wieder her. 10 s Abklingzeit. Der Effekt kann auch noch ausgelöst werden, wenn die Figur inaktiv in der Truppe ist.",
@@ -1086,6 +1100,7 @@
     },
     "royal-spear": {
         "rarity": 4,
+        "source": "Paimon's Bargains",
         "passive": {
             "en": "Upon damaging an opponent, increases CRIT Rate by {{value}}%. Max 5 stacks. A CRIT Hit removes all stacks.",
             "de": "Erhöht die KT beim Verursachen von Schaden um {{value}}%, 5-fach stapelbar. Effekt erlischt beim Verursachen eines KT.",
@@ -1331,6 +1346,7 @@
     },
     "tamayuratei-no-ohanashi": {
         "rarity": 4,
+        "source": "Event",
         "passive": {
             "en": "Increase ATK by {{value}}% and Movement SPD by 10% for 10s when using an Elemental Skill.",
             "de": "Erhöht beim Auslösen der Elementarfähigkeit den ANG um {{value}}% und die Bewegungs-GSW um 10 %, hält 10 s.",
@@ -1366,6 +1382,7 @@
     },
     "the-catch": {
         "rarity": 4,
+        "source": "Fishing",
         "passive": {
             "en": "Increases Elemental Burst DMG by {{value}}% and Elemental Burst CRIT Rate by {{value}}%.",
             "de": "Erhöht den mit Spezialfähigkeiten verursachten Schaden um {{value}}% und die KT von Spezialfähigkeiten um {{value}}%.",
@@ -1486,6 +1503,7 @@
     },
     "white-tassel": {
         "rarity": 3,
+        "source": "Exploration",
         "passive": {
             "en": "Increases Normal Attack DMG by {{value}}%.",
             "de": "Erhöht den mit Standardangriffen verursachten Schaden um {{value}}%.",

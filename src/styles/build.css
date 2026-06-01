@@ -409,6 +409,71 @@
   background: rgba(255, 255, 255, 0.045);
 }
 
+.weapon-card .rank-row.is-free-weapon {
+  position: relative;
+  background:
+    linear-gradient(
+      90deg,
+      color-mix(in srgb, #7ee0ad 18%, transparent) 0%,
+      color-mix(in srgb, #7ee0ad 8%, transparent) 48%,
+      rgba(255, 255, 255, 0.045) 100%
+    ),
+    rgba(255, 255, 255, 0.045);
+}
+
+.weapon-card .rank-row.is-free-weapon::before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 4px;
+  background:  #9ef0c2;
+  content: "";
+  pointer-events: none;
+}
+
+.weapon-card .rank-group .rank-row.is-free-weapon:first-child {
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+}
+
+.weapon-card .rank-group .rank-row.is-free-weapon:first-child::before,
+.weapon-card .rank-list > .rank-row.is-free-weapon::before,
+.weapon-card .conditional-row.is-free-weapon::before {
+  border-top-left-radius: 7px;
+}
+
+.weapon-card .rank-group .rank-row.is-free-weapon:last-child {
+  border-bottom-right-radius: 7px;
+  border-bottom-left-radius: 7px;
+}
+
+.weapon-card .rank-group .rank-row.is-free-weapon:last-child::before,
+.weapon-card .rank-list > .rank-row.is-free-weapon::before,
+.weapon-card .conditional-row.is-free-weapon::before {
+  border-bottom-left-radius: 7px;
+}
+
+.free-weapon-note {
+  display: inline-flex;
+  max-width: 100%;
+  gap: 7px;
+  align-items: center;
+  margin: 6px 0;
+  color: rgba(255, 255, 255, 0.64);
+  font-size: 0.74rem;
+  line-height: 1.35;
+}
+
+.free-weapon-note-mark {
+  flex: 0 0 auto;
+  width: 3px;
+  height: 14px;
+  border-radius: 999px;
+  background: #9ef0c2;
+  box-shadow: 0 0 10px color-mix(in srgb, #7ee0ad 36%, transparent);
+}
+
 .rank-number {
   display: grid;
   width: 26px;
@@ -509,7 +574,6 @@
 }
 
 .alt {
-  margin-left: 12px;
   color: color-mix(in srgb, var(--text) 82%, transparent);
 }
 
@@ -867,6 +931,24 @@ body.info-popover-locked .info-popover.is-open .info-popover-card {
 .weapon-popover-passive-value {
   color: var(--accent-color, var(--element));
   font-weight: 850;
+}
+
+.weapon-popover-source {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 10px;
+  border-top: 1px solid color-mix(in srgb, var(--text) 16%, transparent);
+  padding-top: 8px;
+  color: color-mix(in srgb, var(--text) 62%, transparent);
+  font-size: 0.76rem;
+  font-weight: 650;
+}
+
+.weapon-popover-source strong {
+  color: color-mix(in srgb, var(--text) 76%, transparent);
+  font-weight: 750;
+  text-align: right;
 }
 
 @keyframes note-highlight {

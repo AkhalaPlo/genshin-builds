@@ -41,6 +41,7 @@
     },
     "amenoma-kageuchi": {
         "rarity": 4,
+        "source": "Craft",
         "passive": {
             "en": "After casting an Elemental Skill, gain 1 Succession Seed. This effect can be triggered once every 5s. The Succession Seed lasts for 30s. Up to 3 Succession Seeds may exist simultaneously. After using an Elemental Burst, all Succession Seeds are consumed and after 2s, the character regenerates {{value}} Energy for each seed consumed.",
             "de": "Gewährt beim Auslösen einer Elementarfähigkeit 1 Samen der Nachkommenschaft, 5 s Abklingzeit. Samen der Nachkommenschaft halten 30 s, zu einem Zeitpunkt können bis zu 3 existieren. Verbraucht beim Auslösen einer Spezialfähigkeit alle vorhandenen Samen der Nachkommenschaft und stellt der Figur 2 s später {{value}} Punkte Elementarenergie pro verbrauchten Samen der Nachkommenschaft wieder her.",
@@ -211,6 +212,7 @@
     },
     "blackcliff-longsword": {
         "rarity": 4,
+        "source": "Paimon's Bargains",
         "passive": {
             "en": "After defeating an opponent, ATK is increased by {{value}}% for 30s. This effect has a maximum of 3 stacks, and the duration of each stack is independent of the others.",
             "de": "Erhöht den ANG beim Besiegen von Gegnern 30 s lang um {{value}}%. 3-fach stapelbar, Wirkungsdauer jeder Stapelung ist unabhängig.",
@@ -246,6 +248,7 @@
     },
     "calamity-of-eshu": {
         "rarity": 4,
+        "source": "Event",
         "passive": {
             "en": "While characters are protected by a Shield, DMG dealt by Normal and Charged Attacks is increased by {{value}}%, and Normal and Charged Attack CRIT Rate is increased by {{value}}%.",
             "de": "Erhöht den mit Standardangriffen und heftigen Schlägen verursachten Schaden des Trägers im Schutz von Schilden um {{value}}% sowie deren KT um {{value}}%.",
@@ -286,6 +289,7 @@
     },
     "cinnabar-spindle": {
         "rarity": 4,
+        "source": "Event",
         "passive": {
             "en": "Elemental Skill DMG is increased by {{value}}% of DEF. The effect will be triggered no more than once every 1.5s and will be cleared 0.1s after the Elemental Skill deals DMG.",
             "de": "Erhöht den mit Elementarfähigkeiten verursachten Schaden um {{value}}% VTD. Dieser Effekt erlischt 0,1 s nach dem Verursachen von Schaden mit der Elementarfähigkeit. 1,5 s Abklingzeit.",
@@ -356,6 +360,7 @@
     },
     "dark-iron-sword": {
         "rarity": 3,
+        "source": "Exploration",
         "passive": {
             "en": "Upon causing an Overloaded, Superconduct, Electro-Charged, Quicken, Aggravate, Hyperbloom, Lunar-Charged, or Electro-infused Swirl reaction, ATK is increased by {{value}}% for 12s.",
             "de": "Erhöht den ANG nach Auslösen der Reaktionen „Überladen“, „Supraleiter“, „Unter Strom“, „Urwuchs“, „Suprawuchs“, „Supraspross“, „Mond unter Strom“ und „Elektro-Verwirbelung“ 12 s lang um {{value}}%.",
@@ -446,6 +451,7 @@
     },
     "festering-desire": {
         "rarity": 4,
+        "source": "Event",
         "passive": {
             "en": "Increases Elemental Skill DMG by {{value}}% and Elemental Skill CRIT Rate by {{value}}%.",
             "de": "Erhöht den mit Elementarfähigkeiten verursachten Schaden um {{value}}% und die KT von Elementarfähigkeiten um {{value}}%.",
@@ -486,6 +492,7 @@
     },
     "fillet-blade": {
         "rarity": 3,
+        "source": "Exploration",
         "passive": {
             "en": "On hit, has a 50% chance to deal {{value}}% ATK DMG to a single opponent. Can only occur once every 15s/14s/13s/12s/11s.",
             "de": "Fügt einem einzelnen Gegner bei einem Treffer mit einer Wahrscheinlichkeit von 50 % Schaden in Höhe von {{value}}% ANG zu. {{value}} s Abklingzeit.",
@@ -521,6 +528,7 @@
     },
     "finale-of-the-deep": {
         "rarity": 4,
+        "source": "Craft",
         "passive": {
             "en": "When using an Elemental Skill, ATK will be increased by {{value}}% for 15s, and a Bond of Life worth 25% of Max HP will be granted. This effect can be triggered once every 10s. When the Bond of Life is cleared, a maximum of {{value}} ATK will be gained based on {{value}}% of the total amount of the Life Bond cleared, lasting for 15s.",
             "de": "Erhöht beim Auslösen der Elementarfähigkeit den ANG um {{value}}%, hält 15 s. Es entsteht gleichzeitig ein Eid des Lebens mit einem Basiswert in Höhe von 25 % der max. LP. 10 s Abklingzeit. Wenn der Eid des Lebens entfernt wird, wird der ANG um {{value}}% der entfernten Summe, max. {{value}} Punkte, erhöht. Hält 15 s.",
@@ -566,6 +574,7 @@
     },
     "fleuve-cendre-ferryman": {
         "rarity": 4,
+        "source": "Fishing",
         "passive": {
             "en": "Increases Elemental Skill CRIT Rate by {{value}}%. Additionally, increases Energy Recharge by {{value}}% for 5s after using an Elemental Skill.",
             "de": "Erhöht die KT der Elementarfähigkeit um {{value}}%. Erhöht außerdem die Aufladerate nach dem Auslösen der Elementarfähigkeit 5 s lang um {{value}}",
@@ -606,6 +615,7 @@
     },
     "flute-of-ezpitzal": {
         "rarity": 4,
+        "source": "Craft",
         "passive": {
             "en": "Using an Elemental Skill increases DEF by {{value}}% for 15s.",
             "de": "Erhöht beim Auslösen der Elementarfähigkeit die VTD 15 s lang um {{value}}%.",
@@ -761,6 +771,7 @@
     },
     "iron-sting": {
         "rarity": 4,
+        "source": "Craft",
         "passive": {
             "en": "Dealing Elemental DMG increases all DMG by {{value}}% for 6s. Max 2 stacks. Can occur once every 1s.",
             "de": "Erhöht den von dieser Figur verursachten Schaden nach Verursachen von Elementar-SCH 6 s lang um {{value}}%, 2-fach stapelbar. 1 s Abklingzeit.",
@@ -796,6 +807,7 @@
     },
     "kagotsurube-isshin": {
         "rarity": 4,
+        "source": "Exploration",
         "passive": {
             "en": "When a Normal, Charged, or Plunging Attack hits an opponent, it will whip up a Hewing Gale, dealing AoE DMG equal to 180% of ATK and increasing ATK by 15% for 8s. This effect can be triggered once every 8s.",
             "de": "Wirbelt beim Treffen von Gegnern mit Standardangriffen, heftigen Schlägen oder Angriffen aus dem Fall einen dreschenden Wind auf, der Flächenschaden in Höhe von 180 % ANG verursacht und den ANG 8 s lang um 15 % erhöht. 8 s Abklingzeit.",
@@ -1161,6 +1173,7 @@
     },
     "prototype-rancour": {
         "rarity": 4,
+        "source": "Craft",
         "passive": {
             "en": "On hit, Normal or Charged Attacks increase ATK and DEF by {{value}}% for 6s. Max 4 stacks. This effect can only occur once every 0.3s.",
             "de": "Erhöht den ANG und die VTD bei Treffern mit Standardangriffen und heftigen Schlägen 6 s lang um {{value}}%, 4-fach stapelbar. 0,3 s Abklingzeit.",
@@ -1196,6 +1209,7 @@
     },
     "royal-longsword": {
         "rarity": 4,
+        "source": "Paimon's Bargains",
         "passive": {
             "en": "Upon damaging an opponent, increases CRIT Rate by {{value}}%. Max 5 stacks. A CRIT Hit removes all stacks.",
             "de": "Erhöht die KT beim Verursachen von Schaden um {{value}}%, 5-fach stapelbar. Effekt erlischt beim Verursachen eines KT.",
@@ -1271,6 +1285,7 @@
     },
     "sapwood-blade": {
         "rarity": 4,
+        "source": "Craft",
         "passive": {
             "en": "After triggering Burning, Quicken, Aggravate, Spread, Bloom, Lunar-Bloom, Hyperbloom, or Burgeon, a Leaf of Consciousness will be created around the character for a maximum of 10s. When picked up, the Leaf will grant the character {{value}} Elemental Mastery for 12s. Only 1 Leaf can be generated this way every 20s. This effect can still be triggered if the character is not on the field. The Leaf of Consciousness' effect cannot stack.",
             "de": "Erzeugt nach dem Auslösen der Reaktionen wie „In Flammen“, „Urwuchs“, „Suprawuchs“, „Rankenwuchs“, „Sprießen“, „Mondspross“, „Supraspross“ oder „Flammenspross“ in der Umgebung der Figur ein Vijnana-Blatt, das höchstens 10 s lang bestehen bleibt. Erhöht 12 s lang die Elementarkunde der Figur, die das Vijnana-Blatt sammelt, um {{value}} Punkte. Auf diese Weise kann alle 20 s nur ein Vijnana-Blatt erzeugt werden. Dieser Effekt tritt auch in Kraft, wenn sich die Figur inaktiv in der Truppe befindet. Der Effekt von Vijnana-Blatt ist nicht stapelbar.",
@@ -1306,6 +1321,7 @@
     },
     "serenitys-call": {
         "rarity": 4,
+        "source": "Craft",
         "passive": {
             "en": "Upon causing an Elemental Reaction, increases Max HP by {{value}}% for 12s. Moonsign: Ascendant Gleam: Max HP from this effect is further increased by {{value}}%. This effect can be triggered even if the equipping character is off-field.",
             "de": "Erhöht nach Auslösen der Elementarreaktion 12 s lang die max. LP um {{value}}%. Mondomen &ndash; Reifer Glanz: Erhöht die max. LP während des Effekts zusätzlich um {{value}}%. Dieser Effekt kann auch ausgelöst werden, wenn die damit ausgerüstete Figur inaktiv ist.",
@@ -1551,6 +1567,7 @@
     },
     "sword-of-descension": {
         "rarity": 4,
+        "source": "Playstation",
         "passive": {
             "en": "Effective only on the following platform: <br>\"PlayStationâ„¢Network\"<br>Hitting opponents with Normal and Charged Attacks grants a 50% chance to deal 200% ATK as DMG in a small AoE. This effect can only occur once every 10s. Additionally, if the Traveler equips the Sword of Descension, their ATK is increased by 66.",
             "de": "{{value}}wirksam:<br>{{value}}„PlayStation™Network“<br>Verursacht beim Treffen von Gegnern mit Standardangriffen und heftigen Schlägen mit einer Wahrscheinlichkeit von {{value}}% Schaden in Höhe von {{value}}% ANG mit geringer Reichweite. 10 s Abklingzeit. Erhöht den ANG zusätzlich um {{value}} Punkte, wenn der Reisende mit dem Schwert der Niederkunft ausgerüstet ist.",
@@ -1571,6 +1588,7 @@
     },
     "sword-of-narzissenkreuz": {
         "rarity": 4,
+        "source": "Exploration",
         "passive": {
             "en": "When the equipping character does not have an Arkhe: When Normal Attacks, Charged Attacks, or Plunging Attacks strike, a Pneuma or Ousia energy blast will be unleashed, dealing {{value}}% of ATK as DMG. This effect can be triggered once every 12s. The energy blast type is determined by the current type of the Sword of Narzissenkreuz.",
             "de": "In zahllosen Geschichten ist diese Waffe, die dem legendären Helden gehört, auch der Schlüssel, um alle Tore zu öffnen, die nötig sind, um den Höhepunkt zu überwinden und das Ende des Schicksals zu erreichen.",
@@ -1641,6 +1659,7 @@
     },
     "the-black-sword": {
         "rarity": 4,
+        "source": "Battle Pass",
         "passive": {
             "en": "Increases DMG dealt by Normal and Charged Attacks by {{value}}%. Additionally, regenerates {{value}}% of ATK as HP when Normal and Charged Attacks score a CRIT Hit. This effect can occur once every 5s.",
             "de": "Erhöht den mit Standardangriffen und heftigen Schlägen verursachten Schaden um {{value}}%. Stellt bei KT von Standardangriffen und heftigen Schlägen LP in Höhe von {{value}}% ANG wieder her. 5 s Abklingzeit.",
@@ -1756,6 +1775,7 @@
     },
     "toukabou-shigure": {
         "rarity": 4,
+        "source": "Event",
         "passive": {
             "en": "After an attack hits opponents, it will inflict an instance of Cursed Parasol upon one of them for 10s. This effect can be triggered once every 15s. If this opponent is defeated during Cursed Parasol's duration, Cursed Parasol's CD will be refreshed immediately. The character wielding this weapon will deal {{value}}% more DMG to the opponent affected by Cursed Parasol.",
             "de": "Nach Treffen von Gegnern mit einem Angriff wird einer der Gegner vom Effekt „Verwünschung des Papierschirms“ betroffen, hält 10 s, 15 s Abklingzeit. Wird der von diesem Effekt betroffene Gegner während der Dauer des Effekts besiegt, wird die Abklingzeit sofort abgeschlossen. Erhöht den von der damit ausgerüsteten Figur an Gegnern, die von „Verwünschung des Papierschirms“ betroffen sind, verursachten Schaden um {{value}}%.",
@@ -1791,6 +1811,7 @@
     },
     "travelers-handy-sword": {
         "rarity": 3,
+        "source": "Exploration",
         "passive": {
             "en": "Each Elemental Orb or Particle collected restores {{value}}% HP.",
             "de": "Stellt beim Erhalten von Elementarkristallen oder Elementarteilchen {{value}}% LP wieder her.",
@@ -1871,6 +1892,7 @@
     },
     "wolf-fang": {
         "rarity": 4,
+        "source": "Battle Pass",
         "passive": {
             "en": "DMG dealt by Elemental Skill and Elemental Burst is increased by {{value}}%. When an Elemental Skill hits an opponent, its CRIT Rate will be increased by {{value}}%. When an Elemental Burst hits an opponent, its CRIT Rate will be increased by {{value}}%. Both of these effects last 10s separately, have 4 max stacks, and can be triggered once every 0.1s.",
             "de": "Erhöht den mit Elementarfähigkeiten und Spezialfähigkeiten verursachten Schaden um {{value}}%. Erhöht beim Treffen von Gegnern mit Elementarfähigkeiten die KT von Elementarfähigkeiten um {{value}}%. Erhöht beim Treffen von Gegnern mit Spezialfähigkeiten die KT von Spezialfähigkeiten um {{value}}%. Diese beiden Effekte halten jeweils 10 s. 4-fach stapelbar, 0,1 s Abklingzeit.",

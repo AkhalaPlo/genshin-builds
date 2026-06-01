@@ -6,9 +6,11 @@ import {
   type WeaponPassiveText,
   type WeaponPassiveValue,
 } from '../utils/weapon-passive';
+import { getWeaponSource } from '../utils/weapon-source';
 
 type WeaponInfo = {
   rarity: number;
+  source?: string;
   passive?: WeaponPassiveText;
   r1?: WeaponPassiveValue[];
   r2?: WeaponPassiveValue[];
@@ -89,6 +91,16 @@ const substatValue = formatWeaponStatValue(
   info?.level_1?.substat_value,
   info?.level_max?.substat_value,
 );
+const source = getWeaponSource(info?.source);
+const sourceTranslationKey = `Weapon source ${source}`;
+const translatedSourceName = sourceTranslationKey
+  ? t(locale, 'ui', sourceTranslationKey, undefined, false)
+  : '';
+const sourceName =
+  translatedSourceName && translatedSourceName !== sourceTranslationKey
+    ? translatedSourceName
+    : source;
+const sourceLabel = t(locale, 'ui', 'Source', undefined, false);
 ---
 
 <span class="info-popover weapon-popover">
@@ -143,6 +155,12 @@ const substatValue = formatWeaponStatValue(
             />
           ))}
         </span>
+        {sourceName && (
+          <span class="weapon-popover-source">
+            <span>{sourceLabel}</span>
+            <strong>{sourceName}</strong>
+          </span>
+        )}
       </span>
     )
   }

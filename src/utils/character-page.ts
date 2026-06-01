@@ -127,6 +127,7 @@ function loadAllWeaponData() {
 
 type SharedWeaponData = {
   rarity: number;
+  source?: string;
   passive?: WeaponPassiveText;
   substat?: string;
   level_1?: {

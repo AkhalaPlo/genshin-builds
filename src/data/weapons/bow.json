@@ -181,6 +181,7 @@
     },
     "blackcliff-warbow": {
         "rarity": 4,
+        "source": "Paimon's Bargains",
         "passive": {
             "en": "After defeating an enemy, ATK is increased by {{value}}% for 30s. This effect has a maximum of 3 stacks, and the duration of each stack is independent of the others.",
             "de": "Erhöht den ANG beim Besiegen von Gegnern 30 s lang um {{value}}%. 3-fach stapelbar, Wirkungsdauer jeder Stapelung ist unabhängig.",
@@ -216,6 +217,7 @@
     },
     "chain-breaker": {
         "rarity": 4,
+        "source": "Craft",
         "passive": {
             "en": "For every party member from Natlan or who has a different Elemental Type from the equipping character, the equipping character gains {{value}}% increased ATK. When there are no less than 3 of the aforementioned characters, the equipping character gains {{value}} Elemental Mastery.",
             "de": "Erhöht für jede Figur aus Natlan oder mit einem anderen Elementartyp als dem des Trägers in der Truppe den ANG des Trägers um {{value}}%. Erhöht bei mindestens 3 für den Bonus relevanten Figuren die Elementarkunde des Trägers um {{value}} Punkte.",
@@ -256,6 +258,7 @@
     },
     "cloudforged": {
         "rarity": 4,
+        "source": "Event",
         "passive": {
             "en": "After Elemental Energy is decreased, the equipping character's Elemental Mastery will increase by {{value}} for 18s. Max 2 stacks.",
             "de": "Erhöht die Elementarkunde des Trägers um {{value}} Punkte, wenn sich dessen Elementarenergie verringert, hält 18 s, 2-fach stapelbar.",
@@ -291,6 +294,7 @@
     },
     "compound-bow": {
         "rarity": 4,
+        "source": "Craft",
         "passive": {
             "en": "Normal Attack and Charged Attack hits increase ATK by {{value}}% and Normal ATK SPD by {{value}}% for 6s. Max 4 stacks. Can only occur once every 0.3s.",
             "de": "Erhöht den ANG bei Treffern mit Standardangriffen und heftigen Schlägen 6 s lang um {{value}}% und die Standardangriffs-GSW um {{value}}%. 4-fach stapelbar, 0,3 s Abklingzeit.",
@@ -376,6 +380,7 @@
     },
     "end-of-the-line": {
         "rarity": 4,
+        "source": "Fishing",
         "passive": {
             "en": "Triggers the Flowrider effect after using an Elemental Skill, dealing {{value}}% ATK as AoE DMG upon hitting an opponent with an attack. Flowrider will be removed after 15s or after causing 3 instances of AoE DMG. Only 1 instance of AoE DMG can be caused every 2s in this way. Flowrider can be triggered once every 12s.",
             "de": "Löst beim Anwenden der Elementarfähigkeit den Effekt „Drift“ aus, bei dem die Figur, wenn sie einen Gegner trifft, Flächenschaden in Höhe von {{value}}% ANG verursacht. Dieser Effekt wird nach 15 s oder 3-maligem Verursachen des Flächenschadens entfernt. 2 s Abklingzeit für das Verursachen solch eines Flächenschadens, 12 s Abklingzeit für den Effekt „Drift“.",
@@ -411,6 +416,7 @@
     },
     "fading-twilight": {
         "rarity": 4,
+        "source": "Event",
         "passive": {
             "en": "Has three states, Evengleam, Afterglow, and Dawnblaze, which increase DMG dealt by {{value}}/{{value}}/{{value}}% respectively. When attacks hit opponents, this weapon will switch to the next state. This weapon can change states once every 7s. The character equipping this weapon can still trigger the state switch while not on the field.",
             "de": "Diese Waffe hat drei Zustände: Zwielicht, Abendröte und Morgengrauen. Diese drei Zustände erhöhen den verursachten Schaden jeweils um {{value}}/{{value}}/{{value}}%. Nachdem die Figur einen Gegner trifft, wird der aktuelle Zustand deaktiviert und der nächste Zustand wird aktiviert. 7 s Abklingzeit für den Zustandswechsel, der auch ausgelöst werden kann, wenn die mit dieser Waffe ausgerüstete Figur inaktiv ist.",
@@ -586,6 +592,7 @@
     },
     "hamayumi": {
         "rarity": 4,
+        "source": "Craft",
         "passive": {
             "en": "Increases Normal Attack DMG by {{value}}% and Charged Attack DMG by {{value}}%. When the equipping character's Energy reaches 100%, this effect is increased by 100%.",
             "de": "Erhöht den mit Standardangriffen verursachten Schaden um {{value}}% und den mit heftigen Schlägen verursachten Schaden um {{value}}%. Verstärkt diesen Effekt bei 100 % Elementarenergie der mit dieser Waffe ausgerüsteten Figur um 100 %.",
@@ -681,6 +688,7 @@
     },
     "ibis-piercer": {
         "rarity": 4,
+        "source": "Event",
         "passive": {
             "en": "The character's Elemental Mastery will increase by {{value}} within 6s after Charged Attacks hit opponents. Max 2 stacks. This effect can be triggered once every 0.5s.",
             "de": "Erhöht nach dem Treffen von Gegnern mit heftigen Schlägen die Elementarkunde der Figur 6 s um {{value}} Punkte, 2-fach stapelbar. 0,5 s Abklingzeit.",
@@ -716,6 +724,7 @@
     },
     "kings-squire": {
         "rarity": 4,
+        "source": "Craft",
         "passive": {
             "en": "Obtain the Teachings of the Forest effect when unleashing Elemental Skills and Bursts, increasing Elemental Mastery by {{value}} for 12s. This effect will be removed when switching characters. When the Teachings of the Forest effect ends or is removed, it will deal {{value}}% of ATK as DMG to 1 nearby opponent. The Teachings of the Forest effect can be triggered once every 20s.",
             "de": "Erhält beim Anwenden der Elementarfähigkeit oder Spezialfähigkeit den Effekt „Waldlehre“, der 12 s lang die Elementarkunde um {{value}} Punkte erhöht. Dieser Effekt wird beim Auswechseln der Figur entfernt. Wenn die Dauer des Effekts endet oder der Effekt entfernt wird, wird 1 Gegner in der Nähe Schaden in Höhe von {{value}}% ANG zugefügt. 20 s Abklingzeit.",
@@ -756,6 +765,7 @@
     },
     "messenger": {
         "rarity": 3,
+        "source": "Exploration",
         "passive": {
             "en": "Charged Attack hits on weak points deal an additional {{value}}% ATK DMG as CRIT DMG. Can only occur once every 10s.",
             "de": "Verursacht beim Treffen von Schwachstellen mit heftigen Schlägen zusätzlichen Schaden in Höhe von {{value}}% ANG sowie auf jeden Fall einen KT. 10 s Abklingzeit.",
@@ -926,6 +936,7 @@
     },
     "predator": {
         "rarity": 4,
+        "source": "Playstation",
         "passive": {
             "en": "Effective only on the following platform: <br>\"PlayStationâ„¢Network\"<br>Dealing Cryo DMG to opponents increases this character's Normal and Charged Attack DMG by 10% for 6s. This effect can have a maximum of 2 stacks. Additionally, when Aloy equips Predator, ATK is increased by 66.",
             "de": "{{value}}wirksam:<br>{{value}}„PlayStation™Network“<br>Erhöht nach dem Treffen von Gegnern mit Kryo-Schaden den mit Standardangriffen und heftigen Schlägen verursachten Schaden 6 s lang um 10 %, 2-fach stapelbar. Erhöht Aloys ANG beim Anlegen von Raubtier zusätzlich um 66 Punkte.",
@@ -946,6 +957,7 @@
     },
     "prototype-crescent": {
         "rarity": 4,
+        "source": "Craft",
         "passive": {
             "en": "Charged Attack hits on weak points increase Movement SPD by 10% and ATK by {{value}}% for 10s.",
             "de": "Erhöht die Bewegungs-GSW beim Treffen von Schwachstellen mit heftigen Schlägen 10 s lang um 10 % und den ANG um {{value}}%.",
@@ -981,6 +993,7 @@
     },
     "rainbow-serpents-rain-bow": {
         "rarity": 4,
+        "source": "Event",
         "passive": {
             "en": "ATK is increased by {{value}}% for 8s after the equipping character's attacks hit an opponent while the equipping character is off-field.",
             "de": "Erhöht den ANG des Trägers, wenn dieser sich inaktiv in der Truppe befindet, nach dem Treffen eines Gegners 8 s lang um {{value}}%.",
@@ -1091,6 +1104,7 @@
     },
     "recurve-bow": {
         "rarity": 3,
+        "source": "Exploration",
         "passive": {
             "en": "Defeating an opponent restores {{value}}% HP.",
             "de": "Stellt beim Besiegen eines Gegners {{value}}% LP wieder her.",
@@ -1126,6 +1140,7 @@
     },
     "royal-bow": {
         "rarity": 4,
+        "source": "Paimon's Bargains",
         "passive": {
             "en": "Upon damaging an opponent, increases CRIT Rate by {{value}}%. Max 5 stacks. A CRIT Hit removes all stacks.",
             "de": "Erhöht die KT beim Verursachen von Schaden um {{value}}%, 5-fach stapelbar. Effekt erlischt beim Verursachen eines KT.",
@@ -1236,6 +1251,7 @@
     },
     "scion-of-the-blazing-sun": {
         "rarity": 4,
+        "source": "Battle Pass",
         "passive": {
             "en": "After a Charged Attack hits an opponent, a Sunfire Arrow will descend upon the opponent hit, dealing {{value}}% ATK as DMG, and applying the Heartsearer effect to the opponent damaged by said Arrow for 10s. Opponents affected by Heartsearer take {{value}}% more Charged Attack DMG from the wielder. A Sunfire Arrow can be triggered once every 10s.",
             "de": "Lässt nach dem Treffen von Gegnern mit heftigen Schlägen einen Brennpfeil auf diese niedergehen, der Schaden in Höhe von {{value}}% des ANG verursacht und ihnen 10 s Brennendes Herz zufügt. Erhöht den Schaden heftiger Schläge des Trägers an Gegnern mit Brennendem Herzen um {{value}}%. 10 s Abklingzeit für den Brennpfeil.",
@@ -1291,6 +1307,7 @@
     },
     "sequence-of-solitude": {
         "rarity": 4,
+        "source": "Event",
         "passive": {
             "en": "When an attack hits an opponent, deal AoE DMG equal to {{value}}% of Max HP at the target location. This effect can be triggered once every / of Max HP at the target's location. This effect can be triggered once every / of Max HP at the target's location. This effect can be triggered once every / of Max HP at the target's location. This effect can be triggered once every / of Max HP at the target's location. This effect can be triggered once every 15s.",
             "de": "Verursacht beim Treffen von Gegnern mit Angriffen an der Stelle des Ziels Flächenschaden basierend auf {{value}}% der max. LP, 15 s Abklingzeit.",
@@ -1491,6 +1508,7 @@
     },
     "snare-hook": {
         "rarity": 4,
+        "source": "Craft",
         "passive": {
             "en": "Upon causing an Elemental Reaction, increases Elemental Mastery by {{value}} for 12s. Moonsign: Ascendant Gleam: Elemental Mastery from this effect is further increased by {{value}}. This effect can be triggered even if the equipping character is off-field.",
             "de": "Erhöht nach Auslösen der Elementarreaktion 12 s lang die Elementarkunde um {{value}} Punkte. Mondomen &ndash; Reifer Glanz: Erhöht die Elementarkunde während des Effekts zusätzlich um {{value}} Punkte. Dieser Effekt kann auch ausgelöst werden, wenn die damit ausgerüstete Figur inaktiv ist.",
@@ -1531,6 +1549,7 @@
     },
     "song-of-stillness": {
         "rarity": 4,
+        "source": "Craft",
         "passive": {
             "en": "After the wielder is healed, they will deal {{value}}% more DMG for 8s. This can be triggered even when the character is not on the field.",
             "de": "Erhöht nach erhaltener Heilung den von der Figur verursachten Schaden um {{value}}%, hält 8 s. Der Effekt kann auch noch ausgelöst werden, wenn die Figur inaktiv in der Truppe ist.",
@@ -1721,6 +1740,7 @@
     },
     "the-viridescent-hunt": {
         "rarity": 4,
+        "source": "Battle Pass",
         "passive": {
             "en": "Upon hit, Normal and Charged Attacks have a 50% chance to generate a Cyclone, which will continuously attract surrounding opponents, dealing {{value}}% of ATK as DMG to these opponents every 0.5s for 4s. This effect can only occur once every {{value}} s.",
             "de": "Erschafft bei Treffern mit Standardangriffen und heftigen Schlägen mit einer Wahrscheinlichkeit von 50 % ein Windauge, das Gegner in der Umgebung fortlaufend ansaugt und ihnen 4 s lang alle 0,5 s Schaden in Höhe von {{value}}% ANG zufügt. {{value}} s Abklingzeit.",
@@ -1811,6 +1831,7 @@
     },
     "windblume-ode": {
         "rarity": 4,
+        "source": "Event",
         "passive": {
             "en": "After using an Elemental Skill, receive a boon from the ancient wish of the Windblume, increasing ATK by {{value}}% for 6s.",
             "de": "Verleiht beim Auslösen von Elementarfähigkeiten den alten Wunsch der Windblumen und erhöht den ANG 6 s lang um {{value}}%.",
