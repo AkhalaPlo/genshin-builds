@@ -33,8 +33,17 @@
 
 .home-intro {
   max-width: 760px;
-  margin: 0 auto 22px;
+  margin: 0 auto 8px;
   color: color-mix(in srgb, var(--text) 78%, transparent);
+  text-align: center;
+}
+
+.home-disclaimer {
+  max-width: 760px;
+  margin: 0 auto 22px;
+  color: color-mix(in srgb, var(--text) 62%, transparent);
+  font-size: 0.86rem;
+  line-height: 1.45;
   text-align: center;
 }
 
@@ -966,6 +975,16 @@
   background: rgba(0, 0, 0, 0.26);
   opacity: 1;
   text-decoration: none;
+}
+
+@media (max-width: 880px) {
+  .home-filters {
+    grid-template-columns: minmax(220px, 1fr) repeat(3, minmax(96px, 0.42fr));
+  }
+
+  .home-updated-toggle {
+    grid-column: 1 / -1;
+  }
 }
 
 @media (max-width: 640px) {

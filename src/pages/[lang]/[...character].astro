@@ -25,6 +25,23 @@ const {
 
 const defaultBuildSlug =
   builds.find((build) => build.isBest)?.slug ?? builds[0]?.slug;
+
+const buildHasItemNotes = (notes: any) =>
+  [
+    notes?.weapons?.items,
+    notes?.artifacts?.sets,
+    notes?.artifacts?.mainstats,
+    notes?.artifacts?.substats,
+    notes?.talents?.items,
+  ].some((items) => Array.isArray(items) && items.length > 0);
+
+const noteMarkerExplanation = t(
+  locale,
+  'ui',
+  'Note marker explanation',
+  undefined,
+  false,
+);
 ---
 
 <CharacterPageLayout
@@ -40,6 +57,7 @@ const defaultBuildSlug =
       {
         builds.map((build) => {
           const buildContentId = `build-content-${build.slug}`;
+          const hasNoteMarkerHint = buildHasItemNotes(build.notes);
 
           return (
             <div class="build-card" data-id={build.slug}>
@@ -57,6 +75,15 @@ const defaultBuildSlug =
               </button>
 
               <div class="build-content" id={buildContentId}>
+                {hasNoteMarkerHint && (
+                  <div class="build-note-hint">
+                    <span class="note-marker-text" aria-hidden="true">
+                      ⓘ
+                    </span>
+                    <span>{noteMarkerExplanation}</span>
+                  </div>
+                )}
+
                 <div class="grid">
                   <Weapon
                     weapons={build.weapons}

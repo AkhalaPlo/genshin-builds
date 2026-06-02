@@ -161,6 +161,7 @@ const substatRows = artifacts.substats.substats_priority.map(
                       label={stat.name}
                       noteId={stat.noteId}
                       hasNote={Boolean(hasNoteMarker(stat))}
+                      emphasized
                     />
                   </>
                 ))}
@@ -187,6 +188,7 @@ const substatRows = artifacts.substats.substats_priority.map(
                       label={row.items[0].name}
                       noteId={row.items[0].noteId}
                       hasNote={Boolean(hasNoteMarker(row.items[0]))}
+                      emphasized
                     />
                   </span>
                 </div>
@@ -201,6 +203,7 @@ const substatRows = artifacts.substats.substats_priority.map(
                         label={item.name}
                         noteId={item.noteId}
                         hasNote={Boolean(hasNoteMarker(item))}
+                        emphasized
                       />
                     </span>
                   </div>

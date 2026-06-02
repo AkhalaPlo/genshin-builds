@@ -50,6 +50,7 @@ const talentRows = talents.talents.map(
                       label={item.name}
                       noteId={item.noteId}
                       hasNote={Boolean(hasNoteMarker(item))}
+                      emphasized
                     />
                   </>
                 ))}
@@ -64,6 +65,7 @@ const talentRows = talents.talents.map(
                     label={item.name}
                     noteId={item.noteId}
                     hasNote={Boolean(hasNoteMarker(item))}
+                    emphasized
                   />
                 </span>
               </div>

@@ -7,7 +7,13 @@ import Footer from '../components/Footer.astro';
 import { t } from '../utils/i18n';
 import { sitePath } from '../utils/paths';
 
-const { character, characterSlug, metadata, lang, locale } = Astro.props;
+const {
+  character,
+  characterSlug,
+  metadata,
+  lang,
+  locale,
+} = Astro.props;
 const characterArtAlt = t(locale, 'ui', 'Character art alt').replace(
   '{name}',
   character,
@@ -33,16 +39,18 @@ const characterArtAlt = t(locale, 'ui', 'Character art alt').replace(
         <div class="character-header-copy">
           <h1 id="character-title" class="page-title">{character}</h1>
 
-          {
-            metadata?.last_updated && (
-              <div class="last-updated">
-                <span>{t(locale, 'ui', 'Last Updated')}</span>
-                <strong>
-                  {t(locale, 'ui', 'Version')} {metadata.last_updated}
-                </strong>
-              </div>
-            )
-          }
+          <div class="character-header-meta">
+            {
+              metadata?.last_updated && (
+                <div class="last-updated">
+                  <span>{t(locale, 'ui', 'Last Updated')}</span>
+                  <strong>
+                    {t(locale, 'ui', 'Version')} {metadata.last_updated}
+                  </strong>
+                </div>
+              )
+            }
+          </div>
         </div>
 
         {
