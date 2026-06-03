@@ -63,9 +63,9 @@
                 {
                     "name": "the-unforged",
                     "note": {
-                        "en": "Slightly gains value if [[character:gaming]] is shielded, making it roughly equal to **[[weapon:wolfs-gravestone]]**.",
-                        "fr": "Gagne légèrement en valeur si [[character:gaming]] a un bouclier, ce qui rend cette arme approximativement équivalente à **[[weapon:wolfs-gravestone]]**.",
-                        "it": "Quest'arma guadagna leggermente valore se [[character:gaming]] è sotto la protezione di uno scudo, rendendo le sue prestazioni più o meno equivalenti a quelle di **[[weapon:wolfs-gravestone]]**."
+                        "en": "Slightly gains value if [[character:gaming]] is **shielded**, making it roughly equal to **[[weapon:wolfs-gravestone]]**.",
+                        "fr": "Gagne légèrement en valeur si [[character:gaming]] a un **bouclier**, ce qui rend cette arme approximativement équivalente à **[[weapon:wolfs-gravestone]]**.",
+                        "it": "Quest'arma guadagna leggermente valore se [[character:gaming]] è sotto la protezione di uno **scudo**, rendendo le sue prestazioni più o meno equivalenti a quelle di **[[weapon:wolfs-gravestone]]**."
 
                     }
                 }
