@@ -17,39 +17,27 @@ const versionText = latestVersion ? `${versionLabel} ${latestVersion}` : '';
 const elements = ['anemo', 'cryo', 'dendro', 'electro', 'geo', 'hydro', 'pyro'];
 const rarities = ['4', '5'];
 const weapons = ['bow', 'catalyst', 'claymore', 'polearm', 'sword'];
-const elementColors = {
-  anemo: '#30d8a0',
-  cryo: '#7af0f0',
-  dendro: '#9de43b',
-  electro: '#c87fff',
-  geo: '#f3b530',
-  hydro: '#02c0ff',
-  pyro: '#ff6640',
-};
 const allLabel = t(locale, 'ui', 'All');
 
 const elementOptions = [
-  { value: '', label: allLabel, color: 'var(--accent)' },
+  { value: '', label: allLabel },
   ...elements.map((element) => ({
     value: element,
     label: t(locale, 'element', element),
-    color: elementColors[element as keyof typeof elementColors],
   })),
 ];
 const rarityOptions = [
-  { value: '', label: allLabel, color: 'var(--accent)' },
+  { value: '', label: allLabel },
   ...rarities.map((rarity) => ({
     value: rarity,
     label: `${rarity}\u2605`,
-    color: '#f3b530',
   })),
 ];
 const weaponOptions = [
-  { value: '', label: allLabel, color: 'var(--accent)' },
+  { value: '', label: allLabel },
   ...weapons.map((weapon) => ({
     value: weapon,
     label: t(locale, 'ui', weapon),
-    color: '#8fb7ff',
   })),
 ];
 ---
@@ -65,95 +53,47 @@ const weaponOptions = [
     />
   </label>
 
-  <div class="home-select-filter" data-filter-select>
+  <label class="home-select-filter">
     {t(locale, 'ui', 'Element')}
-    <input type="hidden" name="element" value="" data-filter-select-value />
-    <button
-      class="home-select-trigger"
-      type="button"
-      aria-haspopup="listbox"
-      aria-expanded="false"
-      data-filter-select-trigger
+    <select
+      class="home-native-select"
+      name="element"
     >
-      <span data-filter-select-label>{allLabel}</span>
-    </button>
-    <div class="home-select-menu" role="listbox" data-filter-select-menu>
       {
         elementOptions.map((option) => (
-          <button
-            class="home-select-option"
-            type="button"
-            role="option"
-            data-value={option.value}
-            style={`--option-color: ${option.color}`}
-            aria-selected={option.value === '' ? 'true' : 'false'}
-          >
-            <span class="home-select-option-label">{option.label}</span>
-          </button>
+          <option value={option.value}>{option.label}</option>
         ))
       }
-    </div>
-  </div>
+    </select>
+  </label>
 
-  <div class="home-select-filter" data-filter-select>
+  <label class="home-select-filter">
     {t(locale, 'ui', 'Rarity')}
-    <input type="hidden" name="rarity" value="" data-filter-select-value />
-    <button
-      class="home-select-trigger"
-      type="button"
-      aria-haspopup="listbox"
-      aria-expanded="false"
-      data-filter-select-trigger
+    <select
+      class="home-native-select"
+      name="rarity"
     >
-      <span data-filter-select-label>{allLabel}</span>
-    </button>
-    <div class="home-select-menu" role="listbox" data-filter-select-menu>
       {
         rarityOptions.map((option) => (
-          <button
-            class="home-select-option"
-            type="button"
-            role="option"
-            data-value={option.value}
-            style={`--option-color: ${option.color}`}
-            aria-selected={option.value === '' ? 'true' : 'false'}
-          >
-            <span class="home-select-option-label">{option.label}</span>
-          </button>
+          <option value={option.value}>{option.label}</option>
         ))
       }
-    </div>
-  </div>
+    </select>
+  </label>
 
-  <div class="home-select-filter" data-filter-select>
+  <label class="home-select-filter">
     {t(locale, 'ui', 'Weapon')}
-    <input type="hidden" name="weapon" value="" data-filter-select-value />
-    <button
-      class="home-select-trigger"
-      type="button"
-      aria-haspopup="listbox"
-      aria-expanded="false"
-      data-filter-select-trigger
+    <select
+      class="home-native-select"
+      name="weapon"
     >
-      <span data-filter-select-label>{allLabel}</span>
-    </button>
-    <div class="home-select-menu" role="listbox" data-filter-select-menu>
       {
         weaponOptions.map((option) => (
-          <button
-            class="home-select-option"
-            type="button"
-            role="option"
-            data-value={option.value}
-            style={`--option-color: ${option.color}`}
-            aria-selected={option.value === '' ? 'true' : 'false'}
-          >
-            <span class="home-select-option-label">{option.label}</span>
-          </button>
+          <option value={option.value}>{option.label}</option>
         ))
       }
-    </div>
-  </div>
+    </select>
+  </label>
 
   {
     hasRecentUpdates && (

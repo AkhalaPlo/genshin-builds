@@ -10,6 +10,8 @@ const openBuildsLabel = t(locale, 'ui', 'Open builds');
 const selectedCharacterLabel = t(locale, 'ui', 'Selected character');
 const resultsLabel = t(locale, 'ui', 'Results');
 const availableBuildsLabel = t(locale, 'ui', 'Available builds');
+const lastUpdatedLabel = t(locale, 'ui', 'Last Updated', undefined, false);
+const versionLabel = t(locale, 'ui', 'Version', undefined, false);
 const characterArtAltTemplate = t(locale, 'ui', 'Character art alt');
 const characterPortraitAltTemplate = t(locale, 'ui', 'Character portrait alt');
 const eagerPortraitCount = 10;
@@ -68,6 +70,7 @@ const selectedCharacter = rosterCharacters[0];
               data-element={character.element}
               data-href={character.href}
               data-image={character.previewImage}
+              data-last-updated={character.lastUpdated}
               data-name={character.name}
               data-recent-updated={
                 character.isRecentlyUpdated ? 'true' : 'false'
@@ -129,6 +132,19 @@ const selectedCharacter = rosterCharacters[0];
         <div class="roster-preview-content">
           <div class="roster-preview-summary">
             <div>
+              <p
+                class="roster-preview-updated roster-preview-updated--mobile"
+                data-preview-updated
+                hidden={!selectedCharacter.lastUpdated}
+              >
+                <span>{lastUpdatedLabel}</span>
+                <strong
+                  data-preview-updated-version
+                  data-version-label={versionLabel}
+                >
+                  {versionLabel} {selectedCharacter.lastUpdated}
+                </strong>
+              </p>
               <p class="roster-preview-kicker">{selectedCharacterLabel}</p>
               <div class="roster-preview-title">
                 <h2 data-preview-name>{selectedCharacter.name}</h2>
@@ -146,7 +162,22 @@ const selectedCharacter = rosterCharacters[0];
           </div>
 
           <section class="roster-preview-builds">
-            <h3>{availableBuildsLabel}</h3>
+            <div class="roster-preview-builds-header">
+              <h3>{availableBuildsLabel}</h3>
+              <p
+                class="roster-preview-updated roster-preview-updated--desktop"
+                data-preview-updated
+                hidden={!selectedCharacter.lastUpdated}
+              >
+                <span>{lastUpdatedLabel}</span>
+                <strong
+                  data-preview-updated-version
+                  data-version-label={versionLabel}
+                >
+                  {versionLabel} {selectedCharacter.lastUpdated}
+                </strong>
+              </p>
+            </div>
             <ul data-preview-builds>
               {selectedCharacter.builds.map((build: any) => (
                 <li>{build.name}</li>

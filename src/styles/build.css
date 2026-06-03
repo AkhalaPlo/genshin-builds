@@ -1081,6 +1081,22 @@ body.info-popover-locked .info-popover.is-open .info-popover-card {
   .stat-row {
     padding: 8px;
   }
+
+  .note-link {
+    position: relative;
+    z-index: 1;
+  }
+
+  .note-link::before {
+    position: absolute;
+    inset: -10px;
+    content: '';
+  }
+
+  .rank-content .note-link::before,
+  .stat-row .note-link::before {
+    inset: -12px -10px;
+  }
 }
 
 @media (max-width: 480px) {
