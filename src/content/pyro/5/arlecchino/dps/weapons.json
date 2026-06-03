@@ -12,7 +12,8 @@
                     "name": "staff-of-the-scarlet-sands",
                     "note": {
                         "en": "If [[character:arlecchino]] is not triggering [[element:vaporize]] or [[element:melt]], do not use an [[stat:em]] Sands with this weapon and it ranks lower than **[[weapon:staff-of-homa]]**.",
-                        "fr": "Si [[character:arlecchino]] ne déclence pas d'[[element:vaporize]] ou [[element:melt]], n'utilisez pas de sablier [[stat:em]] avec cette arme, et elle se classe plus bas que **[[weapon:staff-of-homa]]**."
+                        "fr": "Si [[character:arlecchino]] ne déclence pas d'[[element:vaporize]] ou [[element:melt]], n'utilisez pas de sablier [[stat:em]] avec cette arme, et elle se classe plus bas que **[[weapon:staff-of-homa]]**.",
+                        "it": "Se [[character:arlecchino]] non provoca [[element:vaporize]] o [[element:melt]], non usare Sabbie [[stat:em]] con quest'arma, che avrà prestazioni inferiori a **[[weapon:staff-of-homa]]**."
                     }
                 }
             ]
@@ -29,8 +30,9 @@
                 {
                     "name": "vortex-vanquisher",
                     "note": {
-                        "en": "Ranking assumes you are shielded. Without a shield, this weapon performs similarly to **[[weapon:white-tassel]] [R5]**.",
-                        "fr": "Le classement suppose que vous avez un bouclier. Sans bouclier, cette arme est similaire à **[[weapon:white-tassel]] [R5]**."
+                        "en": "Ranking assumes you are **shielded**. Without a shield, this weapon performs similarly to **[[weapon:white-tassel]] [R5]**.",
+                        "fr": "Le classement suppose que vous **avez un bouclier**. Sans bouclier, cette arme est similaire à **[[weapon:white-tassel]] [R5]**.",
+                        "it": "La classifica presuppone che tu sia **sotto la protezione di uno scudo**. Senza uno scudo, quest'arma ha prestazioni simili a **[[weapon:white-tassel]] [R5]**."
                     }
                 }
             ]
@@ -41,7 +43,8 @@
                     "name": "deathmatch",
                     "note": {
                         "en": "At higher refinements, this weapon will perform similarly to **[[weapon:staff-of-homa]]**.",
-                        "fr": "Avec un raffinement plus haut, cette arme est similaire à **[[weapon:staff-of-homa]]**."
+                        "fr": "Avec un raffinement plus haut, cette arme est similaire à **[[weapon:staff-of-homa]]**.",
+                        "it": "A miglioramenti più alti, quest'arma ha prestazione simili a **[[weapon:staff-of-homa]]**."
                     }
                 }
             ]
@@ -60,7 +63,8 @@
                     "name": "ballad-of-the-fjords",
                     "note": {
                         "en": "In [[element:vaporize]] teams, this weapon performs slightly better than **[[weapon:deathmatch]]**.",
-                        "fr": "Dans les équipes [[element:vaporize]], cette arme est légèrement meilleure que **[[weapon:deathmatch]]**."
+                        "fr": "Dans les équipes [[element:vaporize]], cette arme est légèrement meilleure que **[[weapon:deathmatch]]**.",
+                        "it": "In team [[element:vaporize]], quest'arma ha prestazioni di poco migliori di **[[weapon:deathmatch]]**."
                     }
                 }
             ]
@@ -69,7 +73,8 @@
     "notes": [
         {
             "en": "Weapon ranking assumes [[character:arlecchino]] is used with [[character:bennett]].",
-            "fr": "Le classement des armes suppose qu'[[character:arlecchino]] est jouée avec [[character:bennett]]."
+            "fr": "Le classement des armes suppose qu'[[character:arlecchino]] est jouée avec [[character:bennett]].",
+            "it": "La classifica delle armi presuppone che [[character:arlecchino]] sia utilizzata con [[character:bennett]]."
         }
     ]
 }
