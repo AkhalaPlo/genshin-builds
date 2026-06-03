@@ -17,11 +17,13 @@
         },
         {
             "en": "Shield uptime is also crucial to maximizing her Physical/Shield Support capabilities. If you have neither **[[weapon:sacrificial-greatsword]]** nor at least **[C2]** (ideally **[C4]**) on [[character:xinyan]], you may want to build her as a DPS instead of Physical/Shield Support.",
-            "fr": "L'uptime du bouclier est également crucial pour maximiser les capacités de support physique/bouclier de [[character:xinyan]]. Si vous n'avez ni **[[weapon:sacrificial-greatsword]]** ni au moins **[C2]** (idéalement **[C4]**) sur [[character:xinyan]], il vaudrait mieux la build comme DPS plutôt que comme Support Physique/Bouclier."
+            "fr": "L'uptime du bouclier est également crucial pour maximiser les capacités de support physique/bouclier de [[character:xinyan]]. Si vous n'avez ni **[[weapon:sacrificial-greatsword]]** ni au moins **[C2]** (idéalement **[C4]**) sur [[character:xinyan]], il vaudrait mieux la build comme DPS plutôt que comme Support Physique/Bouclier.",
+            "it": "Il tempo di funzionamento dello scudo è cruciale anche per massimizzare le capacità da Supporto Fisico/Scudo di [[character:xinyan]]. Se non avete né **[[weapon:sacrificial-greatsword]]** né almeno la **[C2]** (idealmente la **[C4]**) di [[character:xinyan]], sarebbe meglio scegliere una build da DPS."
         },
         {
             "en": "**Generally not recommended for [[element:pyro]] applications, as the pulses only happen at Shield Level 3 and are not very efficient at breaking [[element:cryo]] shields.**",
-            "fr": "**Généralement non recommandé pour l'application [[element:pyro]] car les impulsions ne se produisent que au Niveau 3 du bouclier et ne sont pas très efficaces pour casser les boucliers [[element:cryo]].**"
+            "fr": "**Généralement non recommandé pour l'application [[element:pyro]] car les impulsions ne se produisent que au Niveau 3 du bouclier et ne sont pas très efficaces pour casser les boucliers [[element:cryo]].**",
+            "it": "**Generalmente non consigliata per l'applicazione [[element:pyro]], poiché le pulsazioni richiedono uno scudo di livello 3 e non sono particolarmente efficienti per rompere scudi [[element:cryo]].**"
         }
     ]
 }
