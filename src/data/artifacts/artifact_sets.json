@@ -7,7 +7,8 @@
             "de": "Erhöht den ANG um 18 %.",
             "es": "ATQ +18%.",
             "it": "ATT +18%.",
-            "ru": "Увеличивает силу атаки на 18%."
+            "ru": "Увеличивает силу атаки на 18%.",
+            "pt": "ATQ +18%."
         },
         "4p": {
             "en": "Increases Charged Attack CRIT Rate by 30%.",
@@ -15,7 +16,8 @@
             "de": "Erhöht die KT heftiger Schläge um 30 %.",
             "es": "La Prob. CRIT de los Ataques Cargados aumenta en un 30%.",
             "it": "Aumenta il tasso di CRIT dell'attacco caricato di un 30%.",
-            "ru": "Увеличивает шанс крит. попадания заряженной атаки на 30%."
+            "ru": "Увеличивает шанс крит. попадания заряженной атаки на 30%.",
+            "pt": "Aumenta a Taxa Crítica do Ataque Carregado em 30%."
         }
     },
     "brave-heart": {
@@ -26,7 +28,8 @@
             "de": "Erhöht den ANG um 18 %.",
             "es": "ATQ +18%.",
             "it": "ATT +18%.",
-            "ru": "Увеличивает силу атаки на 18%."
+            "ru": "Увеличивает силу атаки на 18%.",
+            "pt": "ATQ +18%."
         },
         "4p": {
             "en": "Increases DMG by 30% against opponents with more than 50% HP.",
@@ -34,7 +37,8 @@
             "de": "Erhöht den Gegnern mit mehr als 50 % LP zugefügten Schaden um 30 %.",
             "es": "Aumenta el daño en un 30% contra enemigos con más del 50% de Vida.",
             "it": "Aumenta di un 30% i DAN contro gli avversari con oltre un 50% dei PS.",
-            "ru": "Увеличивает на 30% урон против врагов с HP выше 50%."
+            "ru": "Увеличивает на 30% урон против врагов с HP выше 50%.",
+            "pt": "Aumenta o Dano em 30% contra os inimigos com mais de 50% de Vida."
         }
     },
     "defenders-will": {
@@ -45,7 +49,8 @@
             "de": "Erhöht die VTD um 30 %.",
             "es": "DEF +30%.",
             "it": "DIF +30%.",
-            "ru": "Увеличивает защиту на 30%."
+            "ru": "Увеличивает защиту на 30%.",
+            "pt": "DEF +30%"
         },
         "4p": {
             "en": "For each different element present in your own party, the wearer's Elemental RES to that corresponding element is increased by 30%.",
@@ -53,7 +58,8 @@
             "de": "Erhöht für jedes unterschiedliche Element der eigenen Figuren in der Truppe den eigenen WDS des jeweiligen Elements um 30 %.",
             "es": "Por cada miembro de tu equipo con un tipo elemental distinto, La RES Elemental del personaje que lleve este conjunto aumenta en un 30% contra dicho elemento.",
             "it": "Per ogni personaggio di tipo elementale diverso nel tuo gruppo, ottieni un aumento di un 30% della RES per ciascun elemento corrispondente.",
-            "ru": "За каждого члена вашего отряда с неповторяющимся элементом повышает сопротивление к соответствующему элементу на 30%."
+            "ru": "За каждого члена вашего отряда с неповторяющимся элементом повышает сопротивление к соответствующему элементу на 30%.",
+            "pt": "Aumenta a própria RES do respectivo elemento em 30% para cada elemento diferente dos seus personagens da equipe."
         }
     },
     "tiny-miracle": {
@@ -64,7 +70,8 @@
             "de": "Erhöht den WDS gegen alle Elemente um 20 %.",
             "es": "+20% en todas las RES Elementales.",
             "it": "RES a tutti gli elementi +20%.",
-            "ru": "Увеличивает сопротивление ко всем элементам на 20%."
+            "ru": "Увеличивает сопротивление ко всем элементам на 20%.",
+            "pt": "RES de todos os Elementos +20%."
         },
         "4p": {
             "en": "Incoming elemental DMG increases corresponding Elemental RES by 30% for 10s. Can only occur once every 10s.",
@@ -72,7 +79,8 @@
             "de": "Erhöht den jeweiligen WDS nach Erleiden von Elementar-SCH 10 s lang um 30 %. 10 s Abklingzeit.",
             "es": "El Daño Elemental recibido aumenta la RES Elemental correspondiente en un 30% durante 10 s. Solo puede ocurrir una vez cada 10 s.",
             "it": "I DAN elementali subiti aumentano la RES elementale corrispondente di un 30% per 10 s. Si può verificare una sola volta ogni 10 s.",
-            "ru": "Получаемый элементальный урон повышает сопротивление к соответствующему элементу на 30% в течение 10 сек. Может возникнуть раз в 10 сек."
+            "ru": "Получаемый элементальный урон повышает сопротивление к соответствующему элементу на 30% в течение 10 сек. Может возникнуть раз в 10 сек.",
+            "pt": "O Dano elemental recebido aumenta a RES Elemental correspondente em 30% por 10s. Pode ser lançado uma vez a cada 10s."
         }
     },
     "berserker": {
@@ -83,7 +91,8 @@
             "de": "Erhöht die KT um 12 %.",
             "es": "Prob. CRIT +12%.",
             "it": "Tasso di CRIT +12%.",
-            "ru": "Увеличивает шанс крит. попадания на 12%."
+            "ru": "Увеличивает шанс крит. попадания на 12%.",
+            "pt": "Taxa Crítica +12%"
         },
         "4p": {
             "en": "When HP is below 70%, CRIT Rate increases by an additional 24%.",
@@ -91,7 +100,8 @@
             "de": "Erhöht die KT bei weniger als 70 % LP zusätzlich um 24 %.",
             "es": "Cuando la Vida es inferior al 70%, aumenta la Prob. CRIT en un 24%.",
             "it": "Quando i PS sono inferiori a un 70%, il tasso di CRIT aumenta di un ulteriore 24%.",
-            "ru": "Увеличивает шанс крит. попадания на 24% при HP ниже 70%."
+            "ru": "Увеличивает шанс крит. попадания на 24% при HP ниже 70%.",
+            "pt": "Quando a Vida estiver abaixo de 70%, a Taxa Crítica aumenta 24%."
         }
     },
     "martial-artist": {
@@ -102,7 +112,8 @@
             "de": "Erhöht den mit Standardangriffen und heftigen Schlägen verursachten Schaden um 15 %.",
             "es": "Daño de ATQ Normal y ATQ Cargado +15%.",
             "it": "DAN da attacchi normali e caricati +15%.",
-            "ru": "Увеличивает урон обычной и заряженной атаки на 15%."
+            "ru": "Увеличивает урон обычной и заряженной атаки на 15%.",
+            "pt": "Aumenta o Dano do Ataque Normal e do Ataque Carregado em 15%."
         },
         "4p": {
             "en": "After using Elemental Skill, increases Normal Attack and Charged Attack DMG by 25% for 8s.",
@@ -110,7 +121,8 @@
             "de": "Erhöht den mit Standardangriffen und heftigen Schlägen verursachten Schaden nach Anwendung von Elementarfähigkeiten 8 s lang um 25 %.",
             "es": "Tras usar la Habilidad Elemental, aumenta el daño de Ataque Normal y Ataque Cargado en un 25% durante 8 s.",
             "it": "Dopo l'uso di un'abilità elementale, aumenta di un 25% i DAN da attacchi normali e caricati per 8 s.",
-            "ru": "Увеличивает урон обычной и заряженной атаки на 25% в течение 8 сек. после использования элементального навыка."
+            "ru": "Увеличивает урон обычной и заряженной атаки на 25% в течение 8 сек. после использования элементального навыка.",
+            "pt": "Após usar uma Habilidade Elemental, aumenta o Dano do Ataque Normal e Ataque Carregado em 25% por 8s."
         }
     },
     "instructor": {
@@ -121,7 +133,8 @@
             "de": "Erhöht Elementarkunde um 80 Punkte.",
             "es": "Maestría Elemental +80 pts.",
             "it": "Maestria elementale +80.",
-            "ru": "Увеличивает мастерство стихий на 80 ед."
+            "ru": "Увеличивает мастерство стихий на 80 ед.",
+            "pt": "Proficiência Elemental +80"
         },
         "4p": {
             "en": "Upon triggering an Elemental Reaction, increases all party members' Elemental Mastery by 120 for 8s.",
@@ -129,7 +142,8 @@
             "de": "Erhöht die Elementarkunde aller Truppenmitglieder nach Auslösen von Elementarreaktionen 8 s lang um 120 Punkte.",
             "es": "Después de activar una Reacción Elemental, aumenta la Maestría Elemental de todos los miembros del equipo en 120 pts. durante 8 s.",
             "it": "Dopo l'innesco di una reazione elementale, aumenta la maestria elementale di tutti i membri del gruppo di 120 per 8 s.",
-            "ru": "Вызов элементальной реакции увеличивает мастерство стихий всех членов отряда на 120 ед. в течение 8 сек."
+            "ru": "Вызов элементальной реакции увеличивает мастерство стихий всех членов отряда на 120 ед. в течение 8 сек.",
+            "pt": "Após uma Reação Elemental aumenta a Proficiência Elemental de todos os membros da Equipe em 120 por 8s."
         }
     },
     "gambler": {
@@ -140,7 +154,8 @@
             "de": "Erhöht den mit Elementarfähigkeiten verursachten Schaden um 20 %.",
             "es": "Daño de Habilidad Elemental +20%.",
             "it": "DAN da abilità elementale +20%.",
-            "ru": "Увеличивает урон элементального навыка на 20%."
+            "ru": "Увеличивает урон элементального навыка на 20%.",
+            "pt": "Aumenta o dano da Habilidade Elemental em 20%."
         },
         "4p": {
             "en": "Defeating an opponent has a 100% chance to remove Elemental Skill CD. Can only occur once every 15s.",
@@ -148,7 +163,8 @@
             "de": "Überspringt die Abklingzeit der Elementarfähigkeit beim Besiegen von Gegnern mit einer Wahrscheinlichkeit von 100 %. 15 s Abklingzeit.",
             "es": "Al derrotar a un enemigo, hay una probabilidad del 100% de reiniciar el TdE de la Habilidad Elemental. Puede ocurrir una vez cada 15 s.",
             "it": "Sconfiggere un avversario fornisce un 100% di probabilità di azzerare il TdR dell'abilità elementale. Può verificarsi una sola volta ogni 15 s.",
-            "ru": "Победа над противником со 100% шансом восстанавливает время отката элементального навыка. Может возникнуть раз в 15 сек."
+            "ru": "Победа над противником со 100% шансом восстанавливает время отката элементального навыка. Может возникнуть раз в 15 сек.",
+            "pt": "Ao derrotar um inimigo, possui 100% de chance de remover a Recarga da Habilidade Elemental. Este efeito pode ser ativado uma vez a cada 15s."
         }
     },
     "the-exile": {
@@ -159,7 +175,8 @@
             "de": "Erhöht die Aufladerate um 20 %.",
             "es": "Recarga de Energía +20%.",
             "it": "Ricarica d'energia +20%.",
-            "ru": "Увеличивает скорость восстановления энергии на 20%."
+            "ru": "Увеличивает скорость восстановления энергии на 20%.",
+            "pt": "Recarga de Energia +20%"
         },
         "4p": {
             "en": "Using an Elemental Burst regenerates 2 Energy for all party members (excluding the wearer) every 2s for 6s. This effect cannot stack.",
@@ -167,7 +184,8 @@
             "de": "Stellt allen Truppenmitgliedern (außer sich selbst) bei Anwendung von Spezialfähigkeiten 6 s lang alle 2 s 2 Punkte Elementarenergie wieder her, nicht stapelbar.",
             "es": "Al usar la Habilidad Definitiva, todos los miembros del equipo (a excepción de tu personaje en uso) recuperan 2 pts. de Energía Elemental cada 2 s durante 6 s. Este efecto no puede acumularse.",
             "it": "L'uso di un Tripudio elementale rigenera 2 di energia per tutti i membri del gruppo (escluso il personaggio che equipaggia il set) ogni 2 s per 6 s. Non cumulabile.",
-            "ru": "Использование взрыва стихии восстанавливает 2 ед. энергии остальным членам отряда (но не выбранному персонажу) каждые 2 сек. в течение 6 сек. Эффект не может складываться."
+            "ru": "Использование взрыва стихии восстанавливает 2 ед. энергии остальным членам отряда (но не выбранному персонажу) каждые 2 сек. в течение 6 сек. Эффект не может складываться.",
+            "pt": "Ao usar o Supremo, regenera 2 de Energia a todos os personagens da equipe (excluindo o portador) a cada 2s por 6s. Este efeito não pode ser acumulado."
         }
     },
     "adventurer": {
@@ -178,7 +196,8 @@
             "de": "Erhöht die max. LP um 1000.",
             "es": "Vida Máx. +1000 pts.",
             "it": "PS max +1.000.",
-            "ru": "Увеличивает макс. HP на 1000 ед."
+            "ru": "Увеличивает макс. HP на 1000 ед.",
+            "pt": "Vida Máx. +1000"
         },
         "4p": {
             "en": "Opening a chest regenerates 30% Max HP over 5s.",
@@ -186,7 +205,8 @@
             "de": "Stellt nach dem Öffnen jeglicher Truhen 5 s lang 30 % LP wieder her.",
             "es": "Al abrir un cofre, se regenera un 30% de Vida durante 5 s.",
             "it": "Aprire un baule rigenera un 30% dei PS max per 5 s.",
-            "ru": "В течение 5 сек. после открытия любого сундука восстанавливает 30% HP."
+            "ru": "В течение 5 сек. после открытия любого сундука восстанавливает 30% HP.",
+            "pt": "Abrir um baú recupera 30% de Vida Máxima durante 5 segundos."
         }
     },
     "lucky-dog": {
@@ -197,7 +217,8 @@
             "de": "Erhöht die VTD um 100 Punkte.",
             "es": "DEF +100.",
             "it": "DIF +100.",
-            "ru": "Увеличивает защиту на 100 ед."
+            "ru": "Увеличивает защиту на 100 ед.",
+            "pt": "DEF +100"
         },
         "4p": {
             "en": "Picking up Mora restores 300 HP.",
@@ -205,7 +226,8 @@
             "de": "Stellt beim Sammeln von Mora 300 LP wieder her.",
             "es": "Recoger Mora restaura 300 pts. de Vida.",
             "it": "Raccogliere Mora ripristina 300 PS.",
-            "ru": "Поднятие монет восстанавливает 300 HP."
+            "ru": "Поднятие монет восстанавливает 300 HP.",
+            "pt": "Ao coletar Mora, restaura 300 de Vida."
         }
     },
     "scholar": {
@@ -216,7 +238,8 @@
             "de": "Erhöht die Aufladerate um 20 %.",
             "es": "Recarga de Energía +20%.",
             "it": "Ricarica d'energia +20%.",
-            "ru": "Увеличивает скорость восстановления энергии на 20%."
+            "ru": "Увеличивает скорость восстановления энергии на 20%.",
+            "pt": "Recarga de Energia +20%"
         },
         "4p": {
             "en": "Gaining Elemental Particles or Orbs gives 3 Energy to all party members who have a bow or a catalyst equipped. Can only occur once every 3s.",
@@ -224,7 +247,8 @@
             "de": "Stellt allen Truppenmitgliedern mit Bögen und Katalysatoren beim Erhalten von Elementarteilchen und Elementarkristallen zusätzlich 3 Punkte Elementarenergie wieder her. 3 s Abklingzeit.",
             "es": "Al obtener partículas u orbes elementales, los miembros del equipo que usen arco o catalizador recuperan 3 pts. adicionales de Energía Elemental. Solo puede suceder una vez cada 3 s.",
             "it": "Ottenere particelle o sfere elementali fornisce 3 di energia a tutti i membri del gruppo equipaggiati con un arco o un catalizzatore. Si può verificare una sola volta ogni 3 s.",
-            "ru": "Получение элементальных сфер или частиц восстанавливает 3 ед. энергии членам отряда, экипированным стрелковым оружием или катализатором. Может возникнуть раз в 3 сек."
+            "ru": "Получение элементальных сфер или частиц восстанавливает 3 ед. энергии членам отряда, экипированным стрелковым оружием или катализатором. Может возникнуть раз в 3 сек.",
+            "pt": "Obter Partículas ou Orbes Elementais confere 3 de Energia a todos os membros da equipe que possuem um arco ou catalisador equipado. Pode ser ativado uma vez a cada 3s."
         }
     },
     "traveling-doctor": {
@@ -235,7 +259,8 @@
             "de": "Erhöht den passiven Heileffekt der Figur um 20 %.",
             "es": "Curación recibida +20%.",
             "it": "Guarigione ricevuta +20%.",
-            "ru": "Увеличивает получаемое лечение на 20%."
+            "ru": "Увеличивает получаемое лечение на 20%.",
+            "pt": "Aumenta o efeito de cura em 20%."
         },
         "4p": {
             "en": "Using Elemental Burst restores 20% HP.",
@@ -243,7 +268,8 @@
             "de": "Stellt bei Anwendung von Spezialfähigkeiten 20 % LP wieder her.",
             "es": "Al lanzar una Habilidad Definitiva, restaura un 20% de Vida.",
             "it": "Usare il Tripudio elementale ripristina un 20% dei PS.",
-            "ru": "Использование взрыва стихии восстанавливает 20% HP."
+            "ru": "Использование взрыва стихии восстанавливает 20% HP.",
+            "pt": "Após usar o Supremo, restaura 20% de Vida."
         }
     },
     "blizzard-strayer": {
@@ -254,7 +280,8 @@
             "de": "Erhöht den Kryo-Schaden um 15 %.",
             "es": "Bono de Daño Cryo +15%.",
             "it": "Bonus DAN da Cryo +15%.",
-            "ru": "Даёт 15% бонус Крио урона."
+            "ru": "Даёт 15% бонус Крио урона.",
+            "pt": "Bônus de Dano Cryo +15%"
         },
         "4p": {
             "en": "When a character attacks an opponent affected by Cryo, their CRIT Rate is increased by 20%. If the opponent is Frozen, CRIT Rate is increased by an additional 20%.",
@@ -262,7 +289,8 @@
             "de": "Erhöht die KT beim Angreifen von Kryo-Effekten betroffener Gegner um 20 %. Erhöht die KT bei von Gefroren betroffenen Gegnern zusätzlich um 20 %.",
             "es": "Aumenta en un 20% la Prob. CRIT contra los enemigos afectados por Cryo. Si el enemigo está Congelado, la Prob. CRIT aumentará en un 20% adicional.",
             "it": "Quando un personaggio attacca un avversario sotto l'effetto di Cryo, il suo tasso di CRIT aumenta di un 20%. Se l'avversario è affetto da Congelamento, il tasso di CRIT aumenta di un ulteriore 20%.",
-            "ru": "Атаки по противникам с эффектом Крио увеличивают шанс крит. попадания на 20%. Если противник имеет статус Заморозка, то дополнительно увеличивает шанс крит. попадания на 20%."
+            "ru": "Атаки по противникам с эффектом Крио увеличивают шанс крит. попадания на 20%. Если противник имеет статус Заморозка, то дополнительно увеличивает шанс крит. попадания на 20%.",
+            "pt": "Quando um personagem ataca um inimigo afetado por Cryo, a sua Taxa CRIT aumenta em 20%. Adicionalmente, se o inimigo estiver Congelado, a Taxa CRIT aumenta em mais 20%."
         }
     },
     "thundersoother": {
@@ -273,7 +301,8 @@
             "de": "Erhöht den Elektro-WDS um 40 %.",
             "es": "RES Electro +40%",
             "it": "RES a Electro +40%.",
-            "ru": "Повышает Электро сопротивление на +40%."
+            "ru": "Повышает Электро сопротивление на +40%.",
+            "pt": "RES Electro +40%"
         },
         "4p": {
             "en": "Increases DMG against opponents affected by Electro by 35%.",
@@ -281,7 +310,8 @@
             "de": "Erhöht den von Elektro-Effekten betroffenen Gegnern zugefügten Schaden um 35 %.",
             "es": "Aumenta el Daño contra los enemigos afectados por Electro un 35%.",
             "it": "Aumenta di un 35% i DAN contro gli avversari sotto l'effetto di Electro.",
-            "ru": "Увеличивает урон против врагов, находящихся под действием Электро, на 35%."
+            "ru": "Увеличивает урон против врагов, находящихся под действием Электро, на 35%.",
+            "pt": "Aumenta o Dano contra inimigos afetados por Electro em 35%."
         }
     },
     "lavawalker": {
@@ -292,7 +322,8 @@
             "de": "Erhöht den Pyro-WDS um 40 %.",
             "es": "RES Pyro +40%.",
             "it": "RES a Pyro +40%.",
-            "ru": "Повышает Пиро сопротивление на +40%."
+            "ru": "Повышает Пиро сопротивление на +40%.",
+            "pt": "RES Pyro +40%"
         },
         "4p": {
             "en": "Increases DMG against opponents affected by Pyro by 35%.",
@@ -300,7 +331,8 @@
             "de": "Erhöht den von Pyro-Effekten betroffenen Gegnern zugefügten Schaden um 35 %.",
             "es": "Aumenta en un 35% el daño contra los enemigos afectados por Pyro.",
             "it": "I DAN contro gli avversari affetti da Pyro aumentano di un 35%.",
-            "ru": "Увеличивает урон против врагов, находящихся под действием Пиро, на 35%."
+            "ru": "Увеличивает урон против врагов, находящихся под действием Пиро, на 35%.",
+            "pt": "Aumenta o Dano contra inimigos afetados por Pyro em 35%."
         }
     },
     "maiden-beloved": {
@@ -311,7 +343,8 @@
             "de": "Erhöht den aktiven Heileffekt der Figur um 15 %.",
             "es": "Aumenta en un 15% la curación realizada.",
             "it": "Efficacia guarigione personaggio +15%.",
-            "ru": "Увеличивает эффективность лечения на 15%."
+            "ru": "Увеличивает эффективность лечения на 15%.",
+            "pt": "Efeito de Cura do Personagem aumenta em 15%"
         },
         "4p": {
             "en": "Using an Elemental Skill or Burst increases healing received by all party members by 20% for 10s.",
@@ -319,7 +352,8 @@
             "de": "Erhöht den passiven Heilungseffekt aller Truppenmitglieder nach Anwendung von Elementarfähigkeiten oder Spezialfähigkeiten 10 s lang um 20 %.",
             "es": "El uso de una Habilidad Elemental o Definitiva aumenta en un 20% la curación recibida de todos los miembros del equipo durante 10 s.",
             "it": "Usare un'abilità o un Tripudio elementale aumenta di un 20% la guarigione ricevuta da tutti i membri del gruppo per 10 s.",
-            "ru": "Увеличивает получаемое лечение всех членов отряда на 20% в течение 10 сек. после использования элементального навыка или взрыва стихии."
+            "ru": "Увеличивает получаемое лечение всех членов отряда на 20% в течение 10 сек. после использования элементального навыка или взрыва стихии.",
+            "pt": "Ao usar uma Habilidade Elemental ou Explosão, aumenta a cura recebida por todos os membros da equipe em 20% por 10s."
         }
     },
     "gladiators-finale": {
@@ -330,7 +364,8 @@
             "de": "Erhöht den ANG um 18 %.",
             "es": "ATQ +18%.",
             "it": "ATT +18%.",
-            "ru": "Увеличивает силу атаки на 18%."
+            "ru": "Увеличивает силу атаки на 18%.",
+            "pt": "ATQ +18%."
         },
         "4p": {
             "en": "If the wielder of this artifact set uses a Sword, Claymore or Polearm, increases their Normal Attack DMG by 35%.",
@@ -338,7 +373,8 @@
             "de": "Erhöht den mit Standardangriffen verursachten Schaden, wenn die mit diesem Artefaktset ausgestattete Figur einen Einhänder, einen Zweihänder oder eine Stangenwaffe trägt, um 35 %.",
             "es": "Aumenta el daño de Ataque Normal en un 35% si el personaje usa una espada ligera, mandoble o lanza.",
             "it": "Se chi possiede questo set di manufatti usa una spada, una claymore o una lancia, i DAN inflitti dal suo attacco normale aumentano di un 35%.",
-            "ru": "Увеличивает урон обычной атаки на 35%, если персонаж использует одноручное, двуручное или древковое оружие."
+            "ru": "Увеличивает урон обычной атаки на 35%, если персонаж использует одноручное, двуручное или древковое оружие.",
+            "pt": "Se o portador deste conjunto de artefato usar uma Espada, Espadão ou Lança, aumenta o Dano de seus Ataques Normais em 35%."
         }
     },
     "viridescent-venerer": {
@@ -349,7 +385,8 @@
             "de": "Erhöht den Anemo-Schaden um 15 %.",
             "es": "Bono de Daño Anemo +15%.",
             "it": "Bonus DAN da Anemo +15%.",
-            "ru": "Даёт 15% бонус Анемо урона."
+            "ru": "Даёт 15% бонус Анемо урона.",
+            "pt": "Bônus de Dano Anemo +15%"
         },
         "4p": {
             "en": "Increases Swirl DMG by 60%. Decreases opponent's Elemental RES to the element infused in the Swirl by 40% for 10s.",
@@ -357,7 +394,8 @@
             "de": "Erhöht den mit Verwirbelungen verursachten Schaden um 60 %. Verringert den dem jeweiligen Element in der Verwirbelung entsprechenden WDS des betroffenen Gegners 10 s lang um 40 %.",
             "es": "Aumenta el daño de Torbellino en un 60%. Dependiendo del tipo elemental que tenga, disminuye la RES Elemental correspondiente del enemigo en un 40% durante 10 s.",
             "it": "Aumenta di un 60% i DAN da Turbinio. Riduce di un 40% la RES dell'avversario all'elemento infuso dal Turbinio per 10 s.",
-            "ru": "Увеличивает урон Рассеивания на 60%. При взаимодействии Рассеивания с другим элементом, также понижает сопротивление противника к соответствующему элементу на 40% в течение 10 сек."
+            "ru": "Увеличивает урон Рассеивания на 60%. При взаимодействии Рассеивания с другим элементом, также понижает сопротивление противника к соответствующему элементу на 40% в течение 10 сек.",
+            "pt": "Aumenta o Dano do Redemoinho em 60%. Dependendo do tipo elemento infundido, diminui a RES Elemental correspondente do oponente em 40% por 10s."
         }
     },
     "wanderers-troupe": {
@@ -368,7 +406,8 @@
             "de": "Erhöht Elementarkunde um 80 Punkte.",
             "es": "Maestría Elemental +80 pts.",
             "it": "Maestria elementale +80.",
-            "ru": "Увеличивает мастерство стихий на 80 ед."
+            "ru": "Увеличивает мастерство стихий на 80 ед.",
+            "pt": "Proficiência Elemental +80"
         },
         "4p": {
             "en": "Increases Charged Attack DMG by 35% if the character uses a Catalyst or a Bow.",
@@ -376,7 +415,8 @@
             "de": "Erhöht den mit heftigen Schlägen verursachten Schaden, wenn die Figur einen Katalysator oder einen Bogen trägt, um 35 %.",
             "es": "Aumenta el daño de ATQ Cargado en un 35% si el personaje usa catalizador o arco.",
             "it": "Se il personaggio usa un catalizzatore o un arco, aumenta di un 35% i DAN da attacco caricato.",
-            "ru": "Увеличивает урон заряженной атаки на 35%, если персонаж использует катализатор или стрелковое оружие."
+            "ru": "Увеличивает урон заряженной атаки на 35%, если персонаж использует катализатор или стрелковое оружие.",
+            "pt": "Aumenta o Dano do Ataque Carregado em 35% se o personagem estiver usando Catalisador ou Arco."
         }
     },
     "thundering-fury": {
@@ -387,7 +427,8 @@
             "de": "Erhöht den Elektro-Schaden um 15 %.",
             "es": "Bono de Daño Electro +15%.",
             "it": "Bonus DAN da Electro +15%.",
-            "ru": "Даёт 15% бонус Электро урона."
+            "ru": "Даёт 15% бонус Электро урона.",
+            "pt": "Bônus de Dano Electro +15%"
         },
         "4p": {
             "en": "Increases the DMG caused by Overloaded, Electro-Charged, Superconduct, and Hyperbloom by 40%, the DMG Bonus conferred by Aggravate by 20%, and the DMG caused by Lunar-Charged by 20%. When Quicken or the aforementioned Elemental Reactions are triggered, Elemental Skill CD is decreased by 1s. Can only occur once every 0.8s.",
@@ -395,7 +436,8 @@
             "de": "Erhöht den mit den Reaktionen „Überladen“, „Unter Strom“, „Supraleiter“ und „Supraspross“ verursachten Schaden um 40 %. Erhöht den mit den Reaktionen „Suprawuchs“ und „Mond unter Strom“ verursachten Schaden um 20 %. Verkürzt die Abklingzeit der Elementarfähigkeit beim Auslösen dieser Elementarreaktionen und der Reaktion „Urwuchs“ um 1 s. 0,8 s Abklingzeit.",
             "es": "Aumenta en un 40% el daño infligido por Sobrecarga, Electrocargado, Superconductor y Sobreflorecimiento, y además, tanto el bono de daño generado por Intensificación como el daño de la reacción de Electrocargado Lunar aumentan en un 20%. Al causar una de estas reacciones o una reacción de Aceleración, el TdE de la Habilidad Elemental se reduce en 1 s. Solo puede ocurrir una vez cada 0.8 s.",
             "it": "Aumenta di un 40% i DAN da Sovraccarico, Electrocarica, Superconduzione e Iperfioritura, di un 20% il bonus DAN conferito da Accentuazione, e di un 20% i DAN causati da Carica lunare. Innescare Vivificazione o una delle suddette reazioni elementali riduce il TdR dell'abilità elementale di 1 s. Si può verificare una sola volta ogni 0,8 s.",
-            "ru": "Увеличивает урон реакций Перегрузка, Заряжен, Сверхпроводник и Вегетация на 40%. Урон от реакций Обострение и Лунный заряд увеличивается на 20%. При активации перечисленных реакций или реакции Стимуляция время отката элементального навыка уменьшается на 1 сек. Эффект может возникнуть один раз в 0,8 сек."
+            "ru": "Увеличивает урон реакций Перегрузка, Заряжен, Сверхпроводник и Вегетация на 40%. Урон от реакций Обострение и Лунный заряд увеличивается на 20%. При активации перечисленных реакций или реакции Стимуляция время отката элементального навыка уменьшается на 1 сек. Эффект может возникнуть один раз в 0,8 сек.",
+            "pt": "Aumenta o Dano causado por Sobrecarga, Eletricamente Carregado, Supercondutor e Superflorescimento em 40%, o Bônus de Dano concedido por Intensificação em 20% e o Dano causado por Carga Lunar em 20%. Quando Aceleração ou uma das Reações Elementais mencionadas for desencadeada, o Tempo de Recarga da Habilidade Elemental é reduzido em 1s. Só pode ocorrer uma vez a cada 0,8s."
         }
     },
     "crimson-witch-of-flames": {
@@ -406,7 +448,8 @@
             "de": "Erhöht den Pyro-Schaden um 15 %.",
             "es": "Bono de Daño Pyro +15%.",
             "it": "Bonus DAN da Pyro +15%.",
-            "ru": "Даёт 15% бонус Пиро урона."
+            "ru": "Даёт 15% бонус Пиро урона.",
+            "pt": "Bônus de Dano Pyro +15%"
         },
         "4p": {
             "en": "Increases Overloaded, Burning, and Burgeon DMG by 40%. Increases Vaporize and Melt DMG by 15%. Using Elemental Skill increases the 2-Piece Set Bonus by 50% of its starting value for 10s. Max 3 stacks.",
@@ -414,7 +457,8 @@
             "de": "Erhöht den mit den Reaktionen „Überladen“, „In Flammen“ und „Flammenspross“ verursachten Schaden um 40 % und den den von den Reaktionen „Verdampfen“ und „Schmelzen“ betroffenen Gegnern zugefügten Schaden um 15 %. Erhöht den Effekt eines 2er-Sets bei Anwendung von Elementarfähigkeiten 10 s lang um 50 %, 3-fach stapelbar.",
             "es": "Aumenta el daño causado por Sobrecarga, Quemadura y Crepitar en un 40%, y el de Vaporización y Derretido en un 15%. El uso de una Habilidad Elemental aumenta los efectos del conjunto de 2 piezas en un 50% durante 10 s. Puede acumularse hasta un máximo de 3 veces.",
             "it": "Aumenta di un 40% i DAN da Sovraccarico, Ustione e Germinazione, e di un 15% quelli da Vaporizzazione e Fusione. Usare un'abilità elementale aumenta il bonus del set da 2 pezzi di un 50% del suo valore iniziale per 10 s. Cumulabile fino a 3 volte.",
-            "ru": "Увеличивает урон реакций Перегрузка, Горение и Цветение на 40%, а урон реакций Пар и Таяние на 15%. Использование элементального навыка увеличивает эффект набора из 2 предметов на 50% на 10 сек. Может складываться до 3 раз."
+            "ru": "Увеличивает урон реакций Перегрузка, Горение и Цветение на 40%, а урон реакций Пар и Таяние на 15%. Использование элементального навыка увеличивает эффект набора из 2 предметов на 50% на 10 сек. Может складываться до 3 раз.",
+            "pt": "Aumenta o Dano causado por Sobrecarga, Queimaduras e Germinação em 40%. Aumenta o Dano causado por Vaporização e Fusão em 15%. Usar Habilidades Elementais aumenta o efeito de Bônus de Conjunto de 2 Peças em 50% do seu valor inicial por 10s. Máximo de 3 acúmulos."
         }
     },
     "noblesse-oblige": {
@@ -425,7 +469,8 @@
             "de": "Erhöht den mit Spezialfähigkeiten verursachten Schaden um 20 %.",
             "es": "Daño de Habilidad Definitiva +20%.",
             "it": "DAN da Tripudio elementale +20%.",
-            "ru": "Увеличивает урон взрыва стихии на 20%."
+            "ru": "Увеличивает урон взрыва стихии на 20%.",
+            "pt": "Dano do Supremo +20%"
         },
         "4p": {
             "en": "Using an Elemental Burst increases all party members' ATK by 20% for 12s. This effect cannot stack.",
@@ -433,7 +478,8 @@
             "de": "Erhöht den ANG aller Truppenmitglieder nach Anwendung von Spezialfähigkeiten 12 s lang um 20 %, nicht stapelbar.",
             "es": "Después de lanzar una Habilidad Definitiva, aumenta el ATQ de todos los miembros del equipo en un 20% durante 12 s. Este efecto no puede acumularse.",
             "it": "L'uso di un Tripudio elementale aumenta di un 20% l'ATT di tutti i membri del gruppo per 12 s. Non cumulabile.",
-            "ru": "Активация взрыва стихии увеличивает силу атаки всех членов отряда на 20% в течение 12 сек. Эффект не складывается."
+            "ru": "Активация взрыва стихии увеличивает силу атаки всех членов отряда на 20% в течение 12 сек. Эффект не складывается.",
+            "pt": "Usar o Supremo aumenta o ATQ de todos os membros da equipe em 20% por 12s. Este efeito não pode ser acumulado."
         }
     },
     "bloodstained-chivalry": {
@@ -444,7 +490,8 @@
             "de": "Erhöht den verursachten physischen Schaden um 25 %.",
             "es": "Daño Físico +25%.",
             "it": "DAN fisici +25%.",
-            "ru": "Увеличивает физ. урон на 25%."
+            "ru": "Увеличивает физ. урон на 25%.",
+            "pt": "Dano Físico causado +25%"
         },
         "4p": {
             "en": "After defeating an opponent, increases Charged Attack DMG by 50%, and reduces its Stamina cost to 0 for 10s.",
@@ -452,7 +499,8 @@
             "de": "Verbraucht beim Besiegen von Gegnern 10 s lang für die Anwendung von heftigen Schlägen keine Ausdauer und erhöht den mit heftigen Schlägen verursachten Schaden um 50 %.",
             "es": "Derrotar a un enemigo hace que no consumas Aguante al lanzar un Ataque Cargado, y que el daño de Ataque Cargado aumente en un 50% durante 10 s.",
             "it": "Dopo aver sconfitto un avversario, aumenta di un 50% i DAN da attacco caricato e ne azzera il costo in vigore per 10 s.",
-            "ru": "После победы над противником увеличивает урон заряженной атаки на 50% и обнуляет стоимость выносливости заряженной атаки на 10 сек."
+            "ru": "После победы над противником увеличивает урон заряженной атаки на 50% и обнуляет стоимость выносливости заряженной атаки на 10 сек.",
+            "pt": "Após derrotar um oponente, aumenta o Dano do Ataque Carregado em 50% e reduz seu custo de Stamina para 0 por 10s."
         }
     },
     "prayers-for-illumination": {
@@ -463,7 +511,8 @@
             "de": "Verringert die Dauer der Beeinträchtigung durch zusätzliches Pyro-Attribut um 40 %.",
             "es": "Los efectos de Pyro causados sobre ti duran un 40% menos.",
             "it": "Riduce la durata dell'effetto di Pyro di un 40%.",
-            "ru": "Уменьшает длительность полученного Пиро эффекта на 40%."
+            "ru": "Уменьшает длительность полученного Пиро эффекта на 40%.",
+            "pt": "Reduz a duração dos efeitos causados por Pyro em 40%."
         }
     },
     "prayers-for-destiny": {
@@ -474,7 +523,8 @@
             "de": "Verringert die Dauer der Beeinträchtigung durch zusätzliches Hydro-Attribut um 40 %.",
             "es": "Los efectos de Hydro causados sobre ti duran un 40% menos.",
             "it": "Riduce la durata dell'effetto di Hydro di un 40%.",
-            "ru": "Уменьшает длительность полученного Гидро эффекта на 40%."
+            "ru": "Уменьшает длительность полученного Гидро эффекта на 40%.",
+            "pt": "Reduz a duração dos efeitos causados por Hydro em 40%."
         }
     },
     "prayers-for-wisdom": {
@@ -485,7 +535,8 @@
             "de": "Verringert die Dauer der Beeinträchtigung durch zusätzliches Elektro-Attribut um 40 %.",
             "es": "Los efectos de Electro causados sobre ti duran un 40% menos.",
             "it": "Riduce la durata dell'effetto di Electro di un 40%.",
-            "ru": "Уменьшает длительность полученного Электро эффекта на 40%."
+            "ru": "Уменьшает длительность полученного Электро эффекта на 40%.",
+            "pt": "Reduz a duração dos efeitos causados por Electro em 40%."
         }
     },
     "prayers-to-springtime": {
@@ -496,7 +547,8 @@
             "de": "Verringert die Dauer der Beeinträchtigung durch zusätzliches Kryo-Attribut um 40 %.",
             "es": "Los efectos de Cryo causados sobre ti duran un 40% menos.",
             "it": "Riduce la durata dell'effetto di Cryo di un 40%.",
-            "ru": "Уменьшает длительность полученного Крио эффекта на 40%."
+            "ru": "Уменьшает длительность полученного Крио эффекта на 40%.",
+            "pt": "Reduz a duração dos efeitos causados por Cryo em 40%."
         }
     },
     "archaic-petra": {
@@ -507,7 +559,8 @@
             "de": "Erhöht den Geo-Schaden um 15 %.",
             "es": "Bono de Daño Geo +15%.",
             "it": "Bonus DAN da Geo +15%.",
-            "ru": "Даёт 15% бонус Гео урона."
+            "ru": "Даёт 15% бонус Гео урона.",
+            "pt": "Obtém 15% de Bônus de Dano Geo."
         },
         "4p": {
             "en": "Upon obtaining an Elemental Shard created through Crystallize or triggering a Lunar-Crystallize reaction, all party members gain a 35% DMG Bonus for that particular element for 10s. Only one form of Elemental DMG Bonus can be gained in this manner at any one time.",
@@ -515,7 +568,8 @@
             "de": "Erhöht beim Erhalten von durch die Reaktion Kristallisation erschaffenen Splittern oder beim Auslösen der Reaktion Mond-Kristallisation den mit dem jeweiligen Element verursachten Schaden aller Truppenmitglieder 10 s lang um 35 %. Zu einem Zeitpunkt kann nur ein SCH-Bonus aufgrund dieses Effekts bestehen.",
             "es": "Al obtener un fragmento creado a través de la reacción de Cristalización o al causar una reacción de Cristalización Lunar, todos los miembros del equipo obtienen durante 10 s un 35% de bono de daño del elemento correspondiente. Solo se puede obtener un tipo de Bono de Daño Elemental a la vez mediante este efecto.",
             "it": "Quando si ottiene un frammento elementale tramite Cristallizzazione o innescando una reazione di Cristallizzazione lunare, tutti i membri del gruppo ricevono un 35% di bonus DAN per l'elemento corrispondente della durata di 10 s. È possibile ottenere un solo bonus DAN elementali alla volta.",
-            "ru": "Получение элементального осколка, образованного реакцией Кристалл, либо активация реакции Лунный кристалл, даёт 35% бонус элементального урона соответствующего элемента всем членам отряда на 10 сек. Одновременно можно иметь бонус урона только одного элемента."
+            "ru": "Получение элементального осколка, образованного реакцией Кристалл, либо активация реакции Лунный кристалл, даёт 35% бонус элементального урона соответствующего элемента всем членам отряда на 10 сек. Одновременно можно иметь бонус урона только одного элемента.",
+            "pt": "Ao obter um Fragmento Elemental por meio de uma Reação de Cristalização ou ao desencadear uma Reação de Cristalização Lunar, todos os personagens na equipe ganham 35% de Bônus de Dano para esse elemento em particular por 10s. Somente uma forma de Dano Elemental pode ser obtida dessa maneira a qualquer momento."
         }
     },
     "retracing-bolide": {
@@ -526,7 +580,8 @@
             "de": "Erhöht die Schildeffizienz um 35 %.",
             "es": "Protección de Escudo +35%.",
             "it": "Efficacia scudo +35%.",
-            "ru": "Увеличивает прочность щита на 35%."
+            "ru": "Увеличивает прочность щита на 35%.",
+            "pt": "Aumenta a efetividade de escudos em 35%"
         },
         "4p": {
             "en": "While protected by a shield, gain an additional 40% Normal and Charged Attack DMG.",
@@ -534,7 +589,8 @@
             "de": "Erhöht den Schaden von Standardangriffen und heftigen Schlägen bei aktivem Schild zusätzlich um 40 %.",
             "es": "Los Ataques Normales y Cargados obtienen un 40% de daño adicional mientras estés bajo la protección de un escudo.",
             "it": "Sotto la protezione di uno scudo, ottieni un ulteriore aumento dei DAN da attacchi normali e caricati di un 40%.",
-            "ru": "Под защитой щита увеличивает урон обычной и заряженной атаки на 40%."
+            "ru": "Под защитой щита увеличивает урон обычной и заряженной атаки на 40%.",
+            "pt": "Ganha um adicional de 40% de Dano Normal e Carregado enquanto estiver sob a proteção de um escudo."
         }
     },
     "heart-of-depth": {
@@ -545,7 +601,8 @@
             "de": "Erhöht den Hydro-Schaden um 15 %.",
             "es": "Bono de Daño Hydro +15%.",
             "it": "Bonus DAN da Hydro +15%.",
-            "ru": "Даёт 15% бонус Гидро урона."
+            "ru": "Даёт 15% бонус Гидро урона.",
+            "pt": "Bônus de Dano Hydro +15%"
         },
         "4p": {
             "en": "After using Elemental Skill, increases Normal Attack and Charged Attack DMG by 30% for 15s.",
@@ -553,7 +610,8 @@
             "de": "Erhöht den mit Standardangriffen und heftigen Schlägen verursachten Schaden nach Anwendung von Elementarfähigkeiten 15 s lang um 30 %.",
             "es": "Tras usar la Habilidad Elemental, aumenta el daño de Ataque Normal y Ataque Cargado en un 30% durante 15 s.",
             "it": "Dopo l'uso di un'abilità elementale, aumenta di un 30% i DAN da attacchi normali e caricati per 15 s.",
-            "ru": "Увеличивает урон обычной и заряженной атаки на 30% в течение 15 сек. после использования элементального навыка."
+            "ru": "Увеличивает урон обычной и заряженной атаки на 30% в течение 15 сек. после использования элементального навыка.",
+            "pt": "Após usar uma Habilidade Elemental, aumenta o Dano do Ataque Normal e Carregado em 30% por 15s."
         }
     },
     "tenacity-of-the-millelith": {
@@ -564,7 +622,8 @@
             "de": "Erhöht die LP um 20 %.",
             "es": "Vida +20%.",
             "it": "PS +20%.",
-            "ru": "Увеличивает НР на 20%."
+            "ru": "Увеличивает НР на 20%.",
+            "pt": "Aumenta a vida em 20%."
         },
         "4p": {
             "en": "When an Elemental Skill hits an opponent, the ATK of all nearby party members is increased by 20% and their Shield Strength is increased by 30% for 3s. This effect can be triggered once every 0.5s. This effect can still be triggered even when the character who is using this artifact set is not on the field.",
@@ -572,7 +631,8 @@
             "de": "Erhöht beim Treffen von Gegnern mit Elementarfähigkeiten den ANG aller Truppenmitglieder in der Nähe um 20 % sowie die Schildeffizienz um 30 %, hält 3 s, 0,5 s Abklingzeit. Die Figur mit diesem Artefaktset kann diesen Effekt auch auslösen, wenn sie inaktiv in der Truppe ist.",
             "es": "Cuando una Habilidad Elemental golpea a un enemigo, el ATQ de todos los personajes del equipo cercanos aumenta en un 20% y su Protección de Escudo aumenta en un 30% durante 3 s. Este efecto puede tener lugar cada 0.5 s y se activa incluso cuando el personaje que lleva equipado este conjunto de artefactos está en tu equipo pero no en uso.",
             "it": "Quando un'abilità elementale colpisce un avversario, l'ATT e l'efficacia dello scudo di tutti i membri del gruppo vicini aumentano rispettivamente di un 20% e di un 30% per 3 s. Quest'effetto può attivarsi una volta ogni 0,5 s, anche se il personaggio che sta usando questo set di manufatti non è sul campo.",
-            "ru": "Когда элементальный навык попадает по врагам, атака всех находящихся поблизости персонажей в отряде, увеличивается на 20%, а прочность их щита увеличивается на 30%. Эффект длится 3 сек. и может возникнуть 1 раз в 0,5 сек. Этот эффект может быть активирован, даже если персонаж, экипированный этим набором артефактов, не находится на поле боя."
+            "ru": "Когда элементальный навык попадает по врагам, атака всех находящихся поблизости персонажей в отряде, увеличивается на 20%, а прочность их щита увеличивается на 30%. Эффект длится 3 сек. и может возникнуть 1 раз в 0,5 сек. Этот эффект может быть активирован, даже если персонаж, экипированный этим набором артефактов, не находится на поле боя.",
+            "pt": "Quando a Habilidade Elemental atinge um oponente, o ATQ de todos os membros da equipe próximos aumenta em 20% e sua Força do Escudo aumenta em 30% por 3s. Esse efeito pode ser ativado uma vez a cada 0,5s. Esse efeito ainda pode ser ativado mesmo quando o personagem que está usando esse conjunto de artefatos não está em campo."
         }
     },
     "pale-flame": {
@@ -583,7 +643,8 @@
             "de": "Erhöht den verursachten physischen Schaden um 25 %.",
             "es": "Daño Físico +25%.",
             "it": "DAN fisici +25%.",
-            "ru": "Увеличивает физ. урон на 25%."
+            "ru": "Увеличивает физ. урон на 25%.",
+            "pt": "Dano Físico causado +25%"
         },
         "4p": {
             "en": "When an Elemental Skill hits an opponent, ATK is increased by 9% for 7s. This effect stacks up to 2 times and can be triggered once every 0.3s. Once 2 stacks are reached, the 2-set effect is increased by 100%.",
@@ -591,7 +652,8 @@
             "de": "Erhöht den ANG beim Treffen von Gegnern mit Elementarfähigkeiten 7 s lang um 9 %, 2-fach stapelbar. 0,3 s Abklingzeit. Erhöht den Effekt des Sets mit 2 Teilen beim Erreichen des Limits von 2 Stapelungen um 100 %.",
             "es": "Al atacar a un enemigo con una Habilidad Elemental, el ATQ aumenta en un 9% durante 7 s. Este efecto puede acumularse hasta 2 veces y activarse cada 0.3 s. Al alcanzar 2 acumulaciones, el efecto de dos piezas del conjunto aumenta en un 100%.",
             "it": "Quando un'abilità elementale colpisce un avversario, l'ATT aumenta di un 9% per 7 s. Cumulabile fino a 2 volte, si può attivare una volta ogni 0,3 s. Raggiunta la quantità massima cumulabile, l'effetto del set da 2 pezzi aumenta di un 100%.",
-            "ru": "Когда элементальный навык попадает по врагам, атака увеличивается на 9% в течение 7 сек. Эффект может складываться до 2 раз и возникнуть не чаще 1 раза за 0,3 сек. На 2 уровне складывания эффект набора из 2 вещей увеличивается на 100%."
+            "ru": "Когда элементальный навык попадает по врагам, атака увеличивается на 9% в течение 7 сек. Эффект может складываться до 2 раз и возникнуть не чаще 1 раза за 0,3 сек. На 2 уровне складывания эффект набора из 2 вещей увеличивается на 100%.",
+            "pt": "Quando a Habilidade Elemental atinge um inimigo, o Ataque aumenta em 9% por 7s. Esse efeito acumula até 2 vezes e pode ser desencadeado uma vez a cada 0.3s. Quando se possui 2 acúmulos, o efeito do conjunto de 2 Artefatos é aumentado em 100%."
         }
     },
     "shimenawas-reminiscence": {
@@ -602,7 +664,8 @@
             "de": "Erhöht den ANG um 18 %.",
             "es": "ATQ +18%.",
             "it": "ATT +18%.",
-            "ru": "Увеличивает силу атаки на 18%."
+            "ru": "Увеличивает силу атаки на 18%.",
+            "pt": "ATQ +18%."
         },
         "4p": {
             "en": "When casting an Elemental Skill, if the character has 15 or more Energy, they lose 15 Energy and Normal/Charged/Plunging Attack DMG is increased by 50% for 10s. This effect will not trigger again during that duration.",
@@ -610,7 +673,8 @@
             "de": "Verringert bei Anwendung einer Elementarfähigkeit die Elementarenergie um 15 Punkte, wenn die Figur mindestens 15 Punkte Elementarenergie besitzt. Erhöht daraufhin den mit Standardangriffen, heftigen Schlägen und Angriffen aus dem Fall verursachten Schaden 10 s lang um 50 %. Dieser Effekt wird während der Wirkungsdauer nicht erneut ausgelöst.",
             "es": "Si el personaje tiene 15 pts. de Energía Elemental o más, perderá 15 pts. al realizar una Habilidad Elemental y el daño infligido con los Ataques Normales, Cargados y Descendentes aumentará en un 50% durante 10 s. Este efecto no puede activarse más de una vez simultáneamente.",
             "it": "Quando un personaggio con almeno 15 di energia usa un'abilità elementale, perde 15 di energia e i DAN da attacco normale, caricato o in picchiata aumentano di un 50% per 10 s. In questo lasso di tempo, l'effetto non si riattiva.",
-            "ru": "При использовании элементального навыка, если у персонажа 15 или более единиц энергии, он теряет 15 единиц энергии, а урон обычной атаки, заряженной атаки и атаки в падении увеличивается на 50% в течение 10 сек. Эффект нельзя активировать повторно в течение этого времени."
+            "ru": "При использовании элементального навыка, если у персонажа 15 или более единиц энергии, он теряет 15 единиц энергии, а урон обычной атаки, заряженной атаки и атаки в падении увеличивается на 50% в течение 10 сек. Эффект нельзя активировать повторно в течение этого времени.",
+            "pt": "Ao lançar sua Habilidade Elemental, se a Energia Elemental do Personagem for maior ou igual a 15, ele perderá 15 pontos de Energia Elemental e nos próximos 10s, seus Ataques Normais, Ataques Carregados, Ataques Imersivos terão um aumento de 50% de Dano. Esse efeito só pode ser desencadeado uma vez dentro desse intervalo de tempo."
         }
     },
     "emblem-of-severed-fate": {
@@ -621,7 +685,8 @@
             "de": "Erhöht die Aufladerate um 20 %.",
             "es": "Recarga de Energía +20%.",
             "it": "Ricarica energia +20%.",
-            "ru": "Увеличивает скорость восстановления энергии на 20%."
+            "ru": "Увеличивает скорость восстановления энергии на 20%.",
+            "pt": "Recarga de Energia +20%"
         },
         "4p": {
             "en": "Increases Elemental Burst DMG by 25% of Energy Recharge. A maximum of 75% bonus DMG can be obtained in this way.",
@@ -629,7 +694,8 @@
             "de": "Erhöht den mit Spezialfähigkeiten verursachten Schaden basierend auf 25 % der Aufladerate. Bis zu 75 % Bonus auf diese Weise möglich.",
             "es": "Aumenta el daño infligido con la Habilidad Definitiva en una cantidad equivalente al 25% de la Recarga de Energía. Se puede obtener un aumento del 75% como máximo.",
             "it": "Aumenta i DAN da Tripudio elementale di un 25% della ricarica d'energia. In questo modo puoi ottenere fino a un 75% di bonus DAN.",
-            "ru": "Увеличивает урон взрыва стихий на величину, равную 25% от значения восстановления энергии. Эффект можно увеличить максимум до 75%."
+            "ru": "Увеличивает урон взрыва стихий на величину, равную 25% от значения восстановления энергии. Эффект можно увеличить максимум до 75%.",
+            "pt": "Aumenta o Dano do Supremo em 25% da Recarga de Energia. No máximo é possível obter 75% de aumento de Dano dessa maneira."
         }
     },
     "husk-of-opulent-dreams": {
@@ -640,7 +706,8 @@
             "de": "Erhöht die VTD um 30 %.",
             "es": "DEF +30%.",
             "it": "DIF +30%.",
-            "ru": "Увеличивает защиту на 30%."
+            "ru": "Увеличивает защиту на 30%.",
+            "pt": "DEF +30%"
         },
         "4p": {
             "en": "A character equipped with this Artifact set will obtain the Curiosity effect in the following conditions: When on the field, the character gains 1 stack after hitting an opponent with a Geo attack, triggering a maximum of once every 0.3s. When off the field, the character gains 1 stack every 3s. Curiosity can stack up to 4 times, each providing 6% DEF and a 6% Geo DMG Bonus. When 6 seconds pass without gaining a Curiosity stack, 1 stack is lost.",
@@ -648,7 +715,8 @@
             "de": "Die mit diesem Artefaktset ausgerüsteten Figuren erhalten unter den folgenden Umständen den Effekt „Neugier“: Aktuelle Figuren erhalten mit 0,3 s Abklingzeit eine Stapelung beim Treffen von Gegnern mit Geo-Angriffen, während die inaktiven Figuren in der Truppe alle 3 s eine Stapelung erhalten. 4-fach stapelbar. Jede Stapelung verleiht einen VTD-Bonus von 6 % und einen Geo-Schadens-Bonus von 6 %. Wenn kein neuer Effekt der „Neugier“ hinzukommt, erlischt alle 6 s eine Stapelung dieses Effekts.",
             "es": "El personaje que equipe este conjunto de artefactos obtendrá el efecto de “curiosidad” en las siguientes circunstancias: al golpear a un enemigo con un ataque Geo, obtiene una carga, lo cual solo puede ocurrir una vez cada 0.3 s; mientras está en tu equipo pero no en uso, obtiene una carga cada 3 s. Este efecto puede acumularse hasta 4 veces, y cada carga aumenta en un 6% la DEF y otorga un 6% de Bono de Daño Geo. Si el personaje no obtiene una carga de curiosidad en 6 s, perderá una acumulación.",
             "it": "Un personaggio equipaggiato con questo set di manufatti ottiene l'effetto Curiosità come segue: quando è in campo, riceve 1 accumulo colpendo un avversario con un attacco di Geo, fino a una volta ogni 0,3 s; quando non è in campo, riceve 1 accumulo ogni 3 s. L'effetto Curiosità è cumulabile fino a 4 volte, e ciascun accumulo fornisce un 6% di DIF e di bonus DAN da Geo. Per ogni 6 s trascorsi senza ottenere un accumulo, ne perderai 1.",
-            "ru": "Персонаж, экипированный этим набором артефактов, получает эффект Любопытства в следующих ситуациях: 1 уровень Любопытства даётся активному персонажу после попадания по противнику атакой Гео (не чаще чем раз в 0,3 сек.); когда персонаж находится вне поля боя, он получает 1 ур. Любопытства каждые 3 сек. Любопытство может складываться до 4 ур., каждый ур. прибавляет 6% к защите и 6% к Гео урону. Если персонаж не получает Любопытство в течение 6 сек., то он теряет 1 накопленный уровень Любопытства."
+            "ru": "Персонаж, экипированный этим набором артефактов, получает эффект Любопытства в следующих ситуациях: 1 уровень Любопытства даётся активному персонажу после попадания по противнику атакой Гео (не чаще чем раз в 0,3 сек.); когда персонаж находится вне поля боя, он получает 1 ур. Любопытства каждые 3 сек. Любопытство может складываться до 4 ур., каждый ур. прибавляет 6% к защите и 6% к Гео урону. Если персонаж не получает Любопытство в течение 6 сек., то он теряет 1 накопленный уровень Любопытства.",
+            "pt": "Um personagem com este conjunto de artefatos equipado obterá o efeito de Curiosidade nas seguintes condições: Quando estiver no campo de batalha, o personagem ganha 1 carga após atingir um adversário com um ataque Geo, isso pode ser desencadeado uma vez a cada 0.3s. Quando fora do campo de batalha, o personagem ganha 1 carga a cada 3s. A Curiosidade pode acumular em até 4 vezes, cada uma fornecendo 6% de DEF e um Bônus de Dano Geo de também 6%. Quando 6 segundos passam sem ganhar um acúmulo de Curiosidade, 1 acúmulo é perdido."
         }
     },
     "ocean-hued-clam": {
@@ -659,7 +727,8 @@
             "de": "Erhöht den Heilungsbonus um 15 %.",
             "es": "Bono de Curación +15%.",
             "it": "Bonus di guarigione +15%.",
-            "ru": "Повышает бонус лечения на 15%."
+            "ru": "Повышает бонус лечения на 15%.",
+            "pt": "Bônus de Cura +15%"
         },
         "4p": {
             "en": "When the character equipping this artifact set heals a character in the party, a Sea-Dyed Foam will appear for 3 seconds, accumulating the amount of HP recovered from healing (including overflow healing). At the end of the duration, the Sea-Dyed Foam will explode, dealing DMG to nearby opponents based on 90% of the accumulated healing. (This DMG is calculated similarly to Reactions such as Electro-Charged, and Superconduct, but is not affected by Elemental Mastery, Character Levels, or Reaction DMG Bonuses). Only one Sea-Dyed Foam can be produced every 3.5 seconds. Each Sea-Dyed Foam can accumulate up to 30,000 HP (including overflow healing). There can be no more than one Sea-Dyed Foam active at any given time. This effect can still be triggered even when the character who is using this artifact set is not on the field.",
@@ -667,7 +736,8 @@
             "de": "Wenn die mit diesem Artefaktset ausgerüsteten Figuren die Figuren in der Truppe heilen, entsteht eine Meeresblase, die 3 s hält und die wiederhergestellten Lebenspunkte beim Heilen (einschließlich des überschüssigen Heilungswerts) aufzeichnet. Wenn ihre Dauer endet, explodiert die Meeresblase, was Gegnern in der Umgebung Schaden, der 90 % der insgesamt wiederhergestellten LP entspricht, zufügt (Diese SCH-Berechnungsweise gleicht der der Elementarreaktionen Unter Strom und Supraleiter, ist jedoch von der Elementarkunde, der Stufe oder dem Reaktion-SCH-Bonus unabhängig). Alle 3,5 s kann höchstens eine Meeresblase entstehen. Jede Meeresblase kann bis zu 30.000 wiederhergestellte Lebenspunkte (einschließlich des überschüssigen Heilungswerts) aufzeichnen. In der eigenen Truppe kann gleichzeitig höchstens eine Meeresblase bestehen. Wenn die mit diesem Artefaktset ausgerüsteten Figuren inaktiv in der Truppe sind, kann dieser Effekt auch ausgelöst werden.",
             "es": "Cuando el personaje que equipa este conjunto de artefactos cura a otro, crea el efecto de “burbuja marina” durante 3 s, el cual registra la cantidad de Vida regenerada (incluida la regenerada por encima del 100%). Tras ello, la burbuja marina estalla e inflige contra los enemigos cercanos un daño basado en el 90% de la cantidad regenerada. Este daño se calcula de manera similar al de las reacciones de Electrocargado, Superconductor, etc., pero no varía en función de la Maestría Elemental, el nivel del personaje o el bono de daño de las reacciones. Solo se puede crear una burbuja marina cada 3.5 s, la cual solo puede registrar un máximo de 30 000 pts. de Vida regenerada, incluyendo la regenerada por encima del 100%. Además, solo puede existir una burbuja marina en tu equipo al mismo tiempo. Cuando el personaje que equipa este conjunto de artefactos está en el equipo pero no en uso, también podrá activar este efecto.",
             "it": "Quando il personaggio equipaggiato con questo set di manufatti guarisce un personaggio del gruppo, una Schiuma marina appare per 3 s, accumulando la quantità di PS ripristinata dalla guarigione (inclusa quella in eccesso). Al termine dell'effetto, la Schiuma marina esplode, infliggendo DAN agli avversari vicini pari a un 90% della guarigione accumulata. (Questi DAN si calcolano analogamente alle reazioni quali Electrocarica e Superconduzione, ma non vengono influenzati da maestria elementale, livelli personaggio o bonus DAN delle reazioni). Si può generare una sola Schiuma marina ogni 3,5 s. Ogni Schiuma marina può accumulare fino a 30.000 PS (inclusa la guarigione in eccesso). Può esserci solo una Schiuma marina attiva alla volta. L'effetto è attivabile anche se il personaggio che sta usando il set di manufatti non è sul campo.",
-            "ru": "Экипированный этим набором артефактов персонаж при лечении соратников создаёт на 3 сек. Пузырь морских красок. Пузырь регистрирует восстановленное при лечении HP (в том числе избыточное, когда лечение превышает максимум здоровья). После окончания действия Пузырь взрывается и наносит окружающим врагам урон в размере 90% учтённого объёма лечения (урон рассчитывается так же, как для эффектов Заряжен и Сверхпроводник, но на него не действуют бонусы мастерства стихий, уровня и реакций). Пузырь морских красок можно создавать не чаще чем раз в 3,5 сек. Пузырь может записать до 30 000 восстановленного HP, в том числе HP избыточного лечения. Для отряда не может существовать больше одного Пузыря морских красок одновременно. Этот эффект действует, даже если персонаж, экипированный набором артефактов, не находится на поле боя."
+            "ru": "Экипированный этим набором артефактов персонаж при лечении соратников создаёт на 3 сек. Пузырь морских красок. Пузырь регистрирует восстановленное при лечении HP (в том числе избыточное, когда лечение превышает максимум здоровья). После окончания действия Пузырь взрывается и наносит окружающим врагам урон в размере 90% учтённого объёма лечения (урон рассчитывается так же, как для эффектов Заряжен и Сверхпроводник, но на него не действуют бонусы мастерства стихий, уровня и реакций). Пузырь морских красок можно создавать не чаще чем раз в 3,5 сек. Пузырь может записать до 30 000 восстановленного HP, в том числе HP избыточного лечения. Для отряда не может существовать больше одного Пузыря морских красок одновременно. Этот эффект действует, даже если персонаж, экипированный набором артефактов, не находится на поле боя.",
+            "pt": "Quando o personagem que equipa este conjunto de artefatos cura outro personagem da sua equipe, ele cria o efeito de \"Bolha de Espuma do Mar\" durante 3s, que registra a quantidade de vida regenerada (incluindo a regenerada acima de 100%). No final da duração do efeito, a Bolha de Espuma do Mar explode, causando dano aos inimigos ao redor com base em 90% da vida regenerada. (Esse Dano é calculado de forma semelhante a reações como Eletricamente Carregado e Supercondutor, mas não é afetado pela Proficiência Elemental, níveis de personagens ou dano bônus de reações.) Apenas se pode criar uma Bolha de Espuma do Mar a cada 3.5s, e esta poderá registrar no máximo 30.000 pontos de vida, incluindo aqueles regenerados acima de 100%. Além disso, apenas uma Bolha de Espuma do Mar pode existir em sua equipe de cada vez. Quando o personagem equipando este conjunto de artefatos está na equipe, mas não em combate, poderá ainda assim ativar este efeito."
         }
     },
     "vermillion-hereafter": {
@@ -678,7 +748,8 @@
             "de": "Erhöht den ANG um 18 %.",
             "es": "ATQ +18%.",
             "it": "ATT +18%.",
-            "ru": "Увеличивает силу атаки на 18%."
+            "ru": "Увеличивает силу атаки на 18%.",
+            "pt": "ATQ +18%."
         },
         "4p": {
             "en": "After using an Elemental Burst, this character will gain the Nascent Light effect, increasing their ATK by 8% for 16s. When the character's HP decreases, their ATK will further increase by 10%. This further increase can occur this way a maximum of 4 times. This effect can be triggered once every 0.8s. Nascent Light will be dispelled when the character leaves the field. If an Elemental Burst is used again during the duration of Nascent Light, the original Nascent Light will be dispelled.",
@@ -686,7 +757,8 @@
             "de": "Verleiht Figuren nach Anwendung von Spezialfähigkeiten den 16 s anhaltenden Effekt „Schleichlicht“: Erhöht den ANG der jeweiligen Figur anfänglich um 8 %. Erhöht den ANG der Figur bei jedem LP-Verlust zusätzlich um 10 %, 0,8 s Abklingzeit. 4 ANG-Boni auf diese Weise möglich. Beendet den Effekt „Schleichlicht“ beim Auswechseln der Figur. Entfernt bei erneuter Anwendung der Spezialfähigkeit während der Wirkungsdauer von „Schleichlicht“ den bisherigen Effekt „Schleichlicht“ vollständig.",
             "es": "Al usar la Habilidad Definitiva, obtienes el efecto de “destello emergente” durante 16 s, el cual aumenta el ATQ en un 8% y, además, hace que cada vez que el personaje pierda Vida, su ATQ aumente en un 10% adicional. Este efecto solo puede aumentar el ATQ un máximo de 4 veces de esta manera y activarse una vez cada 0.8 s. Los efectos de destello emergente se disiparán si el personaje es retirado de combate. Si el personaje vuelve a usar la Habilidad Definitiva mientras dicho efecto está activo, el destello emergente original también se disipará.",
             "it": "Dopo aver usato un Tripudio elementale, il personaggio ottiene l'effetto Luce nascente, che aumenta l'ATT di un 8% per 16 s. Quando i PS del personaggio si riducono, il suo ATT aumenta di un ulteriore 10%. Questo ulteriore aumento può essere accumulato per un massimo di 4 volte. Quest'effetto può attivarsi una volta ogni 0,8 s. Quando il personaggio abbandona il campo, l'effetto Luce nascente si disperde. Usando nuovamente un Tripudio elementale quando Luce nascente è attivo, l'effetto originale si disperde.",
-            "ru": "После активации взрыва стихии на 16 сек. создаёт Скрытое сияние, которое повышает силу атаки на 8%. Сила атаки персонажа увеличивается ещё на 10%, когда он теряет HP. Этот эффект может возникнуть максимум 4 раза и не чаще, чем раз в 0,8 сек. Скрытое сияние исчезает, когда персонаж покидает поле боя. При повторной активации взрыва стихии существующее Скрытое сияние снимается."
+            "ru": "После активации взрыва стихии на 16 сек. создаёт Скрытое сияние, которое повышает силу атаки на 8%. Сила атаки персонажа увеличивается ещё на 10%, когда он теряет HP. Этот эффект может возникнуть максимум 4 раза и не чаще, чем раз в 0,8 сек. Скрытое сияние исчезает, когда персонаж покидает поле боя. При повторной активации взрыва стихии существующее Скрытое сияние снимается.",
+            "pt": "Depois do Supremo ser usado, será desencadeado o efeito de \"Luz Nascente\" por 16s: o ATQ será aumentado em 8% e quando a Vida do personagem diminuir, o ATQ aumentará mais 10%. Esse aumento pode ocorrer desta forma no máximo 4 vezes, e pode ser desencadeado 1 vez a cada 0.8s. O efeito de \"Luz Nascente\" desaparece quando o personagem sai do campo de batalha. Quando o personagem lança novamente o Supremo durante o efeito, o efeito original de \"Luz Nascente\" será removido."
         }
     },
     "echoes-of-an-offering": {
@@ -697,7 +769,8 @@
             "de": "Erhöht den ANG um 18 %.",
             "es": "ATQ +18%.",
             "it": "ATT +18%.",
-            "ru": "Увеличивает силу атаки на 18%."
+            "ru": "Увеличивает силу атаки на 18%.",
+            "pt": "ATQ +18%."
         },
         "4p": {
             "en": "When Normal Attacks hit opponents, there is a 36% chance that it will trigger Valley Rite, which will increase Normal Attack DMG by 70% of ATK. This effect will be dispelled 0.05s after a Normal Attack deals DMG. If a Normal Attack fails to trigger Valley Rite, the odds of it triggering the next time will increase by 20%. This trigger can occur once every 0.2s.",
@@ -705,7 +778,8 @@
             "de": "Löst beim Treffen von Gegnern mit Standardangriffen mit einer Wahrscheinlichkeit von 36 % „Talritual“ aus: Erhöht den mit Standardangriffen verursachten Schaden um 70 % ANG. Erlischt 0,05 s nach dem Verursachen von Schaden mit Standardangriffen. Erhöht, wenn der Effekt bei einem Standardangriff nicht ausgelöst wird, die Chance, dass er beim nächsten Mal ausgelöst wird, um 20 %, 0,2 s Abklingzeit.",
             "es": "Al golpear a un enemigo con un Ataque Normal, hay una probabilidad del 36% de activar el efecto de “ritual del valle”, el cual aumenta el daño de Ataque Normal en una cantidad equivalente al 70% del ATQ. Este efecto se anula 0.05 s después de infligir daño con un Ataque Normal. Si dicho ataque no activa ritual del valle, la probabilidad de activarlo con el siguiente golpe de Ataque Normal aumenta en un 20%. Esta activación solo puede ocurrir una vez cada 0.2 s.",
             "it": "Quando gli attacchi normali colpiscono gli avversari, hanno un 36% di probabilità di innescare Rito della valle, che aumenta i DAN da attacchi normali di un 70% dell'ATT. Questo effetto si disperde 0,05 s dopo che un attacco normale infligge DAN. Se un attacco normale non innesca Rito della valle, le probabilità di attivare l'effetto la volta successiva aumentano di un 20%. È possibile attivare l'effetto una volta ogni 0,2 s.",
-            "ru": "Попадания обычной атакой с 36% шансом активируют Ритуал долины: урон обычной атаки повышается на 70% от силы атаки. Через 0,05 сек. после нанесения урона обычной атакой эффект исчезает. Если обычной атаке не удалось активировать этот эффект, шанс его активации следующим попаданием возрастает на 20%. Шанс активации возникает не чаще одного раза в 0,2 сек."
+            "ru": "Попадания обычной атакой с 36% шансом активируют Ритуал долины: урон обычной атаки повышается на 70% от силы атаки. Через 0,05 сек. после нанесения урона обычной атакой эффект исчезает. Если обычной атаке не удалось активировать этот эффект, шанс его активации следующим попаданием возрастает на 20%. Шанс активации возникает не чаще одного раза в 0,2 сек.",
+            "pt": "Quando o Ataque Normal atinge um inimigo, tem 36% de chance de ativar o Rito do Vale, que aumenta o Dano do Ataque Normal em 70% do ATQ. Esse efeito desaparece 0.05s após um Ataque Normal causar dano. Quando o Ataque Normal não ativar o Rito do Vale, aumenta a probabilidade de ativação em 20% na próxima vez. Essa ativação pode ocorrer 1 vez a cada 0.2s."
         }
     },
     "deepwood-memories": {
@@ -716,7 +790,8 @@
             "de": "Erhöht den Dendro-Schaden um 15 %.",
             "es": "Bono de Daño Dendro +15%.",
             "it": "Bonus DAN da Dendro +15%.",
-            "ru": "Даёт 15% бонус Дендро урона."
+            "ru": "Даёт 15% бонус Дендро урона.",
+            "pt": "Bônus de Dano Dendro +15%"
         },
         "4p": {
             "en": "After Elemental Skills or Bursts hit opponents, the targets' Dendro RES will be decreased by 30% for 8s. This effect can be triggered even if the equipping character is not on the field.",
@@ -724,7 +799,8 @@
             "de": "Verringert nach Treffern mit der Elementarfähigkeit oder Spezialfähigkeit den Dendro-WDS des Ziels 8 s lang um 30 %. Dieser Effekt kann auch ausgelöst werden, wenn die damit ausgerüstete Figur inaktiv in der Truppe ist.",
             "es": "Tras golpear a un enemigo con una Habilidad Elemental o Definitiva, la RES Dendro de dicho enemigo se reduce en un 30% durante 8 s. Este efecto se puede activar incluso cuando el personaje que lleva este conjunto equipado está en tu equipo pero no en uso.",
             "it": "Se gli avversari vengono colpiti dalle abilità elementali o dai Tripudi elementali, la loro RES a Dendro sarà ridotta di un 30% per 8 s. Quest'effetto si applica anche se il personaggio che equipaggia questo set non è in campo.",
-            "ru": "Попадание элементальным навыком или взрывом стихии снижает Дендро сопротивление врага на 30% на 8 сек. Этот эффект срабатывает, даже если экипированный этими артефактами персонаж не на поле боя."
+            "ru": "Попадание элементальным навыком или взрывом стихии снижает Дендро сопротивление врага на 30% на 8 сек. Этот эффект срабатывает, даже если экипированный этими артефактами персонаж не на поле боя.",
+            "pt": "Depois que as Habilidades Elementais ou Supremos acertam os oponentes, a RES Dendro dos alvos serão reduzidas em 30% por 8s. Esse efeito pode ser desencadeado mesmo se o personagem equipando este conjunto não estiver em campo."
         }
     },
     "gilded-dreams": {
@@ -735,7 +811,8 @@
             "de": "Erhöht die Elementarkunde um 80 Punkte.",
             "es": "Maestría Elemental +80 pts.",
             "it": "Maestria elementale +80.",
-            "ru": "Увеличивает мастерство стихий на 80 ед."
+            "ru": "Увеличивает мастерство стихий на 80 ед.",
+            "pt": "Proficiência Elemental +80"
         },
         "4p": {
             "en": "Within 8s of triggering an Elemental Reaction, the character equipping this will obtain buffs based on the Elemental Type of the other party members. ATK is increased by 14% for each party member whose Elemental Type is the same as the equipping character, and Elemental Mastery is increased by 50 for every party member with a different Elemental Type. Each of the aforementioned buffs will count up to 3 characters. This effect can be triggered once every 8s. The character who equips this can still trigger its effects when not on the field.",
@@ -743,7 +820,8 @@
             "de": "Verleiht der damit ausgerüsteten Figur nach Auslösen einer Elementarreaktion entsprechend den Elementartypen anderer Figuren in der Truppe unterschiedliche Boni, die 8 s halten: Die Anwesenheit von je 1 Figur des gleichen Elementartyps erhöht den ANG um 14 %. Die Anwesenheit von je 1 Figur unterschiedlichen Elementartyps erhöht die Elementarkunde um 50 Punkte. Für jeden dieser Boni werden bis zu 3 Figuren mit gleichem oder unterschiedlichem Elementartyp gewertet. Diese Effekte treten auch in Kraft, wenn die damit ausgerüstete Figur inaktiv in der Truppe ist, 8 s Abklingzeit.",
             "es": "Tras causar una Reacción Elemental, el personaje que lleve equipado este conjunto obtiene durante 8 s los siguientes fortalecimientos en función de los tipos elementales de los miembros del equipo: por cada personaje del mismo tipo elemental que el portador de este conjunto, el ATQ aumenta en un 14%; por cada personaje de tipo elemental distinto al portador de este conjunto, la Maestría Elemental aumenta en 50 pts. Cada uno de estos efectos se calcula para un máximo de 3 personajes. Este efecto solo se puede activar una vez cada 8 s, y se activará incluso cuando el personaje que lleva este conjunto equipado esté en tu equipo pero no en uso.",
             "it": "Entro 8 s dall'attivazione di una reazione elementale, il personaggio che equipaggia questo set ottiene effetti positivi in base al tipo elementale degli altri membri del gruppo. L'ATT aumenta di un 14% per ogni membro del gruppo il cui tipo elementale corrisponde a quello del personaggio che equipaggia il set, e la maestria elementale aumenta di 50 per ogni membro del gruppo con un tipo elementale diverso. Ciascuno degli effetti positivi può considerare fino a 3 personaggi. Quest'effetto può attivarsi una volta ogni 8 s. Il personaggio che equipaggia questo set può attivarne gli effetti anche quando non presente sul campo.",
-            "ru": "На 8 сек. после вызова элементальной реакции согласно элементам других персонажей в отряде экипированный этими артефактами персонаж получает следующие усиления: сила атаки повышается на 14% за каждого персонажа с таким же элементом, как у экипированного персонажа; мастерство стихий повышается на 50 ед. за каждого персонажа с иным элементом. Каждое из этих усилений при подсчёте включает до 3 персонажей. Эффект может возникнуть один раз в 8 сек. Срабатывает, даже если экипированный этими артефактами персонаж не на поле боя."
+            "ru": "На 8 сек. после вызова элементальной реакции согласно элементам других персонажей в отряде экипированный этими артефактами персонаж получает следующие усиления: сила атаки повышается на 14% за каждого персонажа с таким же элементом, как у экипированного персонажа; мастерство стихий повышается на 50 ед. за каждого персонажа с иным элементом. Каждое из этих усилений при подсчёте включает до 3 персонажей. Эффект может возникнуть один раз в 8 сек. Срабатывает, даже если экипированный этими артефактами персонаж не на поле боя.",
+            "pt": "Dentro de 8s após causar uma Reação Elemental, o personagem equipando este conjunto irá obter aprimoramentos baseados no Tipo Elemental dos outros membros da equipe. O ATQ é aumentado em 14% para cada membro da equipe cujo Tipo Elemental seja o mesmo que o personagem equipando o conjunto. A Proficiência Elemental é aumentada em 50 para cada membro da equipe com Tipos Elementais diferentes. Cada um desses aprimoramentos mencionados anteriormente irá contar para até 3 personagens. Esse efeito pode ser desencadeado uma vez a cada 8s. O personagem que equipar este conjunto ainda pode ativar seu efeito mesmo que não esteja em campo."
         }
     },
     "desert-pavilion-chronicle": {
@@ -754,7 +832,8 @@
             "de": "Erhöht den Anemo-Schaden um 15 %.",
             "es": "Bono de Daño Anemo +15%.",
             "it": "Bonus DAN da Anemo +15%.",
-            "ru": "Даёт 15% бонус Анемо урона."
+            "ru": "Даёт 15% бонус Анемо урона.",
+            "pt": "Bônus de Dano Anemo +15%"
         },
         "4p": {
             "en": "When Charged Attacks hit opponents, the equipping character's Normal Attack SPD will increase by 10% while Normal, Charged, and Plunging Attack DMG will increase by 40% for 15s.",
@@ -762,7 +841,8 @@
             "de": "Erhöht die Standardangriffs-GSW der damit ausgerüsteten Figur nach dem Treffen von Gegnern mit heftigen Schlägen um 10 % und erhöht den von Standardangriffen, heftigen Schlägen und Angriffen aus dem Fall verursachten Schaden um 40 %, hält 15 s.",
             "es": "Tras golpear a un enemigo con un Ataque Cargado, la Vel. de Ataque Normal del personaje aumenta en un 10%, y el daño de Ataque Normal, Cargado y Descendente aumenta en un 40% durante 15 s.",
             "it": "Quando gli attacchi caricati colpiscono gli avversari, la VEL dell'attacco normale del personaggio aumenta di un 10%, mentre i DAN da attacco normale, caricato e in picchiata aumentano di un 40% per 15 s.",
-            "ru": "Попадание заряженной атакой на 15 сек. повышает скорость обычной атаки на 10%, а урон обычной атаки, заряженной атаки и атаки в падении - на 40%."
+            "ru": "Попадание заряженной атакой на 15 сек. повышает скорость обычной атаки на 10%, а урон обычной атаки, заряженной атаки и атаки в падении - на 40%.",
+            "pt": "Quando um Ataque Carregado atinge um inimigo, aumenta a Vel. de ATQ do Ataque Normal desse Personagem em 10% e aumenta o Dano infligido por Ataques Normais, Carregados e Imersivos em 40% por 15s."
         }
     },
     "flower-of-paradise-lost": {
@@ -773,7 +853,8 @@
             "de": "Erhöht Elementarkunde um 80 Punkte.",
             "es": "Maestría Elemental +80 pts.",
             "it": "Maestria elementale +80.",
-            "ru": "Увеличивает мастерство стихий на 80 ед."
+            "ru": "Увеличивает мастерство стихий на 80 ед.",
+            "pt": "Aumenta a Proficiência Elemental em 80."
         },
         "4p": {
             "en": "The equipping character's Bloom, Hyperbloom, and Burgeon reaction DMG are increased by 40%, and their Lunar-Bloom reaction DMG is increased by 10%. Additionally, after the equipping character triggers Bloom, Hyperbloom, Lunar-Bloom, or Burgeon, they will gain another 25% bonus to the effects mentioned prior. Each stack of this lasts 10s. Max 4 stacks simultaneously. This effect can only be triggered once per second. The character who equips this can still trigger its effects when not on the field.",
@@ -781,7 +862,8 @@
             "de": "Erhöht den durch den Träger mit den Reaktionen „Sprießen“, „Supraspross“ und „Flammenspross“ verursachten Schaden um 40 % und den durch den Träger mit der Reaktion „Mondspross“ verursachten Schaden um 10 %. Erhöht den Bonus von obigem Effekt zusätzlich um 25 %, nachdem der Träger die Reaktionen „Sprießen“, „Supraspross“, „Flammenspross“ oder „Mondspross“ ausgelöst hat, hält 10 s, 4-fach stapelbar, 1 s Abklingzeit. Dieser Effekt kann auch dann ausgelöst werden, wenn sich der Träger inaktiv in der Truppe befindet.",
             "es": "Aumenta en un 40% el daño que inflige el portador de este conjunto con las reacciones de Florecimiento, Sobreflorecimiento y Crepitar, y en un 10% el daño que inflige con la reacción de Florecimiento Lunar. Además, cuando el portador de este conjunto causa alguna de estas reacciones, el bono anterior aumenta en un 25%. Este efecto dura 10 s, puede acumularse hasta 4 veces y ocurrir una vez por segundo. Puede activarse incluso cuando el portador del conjunto está en tu equipo pero no en uso.",
             "it": "I DAN da reazioni di Fioritura, Iperfioritura e Germinazione del personaggio equipaggiato aumentano di un 40%, inoltre i DAN della reazione di Fioritura lunare aumentano di un 10%. In più, se il personaggio innesca Fioritura, Iperfioritura o Germinazione, ottiene un ulteriore 25% di bonus per gli effetti sopracitati. Ogni accumulo dura 10 s. Massimo 4 accumuli contemporaneamente. Quest'effetto può attivarsi solo una volta al secondo. Il personaggio equipaggiato può attivare l'effetto anche se non è presente sul campo.",
-            "ru": "Увеличивает урон реакций Бутонизация, Вегетация и Цветение экипированного персонажа на 40%, а урон Лунной бутонизации - на 10%. Кроме того, после того как экипированный персонаж активирует реакции Бутонизация, Вегетация, Цветение и Лунная бутонизация, этот эффект усиливается на 25%. Эффект длится 10 сек., складывается до 4 раз, может возникнуть один раз в 1 сек. и активируется, даже если экипированный персонаж не на поле боя."
+            "ru": "Увеличивает урон реакций Бутонизация, Вегетация и Цветение экипированного персонажа на 40%, а урон Лунной бутонизации - на 10%. Кроме того, после того как экипированный персонаж активирует реакции Бутонизация, Вегетация, Цветение и Лунная бутонизация, этот эффект усиливается на 25%. Эффект длится 10 сек., складывается до 4 раз, может возникнуть один раз в 1 сек. и активируется, даже если экипированный персонаж не на поле боя.",
+            "pt": "Aumenta em 40% o Dano infligido pelas reações de Florescimento, Superflorescimento e Germinação de seu portador; aumenta o Dano de Florescimento Lunar em 10%. Além disto, após o personagem que está com isso equipado desencadear as reações de Florescimento, Superflorescimento, Germinação e Florescimento Lunar o bônus descrito acima é aumentado em 25%. Este efeito dura 10s e pode ser acumulado até 4 vezes, podendo ser desencadeado 1 vez por segundo. Este efeito pode ser desencadeado também quando o seu portador está na equipe, porém fora do campo de batalha."
         }
     },
     "nymphs-dream": {
@@ -792,7 +874,8 @@
             "de": "Erhöht den Hydro-Schaden um 15 %.",
             "es": "Bono de Daño Hydro +15%.",
             "it": "Bonus DAN da Hydro +15%.",
-            "ru": "Даёт 15% бонус Гидро урона."
+            "ru": "Даёт 15% бонус Гидро урона.",
+            "pt": "Bônus de Dano Hydro +15%"
         },
         "4p": {
             "en": "After Normal, Charged, and Plunging Attacks, Elemental Skills, and Elemental Bursts hit opponents, 1 stack of Mirrored Nymph will be triggered, lasting 8s. When under the effect of 1, 2, or 3 or more Mirrored Nymph stacks, ATK will be increased by 7%/16%/25%, and Hydro DMG Bonus will be increased by 4%/9%/15%. Mirrored Nymph stacks created by Normal, Charged, and Plunging Attacks, Elemental Skills, and Elemental Bursts exist independently.",
@@ -800,7 +883,8 @@
             "de": "Erschafft beim Treffen von Gegnern mit Standardangriffen, heftigen Schlägen, Angriffen aus dem Fall, Elementarfähigkeiten oder Spezialfähigkeiten eine 8 s anhaltende Stapelung des Effekts „Narzisse im Spiegel“. Erhöht den ANG bei 1/2/3 Stapelungen von „Narzisse im Spiegel“ um 7/16/25 % und den Hydro-SCH-Bonus um 4/9/15 %. Die durch Standardangriffe, heftige Schläge, Angriffe aus dem Fall, Elementarfähigkeiten und Spezialfähigkeiten entstandenen Effekte von „Narzisse im Spiegel“ existieren unabhängig voneinander.",
             "es": "Tras golpear a un enemigo con un Ataque Normal, Cargado o Descendente o una Habilidad Elemental o Definitiva, se genera 1 carga de “reflejo de la ninfa” durante 8 s. Con 1/2/3 o más cargas, el ATQ aumenta en un 7/16/25% y el Bono de Daño Hydro aumenta en un 4/9/15%. Las cargas de reflejo de la ninfa creadas con un Ataque Normal, Cargado o Descendente o con la Habilidad Elemental o Definitiva son independientes entre sí.",
             "it": "Dopo che gli attacchi normali, caricati e in picchiata, e le abilità e i Tripudi elementali colpiscono un avversario, si innesca 1 accumulo di Ninfa speculare della durata di 8 s. Mentre sono sotto l'effetto di 1, 2, 3 o più accumuli di Ninfa speculare, l'ATT e il bonus DAN da Hydro aumentano rispettivamente di un 7%/16%/25% e di un 4%/9%/15%. Gli accumuli di Ninfa speculare generati da attacchi normali, caricati e in picchiata e da abilità e Tripudi elementali esistono indipendentemente.",
-            "ru": "Попадания обычной атакой, заряженной атакой, атакой в падении, элементальным навыком и взрывом стихии по противнику на 8 сек. создают 1 уровень Отражения нимфы. Когда действуют 1/2/3 и более уровня Отражения нимфы, сила атаки повышается на 7%/16%/25%, а бонус Гидро урона на 4%/9%/15%. Уровни Отражения нимфы, созданные обычными атаками, заряженными атаками, атаками в падении, элементальными навыками и взрывами стихии, существуют независимо друг от друга."
+            "ru": "Попадания обычной атакой, заряженной атакой, атакой в падении, элементальным навыком и взрывом стихии по противнику на 8 сек. создают 1 уровень Отражения нимфы. Когда действуют 1/2/3 и более уровня Отражения нимфы, сила атаки повышается на 7%/16%/25%, а бонус Гидро урона на 4%/9%/15%. Уровни Отражения нимфы, созданные обычными атаками, заряженными атаками, атаками в падении, элементальными навыками и взрывами стихии, существуют независимо друг от друга.",
+            "pt": "Quando um Ataque Normal, Carregado, Imersivo, Habilidade Elemental ou Supremo atingem um inimigo, gerarão um acúmulo do efeito \"Ninfa Espelhada\" por 8s. Quando possuir 1/2/3 acúmulos ou mais do efeito \"Ninfa Espelhada\", aumentará o ATQ em 7%/16%/25, e aumentará o Bônus de Dano Hydro em 4%/9%/15%. Os acúmulos de \"Ninfa Espelhada\" gerados por Ataques Normais, Carregados, Imersivos, Habilidade Elemental ou Supremos existem independentemente."
         }
     },
     "vourukashas-glow": {
@@ -811,7 +895,8 @@
             "de": "Erhöht die LP um 20 %.",
             "es": "Vida +20%.",
             "it": "PS +20%.",
-            "ru": "Увеличивает НР на 20%."
+            "ru": "Увеличивает НР на 20%.",
+            "pt": "Aumenta a vida em 20%."
         },
         "4p": {
             "en": "Elemental Skill and Elemental Burst DMG will be increased by 10%. After the equipping character takes DMG, the aforementioned DMG Bonus is increased by 80% for 5s. This effect increase can have 5 stacks. The duration of each stack is counted independently. These effects can be triggered even when the equipping character is not on the field.",
@@ -819,7 +904,8 @@
             "de": "Erhöht den mit Elementarfähigkeiten und Spezialfähigkeiten verursachten Schaden um 10 %. Erhöht diesen Schadensbonus 5 s lang, nachdem der Träger Schaden erlitten hat, um 80 %. Dieser Effekt ist 5-fach stapelbar und die Wirkungsdauer jeder Stapelung wird unabhängig voneinander berechnet. Dieser Effekt kann auch dann ausgelöst werden, wenn sich die damit ausgerüstete Figur inaktiv in der Truppe befindet.",
             "es": "El daño de la Habilidad Elemental y Definitiva aumenta en un 10%. Cuando el portador de este artefacto recibe daño, el incremento de daño anteriormente mencionado aumenta en un 80% durante 5 s. Este efecto puede acumularse hasta 5 veces, cada acumulación se calcula de manera independiente y se puede activar incluso cuando el portador está en tu equipo pero no en uso.",
             "it": "Le abilità e i Tripudi elementali ricevono un 10% di bonus DAN. Dopo che il personaggio equipaggiato subisce DAN, questo effetto di base aumenta di un 80% per 5 s. Massimo 5 accumuli. La durata di ciascun accumulo viene conteggiata in modo indipendente. Questi effetti possono essere attivati anche quando il personaggio equipaggiato non si trova in campo.",
-            "ru": "Увеличивает урон элементального навыка и взрыва стихии на 10%. Если экипированный персонаж получает урон, этот эффект повышения урона увеличивается на 80% на 5 сек. Эффект может складываться до 5 раз. Отсчёт времени каждого уровня происходит отдельно. Эти эффекты активируются, даже если экипированный персонаж не на поле боя."
+            "ru": "Увеличивает урон элементального навыка и взрыва стихии на 10%. Если экипированный персонаж получает урон, этот эффект повышения урона увеличивается на 80% на 5 сек. Эффект может складываться до 5 раз. Отсчёт времени каждого уровня происходит отдельно. Эти эффекты активируются, даже если экипированный персонаж не на поле боя.",
+            "pt": "Aumenta o Dano da Habilidade Elemental e do Supremo em 10%. Nos 5s após o personagem que tem este artefato equipado sofrer Dano, o efeito de aumento de Dano mencionado acima será de 80%. Esse efeito de aumento pode ser acumulado até 5 vezes, com cada acúmulo tendo sua duração contada independentemente. Esse efeito pode ser desencadeado mesmo se o personagem não estiver ativo no campo de batalha."
         }
     },
     "marechaussee-hunter": {
@@ -830,7 +916,8 @@
             "de": "Erhöht den mit Standardangriffen und heftigen Schlägen verursachten Schaden um 15 %.",
             "es": "Daño de Ataque Normal y Cargado +15%.",
             "it": "DAN da attacchi normali e caricati +15%.",
-            "ru": "Увеличивает урон обычной и заряженной атаки на 15%."
+            "ru": "Увеличивает урон обычной и заряженной атаки на 15%.",
+            "pt": "Aumenta o Dano do Ataque Normal e do Ataque Carregado em 15%."
         },
         "4p": {
             "en": "When current HP increases or decreases, CRIT Rate will be increased by 12% for 5s. Max 3 stacks.",
@@ -838,7 +925,8 @@
             "de": "Erhöht beim Erhöhen oder Verringern der aktuellen LP die KT um 12 %. Hält 5 s. 3-fach stapelbar.",
             "es": "Cuando la Vida del personaje aumenta o disminuye, la Prob. CRIT aumenta en un 12%. Este efecto dura 5 s y puede acumularse hasta 3 veces.",
             "it": "Quando la quantità di PS attuali aumenta o diminuisce, il tasso di CRIT aumenta di un 12% per 5 s. Massimo 3 accumuli.",
-            "ru": "Увеличивает шанс крит. попадания на 12% на 5 сек., когда текущее HP увеличивается или снижается. Эффект может складываться до 3 раз."
+            "ru": "Увеличивает шанс крит. попадания на 12% на 5 сек., когда текущее HP увеличивается или снижается. Эффект может складываться до 3 раз.",
+            "pt": "Quando a Vida atual aumenta ou diminui, aumenta a Taxa CRIT em 12%. Esse efeito dura 5s e pode ser acumulado até 3 vezes."
         }
     },
     "golden-troupe": {
@@ -849,7 +937,8 @@
             "de": "Erhöht den mit Elementarfähigkeiten verursachten Schaden um 20 %.",
             "es": "Daño de Habilidad Elemental +20%.",
             "it": "DAN da abilità elementale +20%.",
-            "ru": "Увеличивает урон элементального навыка на 20%."
+            "ru": "Увеличивает урон элементального навыка на 20%.",
+            "pt": "Aumenta o dano da Habilidade Elemental em 20%."
         },
         "4p": {
             "en": "Increases Elemental Skill DMG by 25%. Additionally, when not on the field, Elemental Skill DMG will be further increased by 25%. This effect will be cleared 2s after taking the field.",
@@ -857,7 +946,8 @@
             "de": "Erhöht den mit Elementarfähigkeiten verursachten Schaden um 25 %. Erhöht außerdem den mit Elementarfähigkeiten verursachten Schaden ein weiteres Mal um 25 %, wenn sich die Figur inaktiv in der Truppe befindet. Der Effekt verschwindet nach 2 s, nachdem die Figur eingewechselt worden ist.",
             "es": "Aumenta en un 25% el daño infligido con la Habilidad Elemental. Además, cuando el personaje está en tu equipo pero no en uso, el daño de dicha habilidad aumenta en un 25% adicional. Este efecto se anula 2 s después de entrar en el campo de batalla.",
             "it": "Aumenta i DAN da abilità elementale di un 25%. Inoltre, quando il personaggio non è in campo, tali DAN aumentano di un ulteriore 25%. Quest'effetto si annulla 2 s dopo che il personaggio rientra in campo.",
-            "ru": "Увеличивает урон элементального навыка на 25%. Кроме того, когда персонаж не на поле боя, урон элементального навыка дополнительно увеличивается на 25%. Через 2 сек. после вступления в бой эффект исчезает."
+            "ru": "Увеличивает урон элементального навыка на 25%. Кроме того, когда персонаж не на поле боя, урон элементального навыка дополнительно увеличивается на 25%. Через 2 сек. после вступления в бой эффект исчезает.",
+            "pt": "Aumenta o Dano da Habilidade Elemental em 25%. Além disso, quando o personagem não está no campo de batalha, o Dano da Habilidade Elemental aumenta em mais 25%. Este efeito será removido 2s após o personagem entrar no campo de batalha."
         }
     },
     "song-of-days-past": {
@@ -868,7 +958,8 @@
             "de": "Erhöht den Heilungsbonus um 15 %.",
             "es": "Bono de Curación +15%.",
             "it": "Bonus di guarigione +15%.",
-            "ru": "Повышает бонус лечения на 15%."
+            "ru": "Повышает бонус лечения на 15%.",
+            "pt": "Bônus de Cura +15%"
         },
         "4p": {
             "en": "When the equipping character heals a party member, the Yearning effect will be created for 6s, which records the total amount of healing provided (including overflow healing). When the duration expires, the Yearning effect will be transformed into the \"Waves of Days Past\" effect: When your active party member hits an opponent with a Normal Attack, Charged Attack, Plunging Attack, Elemental Skill, or Elemental Burst, the DMG dealt will be increased by 8% of the total healing amount recorded by the Yearning effect. The \"Waves of Days Past\" effect is removed after it has taken effect 5 times or after 10s. A single instance of the Yearning effect can record up to 15,000 healing, and only a single instance can exist at once, but it can record the healing from multiple equipping characters. Equipping characters on standby can still trigger this effect.",
@@ -876,7 +967,8 @@
             "de": "Erzeugt, wenn der Träger ein Truppenmitglied heilt, 6 s lang den Effekt „Sehnsucht“, der die Gesamtmenge der durchgeführten Heilung (einschließlich des überschüssigen Heilungswerts) aufzeichnet. Wandelt, wenn die Wirkungsdauer abläuft, den Effekt „Sehnsucht“ in den Effekt „Wellen von damals“ um: Erhöht, wenn die eigene aktuelle Figur in der Truppe einen Gegner mit einem Standardangriff, heftigen Schlag, Angriff aus dem Fall, einer Elementarfähigkeit oder einer Spezialfähigkeit trifft, den verursachten Schaden um 8 % der durch den Effekt „Sehnsucht“ aufgezeichneten Gesamtheilungsmenge. Der Effekt „Wellen von damals“ wird entfernt, nachdem er 5-mal ausgelöst wurde, oder nach 10 s. Ein einzelner „Sehnsucht“-Effekt kann bis zu 15.000 Punkte an Heilung aufzeichnen und es kann zu einem Zeitpunkt nur einen „Sehnsucht“-Effekt geben. Dieser Effekt kann die Menge an Heilung durch mehrere Träger aufzeichnen. Er kann auch noch ausgelöst werden, wenn sich der Träger inaktiv in der Truppe befindet.",
             "es": "Cuando el portador de este conjunto realiza una curación, crea el efecto de “añoranza” durante 6 s, el cual registra la cantidad de Vida recuperada (incluyendo el exceso de curación). Al terminar la duración, el efecto de añoranza se convierte en el de “marea de antaño”, de manera que cuando tu personaje en uso golpea a un enemigo con un Ataque Normal, Cargado o Descendente o con su Habilidad Elemental o Definitiva, el daño que inflige dicho personaje aumenta en una cantidad equivalente al 8% de la cantidad de Vida recuperada y registrada por añoranza. El efecto de marea de antaño se elimina tras activarse 5 veces o después de 10 s. Por su parte, el efecto de añoranza solo puede registrar un máximo de 15 000 pts. de Vida recuperada y solo puede existir uno al mismo tiempo, pero puede registrar la Vida recuperada por varios portadores de este conjunto. Este efecto se puede activar incluso cuando el portador está en tu equipo pero no en uso.",
             "it": "Quando il personaggio che equipaggia il set apporta effetti di guarigione a un membro del gruppo, attiva l'effetto Anelito per 6 s, che registra gli effetti di guarigione totali apportati (inclusi quelli che superano il limite di guarigione massimo). Al termine della sua durata, Anelito si converte in \"Onde di giorni che furono\": quando il membro attivo del tuo gruppo colpisce un nemico con un attacco normale, caricato o in picchiata, o con un'abilità o un Tripudio elementale, infligge DAN aumentati di un 8% della guarigione totale registrata da Anelito. L'effetto \"Onde di giorni che furono\" termina dopo 5 attivazioni o trascorsi 10 s. Una singola iterazione di Anelito è in grado di registrare fino a 15.000 PS derivanti dalla guarigione, e il gruppo può avere un'unica iterazione attiva; tuttavia, Anelito può registrare gli effetti di guarigione apportati da più membri del gruppo che equipaggiano il set. Anelito può essere attivato anche se i membri in questione non sono in campo.",
-            "ru": "Экипированный персонаж при лечении членов отряда на 6 сек. создаёт эффект Стремления, который регистрирует осуществлённое лечение (в том числе избыточное). С завершением длительности Стремление превращается в Волны былых времён: при попадании обычной атаки, заряженной атаки, атаки в падении, элементального навыка или взрыва стихии вашего активного персонажа по противнику наносимый урон увеличивается на 8% от общего количества лечения, зарегистрированного Стремлением. После 5 активаций или через 10 сек. эффект Волн былых времён исчезает. Однократный эффект Стремления регистрирует до 15 000 ед. HP. Одновременно может существовать только одно Стремление, но оно регистрирует лечение, предоставляемое несколькими экипированными персонажами сразу. Этот эффект активируется, даже если экипированный персонаж не на поле боя."
+            "ru": "Экипированный персонаж при лечении членов отряда на 6 сек. создаёт эффект Стремления, который регистрирует осуществлённое лечение (в том числе избыточное). С завершением длительности Стремление превращается в Волны былых времён: при попадании обычной атаки, заряженной атаки, атаки в падении, элементального навыка или взрыва стихии вашего активного персонажа по противнику наносимый урон увеличивается на 8% от общего количества лечения, зарегистрированного Стремлением. После 5 активаций или через 10 сек. эффект Волн былых времён исчезает. Однократный эффект Стремления регистрирует до 15 000 ед. HP. Одновременно может существовать только одно Стремление, но оно регистрирует лечение, предоставляемое несколькими экипированными персонажами сразу. Этот эффект активируется, даже если экипированный персонаж не на поле боя.",
+            "pt": "Quando o personagem que está com este conjunto equipado curar um membro da equipe, gera por 6s o efeito \"Sede de Esperança\", registrando a quantidade curada (inclui sobrecura). Quando a duração acabar, o efeito Sede de Esperança será convertido para o efeito \"Ondas do Passado\": quando o Ataque Normal, Carregado, Imersivo, a Habilidade Elemental e Supremo do personagem ativo de sua equipe atingirem um inimigo, aumentará o Dano causado em 8% da cura registrada. Ondas do Passado será removido depois de ser desencadeado 5 vezes ou após 10s. Uma Sede de Esperança pode registrar até 15.000 de cura, e só é possível existir um efeito ao mesmo tempo, mas que pode registrar a cura feita por mais de um personagem que está com esse conjunto equipado. Esse efeito pode ser desencadeado mesmo que o personagem que está com esse conjunto equipado não esteja ativo no campo de batalha."
         }
     },
     "nighttime-whispers-in-the-echoing-woods": {
@@ -887,7 +979,8 @@
             "de": "Erhöht den ANG um 18 %.",
             "es": "ATQ +18%.",
             "it": "ATT +18%.",
-            "ru": "Увеличивает силу атаки на 18%."
+            "ru": "Увеличивает силу атаки на 18%.",
+            "pt": "ATQ +18%"
         },
         "4p": {
             "en": "After using an Elemental Skill, gain a 20% Geo DMG Bonus for 10s. When under a shield granted by the Crystallize reaction, or when Moondrifts formed by Lunar-Crystallize reactions are nearby, the above effect is increased by 150%. When these conditions are no longer met, this additional increase disappears after 1s.",
@@ -895,7 +988,8 @@
             "de": "Erhöht den Geo-SCH-Bonus 10 s lang um 20 %, nachdem eine Elementarfähigkeit eingesetzt wurde. Erhöht diesen Effekt zusätzlich um 150 %, wenn die Figur von einem Kristallschild, der durch die Reaktion „Kristallisation“ entsteht, geschützt wird, oder sich in der Nähe ein durch die Reaktion „Mond-Kristallisation“ hervorgerufener Mondkäfig befindet &ndash; diese weitere Verstärkung wird 1 s nach der Nichterfüllung dieser Bedingungen entfernt.",
             "es": "Tras usar la Habilidad Elemental, el personaje obtiene un 20% de Bono de Daño Geo durante 10 s. Si está protegido por un escudo creado mediante la reacción de Cristalización o si en las cercanías hay algún pilar lunar creado con la reacción de Cristalización Lunar, dicho efecto aumenta en un 150%. Este aumento adicional se eliminará en 1 s si no se cumplen las condiciones anteriores.",
             "it": "Dopo aver usato un'abilità elementale, il personaggio riceve un 20% di bonus DAN da Geo per 10 s. Quando il personaggio è protetto da uno scudo ottenuto tramite reazioni di Cristallizzazione, o quando sono presenti nelle vicinanze delle Gabbie lunari create dalla reazione di Cristallizzazione lunare, l'effetto sopracitato aumenta di un 150%. Quando queste condizioni non sono più soddisfatte, l'aumento aggiuntivo sparisce dopo 1 s.",
-            "ru": "После использования элементального навыка бонус Гео урона на 10 сек. увеличивается на 20%. Если персонаж находится под защитой щита, созданного реакцией Кристалл, либо поблизости есть Лунная пелена, созданная реакцией Лунный кристалл, этот эффект усиливается на 150%. Через 1 сек. после того, как данные условия прекращают выполняться, это дополнительное увеличение исчезает."
+            "ru": "После использования элементального навыка бонус Гео урона на 10 сек. увеличивается на 20%. Если персонаж находится под защитой щита, созданного реакцией Кристалл, либо поблизости есть Лунная пелена, созданная реакцией Лунный кристалл, этот эффект усиливается на 150%. Через 1 сек. после того, как данные условия прекращают выполняться, это дополнительное увеличение исчезает.",
+            "pt": "Nos 10s depois de usar uma Habilidade Elemental, aumenta o Bônus de Dano Geo em 20%. Se estiver protegido por um escudo gerado pela Reação de Cristalização, ou se houver uma Jaula Lunar próxima gerada por Cristalização Lunar por perto, o efeito acima será aumentado em 150%. Quando essas circunstâncias não forem satisfeitas, esse aumento adicional de Dano desaparece após 1s."
         }
     },
     "fragment-of-harmonic-whimsy": {
@@ -906,7 +1000,8 @@
             "de": "Erhöht den ANG um 18 %.",
             "es": "ATQ +18%.",
             "it": "ATT +18%.",
-            "ru": "Увеличивает силу атаки на 18%."
+            "ru": "Увеличивает силу атаки на 18%.",
+            "pt": "ATQ +18%"
         },
         "4p": {
             "en": "When the value of a Bond of Life increases or decreases, this character deals 18% increased DMG for 6s. Max 3 stacks.",
@@ -914,7 +1009,8 @@
             "de": "Erhöht beim Erhöhen oder Verringern des Werts von Eid des Lebens den von der Figur verursachten Schaden um 18 %, hält 6 s, 3-fach stapelbar.",
             "es": "Cuando el valor de un pacto vital aumenta o disminuye, el daño que inflige el personaje aumenta en un 18%. Este efecto dura 6 s y puede acumularse hasta 3 veces.",
             "it": "Quando il valore di un Legame vitale aumenta o diminuisce, il personaggio infligge DAN aumentati di un 18% per 6 s. Massimo 3 accumuli.",
-            "ru": "Когда значение Долга жизни увеличивается или уменьшается, наносимый персонажем урон увеличивается на 18% на 6 сек. Эффект может складываться до 3 раз."
+            "ru": "Когда значение Долга жизни увеличивается или уменьшается, наносимый персонажем урон увеличивается на 18% на 6 сек. Эффект может складываться до 3 раз.",
+            "pt": "Quando o valor de um Contrato de Vida aumenta ou diminui, aumenta o Dano causado por esse personagem em 18% por 6s. Acumula até 3 vezes."
         }
     },
     "unfinished-reverie": {
@@ -925,7 +1021,8 @@
             "de": "Erhöht den ANG um 18 %.",
             "es": "ATQ +18%.",
             "it": "ATT +18%.",
-            "ru": "Увеличивает силу атаки на 18%."
+            "ru": "Увеличивает силу атаки на 18%.",
+            "pt": "ATQ +18%"
         },
         "4p": {
             "en": "After leaving combat for 3s, DMG dealt increased by 50%. In combat, if no Burning opponents are nearby for more than 6s, this DMG Bonus will decrease by 10% per second until it reaches 0%. When a Burning opponent exists, it will increase by 10% instead until it reaches 50%. This effect still triggers if the equipping character is off-field.",
@@ -933,7 +1030,8 @@
             "de": "Erhöht den verursachten Schaden um 50 %, sobald der Träger den Kampf für 3 s verlassen hat. Verringert diesen Schadensbonus im Kampf jede s um 10 %, sobald 6 s lang keine Gegner in Flammen in der Nähe sind, bis auf 0 %. Erhöht den Schadensbonus jede s um 10 %, wenn Gegner in Flammen in der Nähe sind, bis auf 50 %. Der Effekt kann auch noch ausgelöst werden, wenn der Träger inaktiv in der Truppe ist.",
             "es": "3 s después de salir de combate, el daño infligido aumenta en un 50%. Si estando en combate han pasado más de 6 s sin que haya ningún enemigo cercano quemado, dicho aumento de daño irá disminuyendo en un 10% por segundo, hasta llegar al 0%. Si hay algún enemigo cercano quemado, el daño infligido aumenta en un 10% por segundo, hasta llegar al 50%. Estos efectos se pueden activar incluso cuando el personaje que lleva equipado este conjunto de artefactos está en tu equipo pero no en uso.",
             "it": "Dopo aver trascorso 3 s fuori da un combattimento, i DAN inflitti aumentano di un 50%. Durante un combattimento, se nelle vicinanze non sono presenti avversari affetti da Ustione per più di 6 s, il suddetto bonus DAN diminuisce di un 10% al secondo fino ad azzerarsi. Se è presente almeno un avversario affetto da Ustione, invece, il bonus DAN aumenta di un 10% al secondo fino a raggiungere il 50%. Quest'effetto può attivarsi anche se il personaggio che equipaggia il set non è in campo.",
-            "ru": "Урон персонажа после того, как он покидает поле боя на 3 сек., повышается на 50%. В бою, если поблизости более 6 сек. нет врагов со статусом Горение, персонаж теряет 10% упомянутого увеличения урона в секунду, пока оно не упадёт до 0%. Если поблизости есть враги со статусом Горение, увеличение урона повышается на 10% в секунду, пока не достигнет 50%. Этот эффект срабатывает, даже если экипированный персонаж не на поле боя."
+            "ru": "Урон персонажа после того, как он покидает поле боя на 3 сек., повышается на 50%. В бою, если поблизости более 6 сек. нет врагов со статусом Горение, персонаж теряет 10% упомянутого увеличения урона в секунду, пока оно не упадёт до 0%. Если поблизости есть враги со статусом Горение, увеличение урона повышается на 10% в секунду, пока не достигнет 50%. Этот эффект срабатывает, даже если экипированный персонаж не на поле боя.",
+            "pt": "Depois de sair do combate por 3s, aumenta o Dano causado em 50%. Em combate, se não houverem inimigos Queimando por mais que 6s, esse Bônus de Dano reduzirá 10% por segundo até 0%. Quando existir um oponente Queimando, aumentará 10% até alcançar 50%. Esse efeito pode ser desencadeado mesmo que o personagem com este conjunto de artefatos equipado não esteja ativo."
         }
     },
     "scroll-of-the-hero-of-cinder-city": {
@@ -944,7 +1042,8 @@
             "de": "Stellt dem Träger beim Auslösen von „Nachtseelenaufbruch“ durch ein Truppenmitglied in der Nähe 6 Punkte Elementarenergie wieder her.",
             "es": "Cuando un personaje cercano del equipo causa una explosión noctámbula, el portador de este conjunto recupera 6 pts. de Energía Elemental.",
             "it": "Quando un membro vicino del gruppo innesca un Impeto dell'Anima della Notte, il personaggio equipaggiato con questo set rigenera 6 di energia elementale.",
-            "ru": "Когда член отряда поблизости активирует Вспышку Ночного духа, экипированный персонаж восстанавливает 6 ед. энергии."
+            "ru": "Когда член отряда поблизости активирует Вспышку Ночного духа, экипированный персонаж восстанавливает 6 ед. энергии.",
+            "pt": "Quando um membro da equipe próximo desencadeia uma Explosão do Espírito da Noite, o personagem que está com esse conjunto equipado regenera 6 de Energia Elemental."
         },
         "4p": {
             "en": "After the equipping character triggers a reaction related to their Elemental Type, all nearby party members gain a 12% Elemental DMG Bonus for the Elemental Types involved in the elemental reaction for 15s. If the equipping character is in the Nightsoul's Blessing state when triggering this effect, all nearby party members gain an additional 28% Elemental DMG Bonus for the Elemental Types involved in the elemental reaction for 20s. The equipping character can trigger this effect while off-field, and the DMG bonus from Artifact Sets with the same name do not stack.",
@@ -952,7 +1051,8 @@
             "de": "Erhöht, nachdem der Träger eine Elementarreaktion, die mit seinem Elementartyp zusammenhängt, ausgelöst hat, den Elementar-SCH-Bonus der mit dieser Elementarreaktion zusammenhängenden Elemente aller Truppenmitglieder in der Nähe 15 s lang um 12 %. Erhöht, wenn der Träger beim Auslösen dieses Effekts im Zustand „Nachtseelensegen“ ist, den Elementar-SCH-Bonus der mit dieser Elementarreaktion zusammenhängenden Elemente aller Truppenmitglieder in der Nähe 20 s lang zusätzlich um 28 %. Dieser Effekt kann auch ausgelöst werden, wenn sich der Träger inaktiv in der Truppe befindet. Die SCH-Bonus-Effekte mehrerer gleicher Artefaktsets sind nicht stapelbar.",
             "es": "Cuando el portador de este conjunto causa una Reacción Elemental relacionada con su tipo elemental, los Bonos de Daño Elemental relacionados con esa Reacción Elemental de todos los personajes cercanos del equipo aumentan en un 12% durante 15 s. Si el portador de este conjunto está en el estado de bendición noctámbula cuando se activa este efecto, los Bonos de Daño Elemental relacionados con esa Reacción Elemental de dichos personajes aumentan en un 28% adicional durante 20 s. Estos efectos se pueden activar incluso cuando el portador está en tu equipo pero no en uso. Los bonos de daño otorgados por este conjunto de artefactos no se pueden acumular con los de otro conjunto del mismo tipo.",
             "it": "Quando il personaggio che equipaggia il set innesca una reazione legata al proprio tipo elementale, tutti i membri del gruppo vicini che possiedono un tipo elementale correlato alla suddetta reazione ottengono un bonus DAN elementali pari a un 12% per 15 s. Se il personaggio che equipaggia il set è in stato di Grazia dell'Anima della Notte quando questo effetto si attiva, il suddetto bonus DAN elementali aumenta di un ulteriore 28% per 20 s. Il personaggio che equipaggia il set può attivare questo effetto anche se non si trova in campo. Il bonus DAN di più set di manufatti con lo stesso nome non si accumula.",
-            "ru": "После того как экипированный персонаж активирует реакцию, связанную с его элементом, все члены отряда поблизости получают 12% бонус урона элементами, связанными с этой реакцией, на 15 сек. Если экипированный персонаж, активируя данный эффект, находится в состоянии Благословение Ночного духа, все персонажи отряда поблизости дополнительно получают 28% бонус урона элементами, связанными с этой реакцией, на 20 сек. Такой эффект может возникнуть, даже если персонаж не находится на поле боя. Бонусы одноимённых наборов артефактов не суммируются."
+            "ru": "После того как экипированный персонаж активирует реакцию, связанную с его элементом, все члены отряда поблизости получают 12% бонус урона элементами, связанными с этой реакцией, на 15 сек. Если экипированный персонаж, активируя данный эффект, находится в состоянии Благословение Ночного духа, все персонажи отряда поблизости дополнительно получают 28% бонус урона элементами, связанными с этой реакцией, на 20 сек. Такой эффект может возникнуть, даже если персонаж не находится на поле боя. Бонусы одноимённых наборов артефактов не суммируются.",
+            "pt": "Quando o personagem que está com esse conjunto equipado desencadeia uma Reação Elemental que envolve seu Tipo Elemental, todos os membros próximos da equipe ganham 12% de Bônus de Dano Elemental relacionado à reação por 15s. Caso o personagem que está com esse conjunto equipado estiver no estado Bênção do Espírito da Noite ao desencadear esse efeito, todos os membros próximos da equipe ganham mais 28% de Bônus de Dano Elemental relacionado à reação por 20s. Esse efeito pode ser ativado mesmo quando o personagem que está com esse conjunto equipado está fora de campo. Bônus de Dano fornecidos por conjuntos de Artefatos com o mesmo nome não acumularão."
         }
     },
     "obsidian-codex": {
@@ -963,7 +1063,8 @@
             "de": "Erhöht, wenn der Träger im Zustand „Nachtseelensegen“ und aktiv auf dem Feld ist, den verursachten Schaden um 15 %.",
             "es": "Cuando el portador de este conjunto está en uso y en el estado de bendición noctámbula, el daño que inflige aumenta en un 15%.",
             "it": "Mentre il personaggio equipaggiato con questo set è in stato di Grazia dell'Anima della Notte ed è in campo, i DAN che infligge aumentano di un 15%.",
-            "ru": "Урон экипированного персонажа на поле в состоянии Благословения Ночного духа увеличивается на 15%."
+            "ru": "Урон экипированного персонажа на поле в состоянии Благословения Ночного духа увеличивается на 15%.",
+            "pt": "Enquanto o personagem que está com esse conjunto equipado estiver sob a Bênção do Espírito da Noite e estiver ativo, o Dano causado por ele é aumentado em 15%."
         },
         "4p": {
             "en": "After the equipping character consumes 1 Nightsoul point while on the field, CRIT Rate increases by 40% for 6s. This effect can trigger once every second.",
@@ -971,7 +1072,8 @@
             "de": "Erhöht, nachdem der Träger aktiv auf dem Schlachtfeld 1 Nachtseelenpunkt verbraucht hat, die KT 6 s lang um 40 %. 1 s Abklingzeit.",
             "es": "Cuando el portador de este conjunto consume 1 pt. de noctambulismo mientras está en uso, su Prob. CRIT aumenta en un 40% durante 6 s. Este efecto solo se puede activar una vez cada 1 s.",
             "it": "Quando il personaggio equipaggiato con questo set consuma 1 punto Anima della Notte mentre si trova in campo, il suo tasso di CRIT aumenta di un 40% per 6 s. Quest'effetto può attivarsi una volta ogni secondo.",
-            "ru": "После того как экипированный персонаж, будучи на поле боя, расходует 1 очко Ночного духа, шанс крит. попадания увеличивается на 40% на 6 сек. Этот эффект может возникнуть один раз в 1 сек."
+            "ru": "После того как экипированный персонаж, будучи на поле боя, расходует 1 очко Ночного духа, шанс крит. попадания увеличивается на 40% на 6 сек. Этот эффект может возникнуть один раз в 1 сек.",
+            "pt": "Enquanto estiver ativo, após o personagem que está com esse conjunto equipado consumir 1 ponto de Espírito da Noite, a Taxa CRIT aumenta em 40% por 6s. Este efeito pode ser ativado no máximo uma vez a cada segundo."
         }
     },
     "long-nights-oath": {
@@ -982,7 +1084,8 @@
             "de": "Erhöht den mit Angriffen aus dem Fall verursachten Schaden um 25 %.",
             "es": "Aumenta en un 25% el daño del Ataque Descendente.",
             "it": "DAN da attacco in picchiata +25%.",
-            "ru": "Урон атак в падении увеличивается на 25%."
+            "ru": "Урон атак в падении увеличивается на 25%.",
+            "pt": "Dano do Ataque Imersivo aumenta em 25%."
         },
         "4p": {
             "en": "After the equipping character's Plunging Attack/Charged Attack/Elemental Skill hits an opponent, they will gain 1/2/2 stack(s) of \"Radiance Everlasting.\" Plunging Attacks, Charged Attacks, or Elemental Skills can each trigger this effect once every 1s. Radiance Everlasting: Plunging Attacks deal 15% increased DMG for 6s. Max 5 stacks. Each stack's duration is counted independently.",
@@ -990,7 +1093,8 @@
             "de": "Erhält beim Treffen von Gegnern mit Angriffen aus dem Fall, heftigen Schlägen oder Elementarfähigkeiten des Trägers 1/2/2 Stapelung(en) „Ewiger Glanz“. 1 s Abklingzeit für jeden durch die oben genannten Angriffe erzeugten Effekt. Ewiger Glanz: Erhöht den mit Angriffen aus dem Fall verursachten Schaden 6 s um 15 %, 5-fach stapelbar. Die Wirkungsdauer jeder Stapelung wird unabhängig voneinander berechnet.",
             "es": "Cuando el portador de este conjunto golpea a un enemigo con un Ataque Descendente/Ataque Cargado/Habilidad Elemental, obtiene 1/2/2 cargas de “resplandor eterno”. Los Ataques Descendentes, Ataques Cargados o Habilidades Elementales pueden activar este efecto una vez por segundo de forma independiente. Resplandor eterno: el daño de los Ataques Descendentes aumenta en un 15% durante 6 s. Este efecto puede acumularse hasta 5 veces y la duración de cada acumulación se calcula de manera independiente.",
             "it": "Quando colpisce un avversario con attacchi in picchiata/attacchi caricati/abilità elementali, il personaggio che equipaggia il set ottiene 1/2/2 accumuli di Radiosità perenne. Tutti e tre i tipi di attacco possono innescare l'effetto una volta ogni 1 s. Radiosità perenne: gli attacchi in picchiata infliggono un 15% di DAN aumentati per 6 s. Cumulabile fino a 5 volte. La durata di ogni accumulo è indipendente dalle altre.",
-            "ru": "После того как атака в падении, заряженная атака или элементальный навык экипированного персонажа поражают противника, экипированный персонаж получает 1/2/2 уровня Вечного сияния. Атаки в падении, заряженные атаки и элементальные навыки могут по отдельности вызывать этот эффект один раз в 1 сек. Вечное сияние: урон атаки в падении повышается на 15%. Эффект длится 6 сек. и складывается до 5 раз. Длительность каждого уровня рассчитывается отдельно."
+            "ru": "После того как атака в падении, заряженная атака или элементальный навык экипированного персонажа поражают противника, экипированный персонаж получает 1/2/2 уровня Вечного сияния. Атаки в падении, заряженные атаки и элементальные навыки могут по отдельности вызывать этот эффект один раз в 1 сек. Вечное сияние: урон атаки в падении повышается на 15%. Эффект длится 6 сек. и складывается до 5 раз. Длительность каждого уровня рассчитывается отдельно.",
+            "pt": "Quando o personagem que está com esse conjunto equipado atinge um Ataque Imersivo/Carregado/Habilidade Elemental no inimigo, obtém 1/2/2 acúmulo(s) de Brilho Eterno. Ataques Imersivos, Carregados ou Habilidades Elementais podem gerar esse efeito uma vez por segundo. Brilho Eterno: aumenta o Dano causado por Ataques Imersivos em 15% por 6s, acumula até 5 vezes. A duração de cada acúmulo é contada independentemente."
         }
     },
     "finale-of-the-deep-galleries": {
@@ -1001,7 +1105,8 @@
             "de": "Erhöht den Kryo-Schaden um 15 %.",
             "es": "Bono de Daño Cryo +15%.",
             "it": "Bonus DAN da Cryo +15%.",
-            "ru": "Даёт 15% бонус Крио урона."
+            "ru": "Даёт 15% бонус Крио урона.",
+            "pt": "Bônus de Dano Cryo +15%"
         },
         "4p": {
             "en": "When the equipping character has 0 Elemental Energy, Normal Attack DMG is increased by 60% and Elemental Burst DMG is increased by 60%. After the equipping character deals Normal Attack DMG, the aforementioned Elemental Burst effect will stop applying for 6s. After the equipping character deals Elemental Burst DMG, the aforementioned Normal Attack effect will stop applying for 6s. This effect can trigger even if the equipping character is off the field.",
@@ -1009,7 +1114,8 @@
             "de": "Erhöht den mit Standardangriffen verursachten Schaden um 60 % und den mit Spezialfähigkeiten verursachten Schaden um 60 %, wenn die Elementarenergie des Trägers 0 Punkte beträgt. Macht den Schadenbonus für Spezialfähigkeiten 6 s lang unwirksam, wenn der Träger mit seinem Standardangriff Schaden verursacht. Macht den Schadensbonus für Standardangriffe 6 s lang unwirksam, wenn der Träger mit seiner Spezialfähigkeit Schaden verursacht. Kann auch ausgelöst werden, wenn sich die Figur inaktiv in der Truppe befindet.",
             "es": "Cuando el portador de este conjunto tiene 0 pts. de Energía Elemental, tanto el daño de su Ataque Normal como el de su Habilidad Definitiva aumentan en un 60%. Cuando dicho portador inflige daño con su Ataque Normal, el aumento de daño de la Habilidad Definitiva se anulará durante 6 s. Después de que el portador inflija daño con su Habilidad Definitiva, el aumento de daño del Ataque Normal anteriormente mencionado se anulará durante 6 s. Este efecto puede activarse incluso cuando el personaje que lleva este conjunto está en tu equipo pero no en uso.",
             "it": "Quando l'energia elementale del personaggio è pari a zero, i DAN da attacco normale e da Tripudio elementale aumentano di un 60%. Dopo aver inflitto DAN da attacco normale, l'effetto relativo al Tripudio elementale si disattiva per 6 s. Allo stesso modo, dopo aver inflitto DAN da Tripudio elementale, l'effetto relativo agli attacchi normali si disattiva per la stessa quantità di tempo. L'effetto può attivarsi anche se il personaggio che equipaggia il set non è in campo.",
-            "ru": "Когда энергия экипированного персонажа равна 0, урон обычной атаки и взрыва стихии повышается на 60%. После того как экипированный персонаж наносит урон обычной атакой, данный эффект на 6 сек. перестаёт применяться для взрыва стихии. После того как экипированный персонаж наносит урон взрывом стихии, данный эффект на 6 сек. перестаёт применяться для обычной атаки. Этот эффект может возникнуть, даже если экипированный персонаж вне поля боя."
+            "ru": "Когда энергия экипированного персонажа равна 0, урон обычной атаки и взрыва стихии повышается на 60%. После того как экипированный персонаж наносит урон обычной атакой, данный эффект на 6 сек. перестаёт применяться для взрыва стихии. После того как экипированный персонаж наносит урон взрывом стихии, данный эффект на 6 сек. перестаёт применяться для обычной атаки. Этот эффект может возникнуть, даже если экипированный персонаж вне поля боя.",
+            "pt": "Quando a Energia Elemental do personagem que está com esse conjunto equipado for 0, aumenta o Dano causado por seu Ataque Normal em 60%, e o Dano causado pelo Supremo em 60%. Depois que o personagem que está com esse conjunto equipado causar Dano de Ataque Normal, o efeito de aumento de Dano de Supremo desaparecerá por 6s, e o efeito de aumento de Dano de Ataque Normal também desaparecerá por 6s. Esse efeito pode ser desencadeado, ainda que o personagem não esteja ativo."
         }
     },
     "night-of-the-skys-unveiling": {
@@ -1020,7 +1126,8 @@
             "de": "Erhöht Elementarkunde um 80 Punkte.",
             "es": "Maestría Elemental +80 pts.",
             "it": "Maestria elementale +80.",
-            "ru": "Увеличивает мастерство стихий на 80 ед."
+            "ru": "Увеличивает мастерство стихий на 80 ед.",
+            "pt": "Aumenta a Proficiência Elemental em 80."
         },
         "4p": {
             "en": "When nearby party members trigger Lunar Reactions, if the equipping character is on the field, gain the Gleaming Moon: Intent effect for 4s: Increases CRIT Rate by 15%/30% when the party's Moonsign is Nascent Gleam/Ascendant Gleam. All party members' Lunar Reaction DMG is increased by 10% for each different Gleaming Moon effect that party members have. Effects from Gleaming Moon cannot stack.",
@@ -1028,7 +1135,8 @@
             "de": "Verleiht beim Auslösen der Mondleuchten-Reaktionen durch ein Truppenmitglied in der Nähe, wenn sich der Träger auf dem Feld befindet, 4 s lang den Effekt „Helles Mondlicht &ndash; Gedankensammelsurium“: Erhöht, wenn das Mondomen der Truppe „Anfänglicher Glanz“ / „Reifer Glanz“ ist, die KT um 15 % / 30 %. Erhöht für jeden unterschiedlichen Effekt des „Hellen Mondlichts“ der Truppenmitglieder den Schaden der von allen Truppenmitgliedern ausgelösten Mondleuchten-Reaktionen um 10 %. Der durch „Helles Mondlicht“ ausgelöste Effekt ist nicht stapelbar.",
             "es": "Cuando un personaje cercano del equipo causa una Reacción Lunar, si el portador de este conjunto está en uso, obtiene durante 4 s el efecto de “luna refulgente: cavilación”, de manera que, cuando el presagio lunar del equipo es resplandor naciente/resplandor ascendente, la Prob. CRIT aumenta en un 15/30% respectivamente. Por cada efecto de luna refulgente diferente que tengan los personajes, el daño de las Reacciones Lunares de todos los miembros del equipo aumentará en un 10%. Los efectos producidos por luna refulgente no se pueden acumular.",
             "it": "Se il personaggio che equipaggia il set è in campo, quando i membri vicini del gruppo innescano delle reazioni lunari si ottiene l'effetto Luna splendente: Intento per 4 s, che aumenta il tasso di CRIT di un 15%/30% quando il Presagio lunare del gruppo è Barlume nascente/Barlume ascendente. I DAN delle reazioni lunari di tutti i membri del gruppo aumentano di un 10% per ciascun tipo di effetto Luna splendente presente nel gruppo. Gli effetti di Luna splendente non sono cumulabili.",
-            "ru": "Если персонажи отряда поблизости вызывают Лунные реакции, когда экипированный персонаж активен, на 4 сек. активируется эффект Сияющей луны: Намерение: если Лунное знамение отряда - Зарождающееся сияние/Высшее сияние, шанс крит. попадания повышается на 15%/30%. За каждый активный эффект Сияющей луны разных видов в отряде урон Лунных реакций всех персонажей отряда увеличивается на 10%. Эффекты Сияющей луны не складываются."
+            "ru": "Если персонажи отряда поблизости вызывают Лунные реакции, когда экипированный персонаж активен, на 4 сек. активируется эффект Сияющей луны: Намерение: если Лунное знамение отряда - Зарождающееся сияние/Высшее сияние, шанс крит. попадания повышается на 15%/30%. За каждый активный эффект Сияющей луны разных видов в отряде урон Лунных реакций всех персонажей отряда увеличивается на 10%. Эффекты Сияющей луны не складываются.",
+            "pt": "Quando um personagem próximo da equipe desencadear Reações Lunares, se o personagem que está com esse conjunto equipado estiver ativo, obtém por 4s o efeito \"Resplandecer Lunar: Memórias Cheias\": quando o Presságio Lunar da equipe estiver no Reluzir Inicial/Cheio, aumenta a Taxa CRIT em 15%/30%. Para cada efeito Resplandecer Lunar diferente que o membro da equipe possuir, aumenta o Dano causado pelas Reações Lunares em 10% para todos os membros da equipe. O efeito gerado por Resplandecer Lunar não é acumulável."
         }
     },
     "silken-moons-serenade": {
@@ -1039,7 +1147,8 @@
             "de": "Erhöht die Aufladerate um 20 %.",
             "es": "Recarga de Energía +20%.",
             "it": "Ricarica d'energia +20%.",
-            "ru": "Увеличивает скорость восстановления энергии на 20%."
+            "ru": "Увеличивает скорость восстановления энергии на 20%.",
+            "pt": "Recarga de Energia +20%"
         },
         "4p": {
             "en": "When dealing Elemental DMG, gain the Gleaming Moon: Devotion effect for 8s: Increases all party members' Elemental Mastery by 60/120 when the party's Moonsign is Nascent Gleam/Ascendant Gleam. The equipping character can trigger this effect while off-field. All party members' Lunar Reaction DMG is increased by 10% for each different Gleaming Moon effect that party members have. Effects from Gleaming Moon cannot stack.",
@@ -1047,7 +1156,8 @@
             "de": "Verleiht beim Verursachen von Elementar-Schaden 8 s lang den Effekt „Helles Mondlicht &ndash; Hohe Überzeugung“: Erhöht, wenn das Mondomen der Truppe „Anfänglicher Glanz“ / „Reifer Glanz“ ist, die Elementarkunde aller Figuren in der Truppe um 60/120 Punkte. Dieser Effekt kann auch ausgelöst werden, wenn sich der Träger inaktiv in der Truppe befindet. Erhöht für jeden unterschiedlichen Effekt des „Hellen Mondlichts“ der Truppenmitglieder den Schaden der von allen Truppenmitgliedern ausgelösten Mondleuchten-Reaktionen um 10 %. Der durch „Helles Mondlicht“ ausgelöste Effekt ist nicht stapelbar.",
             "es": "Infligir Daño Elemental otorga durante 8 s el efecto de “luna refulgente: veneración”, de manera que, cuando el presagio lunar del equipo es resplandor naciente/resplandor ascendente, la Maestría Elemental de todos los personajes del equipo aumenta en 60/120 pts. respectivamente. Este efecto se puede activar incluso cuando el portador de este conjunto está en tu equipo pero no en uso. Por cada efecto de luna refulgente diferente que tengan los personajes, el daño de las Reacciones Lunares de todos los miembros del equipo aumentará en un 10%. Los efectos producidos por luna refulgente no se pueden acumular.",
             "it": "Quando vengono inflitti DAN elementali, si ottiene l'effetto Luna splendente: Devozione per 8 s, che aumenta la maestria elementale di tutti i membri del gruppo di 60/120 quando il Presagio lunare del gruppo è Barlume nascente/Barlume ascendente. L'effetto si può innescare anche quando il personaggio che equipaggia il set non è in campo. I DAN delle reazioni lunari di tutti i membri del gruppo aumentano di un 10% per ciascun tipo di effetto Luna splendente presente nel gruppo. Gli effetti di Luna splendente non sono cumulabili.",
-            "ru": "При нанесении элементального урона на 8 сек. возникает эффект Сияющей луны: Доверие: если Лунное знамение отряда - Зарождающееся сияние/Высшее сияние, мастерство стихий всех персонажей отряда повышается на 60/120 ед. Такой эффект может возникнуть, даже если экипированный персонаж не находится на поле боя. За каждый активный эффект Сияющей луны разных видов в отряде урон Лунных реакций всех персонажей отряда увеличивается на 10%. Эффекты Сияющей луны не складываются."
+            "ru": "При нанесении элементального урона на 8 сек. возникает эффект Сияющей луны: Доверие: если Лунное знамение отряда - Зарождающееся сияние/Высшее сияние, мастерство стихий всех персонажей отряда повышается на 60/120 ед. Такой эффект может возникнуть, даже если экипированный персонаж не находится на поле боя. За каждый активный эффект Сияющей луны разных видов в отряде урон Лунных реакций всех персонажей отряда увеличивается на 10%. Эффекты Сияющей луны не складываются.",
+            "pt": "Ao causar Dano Elemental, obtém por 8s o efeito Resplandecer Lunar: Missiva Sublime: quando o Presságio Lunar da equipe estiver no Reluzir Inicial/Cheio, aumenta a Proficiência Elemental de todos os personagens em 60/120. Esse efeito pode ser desencadeado, mesmo se o personagem que está com esse conjunto equipado não estiver ativo. Quando um personagem possuir efeitos de Resplandecer Lunar diferentes, aumenta o Dano causado pelas Reações Lunares em 10% para todos os personagens. O efeito gerado por Resplandecer Lunar não é acumulável."
         }
     },
     "aubade-of-morningstar-and-moon": {
@@ -1058,7 +1168,8 @@
             "de": "Erhöht die Elementarkunde um 80 Punkte.",
             "es": "Maestría Elemental +80 pts.",
             "it": "Maestria elementale +80.",
-            "ru": "Увеличивает мастерство стихий на 80 ед."
+            "ru": "Увеличивает мастерство стихий на 80 ед.",
+            "pt": "Aumenta a Proficiência Elemental em 80."
         },
         "4p": {
             "en": "When the equipping character is off-field, Lunar Reaction DMG is increased by 20%. When the party's Moonsign Level is at least Ascendant Gleam, Lunar Reaction DMG will be further increased by 40%. This effect will disappear after the equipping character is active for 3s.",
@@ -1066,7 +1177,8 @@
             "de": "Erhöht den mit Mondleuchten-Reaktionen verursachten Schaden um 20 %, wenn der Träger inaktiv in der Truppe ist. Erhöht den mit Mondleuchten-Reaktionen verursachten Schaden zusätzlich um 40 %, wenn die Mondomenstufe der Truppe mindestens Reifer Glanz ist. Dieser Effekt wird entfernt, wenn der Träger länger als 3 s aktiv auf dem Feld ist.",
             "es": "Cuando el portador de este conjunto está en tu equipo pero no en uso, el daño de Reacción Lunar que inflige aumenta en un 20%. Cuando el nivel de presagio lunar del equipo es de, al menos, resplandor ascendente, el daño de Reacción Lunar aumenta en un 40% adicional. Estos efectos se anularán después de que el portador de este conjunto permanezca en el campo de batalla durante 3 s.",
             "it": "Quando il personaggio che equipaggia il set non è in campo, i DAN da reazione lunare aumentano di un 20%. Quando il livello del Presagio lunare del gruppo è almeno Barlume ascendente, i DAN da reazione lunare aumentano di un ulteriore 40%. Quest'effetto scompare quando il personaggio rimane attivo per 3 s.",
-            "ru": "Когда экипированный персонаж не на поле, урон Лунных реакций увеличивается на 20%. Если Лунное знамение отряда не ниже Высшего сияния, урон Лунных реакций дополнительно увеличивается на 40%. Через 3 сек. после того, как экипированный персонаж становится активным, этот эффект исчезает."
+            "ru": "Когда экипированный персонаж не на поле, урон Лунных реакций увеличивается на 20%. Если Лунное знамение отряда не ниже Высшего сияния, урон Лунных реакций дополнительно увеличивается на 40%. Через 3 сек. после того, как экипированный персонаж становится активным, этот эффект исчезает.",
+            "pt": "Quando o portador não é o personagem ativo, aumenta o Dano causado por Reações Lunares em 20%. Quando o nível de Presságio Lunar da equipe for pelo menos Reluzir Cheio, aumenta o Dano causado por Reações Lunares em mais 40%. Esses efeitos serão removidos 3s após o portador entrar em campo."
         }
     },
     "a-day-carved-from-rising-winds": {
@@ -1077,7 +1189,8 @@
             "de": "Erhöht den ANG um 18 %.",
             "es": "ATQ +18%.",
             "it": "ATT +18%.",
-            "ru": "Увеличивает силу атаки на 18%."
+            "ru": "Увеличивает силу атаки на 18%.",
+            "pt": "ATQ +18%"
         },
         "4p": {
             "en": "After a Normal Attack, Charged Attack, Elemental Skill, or Elemental Burst hits an opponent, gain the Blessing of Pastoral Winds effect for 6s: ATK is increased by 25%. If the equipping character has completed Witch's Homework, Blessing of Pastoral Winds will be upgraded to Resolve of Pastoral Winds, which additionally increases the CRIT Rate of the equipping character by 20%. This effect can be triggered even when the character is off-field.",
@@ -1085,7 +1198,8 @@
             "de": "Verleiht nach Treffen von Gegnern mit einem Standardangriff, heftigen Schlag, einer Elementarfähigkeit oder Spezialfähigkeit 6 s lang „Segen des Windes und des Hirtengesangs“: Erhöht den ANG um 25 %. Verbessert, wenn der Träger „Aufgabe der Hexe“ bereits abgeschlossen hat, „Segen des Windes und des Hirtengesangs“ zu „Willen des Windes und des Hirtengesangs“ und erhöht zusätzlich die KT des Trägers, der die Prüfung bestanden hat, um 20 %. Diese Effekte können auch ausgelöst werden, wenn sich der Träger inaktiv in der Truppe befindet.",
             "es": "Tras golpear a un enemigo con un Ataque Normal o Cargado o con la Habilidad Elemental o Definitiva, se obtiene el efecto de “bendición del viento y la poesía” durante 6 s, el cual aumenta el ATQ en un 25%. Si el portador de este conjunto ya ha completado la misión de «Lecciones del Aquelarre», dicho efecto mejorará y se convertirá en “determinación del viento y la poesía”, el cual aumenta adicionalmente en un 20% la Prob. CRIT del portador que haya superado dicha prueba. Este efecto se puede activar incluso cuando el portador está en tu equipo pero no en uso.",
             "it": "Dopo aver colpito un avversario con un attacco normale, un attacco caricato, un'abilità o un Tripudio elementale, il personaggio che equipaggia il set ottiene l'effetto Benedizioni dei venti pastorali per 6 s, che aumenta l'ATT di un 25%. Se il personaggio ha completato i Compiti della strega, Benedizioni dei venti pastorali viene potenziato in Determinazione dei venti pastorali, che fornisce al personaggio anche un 20% di tasso di CRIT aggiuntivo. L'effetto può attivarsi anche quando il personaggio non è in campo.",
-            "ru": "На 6 сек. после попадания обычной атакой, заряженной атакой, элементальным навыком или взрывом стихии по противнику создаётся эффект Благословения пасторальных ветров: сила атаки повышается на 25%. Если экипированный персонаж уже выполнил Уроки ведьм, то Благословение пасторальных ветров улучшается до Решительности пасторальных ветров, дополнительно повышая шанс крит. попадания экипированного персонажа, который прошёл испытание, на 20%. Этот эффект срабатывает, даже если экипированный персонаж не на поле боя."
+            "ru": "На 6 сек. после попадания обычной атакой, заряженной атакой, элементальным навыком или взрывом стихии по противнику создаётся эффект Благословения пасторальных ветров: сила атаки повышается на 25%. Если экипированный персонаж уже выполнил Уроки ведьм, то Благословение пасторальных ветров улучшается до Решительности пасторальных ветров, дополнительно повышая шанс крит. попадания экипированного персонажа, который прошёл испытание, на 20%. Этот эффект срабатывает, даже если экипированный персонаж не на поле боя.",
+            "pt": "Quando o Ataque Normal, Carregado, Habilidade Elemental ou Supremo atingem o inimigo, obtém o efeito Piedade do Vento e Pastoreio por 6s: aumenta o ATQ em 25%. Se o portador já tiver concluído a Tarefa da Bruxa, Piedade do Vento e Pastoreio será elevado para Determinação do Vento e Pastoreio, aumentando a Taxa CRIT do portador que passou pelo teste em 20%. Esse efeito pode ser desencadeado mesmo quando o portador não é o personagem ativo."
         }
     },
     "celestial-gift": {
@@ -1096,7 +1210,8 @@
             "de": "Erhöht die Aufladerate um 20 %.",
             "es": "Recarga de Energía +20%.",
             "it": "Ricarica d'energia +20%.",
-            "ru": "Увеличивает скорость восстановления энергии на 20%."
+            "ru": "Увеличивает скорость восстановления энергии на 20%.",
+            "pt": "Recarga de Energia +20%"
         },
         "4p": {
             "en": "If the equipping character has completed Witch's Homework, after they use an Elemental Skill, they gain \"Light's Guidance\" for 20s: All nearby party members gain a 20% Elemental DMG Bonus corresponding to the equipping character's Elemental Type. The equipping character can trigger this effect while off-field. DMG Bonuses provided by Artifact Sets with the same name do not stack.<br>· When your party has the Hexerei: Secret Rite effect, Light's Guidance is upgraded to \"Mortal Hymn\": All nearby party members gain a 40% Elemental DMG Bonus corresponding to both the equipping character and the current active party member's Elemental Type instead. If both characters have the same Elemental Type, these bonuses will not stack.",
@@ -1104,7 +1219,8 @@
             "de": "Verleiht dem Träger, nachdem er die Aufgabe der Hexe abgeschlossen und eine Elementarfähigkeit angewendet hat, zusätzlich den Effekt „Führung des Himmelslichts“: Verleiht allen Truppenmitgliedern in der Nähe 20 s lang einen Elementar-SCH-Bonus von 20 % für das Element des Trägers. Dieser Effekt kann auch ausgelöst werden, wenn sich der Träger inaktiv in der Truppe befindet. Die SCH-Bonus-Effekte mehrerer gleicher Artefaktsets sind nicht stapelbar.<br>&ndash; Stuft den Effekt „Führung des Himmelslichts“ zu „Ode an die Welt“ hoch, wenn die Truppe den Effekt „Hexerei &ndash; Geheimes Ritual“ besitzt. Verleiht allen Truppenmitgliedern in der Nähe zusätzlich zum Elementartyp des Trägers einen Elementar-SCH-Bonus für das Element des eigenen aktuellen Truppenmitglieds. Erhöht die beiden oben genannten Elementar-SCH-Boni zudem auf 40 %. Elementar-SCH-Boni desselben Elementartyps können nicht gestapelt werden.",
             "es": "Si el portador de este conjunto de artefactos ya ha completado la misión de «Lecciones del Aquelarre», tras usar su Habilidad Elemental, obtendrá el efecto de “guía de la luz celestial”, el cual otorga durante 20 s a todos los personajes cercanos del equipo un 20% de bono de daño del elemento correspondiente al elemento del portador. Este efecto se puede activar incluso cuando el portador de este conjunto está en tu equipo pero no en uso. Los bonos de daño otorgados por este conjunto de artefactos no se pueden acumular con los de otro conjunto del mismo tipo.<br>·Si el equipo tiene el efecto de “taumaturgia: rito secreto”, mejora el efecto de guía de la luz celestial a “himno del mundo terrenal”, de manera que, además del bono correspondiente al tipo elemental del portador, todos los personajes cercanos del equipo también obtendrán un bono de daño correspondiente al elemento de tu personaje en uso del equipo, y ambos Bonos de Daño Elemental pasarán a ser del 40%. Los bonos de daño del mismo tipo elemental no se pueden acumular.",
             "it": "Se il personaggio che equipaggia il set ha completato i Compiti della strega, dopo aver utilizzato un'abilità elementale ottiene l'effetto Guida della luce per 20 s, che conferisce un 20% di bonus DAN elementali a tutti i membri vicini del gruppo corrispondente al tipo elementale del personaggio che equipaggia il set. L'effetto può attivarsi anche se il personaggio non è in campo. I bonus DAN forniti da set di manufatti con lo stesso nome non si accumulano.<br>· Se Hexerei: Rito segreto è attivo nel tuo gruppo, Guida della luce si potenzia in Inno mortale, che conferisce un 40% di bonus DAN elementali a tutti i membri vicini del gruppo corrispondente sia al tipo elementale del personaggio che equipaggia il set sia a quello del membro attivo del gruppo attuale. Se entrambi i personaggi hanno lo stesso tipo elementale, i bonus non si accumulano.",
-            "ru": "Если экипированный персонаж выполнил Уроки ведьм, то на 20 сек. после использования элементального навыка он наделяется эффектом Наставления света: все персонажи отряда поблизости получают 20% бонус элементального урона согласно типу элемента экипированного персонажа. Этот эффект срабатывает, даже когда экипированный персонаж не на поле боя. Бонусы одноимённых наборов артефактов не суммируются.<br>· Когда в отряде действует эффект Ведьмовство: Тайный обряд, Наставление света улучшается до Гимна смертных: все персонажи отряда поблизости получают 40% бонус элементального урона согласно элементу экипированного и вашего активного персонажей. Бонусы урона одного типа элемента не суммируются."
+            "ru": "Если экипированный персонаж выполнил Уроки ведьм, то на 20 сек. после использования элементального навыка он наделяется эффектом Наставления света: все персонажи отряда поблизости получают 20% бонус элементального урона согласно типу элемента экипированного персонажа. Этот эффект срабатывает, даже когда экипированный персонаж не на поле боя. Бонусы одноимённых наборов артефактов не суммируются.<br>· Когда в отряде действует эффект Ведьмовство: Тайный обряд, Наставление света улучшается до Гимна смертных: все персонажи отряда поблизости получают 40% бонус элементального урона согласно элементу экипированного и вашего активного персонажей. Бонусы урона одного типа элемента не суммируются.",
+            "pt": "Se o portador já completou a Tarefa da Bruxa, após usar uma Habilidade Elemental, obtém \"Orientação da Luz Celestial\" por 20s: todos os personagens próximos da equipe obtêm 20% de Bônus de Dano Elemental correspondente ao Tipo Elemental do portador. Esse efeito pode ser desencadeado mesmo se o portador estiver fora de campo. Bônus de Dano fornecidos por Conjuntos de Artefatos com o mesmo nome não acumulam.<br>· Quando a equipe possui o efeito \"Mágico: Ritual Secreto\", \"Orientação da Luz Celestial\" é elevada para \"Cântico do Mundo Mortal\": todos os personagens próximos da equipe passam a obter 40% de Bônus de Dano Elemental correspondente tanto ao Tipo Elemental do portador quanto ao Tipo Elemental do personagem ativo atual da equipe. Se ambos os personagens tiverem o mesmo Tipo Elemental, esses bônus não acumulam."
         }
     },
     "disenchantment-in-deep-shadow": {
@@ -1115,7 +1231,8 @@
             "de": "Erhöht den ANG um 18 %.",
             "es": "ATQ +18%.",
             "it": "ATT +18%.",
-            "ru": "Увеличивает силу атаки на 18%."
+            "ru": "Увеличивает силу атаки на 18%.",
+            "pt": "ATQ +18%"
         },
         "4p": {
             "en": "Increases Superconduct Reaction DMG by 80%. When the equipping character attacks opponents affected by Superconduct, this attack's CRIT Rate is increased by 16%. An all-new blessing may be obtained as you make your way toward Snezhnaya...",
@@ -1123,7 +1240,8 @@
             "de": "Erhöht den durch die Reaktion Supraleiter verursachten Schaden um 80 %. Erhöht, wenn der Träger einen Gegner angreift, der von der Reaktion Supraleiter betroffen ist, die KT dieses Angriffs um 16 %. Auf dem Weg nach Snezhnaya erhältst du möglicherweise neue Segnungen ...",
             "es": "El daño infligido por la reacción de Superconductor aumenta en un 80%. Cuando el portador de este conjunto de artefactos ataca a un enemigo afectado por Superconductor, la Prob. CRIT de dicho ataque aumenta en un 16%. Quizá este conjunto obtenga una nueva bendición en el camino hacia Snezhnaya...",
             "it": "I DAN da reazione di Superconduzione aumentano di un 80%. Quando il personaggio che equipaggia il set sferra un attacco a un avversario affetto da Superconduzione, il tasso di CRIT di tale attacco aumenta di un 16%. Percorrendo la strada verso Snezhnaya, sarà possibile ottenere una nuova benedizione...",
-            "ru": "Урон реакции Сверхпроводник повышается на 80%. Когда экипированный персонаж атакует врага со статусом Сверхпроводник, шанс крит. попадания данной атаки повышается на 16%. Кто знает, какие ещё благословения принесёт дорога в Снежную?.."
+            "ru": "Урон реакции Сверхпроводник повышается на 80%. Когда экипированный персонаж атакует врага со статусом Сверхпроводник, шанс крит. попадания данной атаки повышается на 16%. Кто знает, какие ещё благословения принесёт дорога в Снежную?..",
+            "pt": "Aumenta o Dano de Supercondutor em 80%. Quando o portador atacar inimigos afetados por Supercondutor, aumenta a Taxa CRIT deste ataque em 16%. Ao se aventurar por Snezhnaya, talvez você possa obter alguma bênção nova..."
         }
     }
 }

@@ -7,7 +7,8 @@
             "es": "Cuando el personaje que lleva esta arma equipada está en tu equipo pero no en uso, el daño de dicho personaje aumenta en un {{value}}% cada 1 s. Como máximo, solo se puede obtener un aumento del {{value}}% de daño de esta manera. 4 s después de que dicho personaje esté en uso, el aumento de daño irá reduciéndose en un {{value}}% cada 1 s hasta llegar al 0%.",
             "fr": "Lorsque le personnage équipé de cette arme fait partie de l'équipe mais n'est pas déployé, ses DGT augmentent de {{value}}% toutes les secondes, jusqu'à {{value}}% maximum. 4 s après le déploiement du personnage, l'effet diminue de {{value}}% toutes les secondes, jusqu'à atteindre 0 %.",
             "it": "Quando il personaggio equipaggiato con quest'arma è nel gruppo ma non sul campo, i suoi DAN aumentano di un {{value}}% ogni secondo fino a un {{value}}% max. Quando il personaggio è sul campo per oltre 4 s, l'aumento dei DAN si riduce di un {{value}}% al secondo fino ad azzerarsi.",
-            "ru": "Увеличивает урон экипированного этим оружием персонажа, когда тот не на поле боя, на {{value}}% в сек. Таким способом макс. количество наносимого урона может быть увеличено до {{value}}%. Через 4 сек. после появления персонажа на поле боя бонус повышения урона от данного эффекта начнёт убывать по {{value}}% в сек., пока не опустится до 0%."
+            "ru": "Увеличивает урон экипированного этим оружием персонажа, когда тот не на поле боя, на {{value}}% в сек. Таким способом макс. количество наносимого урона может быть увеличено до {{value}}%. Через 4 сек. после появления персонажа на поле боя бонус повышения урона от данного эффекта начнёт убывать по {{value}}% в сек., пока не опустится до 0%.",
+            "pt": "Quando o personagem com essa arma equipada estiver na equipe mas não no campo da batalha, o Dano causado por personagem será aumentado em {{value}}% a cada 1s, a quantidade máxima do aumento do Dano desta maneira é de {{value}}%. Depois de 4s de ficar no campo, o efeito de aumento do Dano será reduzido em {{value}}% a cada 1s até que seja reduzido para 0%."
         },
         "substat": "atk%",
         "level_1": {
@@ -52,7 +53,8 @@
             "es": "El daño infligido con Ataques Normales o Cargados aumenta en un {{value}}%. Tras disparar un Ataque Normal o Cargado, el daño aumenta en un {{value}}% por cada 0.1 s que la flecha permanece en el aire. Este efecto puede acumularse hasta cinco veces.",
             "fr": "Augmente les DGT infligés par les attaques normales et les attaques chargées de {{value}}%. Les DGT augmentent de {{value}}% toutes les 0,1 s après avoir tiré une flèche d'attaque normale ou chargée. Cet effet peut être cumulé 5 fois maximum.",
             "it": "Aumenta i DAN da attacco normale e caricato di un {{value}}%. Dopo che un attacco normale o caricato è stato sferrato, i DAN inflitti aumentano di un ulteriore {{value}}% ogni 0,1 s mentre la freccia è in aria. Cumulabile fino a 5 volte.",
-            "ru": "Увеличивает урон обычной и заряженной атаки на {{value}}%. Каждые 0,1 сек. полёта стрелы, выпущенной обычной или заряженной атакой, увеличивают её урон на {{value}}%. Эффект может складываться до 5 раз."
+            "ru": "Увеличивает урон обычной и заряженной атаки на {{value}}%. Каждые 0,1 сек. полёта стрелы, выпущенной обычной или заряженной атакой, увеличивают её урон на {{value}}%. Эффект может складываться до 5 раз.",
+            "pt": "Aumenta o Dano infligido pelo Ataque Normal e Ataque Carregado em {{value}}%. A cada 0.1s depois de disparar uma flecha com o Ataque Normal e Ataque Carregado, terá aumento de Dano de {{value}}%, acumulando até um máximo de 5 vezes."
         },
         "substat": "atk%",
         "level_1": {
@@ -92,7 +94,8 @@
             "es": "Aumenta la Vida en un {{value}}%. Cuando haya algún enemigo cerca, el daño del personaje que lleva esta arma equipada aumenta en un {{value}}%. Este efecto se puede activar cuando dicho personaje está en uso o cuando está en tu equipo pero no en uso.",
             "fr": "Les PV sont augmentés de {{value}}%. Si des ennemis sont proches, les DGT infligés par le personnage équipé de l'arme augmentent de {{value}}%, qu'il soit déployé ou non.",
             "it": "I PS aumentano di un {{value}}%. Quando ci sono avversari vicini, i DAN inflitti da chi brandisce quest'arma aumentano di un {{value}}%. Questo effetto si attiva anche se il personaggio non è in campo.",
-            "ru": "Увеличивает HP на {{value}}%. Когда рядом есть враги, урон, наносимый персонажем, экипированным этим оружием, увеличивается на {{value}}%. Эффект срабатывает, даже когда персонаж не на поле боя."
+            "ru": "Увеличивает HP на {{value}}%. Когда рядом есть враги, урон, наносимый персонажем, экипированным этим оружием, увеличивается на {{value}}%. Эффект срабатывает, даже когда персонаж не на поле боя.",
+            "pt": "Aumenta a Vida em {{value}}%. Se existirem inimigos próximos, o personagem que tem esta arma equipada terá um aumento de Dano de {{value}}%, independentemente do personagem estar ativo no campo de batalha ou não."
         },
         "substat": "cd",
         "level_1": {
@@ -132,7 +135,8 @@
             "es": "Tras causar una reacción de Torbellino, el ATQ aumenta en un {{value}}% durante 12 s. Además, por cada 1/2 personajes del equipo de tipo elemental distinto al del portador de esta arma, el daño que dicho portador inflige con su Ataque Cargado aumenta en un {{value}}% / {{value}}%, y el daño de su Habilidad Definitiva aumenta en un {{value}}% / {{value}}%.",
             "fr": "Après avoir déclenché une réaction de Dispersion, l'ATQ augmente de {{value}}% pendant 12 s. De plus, lorsque l'équipe contient 1/2+ personnages d'un type élémentaire différent de celui du personnage équipé de l'arme, les DGT infligés par les attaques chargées de ce dernier augmentent de {{value}}% / {{value}}% et les ceux infligés par ses déchaînements élémentaires de {{value}}% / {{value}}%.",
             "it": "Dopo aver innescato una reazione di Turbinio, l'ATT aumenta di un {{value}}% per 12 s. Inoltre, se nel gruppo ci sono 1/2 o più personaggi con un tipo elementale diverso rispetto al personaggio che equipaggia l'arma, i DAN da attacco caricato e da Tripudio elementale di quest'ultimo aumentano rispettivamente di un {{value}}% / {{value}}% e di un {{value}}% / {{value}}%.",
-            "ru": "Повышает силу атаки на {{value}}% на 12 сек. после активации реакции Рассеивание. Кроме того, если в отряде 1/2 и более персонажей с элементом, отличным от элемента экипированного персонажа, то урон заряженной атаки экипированного персонажа увеличивается на {{value}}% / {{value}}%, а урон взрыва стихии - на {{value}}% / {{value}}%."
+            "ru": "Повышает силу атаки на {{value}}% на 12 сек. после активации реакции Рассеивание. Кроме того, если в отряде 1/2 и более персонажей с элементом, отличным от элемента экипированного персонажа, то урон заряженной атаки экипированного персонажа увеличивается на {{value}}% / {{value}}%, а урон взрыва стихии - на {{value}}% / {{value}}%.",
+            "pt": "Após desencadear uma reação de Redemoinho, o ATQ aumenta em {{value}}% por 12s. Além disso, se houver pelo menos 1/2 personagens na equipe com um Tipo Elemental diferente do personagem que está com essa arma equipada, o Dano causado por Ataques Carregados do personagem que está com essa arma equipada aumenta em {{value}}%/{{value}}%, e o Dano causado pelo Supremo aumenta em {{value}}%/{{value}}%."
         },
         "substat": "cd",
         "level_1": {
@@ -188,7 +192,8 @@
             "es": "Al derrotar a un enemigo, aumenta el ATQ en un {{value}}% durante 30 s, pudiéndose acumular hasta 3 veces. La duración de cada acumulación es independiente de las demás.",
             "fr": "Augmente l'ATQ de {{value}}% pendant 30 s après avoir vaincu un ennemi. Cet effet peut être cumulé 3 fois maximum et la durée de chaque cumul peut varier.",
             "it": "Dopo aver sconfitto un nemico, l'ATT aumenta di un {{value}}% per 30 s. Cumulabile fino a 3 volte. La durata di ogni accumulo è indipendente dalle altre.",
-            "ru": "Побеждённые противники увеличивают силу атаки на {{value}}%. Длится 30 сек. Эффект может складываться до 3 раз. Длительность добавочных эффектов друг от друга не зависит."
+            "ru": "Побеждённые противники увеличивают силу атаки на {{value}}%. Длится 30 сек. Эффект может складываться до 3 раз. Длительность добавочных эффектов друг от друга не зависит.",
+            "pt": "Após derrotar um inimigo, o ATQ é aumentado em {{value}}% por 30s. Este efeito pode ser acumulado até 3x e a duração de cada acúmulo é independente dos outros."
         },
         "substat": "cd",
         "level_1": {
@@ -224,7 +229,8 @@
             "es": "Por cada personaje de Natlan o de tipo elemental distinto al del portador de esta arma que haya en el equipo, el ATQ de dicho portador aumenta en un {{value}}%. Cuando haya 3 o más personajes con estas características, la Maestría Elemental del portador de esta arma aumenta en {{value}} pts.",
             "fr": "Chaque personnage dans l'équipe de Natlan ou ayant un type élémentaire différent de celui du personnage équipé de l'arme augmente l'ATQ de ce dernier de {{value}}%. Lorsque le nombre de ces personnages est supérieur ou égal à 3, la maîtrise élémentaire du personnage équipé de l'arme augmente de {{value}} pts.",
             "it": "Per ogni membro del gruppo proveniente da Natlan o che possiede un tipo elementale diverso da quello del personaggio che equipaggia l'arma, quest'ultimo ottiene un {{value}}% di ATT aumentato. Quando nel gruppo sono presenti non meno di 3 dei personaggi menzionati sopra, il personaggio che equipaggia l'arma ottiene {{value}} di maestria elementale.",
-            "ru": "За каждого члена отряда из Натлана или с элементом, отличным от элемента экипированного персонажа, сила атаки экипированного персонажа повышается на {{value}}%. Когда таких персонажей не менее 3, экипированный персонаж получает {{value}} ед. мастерства стихий."
+            "ru": "За каждого члена отряда из Натлана или с элементом, отличным от элемента экипированного персонажа, сила атаки экипированного персонажа повышается на {{value}}%. Когда таких персонажей не менее 3, экипированный персонаж получает {{value}} ед. мастерства стихий.",
+            "pt": "Para cada personagem da equipe que é de Natlan ou que tenha um Tipo Elemental diferente do personagem que está com essa arma equipada, o personagem que está com essa arma equipada ganha {{value}}% de aumento de ATQ. Quando não houver menos que 3 dos personagens mencionados, o personagem que está com essa arma equipada ganha {{value}} de Proficiência Elemental."
         },
         "substat": "atk%",
         "level_1": {
@@ -265,7 +271,8 @@
             "es": "Cuando se reduce la Energía Elemental, la Maestría Elemental del portador de esta arma aumenta en {{value}} pts. Este efecto dura 18 s y puede acumularse hasta 2 veces.",
             "fr": "La maîtrise élémentaire du personnage équipé de l'arme augmente de {{value}} pts pendant 18 s lorsque son énergie élémentaire a diminué. Cet effet peut être cumulé 2 fois maximum.",
             "it": "Quando l'energia elementale si riduce, la maestria elementale del personaggio che equipaggia l'arma aumenta di {{value}} per 18 s. Massimo 2 accumuli.",
-            "ru": "После понижения энергии мастерство стихий экипированного персонажа увеличивается на {{value}} ед. Эффект длится 18 сек. и складывается до 2 раз."
+            "ru": "После понижения энергии мастерство стихий экипированного персонажа увеличивается на {{value}} ед. Эффект длится 18 сек. и складывается до 2 раз.",
+            "pt": "Depois que a Energia Elemental diminui, a Proficiência Elemental do personagem que está com essa arma equipada aumenta em {{value}}. Esse efeito dura 18s e pode ser acumulado até 2 vezes."
         },
         "substat": "em",
         "level_1": {
@@ -301,7 +308,8 @@
             "es": "Al golpear a un enemigo con Ataques Normales y Cargados, aumenta el ATQ en un {{value}}% y la Vel. de Ataque Normal en un {{value}}% durante 6 s. Este efecto puede acumularse hasta 4 veces y activarse una vez cada 0.3 s.",
             "fr": "Les attaques normales et chargées confèrent un bonus d'ATQ de {{value}}% ainsi qu'un bonus de VIT d'attaque normale de {{value}}% pendant 6 s lorsqu'elles touchent. Cet effet peut être cumulé 4 fois maximum et déclenché une fois toutes les 0,3 s.",
             "it": "I colpi da attacco normale e caricato aumentano l'ATT di un {{value}}% e la VEL d'ATT normale di un {{value}}% per 6 s. Cumulabile fino a 4 volte. Si può verificare una sola volta ogni 0,3 s.",
-            "ru": "Попадания обычной и заряженной атакой увеличивают силу атаки на {{value}}% и скорость атаки на {{value}}% в течение 6 сек. Эффект может складываться до 4 раз. Может возникнуть раз в 0,3 сек."
+            "ru": "Попадания обычной и заряженной атакой увеличивают силу атаки на {{value}}% и скорость атаки на {{value}}% в течение 6 сек. Эффект может складываться до 4 раз. Может возникнуть раз в 0,3 сек.",
+            "pt": "Ao acertar o Ataque Normal e o Ataque Carregado, aumenta o ATQ em {{value}}% e a VEL do Ataque Normal em {{value}}% por 6s, podendo acumular até 4 vezes. Este efeito pode ser ativado uma vez a cada 0.3s."
         },
         "substat": "physical-dmg",
         "level_1": {
@@ -341,7 +349,8 @@
             "es": "Una parte del «Gran concierto milenario» que flota por los vientos. Aumenta en {{value}} pts. la Maestría Elemental. Cuando el personaje que lleva esta arma equipada ataca a un enemigo con una Habilidad Elemental o Definitiva, dicho personaje obtiene un talismán de reminiscencia que puede adquirirse una vez cada 0.2 s como máximo. Este efecto también puede ocurrir cuando el personaje que lleva equipada esta arma está en tu equipo pero no en uso. Al obtener 4 talismanes de reminiscencia, estos se consumirán y otorgarán a todos los miembros del equipo cercanos el efecto de «Gran concierto milenario: Canción del adiós» durante 12 s, el cual aumenta en {{value}} pts. la Maestría Elemental y el ATQ en un {{value}}%. Tras activarse este efecto, no podrán obtenerse talismanes de reminiscencia durante 20 s. Los efectos de «Gran concierto milenario» no se acumularán con otros efectos del mismo tipo.",
             "fr": "Partie du « Concert du millénaire ». Augmente la maîtrise élémentaire de {{value}} pts. Lorsque le personnage équipé de cette arme touche un ennemi avec sa compétence ou son déchaînement élémentaires, il obtient un talisman de réminiscence, à raison d'un talisman toutes les 0,2 s maximum, même lorsque le personnage fait partie de l'équipe mais n'est pas déployé. Une fois 4 talismans cumulés, ils sont consommés et font bénéficier pendant 12 s tous les personnages de l'équipe à proximité de l'effet « Concert du millénaire - Chant d'adieu », ce qui augmente leur maîtrise élémentaire de {{value}} pts et leur ATQ de {{value}}%. Il n'est plus possible de gagner de talismans de réminiscence pendant 20 s après activation de cet effet. Les différents effets du « Concert du millénaire » ne peuvent pas être cumulés.",
             "it": "Una parte del Concerto millenario che fluttua nel vento. Aumenta la maestria elementale di {{value}}. Quando le abilità e i Tripudi elementali del personaggio equipaggiato con quest'arma colpiscono gli avversari, il personaggio ottiene un Sigillo della rimembranza. Quest'effetto può attivarsi una volta ogni 0,2 s, anche se il personaggio non è sul campo. Una volta ottenuti 4 Sigilli della rimembranza, questi saranno consumati e tutti i membri del gruppo vicini otterranno l'effetto Concerto millenario: Canzone d'addio per 12 s. Concerto millenario: Canzone d'addio aumenta la maestria elementale di {{value}} e l'ATT di un {{value}}%. Quando l'effetto sarà attivato, non otterrai altri Sigilli della rimembranza per 20 s. Gli effetti dello stesso tipo di Concerto millenario non sono cumulabili.",
-            "ru": "Часть Тысячелетней симфонии, что блуждает среди ветров. Увеличивает мастерство стихий на {{value}} ед. При попадании элементальным навыком или взрывом стихии по противнику персонаж получает один Талисман воспоминаний. Он может возникнуть раз в 0,2 сек., даже когда персонаж в отряде, но не активен. Четыре собранных Талисмана воспоминаний пропадают, на 12 сек. наделяя ближайших членов отряда эффектом «Тысячелетняя симфония: Прощальный гимн». Их мастерство стихии повышается на {{value}} ед., а сила атаки - на {{value}}%. В течение 20 сек. после активации эффекта Талисманы воспоминаний появляться не будут. Тысячелетняя симфония с эффектами, влияющими на те же навыки, не складывается."
+            "ru": "Часть Тысячелетней симфонии, что блуждает среди ветров. Увеличивает мастерство стихий на {{value}} ед. При попадании элементальным навыком или взрывом стихии по противнику персонаж получает один Талисман воспоминаний. Он может возникнуть раз в 0,2 сек., даже когда персонаж в отряде, но не активен. Четыре собранных Талисмана воспоминаний пропадают, на 12 сек. наделяя ближайших членов отряда эффектом «Тысячелетняя симфония: Прощальный гимн». Их мастерство стихии повышается на {{value}} ед., а сила атаки - на {{value}}%. В течение 20 сек. после активации эффекта Талисманы воспоминаний появляться не будут. Тысячелетняя симфония с эффектами, влияющими на те же навыки, не складывается.",
+            "pt": "Uma parte do \"Concerto Milenar\" que flutua no vento. Aumenta a Proficiência Elemental em {{value}} pontos. Quando a Habilidade Elemental ou o Supremo atingir os inimigos, o personagem obterá um Símbolo das Lembranças, que pode ser ativado uma vez a cada 0.2s, mesmo quando o personagem não está no campo de batalha. Possuir 4 Símbolo das Lembranças faz consumir todos eles, e faz todos os personagens da equipe obterem o efeito de \"Concerto Milenar: Música da Despedida\" por 12s: A Proficiência Elemental será aumentada em {{value}} pontos, além disso o ATQ será aumentado em {{value}}%. Dentro de 20s depois da ativação, não é possível obter os Símbolos das Lembranças de novo. Entre todos os efeitos de vários valores, os efeitos do mesmo valor não podem ser acumulados."
         },
         "substat": "er",
         "level_1": {
@@ -387,7 +396,8 @@
             "es": "Al usar una Habilidad Elemental, el personaje obtiene el efecto de “deriva”, con el cual, al golpear a un enemigo, inflige Daño en el AdE equivalente al {{value}}% de su ATQ. Este efecto desaparecerá después de 15 s o tras haber infligido 3 veces Daño en el AdE. Solo se puede infligir Daño en el AdE una vez cada 2 s de esta manera, y el efecto de deriva solo se puede activar, como máximo, una vez cada 12 s.",
             "fr": "Accorde l'effet Dérive après l'utilisation d'une compétence élémentaire, permettant d'infliger des DGT de zone équivalant à {{value}}% de l'ATQ en touchant un ennemi. Cet effet disparaît après 15 s ou après avoir infligé des DGT de zone 3 fois. Des DGT de zone peuvent être infligés une fois toutes les 2 s de cette manière, et l'effet Dérive peut être déclenché une fois toutes les 12 s.",
             "it": "Dopo aver utilizzato un'abilità elementale, attiva l'effetto Cavalcaflusso che infligge DAN ad area pari a un {{value}}% dell'ATT quando si colpisce un avversario. Cavalcaflusso viene rimosso dopo 15 s o dopo aver inflitto i DAN ad area per 3 volte. Ciascuna iterazione dei DAN ad area può innescarsi ogni 2 s. Cavalcaflusso può essere attivato una volta ogni 12 s.",
-            "ru": "Активация элементального навыка вызывает эффект Плывущего по течению: атаки при попадании наносят урон по площади, равный {{value}}% от силы атаки. Через 15 сек. либо после 3 нанёсших урон атак эффект исчезнет. Эффект наносит урон не чаще одного раза в 2 сек. и может возникнуть раз в 12 сек."
+            "ru": "Активация элементального навыка вызывает эффект Плывущего по течению: атаки при попадании наносят урон по площади, равный {{value}}% от силы атаки. Через 15 сек. либо после 3 нанёсших урон атак эффект исчезнет. Эффект наносит урон не чаще одного раза в 2 сек. и может возникнуть раз в 12 сек.",
+            "pt": "Desencadeia o efeito \"Deriva\" após usar uma Habilidade Elemental, causando {{value}}% do ATQ como Dano em uma AdE após acertar um oponente com um ataque. O efeito de Deriva será removido após 15s ou após causar Dano em uma AdE 3 vezes. 1 Dano em uma AdE pode ser causado a cada 2s dessa forma. O efeito de Deriva pode ser desencadeado uma vez a cada 12s."
         },
         "substat": "er",
         "level_1": {
@@ -423,7 +433,8 @@
             "es": "Otorga los estados de ocaso, crepúsculo y alba, los cuales aumentan el daño infligido en un {{value}}/{{value}}/{{value}}% respectivamente. Al golpear a un enemigo con un ataque, el personaje entra en el siguiente estado. Este cambio de estado solo se puede activar una vez cada 7 s, y ocurrirá incluso cuando el personaje que lleva esta arma equipada esté en tu equipo pero no en uso.",
             "fr": "Cette arme possède trois états (crépuscule, rémanence et aube) qui augmentent respectivement les DGT infligés de {{value}}/{{value}}/{{value}}%. Lorsqu'une attaque a touché un ennemi, l'arme passe à l'état suivant. Un changement d'état peut être déclenché une fois toutes les 7 s, même lorsque le personnage équipé de l'arme fait partie de l'équipe mais n'est pas déployé.",
             "it": "Ha tre stati: Vesprolume, Crepuscoluce e Ardiaurora, che aumentano i DAN inflitti rispettivamente di un {{value}}/{{value}}/{{value}}%. Quando gli attacchi vanno a segno, quest'arma passa allo stato successivo. L'arma può cambiare stato ogni 7 s e anche quando il personaggio che la utilizza non è in campo.",
-            "ru": "Оружие обладает 3 состояниями: Закат, Туман и Заря, каждое из которых увеличивает наносимый урон на {{value}}/{{value}}/{{value}}% соответственно. После попадания по противнику состояние меняется на следующее, не чаще одного раза в 7 сек. Эффект смены состояния срабатывает, даже когда персонаж не на поле боя."
+            "ru": "Оружие обладает 3 состояниями: Закат, Туман и Заря, каждое из которых увеличивает наносимый урон на {{value}}/{{value}}/{{value}}% соответственно. После попадания по противнику состояние меняется на следующее, не чаще одного раза в 7 сек. Эффект смены состояния срабатывает, даже когда персонаж не на поле боя.",
+            "pt": "Possui três estados: Entardecer, Amanhecer e Alvorada. Estes estados aumentam o Dano infligido em {{value}}%/{{value}}%/{{value}}% respectivamente. Ao atingir um inimigo com um ataque, se trocará para o próximo estado. Essa troca pode acontecer uma vez a cada 7s. Esse efeito também ocorrerá se o personagem que tiver esta arma equipada não estiver ativo no campo de batalha."
         },
         "substat": "er",
         "level_1": {
@@ -468,7 +479,8 @@
             "es": "Los Golpes CRIT tienen un {{value}}% de probabilidad de generar una pequeña cantidad de partículas elementales, las cuales regenerarán 6 pts. de Energía para el personaje. Solo puede ocurrir una vez cada {{value}} s.",
             "fr": "Les coups CRIT des attaques ont {{value}}% de chances de générer une faible quantité de particules élémentaires qui restaurent 6 pts d'énergie. Cet effet peut être déclenché une fois toutes les {{value}} s.",
             "it": "I colpi CRIT hanno un {{value}}% di probabilità di generare una piccola quantità di particelle elementali, che rigenerano di 6 l'energia del personaggio. Si può verificare una sola volta ogni {{value}} s.",
-            "ru": "Критические атаки имеют {{value}}% шанс создать элементальные частицы, которые восстанавливают 6 ед. энергии. Возникает раз в {{value}} сек."
+            "ru": "Критические атаки имеют {{value}}% шанс создать элементальные частицы, которые восстанавливают 6 ед. энергии. Возникает раз в {{value}} сек.",
+            "pt": "Os Acertos Críticos possuem {{value}}% de chance de gerar uma pequena quantidade de Partícula Elemental, que irá regenerar 6 de Energia para o Personagem. Pode ocorrer uma vez a cada {{value}}s."
         },
         "substat": "er",
         "level_1": {
@@ -508,7 +520,8 @@
             "es": "Reduce en un 15% el Coste de Aguante al planear. Cuando se realiza un Disparo Preciso, el daño del Ataque Cargado aumenta en un {{value}}% cada 0.5 s. Este efecto puede acumularse hasta 6 veces y se anula 10 s después de dejar de apuntar.",
             "fr": "La consommation d'endurance lors du planage diminue de 15 %. Lors d'un tir visé, les DGT infligés par les attaques chargées augmentent de {{value}}% toutes les 0,5 s. Cet effet peut être cumulé 6 fois maximum et prend fin 10 s après avoir quitté le mode visée.",
             "it": "Il consumo di vigore durante la planata diminuisce di un 15%. Durante la mira con l'arco, i DAN inflitti degli attacchi caricati aumentano di un {{value}}% ogni 0,5 s. Quest'effetto è cumulabile fino a 6 volte e termina 10 s dopo aver abbandonato la modalità di mira.",
-            "ru": "Уменьшает потребление выносливости во время полёта на 15%. Урон заряженных атак при выполнении прицельных выстрелов увеличивается на {{value}}% каждые 0,5 сек. Этот эффект может складываться до 6 раз и исчезает через 10 сек. после выхода из режима прицеливания."
+            "ru": "Уменьшает потребление выносливости во время полёта на 15%. Урон заряженных атак при выполнении прицельных выстрелов увеличивается на {{value}}% каждые 0,5 сек. Этот эффект может складываться до 6 раз и исчезает через 10 сек. после выхода из режима прицеливания.",
+            "pt": "Diminui o consumo de Stamina ao Planar em 15%. Ao usar Disparo com Mira, o Dano causado por Ataques Carregados aumenta em {{value}}% a cada 0.5s. Esse efeito pode acumular até 6 vezes e será removido 10s após sair do Modo de Mira."
         },
         "substat": "atk%",
         "level_1": {
@@ -543,7 +556,8 @@
             "es": "Aumenta la DEF en un {{value}}%. Cuando el portador de esta arma golpee a un enemigo con su Habilidad Elemental o con la reacción de Cristalización Lunar, obtendrá durante 6 s el efecto de “gracia del hada de escarcha”, el cual aumenta en un {{value}}% el Daño Geo y el daño de Cristalización Lunar que inflige. Si hay un pilar lunar cerca del portador mientras este efecto está activo, los demás personajes cercanos del equipo obtendrán el efecto de “travesura del hada de escarcha”, el cual aumenta en un {{value}}% el Daño Geo y el daño de Cristalización Lunar. Este efecto se puede activar incluso cuando el portador de esta arma está en tu equipo pero no en uso.",
             "fr": "Augmente la DÉF de {{value}}%. Lorsque le personnage équipé de l'arme touche un ennemi avec une compétence élémentaire ou une réaction de Sélénocristallisation, il obtient l'effet Faveur de la nivéole glacée pendant 6 s : augmente ses DGT Géo de {{value}}% et ses DGT de réaction de Sélénocristallisation de {{value}}%. Pendant la durée de l'effet, tous les autres personnages de l'équipe à proximité obtiennent l'effet Malice de la nivéole glacée si un voile lunaire est présent à proximité du personnage équipé de l'arme : augmente les DGT Géo de {{value}}% et les DGT de réaction de Sélénocristallisation de {{value}}%, cet effet pouvant être déclenché même si le personnage équipé de l'arme fait partie de l'équipe mais n'est pas déployé.",
             "it": "La DIF aumenta di un {{value}}%. Quando l'abilità elementale o gli attacchi di Cristallizzazione lunare del personaggio che equipaggia l'arma colpiscono gli avversari, si ottiene l'effetto Favore della Fata del ghiaccio per 6 s, che aumenta di un {{value}}% i DAN da Geo e da reazione di Cristallizzazione lunare inflitti dal personaggio. Finché l'effetto è attivo, se vicino al personaggio ci sono delle Gabbie lunari, gli altri personaggi vicini del gruppo ricevono l'effetto Dispetto della Fata del ghiaccio, che aumenta di un {{value}}% i DAN da Geo e i DAN da reazione di Cristallizzazione lunare. Quest'effetto può attivarsi anche quando il personaggio che equipaggia l'arma non è in campo.",
-            "ru": "Защита повышается на {{value}}%. Когда экипированный персонаж поражает врага элементальным навыком или атаками Лунного кристалла, на 6 сек. он получает эффект Благодарности инеевого альва: Гео урон экипированного персонажа повышается на {{value}}%, урон реакции Лунный кристалл - на {{value}}%. Если во время действия эффекта рядом с экипированным персонажем есть Лунная пелена, то все остальные персонажи отряда поблизости также получают эффект Озорства инеевого альва: Гео урон повышается на {{value}}%, урон реакции Лунный кристалл - на {{value}}%. Этот эффект срабатывает, даже когда экипированный персонаж не на поле боя."
+            "ru": "Защита повышается на {{value}}%. Когда экипированный персонаж поражает врага элементальным навыком или атаками Лунного кристалла, на 6 сек. он получает эффект Благодарности инеевого альва: Гео урон экипированного персонажа повышается на {{value}}%, урон реакции Лунный кристалл - на {{value}}%. Если во время действия эффекта рядом с экипированным персонажем есть Лунная пелена, то все остальные персонажи отряда поблизости также получают эффект Озорства инеевого альва: Гео урон повышается на {{value}}%, урон реакции Лунный кристалл - на {{value}}%. Этот эффект срабатывает, даже когда экипированный персонаж не на поле боя.",
+            "pt": "Aumenta a DEF em {{value}}%. Quando a Habilidade Elemental ou ataques de Cristalização Lunar do portador atingirem o inimigo, obtém o efeito Gentileza Feérica por 6s: aumenta o Dano Geo do portador em {{value}}%, aumenta o Dano de Cristalização Lunar em {{value}}%. Na duração do efeito, se o portador estiver perto de uma Jaula Lunar, os outros membros próximos da equipe obtêm o efeito Truque Maléfico Feérico: aumenta o Dano Geo em {{value}}%, aumenta o Dano de Cristalização Lunar em {{value}}%. Esse efeito pode ser desencadeado mesmo quando o portador não for o personagem ativo."
         },
         "substat": "cd",
         "level_1": {
@@ -599,7 +613,8 @@
             "es": "Aumenta en un {{value}}% el daño infligido con Ataques Normales y en un {{value}}% el infligido con Ataques Cargados. Este efecto aumenta en un 100% cuando el personaje que equipa esta arma tiene restaurada toda su Energía Elemental.",
             "fr": "Augmente les DGT infligés par les attaques normales de {{value}}% et ceux des attaques chargées de {{value}}%. Lorsque l'énergie élémentaire du personnage équipé de l'arme atteint 100 %, cet effet augmente de 100 %.",
             "it": "Aumenta i DAN da attacco normale di un {{value}}% e quelli da attacco caricato di un {{value}}%. Quando l'energia del personaggio equipaggiato con quest'arma raggiunge il massimo, l'effetto aumenta di un 100%.",
-            "ru": "Увеличивает урон обычной атаки на {{value}}% и урон заряженной атаки на {{value}}%. Когда элементальная энергия персонажа с этим оружием достигает 100%, эффект увеличивается на 100%."
+            "ru": "Увеличивает урон обычной атаки на {{value}}% и урон заряженной атаки на {{value}}%. Когда элементальная энергия персонажа с этим оружием достигает 100%, эффект увеличивается на 100%.",
+            "pt": "Aumenta o Dano de ATQ Normal em {{value}}% e o Dano de ATQ Carregado em {{value}}%. Quando a Energia Elemental do personagem equipado com essa arma é igual a 100%, esse efeito aumenta 100%."
         },
         "substat": "atk%",
         "level_1": {
@@ -654,7 +669,8 @@
             "es": "Otorga un {{value}}% a todos los Bonos de Daño Elemental. Tras golpear a un enemigo con un Ataque Cargado, el personaje obtiene el efecto de “caza incansable”, el cual aumenta el daño de su Ataque Cargado en una cantidad equivalente al {{value}}% de su Maestría Elemental. Este efecto desaparece tras activarse 12 veces o después de 10 s, y solo se puede obtener una vez cada 12 s.",
             "fr": "Accorde un bonus de DGT élémentaires de {{value}}%. Lorsqu'une attaque chargée a touché un ennemi, l'effet Chasse infatigable est accordé, augmentant les DGT d'attaque chargée d'une valeur équivalant à {{value}}% de la maîtrise élémentaire. Cet effet disparaît après 10 s ou après 12 attaques chargées. Cet effet peut être déclenché une fois toutes les 12 s.",
             "it": "Ottiene un {{value}}% di bonus DAN per tutti gli elementi e l'effetto Caccia instancabile dopo aver colpito un avversario con un attacco caricato. Quest'effetto aumenta i DAN dell'attacco caricato di un {{value}}% della maestria elementale. Quest'effetto verrà rimosso dopo 12 attacchi caricati o dopo 10 s. È possibile ottenere Caccia instancabile una volta ogni 12 s.",
-            "ru": "Даёт {{value}}% бонус урона всеми элементами. Попадание заряженной атакой наделяет персонажа эффектом Непрестанной охоты, который увеличивает урон заряженных атак на {{value}}% от мастерства стихий. Через 10 сек. либо после 12 активаций эффект исчезает. Может возникнуть один раз в 12 сек."
+            "ru": "Даёт {{value}}% бонус урона всеми элементами. Попадание заряженной атакой наделяет персонажа эффектом Непрестанной охоты, который увеличивает урон заряженных атак на {{value}}% от мастерства стихий. Через 10 сек. либо после 12 активаций эффект исчезает. Может возникнуть один раз в 12 сек.",
+            "pt": "Ganha {{value}}% de Bônus de Dano de todos os Elementos. Obtém o efeito \"Caça Incansável\" ao acertar um oponente com um Ataque Carregado. Esse efeito aumenta o Dano do Ataque Carregado em {{value}}% da Proficiência Elemental. Esse efeito será removido depois 12 Ataques Carregados ou após 10s. Só é possível obter 1 efeito de Caça Incansável a cada 12s."
         },
         "substat": "cr",
         "level_1": {
@@ -695,7 +711,8 @@
             "es": "Tras golpear a un enemigo con un Ataque Cargado, la Maestría Elemental del personaje aumenta en {{value}} pts. durante 6 s. Este efecto puede acumularse hasta 2 veces y solo puede activarse una vez cada 0.5 s.",
             "fr": "Lorsqu'une attaque chargée a touché un ennemi, la maîtrise élémentaire du personnage augmente de {{value}} pts pendant 6 s. Cet effet peut être cumulé 2 fois maximum et déclenché une fois toutes les 0,5 s.",
             "it": "Dopo aver colpito gli avversari con un attacco caricato, la maestria elementale del personaggio aumenta di {{value}} nei 6 s successivi. Massimo 2 accumuli. Quest'effetto può attivarsi una volta ogni 0,5 s.",
-            "ru": "Попадание заряженной атакой по противнику увеличивает мастерство стихий на {{value}} ед. на 6 сек. Эффект складывается до 2 раз и может возникнуть раз в 0,5 сек."
+            "ru": "Попадание заряженной атакой по противнику увеличивает мастерство стихий на {{value}} ед. на 6 сек. Эффект складывается до 2 раз и может возникнуть раз в 0,5 сек.",
+            "pt": "Nos 6s após um Ataque Carregado atingir um inimigo, aumenta a Proficiência Elemental do personagem em {{value}}. Esse efeito pode ser acumulado até 2 vezes e desencadeado uma vez a cada 0.5s."
         },
         "substat": "atk%",
         "level_1": {
@@ -731,7 +748,8 @@
             "es": "Al usar una Habilidad Elemental o Definitiva, obtienes el efecto de “enseñanzas del bosque”, el cual aumenta la Maestría Elemental en {{value}} pts. durante 12 s. Este efecto se eliminará al cambiar de personaje. Cuando termina la duración de enseñanzas del bosque o cuando se elimina el efecto, se inflige un daño equivalente al {{value}}% del ATQ del personaje contra un enemigo cercano. El efecto de enseñanzas del bosque solo se puede activar una vez cada 20 s.",
             "fr": "Accorde l'effet Enseignements de la forêt lors de l'utilisation d'une compétence ou d'un déchaînement élémentaires, augmentant la maîtrise élémentaire de {{value}} pts pendant 12 s. Cet effet est annulé lors du changement de personnage. Lorsque l'effet Enseignements de la forêt prend fin ou est annulé, il inflige des DGT équivalant à {{value}}% de l'ATQ à un ennemi proche. L'effet Enseignements de la forêt peut être déclenché une fois toutes les 20 s.",
             "it": "Ottieni l'effetto Insegnamenti della foresta quando scateni abilità elementali e Tripudi elementali, aumentando la maestria elementale di {{value}} per 12 s. Quest'effetto viene rimosso se il personaggio viene sostituito. Quando l'effetto Insegnamenti della foresta termina o viene rimosso, infligge un {{value}}% dell'ATT sotto forma di DAN a 1 nemico nelle vicinanze. L'effetto Insegnamenti della foresta può attivarsi una volta ogni 20 s.",
-            "ru": "Активация элементального навыка или взрыва стихии наделяет персонажа эффектом Наставлений лесов, который увеличивает его мастерство стихий на {{value}} ед. на 12 сек. При переключении персонажа эффект пропадёт. Когда время действия эффекта заканчивается или он пропадёт, одному из противников поблизости наносится урон в {{value}}% от силы атаки. Этот эффект может возникнуть раз в 20 сек."
+            "ru": "Активация элементального навыка или взрыва стихии наделяет персонажа эффектом Наставлений лесов, который увеличивает его мастерство стихий на {{value}} ед. на 12 сек. При переключении персонажа эффект пропадёт. Когда время действия эффекта заканчивается или он пропадёт, одному из противников поблизости наносится урон в {{value}}% от силы атаки. Этот эффект может возникнуть раз в 20 сек.",
+            "pt": "Obtém o efeito \"Ensinamentos da Floresta\" ao desencadear Habilidades Elementais e Supremos, aumentando a Proficiência Elemental em {{value}} por 12s. Este efeito será removido ao trocar de personagens. Quando o efeito de Ensinamentos da Floresta termina ou é removido, irá causar {{value}}% de ATQ como Dano a 1 oponente próximo. O efeito de Ensinamentos da Floresta pode ser desencadeado uma vez a cada 20s."
         },
         "substat": "atk%",
         "level_1": {
@@ -772,7 +790,8 @@
             "es": "Al golpear un punto débil con un Ataque Cargado, inflige un {{value}}% adicional de daño de ATQ como Daño CRIT. Este efecto puede activarse una vez cada 10 s.",
             "fr": "Les attaques chargées touchant les points faibles infligent un bonus de DGT CRIT équivalant à {{value}}% de l'ATQ. Cet effet peut être déclenché une fois toutes les 10 s.",
             "it": "I colpi da attacco caricato sui punti deboli infliggono un {{value}}% di DAN da ATT come DAN da CRIT. Si può verificare una sola volta ogni 10 s.",
-            "ru": "При попадании заряженной атакой по слабому месту дополнительно наносит {{value}}% урона в качестве крит. урона. Может возникнуть раз в 10 сек."
+            "ru": "При попадании заряженной атакой по слабому месту дополнительно наносит {{value}}% урона в качестве крит. урона. Может возникнуть раз в 10 сек.",
+            "pt": "Ao acertar um ponto fraco com Ataque Carregado, causa um adicional de {{value}}% de Dano de ATQ como Dano Crítico. Este efeito pode ser ativado uma vez a cada 10s."
         },
         "substat": "cd",
         "level_1": {
@@ -807,7 +826,8 @@
             "es": "Tras atacar a un enemigo con un Ataque Normal, el daño infligido por la Habilidad Elemental aumenta en un {{value}}% durante 5 s. Cuando se golpea a un enemigo con la Habilidad Elemental, el daño de Ataque Normal aumenta en un {{value}}% durante 5 s.",
             "fr": "Lorsque vous touchez des ennemis avec des attaques normales, les DGT infligés par les compétences élémentaires sont augmentés de {{value}}% pendant 5 s. Lorsque vous touchez des ennemis avec des compétences élémentaires, les DGT infligés par les attaques normales sont augmentés de {{value}}% pendant 5 s.",
             "it": "Gli attacchi normali che colpiscono gli avversari aumentano i DAN delle abilità elementali di un {{value}}% per 5 s. Le abilità elementali che colpiscono gli avversari aumentano i danni degli attacchi normali di un {{value}}% per 5 s.",
-            "ru": "Попадания обычной атакой увеличивают урон элементального навыка на {{value}}% в течение 5 сек., а попадания элементальным навыком увеличивают урон обычной атаки на {{value}}% в течение 5 сек."
+            "ru": "Попадания обычной атакой увеличивают урон элементального навыка на {{value}}% в течение 5 сек., а попадания элементальным навыком увеличивают урон обычной атаки на {{value}}% в течение 5 сек.",
+            "pt": "Dentro de 5s após acertar um inimigo com o Ataque Normal, o Dano causado pela Habilidade Elemental aumenta em {{value}}%. Dentro de 5s após acertar um inimigo com a Habilidade Elemental, o Dano do Ataque Normal aumenta {{value}}%."
         },
         "substat": "physical-dmg",
         "level_1": {
@@ -847,7 +867,8 @@
             "es": "El daño infligido por la Habilidad Definitiva del portador de esta arma aumenta en un {{value}}% por cada punto de la Energía Elemental máxima total de todos los miembros del equipo. El daño puede aumentar hasta un {{value}}% de esta forma.",
             "fr": "Pour chaque point de l'énergie élémentaire combinée de tous les personnages de l'équipe, les DGT du déchaînement élémentaire du personnage équipé de cette arme augmentent de {{value}}%. Les DGT du déchaînement élémentaire peuvent être augmentés jusqu'à {{value}}% de cette manière.",
             "it": "Per ogni punto dell'energia massima totale del gruppo, i DAN da Tripudio elementale del personaggio equipaggiato con quest'arma aumentano di uno {{value}}%. In questo modo è possibile ottenere fino a un {{value}}% di aumento dei DAN da Tripudio elementale.",
-            "ru": "Урон взрыва стихии экипированного этим оружием персонажа увеличивается на {{value}}% за каждую единицу суммы макс. энергии каждого члена отряда. Бонус урона не может превышать {{value}}%."
+            "ru": "Урон взрыва стихии экипированного этим оружием персонажа увеличивается на {{value}}% за каждую единицу суммы макс. энергии каждого члена отряда. Бонус урона не может превышать {{value}}%.",
+            "pt": "O Personagem que usar esta arma terá um aumento do Dano do Supremo de {{value}}% por cada 1 ponto da soma do máximo da Energia Elemental de todos os membros da equipe. O aumento de Dano do Supremo máximo obtível dessa maneira é de {{value}}%."
         },
         "substat": "atk%",
         "level_1": {
@@ -887,7 +908,8 @@
             "es": "El daño infligido por la Habilidad Elemental y la Habilidad Definitiva aumenta en un {{value}}%. Al golpear a un enemigo con un Ataque Normal, un Ataque Cargado, la Habilidad Elemental o la Habilidad Definitiva, se obtiene una acumulación de estrella del día polar que dura 12 s. Con 1/2/3/4 acumulaciones, el ATQ aumenta en un {{value}}/{{value}}/{{value}}/{{value}}%. Las acumulaciones de estrella del día polar obtenidas con el Ataque Normal, el Ataque Cargado, la Habilidad Elemental o la Habilidad Definitiva se calculan independientemente de las demás.",
             "fr": "Les DGT de la compétence et du déchaînement élémentaires augmentent de {{value}}%. Lorsqu'une attaque normale ou chargée, une compétence ou un déchaînement élémentaires a touché un ennemi, vous obtenez 1 cumul d'étoile cendrée pendant 12 s. Avec 1/2/3/4 cumul(s) d'étoile cendrée, l'ATQ augmente de {{value}}/{{value}}/{{value}}/{{value}}%. Les cumuls d'étoile cendrée obtenus grâce aux différents types d'attaques existent indépendamment les uns des autres.",
             "it": "I DAN da abilità e Tripudio elementali aumentano di un {{value}}%. Se un attacco normale o caricato, un'abilità o un Tripudio elementale colpisce un avversario, riceverai 1 Stella cinerea per 12 s. Se ottieni 1/2/3/4 Stelle cineree, l'ATT aumenta di un {{value}}/{{value}}/{{value}}/{{value}}% rispettivamente. Il totale cumulato di Stelle cineree generato da attacco normale, attacco caricato, abilità elementale o Tripudio elementale viene calcolato in maniera indipendente.",
-            "ru": "Урон, наносимый элементальным навыком и взрывом стихии, увеличивается на {{value}}%. Когда обычная атака, заряженная атака, элементальный навык или взрыв стихии попадают по врагу, возникает 1 ур. эффекта Звезда полярной ночи, который длится 12 сек. При 1/2/3/4 ур. эффекта Звезда полярной ночи сила атаки повышается на {{value}}/{{value}}/{{value}}/{{value}}%. Уровни эффекта Звезда полярной ночи, созданные обычной атакой, заряженной атакой, элементальным навыком и взрывом стихии, существуют независимо."
+            "ru": "Урон, наносимый элементальным навыком и взрывом стихии, увеличивается на {{value}}%. Когда обычная атака, заряженная атака, элементальный навык или взрыв стихии попадают по врагу, возникает 1 ур. эффекта Звезда полярной ночи, который длится 12 сек. При 1/2/3/4 ур. эффекта Звезда полярной ночи сила атаки повышается на {{value}}/{{value}}/{{value}}/{{value}}%. Уровни эффекта Звезда полярной ночи, созданные обычной атакой, заряженной атакой, элементальным навыком и взрывом стихии, существуют независимо.",
+            "pt": "Aumenta o Dano causado por Habilidade Elemental e Supremo em {{value}}%; Depois que o Ataque Normal, Ataque Carregado, Habilidade Elemental ou Supremo acerta o inimigo, gera 1 efeito \"Estrela Polar da Noite Branca\" por 12s. Quando tiver 1/2/3/4 acúmulos de \"Estrela Polar da Noite Branca\", o ATQ é aumentado em {{value}}/{{value}}/{{value}}/{{value}}%. Os efeitos de \"Estrela Polar da Noite Branca\" gerados por Ataque Normal, Ataque Carregado, Habilidade Elemental ou Supremo são individuais."
         },
         "substat": "cr",
         "level_1": {
@@ -943,7 +965,8 @@
             "es": "{{value}}plataformas:<br>{{value}}“PlayStation™Network”.<br>Tras infligir Daño Cryo a los enemigos, el daño de los Ataques Normales y Cargados aumenta en un 10% durante 6 s. Puede acumularse hasta 2 veces. Además, cuando Aloy equipa el arma Depredador, su ATQ aumenta en 66 pts.",
             "fr": "{{value}}:<br>{{value}}»<br>Après avoir infligé des DGT Cryo aux ennemis, les DGT infligés par les attaques normales et chargées augmentent de 10 % pendant 6 s. Cet effet peut être cumulé 2 fois maximum. De plus, lorsque Aloy équipe le Predator, son ATQ augmente de 66 pts.",
             "it": "{{value}}piattaforma<br>{{value}}\"PlayStation™Network\"<br>Infliggere DAN da Cryo ai nemici aumenta i DAN da attacco normale e caricato di questo personaggio di un 10% per 6 s. Cumulabile fino a 2 volte. Inoltre, quando Aloy equipaggia il Predatore, l'ATT aumenta di 66.",
-            "ru": "{{value}}игроков<br>{{value}}<br>Нанесённый противникам Крио урон повышает урон обычной и заряженной атаки персонажа на 10% в течение 6 сек. Эффект может складываться до 2 раз. Кроме этого, когда Хищником экипирована Элой, сила атаки повышается на 66 ед."
+            "ru": "{{value}}игроков<br>{{value}}<br>Нанесённый противникам Крио урон повышает урон обычной и заряженной атаки персонажа на 10% в течение 6 сек. Эффект может складываться до 2 раз. Кроме этого, когда Хищником экипирована Элой, сила атаки повышается на 66 ед.",
+            "pt": "Efetivo apenas para jogadores da seguinte plataforma:<br>\"PlayStation™Network\"<br>Causar Dano cryo aos oponentes aumenta o Dano do Ataque Normal e Carregado do personagem em 10% por 6s. Este efeito pode ter no máximo 2 acúmulos. Adicionalmente, quando Aloy equipa o Predador, o ATQ é aumentado em 66."
         },
         "substat": "atk%",
         "level_1": {
@@ -964,7 +987,8 @@
             "es": "Al golpear un punto débil con un Ataque Cargado, aumenta la Vel. Movimiento en un 10% y el ATQ en un {{value}}% durante 10 s.",
             "fr": "Les attaques chargées touchant les points faibles augmentent la VIT de déplacement de 10 % et l'ATQ de {{value}}% pendant 10 s.",
             "it": "I colpi da attacco caricato sui punti deboli aumentano la VEL di movimento di un 10% e l'ATT di un {{value}}% per 10 s.",
-            "ru": "Попадания заряженной атакой по слабым местам увеличивают скорость передвижения на 10% и силу атаки на {{value}}% в течение 10 сек."
+            "ru": "Попадания заряженной атакой по слабым местам увеличивают скорость передвижения на 10% и силу атаки на {{value}}% в течение 10 сек.",
+            "pt": "Os ataques de Ataques Carregados em pontos fracos aumentam a Veloc. Mov. em 10% e ATQ em {{value}}% por 10s."
         },
         "substat": "atk%",
         "level_1": {
@@ -1000,7 +1024,8 @@
             "es": "Cuando el portador de esta arma está en tu equipo pero no en uso y golpea con un ataque a un enemigo, su ATQ aumenta en un {{value}}% durante 8 s.",
             "fr": "Lorsque le personnage équipé de l'arme fait partie de l'équipe mais n'est pas déployé, l'ATQ augmente de {{value}}% pendant 8 s après que le personnage équipé de l'arme touche un ennemi.",
             "it": "Quando il personaggio che equipaggia l'arma colpisce un avversario con i suoi attacchi mentre non è in campo, il suo ATT aumenta di un {{value}}% per 8 s.",
-            "ru": "Когда экипированный персонаж не находится на поле боя, на 8 сек. после попадания его атак по противнику сила атаки повышается на {{value}}%."
+            "ru": "Когда экипированный персонаж не находится на поле боя, на 8 сек. после попадания его атак по противнику сила атаки повышается на {{value}}%.",
+            "pt": "Quando o portador não é o personagem ativo, aumenta o ATQ em {{value}}% por 8s após o portador atingir um inimigo com um ataque."
         },
         "substat": "er",
         "level_1": {
@@ -1035,7 +1060,8 @@
             "es": "Al recibir o realizar curación, otorga una marca de unidad durante 30 s, acumulable hasta 3 marcas. Al usar la Habilidad Elemental o Definitiva, se consumen todas las marcas de unidad y se obtiene el efecto de “renuencia” durante 10 s. Por cada marca de unidad consumida, el ATQ aumenta en un {{value}}% y todos los Bonos de Daño Elemental aumentan en un {{value}}%. El efecto de renuencia solo se puede activar una vez cada 15 s, y el personaje puede obtener marcas de unidad incluso cuando esté en tu equipo pero no en uso.",
             "fr": "Lorsque le personnage reçoit ou effectue des soins, il obtient une marque solidaire pendant 30 s, un maximum de 3 marques solidaires pouvant être obtenu. Utiliser une compétence ou un déchaînement élémentaires consomme toutes les marques solidaires et accorde un effet de baroud pendant 10 s : chaque marque solidaire consommée augmente l'ATQ de {{value}}% et le bonus de DGT élémentaires de {{value}}%. Un effet de baroud peut être déclenché une fois toutes les 15 s, et des marques solidaires peuvent être obtenues même lorsque le personnage fait partie de l'équipe mais n'est pas déployé.",
             "it": "Quando il personaggio che equipaggia l'arma riceve o apporta effetti di guarigione, ottiene un Simbolo d'unità che dura 30 s, fino a un massimo di 3 Simboli. Con l'uso di abilità o Tripudio elementale, il personaggio consuma tutti i Simboli e riceve l'effetto Lotta per 10 s. Per ogni Simbolo consumato, il personaggio riceve un {{value}}% di bonus ATT e un {{value}}% di bonus DAN per tutti gli elementi. L'effetto Lotta può attivarsi una volta ogni 15 s, e i Simboli sono ottenibili anche quando il personaggio che equipaggia quest'arma non è in campo.",
-            "ru": "Когда экипированный персонаж лечит или получает лечение, он на 30 сек. наделяется Меткой единства. Всего можно получить до 3 Меток. При активации элементального навыка или взрыва стихии все Метки расходуются и на 10 сек. создаётся эффект Отпора: за каждую израсходованную Метку сила атаки повышается на {{value}}%, а бонус урона всеми элементами - на {{value}}%. Эффект Отпора может возникнуть один раз в 15 сек. Персонаж получает Метки единства, даже если он не на поле боя."
+            "ru": "Когда экипированный персонаж лечит или получает лечение, он на 30 сек. наделяется Меткой единства. Всего можно получить до 3 Меток. При активации элементального навыка или взрыва стихии все Метки расходуются и на 10 сек. создаётся эффект Отпора: за каждую израсходованную Метку сила атаки повышается на {{value}}%, а бонус урона всеми элементами - на {{value}}%. Эффект Отпора может возникнуть один раз в 15 сек. Персонаж получает Метки единства, даже если он не на поле боя.",
+            "pt": "Quando é curado ou cura, concede o Sinal da União por 30s, é possível acumular 3 Sinais da União. Ao lançar uma Habilidade Elemental ou Supremo, consome todos os Sinais da União e gera por 10s o efeito \"Resistência\": para cada Sinal da União consumido, aumenta o ATQ em {{value}}% e o Bônus de Dano Elemental em {{value}}%. É possível desencadear o efeito \"Resistência\" uma vez a cada 15s. Também é possível obter o Sinal da União quando o personagem não está ativo no campo de batalha."
         },
         "substat": "atk%",
         "level_1": {
@@ -1075,7 +1101,8 @@
             "es": "Aumenta en un {{value}}% el daño contra los enemigos afectados por Hydro o Pyro.",
             "fr": "Augmente les DGT infligés aux ennemis affectés par les éléments Hydro ou Pyro de {{value}}%.",
             "it": "Aumenta i DAN contro gli avversari sotto l'effetto di Hydro o Pyro di un {{value}}%.",
-            "ru": "Увеличивает на {{value}}% урон против врагов, находящихся под действием Гидро или Пиро элементов."
+            "ru": "Увеличивает на {{value}}% урон против врагов, находящихся под действием Гидро или Пиро элементов.",
+            "pt": "Aumenta o Dano contra inimigos afetados por Hydro ou Pyro em {{value}}%."
         },
         "substat": "em",
         "level_1": {
@@ -1111,7 +1138,8 @@
             "es": "Restaura un {{value}}% de Vida tras derrotar a un enemigo.",
             "fr": "Restaure {{value}}% des PV après la défaite d'un ennemi.",
             "it": "Sconfiggere un avversario ripristina un {{value}}% di PS.",
-            "ru": "Победа над противником восстанавливает {{value}}% HP."
+            "ru": "Победа над противником восстанавливает {{value}}% HP.",
+            "pt": "Derrotar um oponente recupera {{value}}% da Vida."
         },
         "substat": "hp%",
         "level_1": {
@@ -1147,7 +1175,8 @@
             "es": "Al dañar a un enemigo, aumenta la Prob. CRIT en un {{value}}%. Puede acumularse hasta 5 veces. Una vez asestado un golpe CRIT, las acumulaciones de Concentración se reiniciarán.",
             "fr": "Augmente le taux CRIT de {{value}}% à chaque attaque qui cause des DGT à un ennemi. Cet effet peut être cumulé 5 fois maximum et est réinitialisé lors d'un coup CRIT.",
             "it": "Dopo aver inflitto danni a un avversario, il tasso di CRIT aumenta di un {{value}}%. Cumulabile fino a 5 volte. In caso di colpo CRIT, la quantità cumulata si azzera.",
-            "ru": "При нанесении урона противнику повышает шанс крит. попадания на {{value}}%. Эффект может складываться до 5 раз. Добавочный шанс крит. попадания исчезает с первым крит. попаданием."
+            "ru": "При нанесении урона противнику повышает шанс крит. попадания на {{value}}%. Эффект может складываться до 5 раз. Добавочный шанс крит. попадания исчезает с первым крит. попаданием.",
+            "pt": "Ao atingir um oponente, aumenta a Taxa Crítica em {{value}}%, acumulando no máximo 5 vezes. Causar Dano Crítico remove todos os acúmulos."
         },
         "substat": "atk%",
         "level_1": {
@@ -1182,7 +1211,8 @@
             "es": "El daño de Ataque Normal aumenta en un {{value}}% y el de Ataque Cargado disminuye en un 10%.",
             "fr": "Augmente les DGT infligés par les attaques normales de {{value}}% et diminue les DGT infligés par les attaques chargées de 10 %.",
             "it": "Aumenta i DAN da attacchi normali di un {{value}}%, ma riduce quelli da attacchi caricati di un 10%.",
-            "ru": "Увеличивает урон обычной атаки на {{value}}%, но понижает урон заряженной атаки на 10%."
+            "ru": "Увеличивает урон обычной атаки на {{value}}%, но понижает урон заряженной атаки на 10%.",
+            "pt": "Aumenta o Dano do Ataque Normal em {{value}}% mas diminui o Dano do Ataque Carregado em 10%."
         },
         "substat": "atk%",
         "level_1": {
@@ -1217,7 +1247,8 @@
             "es": "Al hacer daño por medio de una Habilidad Elemental, hay un {{value}}% de probabilidad de restablecer el TdE de esta habilidad. Este efecto puede activarse una vez cada {{value}} s.",
             "fr": "Les compétences élémentaires ont {{value}}% de chances de réinitialiser leur propre TdR lorsqu'elles infligent des DGT. Cet effet peut être déclenché une fois toutes les {{value}} s.",
             "it": "Dopo aver inflitto danni a un avversario con un'abilità elementale, questa ha un {{value}}% di probabilità di azzerare il proprio TdR. Si può verificare una sola volta ogni {{value}} s.",
-            "ru": "Когда элементальный навык наносит урон, есть {{value}}% вероятность, что его откат моментально восстановится. Может возникнуть раз в {{value}} сек."
+            "ru": "Когда элементальный навык наносит урон, есть {{value}}% вероятность, что его откат моментально восстановится. Может возникнуть раз в {{value}} сек.",
+            "pt": "Ao causar dano contra um oponente com Habilidade Elemental, a habilidade possui {{value}}% de chance de redefinir o tempo de Recarga desta habilidade. Este efeito pode ser ativado apenas uma vez a cada {{value}} segundos."
         },
         "substat": "er",
         "level_1": {
@@ -1258,7 +1289,8 @@
             "es": "Tras golpear a un enemigo con un Ataque Cargado, sobre él cae una “flecha rayosolar” que inflige daño en una cantidad equivalente al {{value}}% del ATQ, y que le aplica el efecto de “corazón ferviente” durante 10 s. El daño que recibe el enemigo afectado por corazón ferviente de los Ataques Cargados del portador de esta arma aumenta en un {{value}}%. Solo puede caer una flecha rayosolar cada 10 s.",
             "fr": "Lorsqu'une attaque chargée a touché un ennemi, une flèche solaire tombe sur ce dernier pour infliger des DGT équivalant à {{value}}% de l'ATQ et appliquer pendant 10 s l'effet Brûle-cœur à l'ennemi ayant subi ses DGT. Les DGT infligés par les attaques chargées du personnage équipé de l'arme aux ennemis atteints de l'effet Brûle-cœur augmentent de {{value}}%. Une flèche solaire peut être déclenchée une fois toutes les 10 s.",
             "it": "Se chi lo utilizza colpisce un avversario con un attacco caricato, scaglia su di esso una Freccia del fuoco solare che infligge DAN pari a un {{value}}% dell'ATT, applicando al suddetto avversario l'effetto Cuore arso per 10 s. Gli avversari affetti da Cuore arso subiscono un {{value}}% di DAN da attacco caricato in più da parte del personaggio che utilizza l'arma. È possibile scagliare una Freccia del fuoco solare una volta ogni 10 s.",
-            "ru": "Попадания заряженной атакой обрушивают на поражённого ею врага Стрелу слепящего солнца, которая наносит {{value}}% урона от силы атаки. Кроме того, на врага, получившего урон от Стрелы слепящего солнца, на 10 сек. накладывается эффект Пылающего сердца. Урон заряженной атаки экипированного персонажа по противнику под воздействием Пылающего сердца повышается на {{value}}%. Стрела слепящего солнца может возникнуть один раз в 10 сек."
+            "ru": "Попадания заряженной атакой обрушивают на поражённого ею врага Стрелу слепящего солнца, которая наносит {{value}}% урона от силы атаки. Кроме того, на врага, получившего урон от Стрелы слепящего солнца, на 10 сек. накладывается эффект Пылающего сердца. Урон заряженной атаки экипированного персонажа по противнику под воздействием Пылающего сердца повышается на {{value}}%. Стрела слепящего солнца может возникнуть один раз в 10 сек.",
+            "pt": "Quando um Ataque Carregado atinge um inimigo, fará cair uma Flecha Solar no inimigo atingido, causando Dano equivalente a {{value}}% do ATQ, e aplicando o efeito \"Coração Flamejante\" no inimigo atingido pela Flecha Solar por 10s. Aumenta o Dano causado pelo personagem que está com essa arma equipada contra inimigos afetados por \"Coração Flamejante\" em {{value}}%. A Flecha Solar pode ser desencadeada uma vez a cada 10s."
         },
         "substat": "cr",
         "level_1": {
@@ -1314,7 +1346,8 @@
             "es": "Al golpear a un enemigo, inflige en su ubicación Daño en el AdE en una cantidad equivalente al {{value}}% de la Vida Máx. Este efecto solo se puede activar una vez cada 15 s.",
             "fr": "Lorsqu'une attaque touche un ennemi, des DGT de zone d'une valeur équivalant à {{value}}% des PV max sont infligés à l'emplacement de la cible. Cet effet peut être déclenché une fois toutes les 15 s.",
             "it": "Quando un attacco colpisce un avversario, infligge DAN ad area pari a un {{value}}% dei PS max nel punto colpito. Quest'effetto può attivarsi una volta ogni 15 s.",
-            "ru": "При попадании атаки по противнику на позиции цели наносится урон по площади, равный {{value}}% от макс. HP. Этот эффект может возникнуть один раз в 15 сек."
+            "ru": "При попадании атаки по противнику на позиции цели наносится урон по площади, равный {{value}}% от макс. HP. Этот эффект может возникнуть один раз в 15 сек.",
+            "pt": "Quando um ataque acerta um oponente, causa {{value}}% da Vida Máxima como Dano em uma AdE no local do alvo. Este efeito pode ser desencadeado uma vez a cada 15s."
         },
         "substat": "hp%",
         "level_1": {
@@ -1349,7 +1382,8 @@
             "es": "Aumenta en un {{value}}% el daño contra los puntos débiles.",
             "fr": "Augmente les DGT de {{value}}% si les points faibles de l'ennemi sont visés.",
             "it": "Aumenta i DAN contro i punti deboli di un {{value}}%.",
-            "ru": "Увеличивает урон по слабым местам противников на {{value}}%."
+            "ru": "Увеличивает урон по слабым местам противников на {{value}}%.",
+            "pt": "Aumenta o Dano contra pontos fracos em {{value}}%."
         },
         "substat": "cd",
         "level_1": {
@@ -1384,7 +1418,8 @@
             "es": "El portador de esta arma puede obtener el efecto de “reposición”. Al tener 1/2/3 cargas, la Vida Máx. aumenta en un {{value}}/{{value}}/{{value}}%. El portador obtiene 1 carga de reposición en las siguientes situaciones: al usar su Habilidad Elemental, obtiene 1 carga durante 25 s; cuando el valor del pacto vital aumenta, obtiene 1 carga durante 25 s; al realizar una curación, obtiene 1 carga durante 20 s. Esto se puede activar incluso cuando el portador de esta arma está en tu equipo pero no en uso. La duración de cada carga de reposición se calcula de manera independiente. Al tener 3 cargas, la Prob. CRIT de la Habilidad Definitiva aumenta en un {{value}}%. Este efecto se elimina en 4 s si no se tienen 3 cargas de reposición.",
             "fr": "Le personnage équipé de l'arme obtient l'effet Traitement. Avec 1/2/3 cumuls de traitement, ses PV max augmentent respectivement de {{value}}/{{value}}/{{value}}%. Le personnage équipé de l'arme peut obtenir un cumul de traitement des façons suivantes : utiliser une compétence élémentaire accorde un cumul de 25 s ; augmenter la valeur d'un engagement vital accorde un cumul de 25 s ; et effectuer des soins accorde un cumul de 20 s. Cet effet peut être déclenché même si le personnage fait partie de l'équipe mais n'est pas déployé, et la durée de chaque cumul de traitement est calculée indépendamment. De plus, posséder 3 cumuls de traitement augmente le taux CRIT des déchaînements élémentaires de {{value}}%, cet effet prenant fin 4 s après que le nombre de cumuls tombe en dessous de 3.",
             "it": "Il personaggio che equipaggia l'arma ottiene l'effetto Rimedio. Quando possiede 1/2/3 accumuli di Rimedio, i PS max aumentano di un {{value}}/{{value}}/{{value}}%. Il personaggio può ottenere tali accumuli nelle seguenti situazioni: 1 accumulo per 25 s quando usa l'abilità elementale; 1 accumulo per 25 s quando riceve un incremento del Legame vitale; 1 accumulo per 20 s quando apporta effetti di guarigione. È possibile ottenere accumuli anche se il personaggio non si trova in campo, e la durata di ciascun accumulo viene calcolata in modo indipendente. Inoltre, quando il personaggio possiede 3 accumuli, il tasso di CRIT del suo Tripudio elementale aumenta di un {{value}}%. Questo effetto si annulla 4 s dopo che il numero di accumuli cala al di sotto di 3.",
-            "ru": "Экипированный персонаж может получить эффект Снадобья. С 1/2/3 уровнями Снадобья его макс. HP увеличивается на {{value}}/{{value}}/{{value}}%. 1 уровень Снадобья можно получить в следующих ситуациях: на 25 сек. после активации элементального навыка; на 25 сек. после прироста Долга жизни; на 20 сек. после исцеления персонажей. Этот эффект активируется, даже если экипированный персонаж не на поле боя. Длительность каждого уровня эффекта рассчитывается отдельно. Кроме того, когда действует 3 уровня, шанс крит. попадания взрыва стихии увеличивается на {{value}}%. Данный эффект отменяется через 4 сек. после того, как уровней Снадобья становится меньше 3."
+            "ru": "Экипированный персонаж может получить эффект Снадобья. С 1/2/3 уровнями Снадобья его макс. HP увеличивается на {{value}}/{{value}}/{{value}}%. 1 уровень Снадобья можно получить в следующих ситуациях: на 25 сек. после активации элементального навыка; на 25 сек. после прироста Долга жизни; на 20 сек. после исцеления персонажей. Этот эффект активируется, даже если экипированный персонаж не на поле боя. Длительность каждого уровня эффекта рассчитывается отдельно. Кроме того, когда действует 3 уровня, шанс крит. попадания взрыва стихии увеличивается на {{value}}%. Данный эффект отменяется через 4 сек. после того, как уровней Снадобья становится меньше 3.",
+            "pt": "O personagem equipado pode obter o efeito \"Remédio\". Quando eles possuem 1/2/3 acúmulos de \"Remédio\", sua Vida Máxima aumentará em {{value}}%/{{value}}%/{{value}}%. Eles podem obter 1 acúmulo nas seguintes situações: 1 ao usar uma Habilidade Elemental por 25s; 1 ao aumentar o valor do Contrato de Vida por 25s; 1 ao iniciar Cura por 20s. Isso ainda pode ser ativado quando o personagem equipado não está em campo. A duração de cada acúmulo é contada independentemente. Além disso, quando você tem 3 acúmulos, a Taxa CRIT do Supremo será aumentada em {{value}}%. Este efeito será cancelado 4s após você ficar com menos de 3 acúmulos."
         },
         "substat": "hp%",
         "level_1": {
@@ -1434,7 +1469,8 @@
             "es": "Aumenta el Daño CRIT en un {{value}}%. Al golpear a un enemigo, hay un {{value}}% de probabilidad de infligir un 125% de Daño Físico en una pequeña AdE. Este efecto solo puede ocurrir una vez cada {{value}} s.",
             "fr": "Augmente les DGT CRIT de {{value}}%. Toucher un ennemi a {{value}}% de chances d'infliger des DGT physiques équivalant à 125 % de l'ATQ dans une zone restreinte. Cet effet peut être déclenché une fois toutes les {{value}} s.",
             "it": "Aumenta i DAN da CRIT di un {{value}}%. I colpi hanno un {{value}}% di probabilità d'infliggere un 125% di DAN da ATT fisico in una piccola area d'effetto. Si può verificare una sola volta ogni {{value}} s.",
-            "ru": "Увеличивает крит. урон на {{value}}%. При попадании есть {{value}}% шанс нанести 125% физ. урона в небольшом радиусе. Может возникнуть раз в {{value}} сек."
+            "ru": "Увеличивает крит. урон на {{value}}%. При попадании есть {{value}}% шанс нанести 125% физ. урона в небольшом радиусе. Может возникнуть раз в {{value}} сек.",
+            "pt": "Aumenta o Dano Crítico em {{value}}%. Ao acertar, possui {{value}}% de chance de infligir um pequeno ataque AdE, causando 125% de Dano de ATQ Físico. Pode ser ativada uma vez a cada {{value}}s."
         },
         "substat": "cr",
         "level_1": {
@@ -1479,7 +1515,8 @@
             "es": "Si un Ataque Normal o Cargado golpea al enemigo en menos de 0.3 s de ser lanzado, el daño infligido aumentará en un {{value}}%. Si se excede este tiempo, el daño disminuirá en un 10%.",
             "fr": "Les DGT infligés par les flèches des attaques normales et chargées infligent {{value}}% de DGT supplémentaires lorsqu'elles touchent dans les 0,3 s après le tir. Dans le cas contraire, elles infligent 10 % de DGT en moins.",
             "it": "Se un attacco normale o caricato colpisce un bersaglio entro 0,3 s dal tiro, aumenta i DAN di un {{value}}%. In caso contrario, li riduce di un 10%.",
-            "ru": "Если обычная или заряженная стрела поразила цель в течение 0,3 сек. после выстрела, то её урон увеличивается на {{value}}%. В противном случае урон уменьшается на 10%."
+            "ru": "Если обычная или заряженная стрела поразила цель в течение 0,3 сек. после выстрела, то её урон увеличивается на {{value}}%. В противном случае урон уменьшается на 10%.",
+            "pt": "Se a flecha do Ataque Normal e do Ataque Carregado atingir um alvo dentro de 0.3s após o disparo, o Dano é aumentado em {{value}}%. Caso contrário, o Dano é diminuído em 10%."
         },
         "substat": "cr",
         "level_1": {
@@ -1515,7 +1552,8 @@
             "es": "Tras causar una Reacción Elemental, la Maestría Elemental aumenta en {{value}} pts. durante 12 s. Con “presagio lunar: resplandor ascendente”, la Maestría Elemental otorgada por este efecto aumenta en {{value}} pts. adicionales. Este efecto se puede activar incluso cuando el portador de esta arma está en tu equipo pero no en uso.",
             "fr": "Déclencher une réaction élémentaire augmente la maîtrise élémentaire de {{value}} pts pendant 12 s. Signelune « Lueur ascendante » : la maîtrise élémentaire de cet effet augmente de {{value}} pts supplémentaires. Cet effet peut être déclenché même si le personnage équipé de l'arme fait partie de l'équipe mais n'est pas déployé.",
             "it": "Dopo aver innescato una reazione elementale, aumenta la maestria elementale di {{value}} per 12 s. Quando Presagio lunare: Barlume ascendente è attivo, la maestria elementale di questo effetto aumenta di ulteriori {{value}} punti. L'effetto si innesca anche quando il personaggio che equipaggia l'arma non è in campo.",
-            "ru": "На 12 сек. после активации элементальной реакции мастерство стихий повышается на {{value}} ед. Лунное знамение - Высшее сияние: мастерство стихий от данного эффекта дополнительно повышается на {{value}} ед. Этот эффект срабатывает, даже когда экипированный персонаж не на поле боя."
+            "ru": "На 12 сек. после активации элементальной реакции мастерство стихий повышается на {{value}} ед. Лунное знамение - Высшее сияние: мастерство стихий от данного эффекта дополнительно повышается на {{value}} ед. Этот эффект срабатывает, даже когда экипированный персонаж не на поле боя.",
+            "pt": "Nos 12s depois de causar uma reação Elemental, aumenta a Proficiência Elemental em {{value}}. Presságio Lunar: Reluzir Cheio: esse efeito aumenta Proficiência Elemental em mais {{value}}. Esse efeito pode ser ativado mesmo quando o personagem que está com essa arma equipada não estiver ativo."
         },
         "substat": "er",
         "level_1": {
@@ -1556,7 +1594,8 @@
             "es": "Tras recibir curación, el daño infligido aumenta en un {{value}}% durante 8 s. Este efecto puede activarse incluso cuando el personaje está en tu equipo pero no en uso.",
             "fr": "Lorsque le personnage a reçu des soins, les DGT qu'il inflige augmentent de {{value}}% pendant 8 s. L'effet peut être déclenché même lorsque le personnage fait partie de l'équipe mais n'est pas déployé.",
             "it": "Quando chi lo utilizza riceve effetti di guarigione, infligge un {{value}}% di DAN in più per 8 s. Questo effetto può attivarsi anche quando il personaggio non si trova in campo.",
-            "ru": "Наносимый урон после получения лечения увеличивается на {{value}}% на 8 сек. Эффект срабатывает, даже когда персонаж не на поле боя."
+            "ru": "Наносимый урон после получения лечения увеличивается на {{value}}% на 8 сек. Эффект срабатывает, даже когда персонаж не на поле боя.",
+            "pt": "Ao ser curado, aumenta o Dano em {{value}}% por 8s. Pode ser ativado mesmo quando o personagem não estiver em campo na batalha."
         },
         "substat": "atk%",
         "level_1": {
@@ -1591,7 +1630,8 @@
             "es": "El portador de esta arma obtiene el efecto de “brisa del amanecer”, de manera que, 3 s después de salir de combate, el daño del Ataque Normal, la Habilidad Elemental y la Habilidad Definitiva aumenta en un {{value}}%. Al estar en combate, este aumento de daño se reduce en un {{value}}% por segundo hasta llegar al 0%. Cuando el portador golpea a un enemigo con un Ataque Normal, la Habilidad Elemental o la Habilidad Definitiva, el aumento de daño correspondiente se incrementa en un {{value}}%, hasta alcanzar el {{value}}%. Este efecto solo puede activarse una vez cada 0.1 s para cada tipo de ataque, y se puede activar incluso cuando el portador de esta arma está en tu equipo pero no en uso.<br>Además, cuando el equipo tiene el efecto “taumaturgia: rito secreto” y dicho portador golpea a un enemigo con un Ataque Normal, la Habilidad Elemental o la Habilidad Definitiva, el aumento de daño obtenido pasa a ser de un {{value}}% para todos los tipos de daño.",
             "fr": "Le personnage équipé de l'arme obtient l'effet Brise éveillante : après avoir été hors combat pendant 3 s, les DGT infligés par les attaques normales, les compétences élémentaires et les déchaînements élémentaires augmentent de {{value}}%. En combat, l'effet de ce bonus diminue de {{value}}% toutes les secondes jusqu'à atteindre 0 %. Lorsque le personnage équipé de l'arme touche un ennemi avec une attaque normale, une compétence élémentaire ou un déchaînement élémentaire, l'effet de ce bonus pour le type de DGT correspondant augmente de {{value}}%, jusqu'à une augmentation maximum de {{value}}%. Cet effet peut être déclenché une fois toutes les 0,1 s pour chaque type d'attaque et peut être déclenché même si le personnage équipé de l'arme fait partie de l'équipe mais n'est pas déployé.<br>De plus, lorsque l'équipe bénéficie de l'effet Hexerei : Rituel secret, l'augmentation du bonus de DGT lorsque le personnage équipé de l'arme touche un ennemi avec une attaque normale, une compétence élémentaire ou un déchaînement élémentaire passe à {{value}}% et s'applique à tous les types de DGT concernés.",
             "it": "Il personaggio che equipaggia l'arma ottiene Brezza dell'alba. Dopo aver trascorso 3 s fuori da un combattimento, i DAN da attacco normale, abilità elementale e Tripudio elementale aumentano di un {{value}}%. Durante un combattimento, il suddetto bonus DAN diminuisce di un {{value}}% al secondo fino ad azzerarsi. Quando gli attacchi normali, le abilità elementali o i Tripudi elementali del personaggio che equipaggia l'arma colpiscono un avversario, il bonus DAN corrispondente a quel tipo di DAN aumenta di un {{value}}% fino a raggiungere il {{value}}%. Quest'effetto può attivarsi una volta ogni 0,1 s per ogni tipo di attacco sopracitato, anche se il personaggio che equipaggia l'arma non è in campo.<br>Se il gruppo possiede gli effetti di Hexerei: Rito segreto, quando gli attacchi normali, le abilità elementali o i Tripudi elementali del personaggio che equipaggia l'arma colpiscono un avversario, il bonus DAN di tutti questi tipi di DAN aumenta invece di un {{value}}%.",
-            "ru": "Экипированный персонаж получает Волнующийся утренний ветер: через 3 сек. после выхода из боя урон обычной атаки, элементального навыка и взрыва стихии повышается на {{value}}%. В бою этот эффект повышения урона снижается на {{value}}% каждую секунду, пока не достигнет 0%. Когда обычная атака, элементальный навык или взрыв стихии экипированного персонажа поражают противника, эффект повышения урона соответствующего типа усиливается на {{value}}%, пока не достигает {{value}}%. Этот эффект может возникнуть один раз в 0,1 сек. для атак каждого из перечисленных типов и срабатывает, даже когда экипированный персонаж не на поле боя.<br>Кроме того, когда в отряде действует эффект Ведьмовство: Тайный обряд, а обычная атака, элементальный навык или взрыв стихии экипированного персонажа поражают противника, то вместо этого эффект повышения урона для урона всех этих типов усиливается на {{value}}%."
+            "ru": "Экипированный персонаж получает Волнующийся утренний ветер: через 3 сек. после выхода из боя урон обычной атаки, элементального навыка и взрыва стихии повышается на {{value}}%. В бою этот эффект повышения урона снижается на {{value}}% каждую секунду, пока не достигнет 0%. Когда обычная атака, элементальный навык или взрыв стихии экипированного персонажа поражают противника, эффект повышения урона соответствующего типа усиливается на {{value}}%, пока не достигает {{value}}%. Этот эффект может возникнуть один раз в 0,1 сек. для атак каждого из перечисленных типов и срабатывает, даже когда экипированный персонаж не на поле боя.<br>Кроме того, когда в отряде действует эффект Ведьмовство: Тайный обряд, а обычная атака, элементальный навык или взрыв стихии экипированного персонажа поражают противника, то вместо этого эффект повышения урона для урона всех этих типов усиливается на {{value}}%.",
+            "pt": "O portador obtém Prenúncio da Alvorada: 3s depois de sair de batalha, aumenta o Dano do Ataque Normal, Habilidade Elemental e Supremo em {{value}}%. Em batalha, esse efeito de aumento de Dano é reduzido em {{value}}% por segundo até alcançar 0%. Quando o Ataque Normal, Habilidade Elemental ou Supremo do portador atinge o inimigo, aumenta o efeito de aumento de Dano correspondente em {{value}}% até alcançar {{value}}%, esse efeito pode ser desencadeado uma vez a cada 0.1s para cada tipo de ataque acima. Esse efeito pode ser desencadeado, mesmo que o portador não seja o personagem ativo.<br>Além disso, quando possui o efeito Mágico: Ritual Secreto e o portador atinge o inimigo com um Ataque Normal, Habilidade Elemental ou Supremo, aumenta o efeito de aumento para todos os tipos de Dano em {{value}}%."
         },
         "substat": "cd",
         "level_1": {
@@ -1646,7 +1686,8 @@
             "es": "El daño de Ataque Cargado aumenta en un {{value}}%. Por cada personaje del equipo del mismo tipo elemental que el portador de esta arma (esto incluye a dicho portador), otorga 1 carga de “ardid”. Por otro lado, por cada personaje de distinto tipo elemental al portador de esta arma, otorga 1 carga de “teatralidad”. Con 1/2/3 o más cargas de ardid, el ATQ aumenta en un {{value}}/{{value}}/{{value}}%, y con 1/2/3 o más cargas de teatralidad, la Vel. Movimiento aumenta en un {{value}}/{{value}}/{{value}}%.",
             "fr": "Les DGT infligés par les attaques chargées augmentent de {{value}}%. Chaque personnage de l'équipe dont le type élémentaire est le même que celui du personnage équipé de l'arme (y compris le personnage en question) accorde 1 cumul de l'effet Roublardise, tandis que chaque personnage de l'équipe dont le type élémentaire est différent accorde 1 cumul de l'effet Tragédien. Avec 1, 2 ou au minimum 3 cumuls de roublardise, l'ATQ augmente respectivement de {{value}}/{{value}}/{{value}}%, tandis qu'avec 1, 2 ou au minimum 3 cumuls de tragédien, la VIT de déplacement augmente respectivement de {{value}}/{{value}}/{{value}}%.",
             "it": "I DAN inflitti dagli attacchi caricati aumentano di un {{value}}%. Per ogni membro del gruppo dello stesso tipo elementale del personaggio che usa quest'arma (incluso sé stesso), quest'ultimo ottiene 1 accumulo di Stratagemma; per ogni membro del gruppo di tipo elementale diverso, invece, ottiene 1 accumulo di Scenotecnica. Quando il personaggio ha 1/2/3 o più accumuli di Stratagemma, l'ATT aumenta di un {{value}}/{{value}}/{{value}}%. Quando ha 1/2/3 o più accumuli di Scenotecnica, la VEL di movimento aumenta di un {{value}}/{{value}}/{{value}}%.",
-            "ru": "Увеличивает урон заряженной атаки на {{value}}%. Предоставляет 1 уровень Уловки за каждого персонажа того же элемента в отряде, что и экипированный персонаж (включая экипированного персонажа). За каждого персонажа отряда с другим элементом предоставляет 1 уровень Актёрского мастерства. Когда действуют 1/2/3 и более уровня Уловки, сила атаки повышается на {{value}}/{{value}}/{{value}}%. Во время действия 1/2/3 и более уровней Актёрского мастерства скорость передвижения увеличивается на {{value}}/{{value}}/{{value}}%."
+            "ru": "Увеличивает урон заряженной атаки на {{value}}%. Предоставляет 1 уровень Уловки за каждого персонажа того же элемента в отряде, что и экипированный персонаж (включая экипированного персонажа). За каждого персонажа отряда с другим элементом предоставляет 1 уровень Актёрского мастерства. Когда действуют 1/2/3 и более уровня Уловки, сила атаки повышается на {{value}}/{{value}}/{{value}}%. Во время действия 1/2/3 и более уровней Актёрского мастерства скорость передвижения увеличивается на {{value}}/{{value}}/{{value}}%.",
+            "pt": "Aumenta o Dano do Ataque Carregado em {{value}}%. Para cada personagem na equipe com o mesmo Tipo Elemental que o personagem que está com essa arma equipada (incluindo o personagem que está com a arma equipada), obtém 1 acúmulo do efeito \"Método\". Para cada personagem de Tipo Elemental diferente, obtém 1 acúmulo do efeito \"Atuação\". Quando possuir 1/2/3 ou mais acúmulos do efeito \"Método\", o ATQ aumentará {{value}}%/{{value}}%/{{value}}%. Quando possuir 1/2/3 ou mais acúmulos do efeito \"Atuação\", aumenta a Veloc. Mov. em {{value}}%/{{value}}%/{{value}}%."
         },
         "substat": "cd",
         "level_1": {
@@ -1711,7 +1752,8 @@
             "es": "Aumenta en un {{value}}% el daño de la Habilidad Elemental y la Habilidad Definitiva.",
             "fr": "Augmente les DGT infligés par les compétences élémentaires et les déchaînements élémentaires de {{value}}%.",
             "it": "Aumenta i DAN di abilità elementale e Tripudio elementale di un {{value}}%.",
-            "ru": "Увеличивает урон элементального навыка и взрыва стихии на {{value}}%."
+            "ru": "Увеличивает урон элементального навыка и взрыва стихии на {{value}}%.",
+            "pt": "Aumenta o Dano da Habilidade Elemental e do Supremo em {{value}}%."
         },
         "substat": "em",
         "level_1": {
@@ -1747,7 +1789,8 @@
             "es": "Al golpear con un Ataque Normal o Ataque Cargado, hay un 50% de probabilidad de crear un ciclón que atrae a los enemigos cercanos de forma continua, infligiendo un {{value}}% del ATQ como daño cada 0.5 s durante 4 s. Este efecto puede ocurrir una vez cada {{value}} s.",
             "fr": "Les attaques normales et chargées ont 50 % de chances lorsqu'elles touchent de générer un cyclone qui attire les ennemis et leur inflige des DGT équivalant à {{value}}% de l'ATQ toutes les 0,5 s pendant 4 s. Cet effet peut être déclenché une fois toutes les {{value}} s.",
             "it": "Per colpo a segno, gli attacchi normali e caricati hanno un 50% di probabilità di generare un Ciclone, che attrarrà costantemente gli avversari circostanti, infliggendo loro DAN pari a un {{value}}% dell'ATT ogni 0,5 s per 4 s. Si può verificare una sola volta ogni {{value}} s.",
-            "ru": "При попадании обычной или заряженной атакой появляется 50% шанс создать Циклон, который притягивает к себе врагов и наносит им {{value}}% урона каждые 0,5 сек. в течение 4 сек. Может возникнуть раз в {{value}} сек."
+            "ru": "При попадании обычной или заряженной атакой появляется 50% шанс создать Циклон, который притягивает к себе врагов и наносит им {{value}}% урона каждые 0,5 сек. в течение 4 сек. Может возникнуть раз в {{value}} сек.",
+            "pt": "Ao acertar um Ataque Normal ou Ataque com Mira, possui 50% de chance de gerar um Ciclone, que atrairá continuamente os inimigos ao redor, causando {{value}}% de Dano de ATQ a estes inimigos a cada 0.5s por 4s. Este efeito pode ser ativado uma vez a cada {{value}}s."
         },
         "substat": "cr",
         "level_1": {
@@ -1787,7 +1830,8 @@
             "es": "Aumenta el ATQ en un {{value}}% y otorga el poder de los emblemas del trueno. Dependiendo de si se tienen 1, 2 o 3 emblemas del trueno, el daño infligido con los Ataques Normales aumenta en un {{value}}/{{value}}/{{value}}%. En las siguientes situaciones, el personaje obtiene un emblema: al infligir daño con Ataques Normales. El emblema dura 5 s; al realizar una Habilidad Elemental. El emblema dura 10 s; cuando la Energía Elemental del personaje está por debajo del 100%. El emblema del trueno obtenido de esta manera dura hasta que el personaje regenere toda su Energía Elemental. La duración de cada emblema del trueno se calcula de manera independiente.",
             "fr": "Augmente l'ATQ de {{value}}%, et confère la puissance du sceau du tonnerre. 1/2/3 cumuls de sceau du tonnerre augmentent respectivement les DGT des attaques normales de {{value}}/{{value}}/{{value}}%. Le personnage peut obtenir 1 cumul de sceau du tonnerre dans chacune des situations suivantes : si son attaque normale inflige des DGT, il obtient un cumul de 5 s ; s'il utilise sa compétence élémentaire, il obtient un cumul de 10 s ; si son énergie élémentaire est inférieure à 100 %, il obtient un cumul qui disparaît lorsque l'énergie redevient pleine. La durée de chaque cumul est calculée indépendamment.",
             "it": "Aumenta l'ATT di un {{value}}% e garantisce il potere dell'Emblema del tuono. Con 1/2/3 emblemi, l'Emblema del tuono aumenta i DAN da attacco normale di un {{value}}/{{value}}/{{value}}%. Otterrai 1 Emblema del tuono della durata seguente: 5 s se gli attacchi normali infliggeranno DAN; 10 s se userai un'abilità elementale; fino a quando l'energia, se inferiore a un 100%, si sarà ricaricata. La durata di ogni emblema viene calcolata in maniera indipendente.",
-            "ru": "Увеличивает силу атаки на {{value}}% и дарует мощь Громовой эмблемы. На уровнях эмблемы 1, 2 или 3 урон обычной атаки увеличивается на {{value}}/{{value}}/{{value}}% соответственно. Персонаж получает 1 уровень Громовой эмблемы в каждом из следующих случаев: при нанесении урона обычной атакой (эмблема действует 5 сек.); при применении элементального навыка (эмблема действует 10 сек.); когда элементальная энергия персонажа ниже 100% (эмблема исчезнет, когда элементальная энергия полностью восстановится). Продолжительность действия каждого уровня эмблемы рассчитывается индивидуально."
+            "ru": "Увеличивает силу атаки на {{value}}% и дарует мощь Громовой эмблемы. На уровнях эмблемы 1, 2 или 3 урон обычной атаки увеличивается на {{value}}/{{value}}/{{value}}% соответственно. Персонаж получает 1 уровень Громовой эмблемы в каждом из следующих случаев: при нанесении урона обычной атакой (эмблема действует 5 сек.); при применении элементального навыка (эмблема действует 10 сек.); когда элементальная энергия персонажа ниже 100% (эмблема исчезнет, когда элементальная энергия полностью восстановится). Продолжительность действия каждого уровня эмблемы рассчитывается индивидуально.",
+            "pt": "Aumenta o Ataque em {{value}}%, e concede a grandeza do Selo da Trovoada. Nas cargas 1/2/3, o Selo de Trovoada aumenta o Dano do Ataque Normal em {{value}}/{{value}}/{{value}}%. O personagem obterá uma carga de Selo da Trovoada nos seguintes cenários: Ataque Normal que causa Dano (a carga dura 5s), lançar uma Habilidade Elemental (carga dura 10s); Energia Elemental menor que 100% (carga desaparece quando a energia está completa). A duração de cada carga é calculada independentemente uma da outra."
         },
         "substat": "cd",
         "level_1": {
@@ -1838,7 +1882,8 @@
             "es": "Al usar una Habilidad Elemental, obtienes la gracia de las flores de viento, que aumenta el ATQ en un {{value}}% durante 6 s.",
             "fr": "Libérer une compétence élémentaire confère la faveur des alizées. L'ATQ augmente de {{value}}% pendant 6 s.",
             "it": "Dopo l'uso di un'abilità elementale, ricevi un dono dall'antico Desiderio del Florvento, aumentando l'ATT di un {{value}}% per 6 s.",
-            "ru": "Использование элементального навыка накладывает Древнее желание анемонии, которое увеличивает силу атаки на {{value}}% в течение 6 сек."
+            "ru": "Использование элементального навыка накладывает Древнее желание анемонии, которое увеличивает силу атаки на {{value}}% в течение 6 сек.",
+            "pt": "Ao lançar uma Habilidade Elemental, se obtém o desejo antigo da Flor do Vento, e o Ataque aumenta {{value}}% por 6s."
         },
         "substat": "em",
         "level_1": {

@@ -46,106 +46,124 @@ import ruElements from '../i18n/ru/elements.json';
 import ruUi from '../i18n/ru/ui.json';
 import ruAbilities from '../i18n/ru/abilities.json';
 
+import ptWeapons from '../i18n/pt/weapons.json';
+import ptArtifacts from '../i18n/pt/artifact-sets.json';
+import ptCharacters from '../i18n/pt/characters.json';
+import ptStats from '../i18n/pt/stats.json';
+import ptElements from '../i18n/pt/elements.json';
+import ptUi from '../i18n/pt/ui.json';
+import ptAbilities from '../i18n/pt/abilities.json';
+
 import type { LanguageCode } from './languages';
 
 type LocaleCategory = Record<string, string>;
 type LocaleBundle = {
-  weapon: LocaleCategory;
-  artifact: LocaleCategory;
-  character: LocaleCategory;
-  stat: LocaleCategory;
-  element: LocaleCategory;
-  ability: LocaleCategory;
-  ui: LocaleCategory;
+    weapon: LocaleCategory;
+    artifact: LocaleCategory;
+    character: LocaleCategory;
+    stat: LocaleCategory;
+    element: LocaleCategory;
+    ability: LocaleCategory;
+    ui: LocaleCategory;
 };
 
 // Keep locale imports explicit so bundlers include every JSON dictionary.
 const locales = {
-  en: {
-    weapon: enWeapons,
-    artifact: enArtifacts,
-    character: enCharacters,
-    stat: enStats,
-    element: enElements,
-    ability: enAbilities,
-    ui: enUi,
-  },
+    en: {
+        weapon: enWeapons,
+        artifact: enArtifacts,
+        character: enCharacters,
+        stat: enStats,
+        element: enElements,
+        ability: enAbilities,
+        ui: enUi,
+    },
 
-  fr: {
-    weapon: frWeapons,
-    artifact: frArtifacts,
-    character: frCharacters,
-    stat: frStats,
-    element: frElements,
-    ability: frAbilities,
-    ui: frUi,
-  },
+    fr: {
+        weapon: frWeapons,
+        artifact: frArtifacts,
+        character: frCharacters,
+        stat: frStats,
+        element: frElements,
+        ability: frAbilities,
+        ui: frUi,
+    },
 
-  de: {
-    weapon: deWeapons,
-    artifact: deArtifacts,
-    character: deCharacters,
-    stat: deStats,
-    element: deElements,
-    ability: deAbilities,
-    ui: deUi,
-  },
+    de: {
+        weapon: deWeapons,
+        artifact: deArtifacts,
+        character: deCharacters,
+        stat: deStats,
+        element: deElements,
+        ability: deAbilities,
+        ui: deUi,
+    },
 
-  es: {
-    weapon: esWeapons,
-    artifact: esArtifacts,
-    character: esCharacters,
-    stat: esStats,
-    element: esElements,
-    ability: esAbilities,
-    ui: esUi,
-  },
+    es: {
+        weapon: esWeapons,
+        artifact: esArtifacts,
+        character: esCharacters,
+        stat: esStats,
+        element: esElements,
+        ability: esAbilities,
+        ui: esUi,
+    },
 
-  it: {
-    weapon: itWeapons,
-    artifact: itArtifacts,
-    character: itCharacters,
-    stat: itStats,
-    element: itElements,
-    ability: itAbilities,
-    ui: itUi,
-  },
+    it: {
+        weapon: itWeapons,
+        artifact: itArtifacts,
+        character: itCharacters,
+        stat: itStats,
+        element: itElements,
+        ability: itAbilities,
+        ui: itUi,
+    },
 
-  ru: {
-    weapon: ruWeapons,
-    artifact: ruArtifacts,
-    character: ruCharacters,
-    stat: ruStats,
-    element: ruElements,
-    ability: ruAbilities,
-    ui: ruUi,
-  },
+    ru: {
+        weapon: ruWeapons,
+        artifact: ruArtifacts,
+        character: ruCharacters,
+        stat: ruStats,
+        element: ruElements,
+        ability: ruAbilities,
+        ui: ruUi,
+    },
+
+    pt: {
+        weapon: ptWeapons,
+        artifact: ptArtifacts,
+        character: ptCharacters,
+        stat: ptStats,
+        element: ptElements,
+        ability: ptAbilities,
+        ui: ptUi,
+    },
 } satisfies Record<LanguageCode, LocaleBundle>;
 
 /**
  * Finds the language code that owns a locale bundle.
  */
 function getLocaleCode(locale: unknown) {
-  return (
-    Object.entries(locales).find(([, localeBundle]) => localeBundle === locale)?.[0] ??
-    'unknown'
-  );
+    return (
+        Object.entries(locales).find(([, localeBundle]) => localeBundle === locale)?.[0] ??
+        'unknown'
+    );
 }
 
 /**
  * Formats missing translation warnings with a stable language prefix.
  */
 export function formatMissingTranslationWarning(
-  lang: string | undefined,
-  id: string,
-  category?: string,
-  sourceFile?: string,
+    lang: string | undefined,
+    id: string,
+    category?: string,
+    sourceFile?: string,
 ) {
-  return (
-    `[i18n] [${(lang ?? 'unknown').toUpperCase()}] Missing translation for id '${id}'` +
-    (category ? ` in category '${category}'` : '') +
-    (sourceFile ? ` (source: ${sourceFile})` : '')
-  );
+    return (
+        `[i18n] [${(lang ?? 'unknown').toUpperCase()}] Missing translation for id '${id}'` +
+        (category ? ` in category '${category}'` : '') +
+        (sourceFile ? ` (source: ${sourceFile})` : '')
+    );
 }
 
 /**
@@ -158,9 +176,9 @@ export function formatMissingTranslationWarning(
  * @returns Locale dictionary bundle.
  */
 export function getLocale(lang: string | undefined) {
-  const localeKey =
-    typeof lang === 'string' && lang in locales ? (lang as LanguageCode) : 'en';
-  return locales[localeKey];
+    const localeKey =
+        typeof lang === 'string' && lang in locales ? (lang as LanguageCode) : 'en';
+    return locales[localeKey];
 }
 
 /**
@@ -178,32 +196,32 @@ export function getLocale(lang: string | undefined) {
  * @returns Localized string, English fallback, or original ID if unresolved.
  */
 export function t(
-  locale: any,
-  category: string,
-  id: string,
-  sourceFile?: string,
-  warn = true,
+    locale: any,
+    category: string,
+    id: string,
+    sourceFile?: string,
+    warn = true,
 ): string {
-  const translation = locale?.[category]?.[id];
+    const translation = locale?.[category]?.[id];
 
-  if (translation !== undefined) {
-    return translation;
-  }
+    if (translation !== undefined) {
+        return translation;
+    }
 
-  if (warn) {
-    console.warn(
-      formatMissingTranslationWarning(
-        getLocaleCode(locale),
-        id,
-        category,
-        sourceFile,
-      ),
-    );
-  }
+    if (warn) {
+        console.warn(
+            formatMissingTranslationWarning(
+                getLocaleCode(locale),
+                id,
+                category,
+                sourceFile,
+            ),
+        );
+    }
 
-  const fallbackCategory = locales.en[
-    category as keyof LocaleBundle
-  ] as LocaleCategory | undefined;
+    const fallbackCategory = locales.en[
+        category as keyof LocaleBundle
+    ] as LocaleCategory | undefined;
 
-  return fallbackCategory?.[id] ?? id;
+    return fallbackCategory?.[id] ?? id;
 }
