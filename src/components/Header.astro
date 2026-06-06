@@ -28,6 +28,11 @@ const browseLinks = [
     label: t(locale, 'ui', 'Weapons', undefined, false),
     isCurrent: page === 'weapons',
   },
+  {
+    href: localizedPath(currentLang, 'artifacts'),
+    label: `${t(locale, 'ui', 'Artifacts', undefined, false)} ${t(locale, 'ui', 'Sets', undefined, false)}`,
+    isCurrent: page === 'artifacts',
+  },
 ];
 const infoLinks = [
   {
