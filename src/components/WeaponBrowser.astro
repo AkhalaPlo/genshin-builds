@@ -25,6 +25,11 @@ type WeaponBrowserData = {
     levelMaxBaseAttack: string;
     level1Substat: string;
     levelMaxSubstat: string;
+    rankingUsage: {
+      characterName: string;
+      characterRarity: string;
+      href: string;
+    }[];
     passivePanels: {
       refinement: number;
       html: string;
@@ -47,6 +52,14 @@ const weaponLabel = t(locale, 'ui', 'Weapon');
 const rarityLabel = t(locale, 'ui', 'Rarity');
 const searchLabel = t(locale, 'ui', 'Search');
 const descriptionLabel = t(locale, 'ui', 'Description', undefined, false);
+const rankedOnLabel = t(locale, 'ui', 'Weapon ranked on', undefined, false);
+const noRankingMentionsLabel = t(
+  locale,
+  'ui',
+  'No weapon ranking mentions',
+  undefined,
+  false,
+);
 const level1Label = t(locale, 'ui', 'Level 1', undefined, false);
 const maxLevelLabel = t(locale, 'ui', 'Max Level', undefined, false);
 const statLabel = t(locale, 'ui', 'Stat', undefined, false);
@@ -208,6 +221,29 @@ const baseAttackLabel = t(locale, 'ui', 'Base ATK', undefined, false);
               </div>
             </section>
           )}
+
+          <section
+            class="weapon-ranking-usage"
+            aria-label={`${weapon.name} ${rankedOnLabel}`}
+          >
+            <h3>{rankedOnLabel}</h3>
+            {weapon.rankingUsage.length > 0 ? (
+              <div class="weapon-ranking-list">
+                {weapon.rankingUsage.map((usage) => (
+                  <a
+                    class={`weapon-ranking-chip character-rarity-${usage.characterRarity}`}
+                    href={usage.href}
+                  >
+                    <span class="weapon-ranking-character">
+                      {usage.characterName}
+                    </span>
+                  </a>
+                ))}
+              </div>
+            ) : (
+              <p class="weapon-ranking-empty">{noRankingMentionsLabel}</p>
+            )}
+          </section>
 
           <footer class="weapon-entry-footer">
             <span>{sourceLabel}</span>

@@ -1,7 +1,14 @@
+import fs from 'fs';
 import path from 'path';
-import { readJSONFile } from './content';
+import translationAliases from '../data/translation-aliases.json';
+import {
+  getPublicCharacterName,
+  getPublicCharacterSlug,
+} from './character-slugs';
+import { loadJSON, readJSONFile } from './content';
 import { getLocale, t } from './i18n';
 import { resolveWeaponAssetUrl } from './item-assets';
+import { localizedPath } from './paths';
 import {
   formatWeaponPassive,
   type WeaponPassiveText,
@@ -26,6 +33,27 @@ const weaponTypes = [
 const refinements = [1, 2, 3, 4, 5] as const;
 
 type WeaponType = (typeof weaponTypes)[number];
+
+/**
+ * Character link rendered in the "Ranked on" section of a weapon card.
+ */
+type WeaponRankingUsage = {
+  characterName: string;
+  characterRarity: string;
+  href: string;
+};
+
+/**
+ * Translation aliases relevant to canonicalizing weapon recommendation IDs.
+ */
+type TranslationAliasCategory = Partial<
+  Record<'weapon', Record<string, string>>
+>;
+
+/**
+ * Shared alias lookup used to resolve legacy weapon IDs before indexing usage.
+ */
+const aliases = translationAliases as TranslationAliasCategory;
 
 /**
  * Raw weapon record loaded from a type-specific weapon JSON file.
@@ -88,6 +116,131 @@ function translateWeaponSource(locale: any, source?: string) {
 }
 
 /**
+ * Extracts and canonicalizes the weapon ID from one recommendation item.
+ *
+ * Recommendation files support both legacy string entries and object entries
+ * with a `name` field, so this keeps the ranking index aligned with the
+ * character page loader.
+ *
+ * @param item Raw weapon recommendation item from a `weapons.json` ranking.
+ * @returns Canonical weapon ID, or null when the item is not usable.
+ */
+function normalizeWeaponItemId(item: any) {
+  const weaponId = typeof item === 'string' ? item : item?.name;
+
+  if (typeof weaponId !== 'string' || !weaponId.trim()) {
+    return null;
+  }
+
+  return aliases.weapon?.[weaponId] ?? weaponId;
+}
+
+/**
+ * Builds a reverse index of weapons that appear in character ranking lists.
+ *
+ * Only the ordered `weapons` ranking groups are counted. Conditional options
+ * and weapon IDs that only appear inside note text are intentionally skipped.
+ *
+ * @param locale Locale dictionary bundle used for character display names.
+ * @param lang Active language code used for character links.
+ * @returns Weapon IDs mapped to the characters that rank them.
+ */
+function getWeaponRankingUsage(locale: any, lang: string) {
+  const contentPath = path.resolve('src/content');
+  const usageByWeapon = new Map<string, WeaponRankingUsage[]>();
+
+  if (!fs.existsSync(contentPath)) {
+    return usageByWeapon;
+  }
+
+  fs.readdirSync(contentPath, { withFileTypes: true })
+    .filter((element) => element.isDirectory() && element.name !== 'site')
+    .forEach((element) => {
+      const elementPath = path.join(contentPath, element.name);
+
+      fs.readdirSync(elementPath, { withFileTypes: true })
+        .filter((rarity) => rarity.isDirectory())
+        .forEach((rarity) => {
+          const rarityPath = path.join(elementPath, rarity.name);
+
+          fs.readdirSync(rarityPath, { withFileTypes: true })
+            .filter((character) => character.isDirectory())
+            .forEach((character) => {
+              const characterPath = path.join(rarityPath, character.name);
+              const metadataPath = path.join(characterPath, 'metadata.json');
+
+              if (!fs.existsSync(metadataPath)) {
+                return;
+              }
+
+              const characterName = getPublicCharacterName(locale, {
+                character: character.name,
+                element: element.name,
+              });
+              const characterSlug = getPublicCharacterSlug({
+                character: character.name,
+                element: element.name,
+              });
+              const href = localizedPath(lang, characterSlug);
+
+              fs.readdirSync(characterPath, { withFileTypes: true })
+                .filter((build) => build.isDirectory())
+                .forEach((build) => {
+                  const buildPath = path.join(characterPath, build.name);
+                  const rawWeapons = loadJSON(buildPath, 'weapons.json');
+                  const rankingGroups = Array.isArray(rawWeapons?.weapons)
+                    ? rawWeapons.weapons
+                    : [];
+
+                  if (rankingGroups.length === 0) {
+                    return;
+                  }
+
+                  const usageEntry = {
+                    characterName,
+                    characterRarity: rarity.name,
+                    href,
+                  };
+                  const seenInBuild = new Set<string>();
+
+                  rankingGroups.forEach((group: { items?: any[] }) => {
+                    if (!Array.isArray(group?.items)) {
+                      return;
+                    }
+
+                    group.items.forEach((item) => {
+                      const weaponId = normalizeWeaponItemId(item);
+
+                      if (!weaponId || seenInBuild.has(weaponId)) {
+                        return;
+                      }
+
+                      seenInBuild.add(weaponId);
+
+                      if (!usageByWeapon.has(weaponId)) {
+                        usageByWeapon.set(weaponId, []);
+                      }
+
+                      const usage = usageByWeapon.get(weaponId);
+
+                      if (!usage?.some((item) => item.href === href)) {
+                        usage?.push(usageEntry);
+                      }
+                    });
+                  });
+                });
+            });
+        });
+    });
+
+  usageByWeapon.forEach((usage) => {
+    usage.sort((a, b) => a.characterName.localeCompare(b.characterName));
+  });
+
+  return usageByWeapon;
+}
+
+/**
  * Loads, localizes, and flattens every weapon entry across all weapon types.
  *
  * The returned objects include display labels, table values, filter metadata,
@@ -95,9 +248,14 @@ function translateWeaponSource(locale: any, source?: string) {
  *
  * @param locale Locale dictionary bundle used for names and labels.
  * @param lang Active language code used for passive text formatting.
+ * @param rankingUsageByWeapon Character usage index keyed by weapon ID.
  * @returns Localized weapon card entries.
  */
-function getWeaponEntries(locale: any, lang: string) {
+function getWeaponEntries(
+  locale: any,
+  lang: string,
+  rankingUsageByWeapon: Map<string, WeaponRankingUsage[]>,
+) {
   const weaponDataPath = path.resolve('src/data/weapons');
 
   return weaponTypes.flatMap((type) => {
@@ -118,6 +276,7 @@ function getWeaponEntries(locale: any, lang: string) {
         type,
         typeLabel,
         sourceName: translateWeaponSource(locale, info.source),
+        rankingUsage: rankingUsageByWeapon.get(id) ?? [],
         substat: info.substat ?? '',
         substatName,
         level1BaseAttack: formatWeaponValue(info.level_1?.base_attack),
@@ -143,8 +302,9 @@ function getWeaponEntries(locale: any, lang: string) {
  */
 export function getWeaponBrowserData(lang = 'en') {
   const locale = getLocale(lang);
-  const weapons = getWeaponEntries(locale, lang).sort((a, b) =>
-    a.name.localeCompare(b.name),
+  const rankingUsageByWeapon = getWeaponRankingUsage(locale, lang);
+  const weapons = getWeaponEntries(locale, lang, rankingUsageByWeapon).sort(
+    (a, b) => a.name.localeCompare(b.name),
   );
   const substats = [...new Set(weapons.map((weapon) => weapon.substat))]
     .filter(Boolean)
