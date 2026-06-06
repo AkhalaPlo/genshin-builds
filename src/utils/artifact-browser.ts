@@ -1,6 +1,7 @@
 import path from 'path';
 import { readJSONFile } from './content';
 import { getLocale, t } from './i18n';
+import { resolveArtifactAssetUrl } from './item-assets';
 
 /**
  * Artifact set bonus keys supported by the source data.
@@ -75,6 +76,7 @@ function getArtifactSetEntries(locale: any, lang: string) {
 
     return {
       id,
+      imageUrl: resolveArtifactAssetUrl(id),
       name: t(locale, 'artifact', id, undefined, false),
       rarity: info.rarity,
       bonuses,

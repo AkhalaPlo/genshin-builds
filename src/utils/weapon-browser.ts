@@ -1,6 +1,7 @@
 import path from 'path';
 import { readJSONFile } from './content';
 import { getLocale, t } from './i18n';
+import { resolveWeaponAssetUrl } from './item-assets';
 import {
   formatWeaponPassive,
   type WeaponPassiveText,
@@ -111,6 +112,7 @@ function getWeaponEntries(locale: any, lang: string) {
 
       return {
         id,
+        imageUrl: resolveWeaponAssetUrl(type, id),
         name: t(locale, 'weapon', id, undefined, false),
         rarity: info.rarity,
         type,

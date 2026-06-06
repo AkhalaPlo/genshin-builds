@@ -891,6 +891,29 @@
   overflow-wrap: anywhere;
 }
 
+.credits-legal-card {
+  border-color: color-mix(
+    in srgb,
+    var(--accent) 28%,
+    rgba(255, 255, 255, 0.08)
+  );
+}
+
+.credits-legal-card p {
+  margin: 0;
+}
+
+.credits-legal-card p + p {
+  margin-top: 10px;
+}
+
+.credits-legal-declaration {
+  border-left: 3px solid var(--accent);
+  padding-left: 10px;
+  color: color-mix(in srgb, #fff 84%, var(--accent) 16%);
+  font-weight: 800;
+}
+
 .changelog-list {
   gap: 24px;
 }

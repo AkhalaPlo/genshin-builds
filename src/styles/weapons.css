@@ -111,6 +111,47 @@
   gap: 12px;
 }
 
+.weapon-entry-title {
+  display: flex;
+  min-width: 0;
+  flex: 1 1 auto;
+  align-items: center;
+  gap: 12px;
+}
+
+.weapon-entry-image {
+  display: grid;
+  width: 72px;
+  height: 72px;
+  flex: 0 0 72px;
+  place-items: center;
+  border: 1px solid color-mix(in srgb, var(--weapon-rarity) 42%, transparent);
+  border-radius: 8px;
+  background:
+    radial-gradient(
+      circle at 50% 38%,
+      color-mix(in srgb, var(--weapon-rarity) 20%, transparent),
+      transparent 64%
+    ),
+    rgba(0, 0, 0, 0.16);
+}
+
+.weapon-entry-image img {
+  display: block;
+  width: 88%;
+  height: 88%;
+  object-fit: contain;
+}
+
+.weapon-entry-image.is-empty::before {
+  width: 34px;
+  height: 34px;
+  border: 1px solid color-mix(in srgb, var(--weapon-rarity) 34%, transparent);
+  border-radius: 50%;
+  background: color-mix(in srgb, var(--weapon-rarity) 10%, transparent);
+  content: '';
+}
+
 .weapon-entry-header h2 {
   margin: 0;
   color: color-mix(in srgb, #fff 84%, var(--weapon-rarity) 16%);
@@ -332,6 +373,16 @@
 
   .weapon-entry-header {
     display: grid;
+  }
+
+  .weapon-entry-title {
+    align-items: flex-start;
+  }
+
+  .weapon-entry-image {
+    width: 58px;
+    height: 58px;
+    flex-basis: 58px;
   }
 
   .weapon-entry-rarity {

@@ -103,6 +103,47 @@
   gap: 12px;
 }
 
+.artifact-set-entry-title {
+  display: flex;
+  min-width: 0;
+  flex: 1 1 auto;
+  align-items: center;
+  gap: 12px;
+}
+
+.artifact-set-entry-image {
+  display: grid;
+  width: 72px;
+  height: 72px;
+  flex: 0 0 72px;
+  place-items: center;
+  border: 1px solid color-mix(in srgb, var(--artifact-rarity) 42%, transparent);
+  border-radius: 8px;
+  background:
+    radial-gradient(
+      circle at 50% 38%,
+      color-mix(in srgb, var(--artifact-rarity) 20%, transparent),
+      transparent 64%
+    ),
+    rgba(0, 0, 0, 0.16);
+}
+
+.artifact-set-entry-image img {
+  display: block;
+  width: 88%;
+  height: 88%;
+  object-fit: contain;
+}
+
+.artifact-set-entry-image.is-empty::before {
+  width: 34px;
+  height: 34px;
+  border: 1px solid color-mix(in srgb, var(--artifact-rarity) 34%, transparent);
+  border-radius: 50%;
+  background: color-mix(in srgb, var(--artifact-rarity) 10%, transparent);
+  content: '';
+}
+
 .artifact-set-entry-header h2 {
   margin: 0;
   color: color-mix(in srgb, #fff 84%, var(--artifact-rarity) 16%);
@@ -232,6 +273,16 @@
 
   .artifact-set-entry-header {
     display: grid;
+  }
+
+  .artifact-set-entry-title {
+    align-items: flex-start;
+  }
+
+  .artifact-set-entry-image {
+    width: 58px;
+    height: 58px;
+    flex-basis: 58px;
   }
 
   .artifact-set-entry-rarity {

@@ -13,6 +13,7 @@ type WeaponBrowserData = {
   }[];
   weapons: {
     id: string;
+    imageUrl: string;
     name: string;
     rarity: number;
     type: string;
@@ -127,9 +128,23 @@ const baseAttackLabel = t(locale, 'ui', 'Base ATK', undefined, false);
           data-type={weapon.type}
         >
           <header class="weapon-entry-header">
-            <div>
-              <h2>{weapon.name}</h2>
-              <p>{weapon.typeLabel}</p>
+            <div class="weapon-entry-title">
+              <div
+                class={`weapon-entry-image${weapon.imageUrl ? '' : ' is-empty'}`}
+              >
+                {weapon.imageUrl && (
+                  <img
+                    src={weapon.imageUrl}
+                    alt=""
+                    loading="lazy"
+                    decoding="async"
+                  />
+                )}
+              </div>
+              <div>
+                <h2>{weapon.name}</h2>
+                <p>{weapon.typeLabel}</p>
+              </div>
             </div>
             <span class="weapon-entry-rarity">
               {weapon.rarity}

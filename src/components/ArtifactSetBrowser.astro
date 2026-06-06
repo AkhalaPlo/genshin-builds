@@ -4,6 +4,7 @@ import { t } from '../utils/i18n';
 type ArtifactSetBrowserData = {
   artifactSets: {
     id: string;
+    imageUrl: string;
     name: string;
     rarity: number;
     bonuses: {
@@ -99,9 +100,23 @@ const artifactSetLabel = `${t(locale, 'ui', 'Artifacts')} ${t(locale, 'ui', 'Set
           data-bonuses={artifactSet.bonusTypes.join(' ')}
         >
           <header class="artifact-set-entry-header">
-            <div>
-              <h2>{artifactSet.name}</h2>
-              <p>{artifactSetLabel}</p>
+            <div class="artifact-set-entry-title">
+              <div
+                class={`artifact-set-entry-image${artifactSet.imageUrl ? '' : ' is-empty'}`}
+              >
+                {artifactSet.imageUrl && (
+                  <img
+                    src={artifactSet.imageUrl}
+                    alt=""
+                    loading="lazy"
+                    decoding="async"
+                  />
+                )}
+              </div>
+              <div>
+                <h2>{artifactSet.name}</h2>
+                <p>{artifactSetLabel}</p>
+              </div>
             </div>
             <span class="artifact-set-entry-rarity">
               {artifactSet.rarity}
