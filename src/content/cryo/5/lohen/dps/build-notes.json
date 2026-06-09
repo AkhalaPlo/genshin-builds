@@ -1,0 +1,21 @@
+{
+    "name": {
+        "en": "DPS",
+        "fr": "DPS"
+    },
+    "best": true,
+    "global": {
+        "link": "https://docs.google.com/spreadsheets/u/0/d/1dda_6MclkZ6hrQEvQW8s4HT-aeUlaEQiCxI5sGjLbiQ/edit",
+        "author": "Quinslay"
+    },
+    "notes": [
+        {
+            "en": "[[character:lohen]] is a [[element:cryo]] DPS who deals the majority of his damage though [[ability:na]]s and [[ability:ca]]s, but weaves [[ability:skill]] and [[ability:burst]] damage throughout. [[character:lohen]]'s damage is further increased when Off-Field DPS units deal large amounts of damage.",
+            "fr": "[[character:lohen]] est un DPS [[element:cryo]] qui inflige la majorité de ses dégâts avec ses [[ability:na]]s et [[ability:ca]]s, tout en intégrant des dégâts de [[ability:skill]] et de [[ability:burst]] tout au long de sa rotation. Les dégâts de [[character:lohen]] augmentent davantage lorsque des personnages DPS off-field infligent de grandes quantités de dégâts."
+        },
+        {
+            "en": "Rankings assume [[character:lohen]] is **not** run in a team where he himself triggers [[element:melt]] reactions.",
+            "fr": "Les classements supposent que [[character:lohen]] n'est **pas** joué dans une équipe où il déclenche lui-même des réactions de [[element:melt]]."
+        }
+    ]
+}

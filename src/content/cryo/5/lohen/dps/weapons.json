@@ -1,0 +1,96 @@
+{
+    "weapons": [
+        {
+            "items": [
+                "disaster-and-remorse"
+            ]
+        },
+        {
+            "items": [
+                "fractured-halo",
+                "primordial-jade-winged-spear",
+                "staff-of-homa"
+            ]
+        },
+        {
+            "items": [
+                "symphonist-of-scents",
+                "crimson-moons-semblance",
+                "lumidouce-elegy"
+            ]
+        },
+        {
+            "items": [
+                "calamity-queller"
+            ]
+        },
+        {
+            "items": [
+                "bloodsoaked-ruins",
+                "staff-of-the-scarlet-sands"
+            ]
+        },
+        {
+            "items": [
+                "skyward-spine"
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "deathmatch",
+                    "note": {
+                        "en": "At **[R5]**, this weapon ranks similarly to **[[weapon:calamity-queller]]**.",
+                        "fr": "Une fois **[R5]**, cette arme se classe de manière similaire à **[[weapon:calamity-queller]]**."
+                    }
+                },
+                {
+                    "name": "vortex-vanquisher",
+                    "note": {
+                        "en": "If [[character:lohen]] is **consistently shielded**, this weapon ranks similarly to **[[weapon:staff-of-the-scarlet-sands]]**.",
+                        "fr": "Si [[character:lohen]] est **constamment sous bouclier**, cette arme se rapproche de **[[weapon:staff-of-the-scarlet-sands]]**."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                "sacrificers-staff",
+                "blackcliff-pole"
+            ]
+        },
+        {
+            "items": [
+                "engulfing-lightning"
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "favonius-lance",
+                    "note": {
+                        "en": "This weapon's performance heavily depends on **how much value the rest of the team gains** from having lower [[stat:er]] requirements.",
+                        "fr": "Les performances de cette arme dépendent beaucoup de **l'intérêt que le reste de l'équipe tire** de besoins en [[stat:er]] plus bas."
+                    }
+                },
+                {
+                    "name": "white-tassel",
+                    "refinement": 5
+                },
+                "prospectors-shovel",
+                {
+                    "name": "tamayuratei-no-ohanashi",
+                    "refinement": 5
+                },
+                {
+                    "name": "crescent-pike",
+                    "refinement": 5
+                },
+                {
+                    "name": "prototype-starglitter",
+                    "refinement": 5
+                }
+            ]
+        }
+    ]
+}
