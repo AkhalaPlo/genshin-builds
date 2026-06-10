@@ -57,7 +57,14 @@
         },
         {
             "items": [
-                "sacrificers-staff",
+                {
+                    "name": "sacrificers-staff",
+                    "note": {
+                        "en": "At **[R5]**, this weapon ranks similarly to **[[weapon:deathmatch]]**.",
+                        "fr": "Une fois **[R5]**, cette arme se classe de manière similaire à **[[weapon:deathmatch]]**.",
+                        "it": "A **[R5]**, quest'arma ha prestazioni simili a **[[weapon:deathmatch]]**."
+                    }
+                },
                 "blackcliff-pole"
             ]
         },
@@ -67,10 +74,12 @@
             ]
         },
         {
-            "items": [{
-                "name": "missive-windspear",
-                "refinement": 5
-            }]
+            "items": [
+                {
+                    "name": "missive-windspear",
+                    "refinement": 5
+                }
+            ]
         },
         {
             "items": [

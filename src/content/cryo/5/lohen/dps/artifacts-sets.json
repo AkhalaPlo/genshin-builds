@@ -20,8 +20,8 @@
                             "name": "blizzard-strayer",
                             "pieces": 4,
                             "note": {
-                                "en": "This set can rival or outdo **[[set:a-day-carved-from-rising-winds]]** if [[character:lohen]] is fighting enemies that can be consistently frozen.",
-                                "fr": "Ce set peut rivaliser avec **[[set:a-day-carved-from-rising-winds]]**, voire le dépasser, si [[character:lohen]] affronte des ennemis pouvant être gelés de manière constante.",
+                                "en": "This set can rival or outdo **[[set:a-day-carved-from-rising-winds]]** if [[character:lohen]] is fighting enemies that can be consistently frozen.  Do not use this set in teams that do not have consistent [[element:cryo]] aura on enemies.",
+                                "fr": "Ce set peut rivaliser avec **[[set:a-day-carved-from-rising-winds]]**, voire le dépasser, si [[character:lohen]] affronte des ennemis pouvant être gelés de manière constante. N'utilisez pas ce set dans les équipes qui n'ont pas une aura [[element:cryo]] permanente sur les ennemis.",
                                 "it": "Questo set può eguagliare o superare **[[set:a-day-carved-from-rising-winds]]** quando [[character:lohen]] combatte nemici che possono essere **Congelati** in maniera costante"
                             }
                         }
