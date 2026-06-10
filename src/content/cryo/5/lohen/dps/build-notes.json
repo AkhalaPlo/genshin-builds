@@ -16,6 +16,10 @@
             "it": "[[character:lohen]] è un DPS [[element:cryo]] che infligge la maggior parte dei suoi danni tramite [[ability:na|Attacchi Normali]] e [[ability:ca|Caricati]], integrando però anche danni da [[ability:skill]] e da [[ability:burst]]. I **danni inflitti da [[character:lohen]] aumentano ulteriormente quando sono presenti DPS fuori campo che infliggono danni ingenti**."
         },
         {
+            "en": "**General Combo**: {rot:N1 > CA > N1 > CA > E > N1 > CA > N1 > CA > repeat x3}",
+            "it": "**Combo generica**: {rot:2N1C E 2N1C, ripeti 3 volte}"
+        },
+        {
             "en": "Rankings assume [[character:lohen]] is **not** run in a team where he himself triggers [[element:melt]] reactions.",
             "fr": "Les classements supposent que [[character:lohen]] n'est **pas** joué dans une équipe où il déclenche lui-même des réactions de [[element:melt]].",
             "it": "Le classifiche partono dal presupposto che [[character:lohen]] **non** sia giocato in un team dove lui stesso provoca reazioni di [[element:melt]]."
