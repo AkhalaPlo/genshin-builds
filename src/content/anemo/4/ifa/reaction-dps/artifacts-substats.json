@@ -3,8 +3,9 @@
         {
             "name": "er",
             "note": {
-                "en": "Prioritize until requirements are met",
-                "fr": "Priorisez jusqu'à ce que les besoins soient atteints"
+                "en": "Prioritize until requirements are met.",
+                "fr": "Priorisez jusqu'à ce que les besoins soient atteints.",
+                "it": "Dare la priorità finché non vengono soddisfatti i requisiti."
             }
         },
         "em",
