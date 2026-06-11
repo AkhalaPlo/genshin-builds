@@ -13,8 +13,9 @@
             {
                 "name": "cr",
                 "note": {
-                    "en": "Only if using **[[weapon:favonius-warbow]]**",
-                    "fr": "Seulement avec **[[weapon:favonius-warbow]]**"
+                    "en": "Only if using **[[weapon:favonius-warbow]]**.",
+                    "fr": "Seulement avec **[[weapon:favonius-warbow]]**.",
+                    "it": "Solo se utilizzi **[[weapon:favonius-warbow]]**."
                 }
             }
         ]

@@ -1,29 +1,35 @@
 {
     "name": {
         "en": "Off-Field Reaction DPS & Heal Support",
-        "fr": "DPS Réaction off-field & Support Soins"
+        "fr": "DPS Réaction off-field & Support Soins",
+        "it": "DPS da Reazione Fuori Campo & Supporto Cure"
     },
     "best": true,
     "notes": [
         {
-            "en": "[[character:jahoda]] offers continuous healing for the active character with her [[ability:burst]], and Off-Field Elemental Application with her infused [[ability:skill]] and [[ability:burst]]. While Ascendant Gleam is active, her [[ability:skill]] can steal enemy auras and use it for herself.",
-            "fr": "[[character:jahoda]] offre un soin continu au personnage actif avec son [[ability:burst]], ainsi qu'une application élémentaire off-field avec son [[ability:skill]] et son [[ability:burst]] infusés. Tant que Lueur ascendante est active, son [[ability:skill]] peut voler les auras ennemies et les utiliser pour elle-même."
+            "en": "[[character:jahoda]] offers continuous healing for the active character with her [[ability:burst]], and Off-Field Elemental Application with her infused [[ability:skill]] and [[ability:burst]]. While Ascendant Gleam is active, her [[ability:skill]] can steal enemy auras and use them for herself.",
+            "fr": "[[character:jahoda]] offre un soin continu au personnage actif avec son [[ability:burst]], ainsi qu'une application élémentaire off-field avec son [[ability:skill]] et son [[ability:burst]] infusés. Tant que Lueur ascendante est active, son [[ability:skill]] peut voler les auras ennemies et les utiliser pour elle-même.",
+            "it": "[[character:jahoda]] offre cure continue al personaggio attivo tramite il suo [[ability:burst]], ed applicazione elementale da fuori campo tramite l'infusione dell'[[ability:skill]] e del [[ability:burst]]. Mentre Presagio lunare: Barlume ascendente è attivo, la sua [[ability:skill]] può assorbire le aure nemiche."
         },
         {
             "en": "[[character:jahoda]] heavily favors having Moonsign: Ascendant Gleam.",
-            "fr": "[[character:jahoda]] préfère fortement avoir le Signe lunaire : Lueur ascendante."
+            "fr": "[[character:jahoda]] préfère fortement avoir le Signe lunaire : Lueur ascendante.",
+            "it": "[[character:jahoda]] predilige fortemente che Presagio lunare: Barlume ascendente sia attivo."
         },
         {
             "en": "Her [[ability:skill]] and [[ability:burst]] Infusion priority is [[element:pyro]]>[[element:hydro]]>[[element:electro]]>[[element:cryo]].",
-            "fr": "La priorité d'infusion de son [[ability:skill]] et de son [[ability:burst]] est [[element:pyro]] > [[element:hydro]] > [[element:electro]] > [[element:cryo]]."
+            "fr": "La priorité d'infusion de son [[ability:skill]] et de son [[ability:burst]] est [[element:pyro]] > [[element:hydro]] > [[element:electro]] > [[element:cryo]].",
+            "it": "La sua priorità d'infusione è [[element:pyro]]>[[element:hydro]]>[[element:electro]]>[[element:cryo]]."
         },
         {
             "en": "If the active character has 70% HP or more, [[character:jahoda]]'s [[ability:burst]] will also heal the character with the lowest HP.",
-            "fr": "Si le personnage actif a 70 % de PV ou plus, l'[[ability:burst]] de [[character:jahoda]] soignera aussi le personnage avec le moins de PV."
+            "fr": "Si le personnage actif a 70 % de PV ou plus, l'[[ability:burst]] de [[character:jahoda]] soignera aussi le personnage avec le moins de PV.",
+            "it": "Se il personaggio attivo ha 70% o più PS, il [[ability:burst]] di [[character:jahoda]] curerà anche il personaggio con il minor numero di PS."
         },
         {
             "en": "[[character:jahoda]]'s [C6] will only take effect if the Purr-Loined Treasure Flask is full.",
-            "fr": "La [C6] de [[character:jahoda]] ne prendra effet que si le Flacon au trésor chapardé est plein."
+            "fr": "La [C6] de [[character:jahoda]] ne prendra effet que si le Flacon au trésor chapardé est plein.",
+            "it": "La **[C6]** di Jahoda avrà effetto solo se la Fiaschetta preziosa Purr purr è piena."
         }
     ]
 }
