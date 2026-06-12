@@ -6,7 +6,12 @@
                     "items": [
                         {
                             "name": "viridescent-venerer",
-                            "pieces": 4
+                            "pieces": 4,
+                            "note": {
+                                "en": "Interchangeable with **[[set:celestial-gift]] (4)** depending on if there are members in the team that are already holding one or the other set.",
+                                "fr": "Interchangeable avec **[[set:celestial-gift]] (4)** selon les membres de l'équipe qui portent déjà l'un ou l'autre set.",
+                                "it": "Questo set è intercambiabile con **[[set:celestial-gift]] (4)** a seconda della presenza nel team di personaggi che possono utilizzare l'altro set."
+                            }
                         }
                     ]
                 },
@@ -16,8 +21,9 @@
                             "name": "celestial-gift",
                             "pieces": 4,
                             "note": {
-                                "en": "Interchangeable with **[[set:vv]]** (4) depending on if there are members in the team that are already holding one or the other set.",
-                                "fr": "Interchangeable avec **[[set:vv]]** (4) selon les membres de l'équipe qui portent déjà l'un ou l'autre set."
+                                "en": "Interchangeable with **[[set:vv]] (4)** depending on if there are members in the team that are already holding one or the other set.",
+                                "fr": "Interchangeable avec **[[set:vv]] (4)** selon les membres de l'équipe qui portent déjà l'un ou l'autre set.",
+                                "it": "Questo set è intercambiabile con **[[set:vv]] (4)** a seconda della presenza nel team di personaggi che possono utilizzare l'altro set."
                             }
                         }
                     ]
