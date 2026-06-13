@@ -64,9 +64,9 @@
                 {
                     "name": "skyward-spine",
                     "note": {
-                        "en": "This weapon **may perform equal to or better than **[[weapon:white-tassel]] [R5]** if the ATK Speed it gives is utilized to hit more of [[character:cyno]]'s [[ability:na]]s.",
-                        "fr": "Cette arme peut être **équivalente ou meilleure que **[[weapon:white-tassel]] [R5]** si la vitesse d'attaque qu'elle donne est utilisée pour performer plus d'[[ability:na|attaques normales]] de [[character:cyno]].",
-                        "it": "Quest'arma può avere prestazioni pari a o migliori di **[[weapon:white-tassel]] [R5]** se la VEL d'ATT fornita è utilizzata per effettuare più [[ability:na|Attacchi Normali]]."
+                        "en": "This weapon may perform equal to or better than **[[weapon:white-tassel]] [R5]** if the ATK Speed it gives is utilized to hit more of [[character:cyno]]'s [[ability:na]]s. In teams where energy is scarce, such as teams without another Favonius weapon or an [[element:electro]] user, this weapon can be desired for the [[stat:er]] it gives.",
+                        "fr": "Cette arme peut être équivalente ou meilleure que **[[weapon:white-tassel]] [R5]** si la vitesse d'attaque qu'elle donne est utilisée pour performer plus d'[[ability:na|attaques normales]] de [[character:cyno]]. Dans les équipes où l'énergie est rare, comme les équipes sans autre arme de Favonius ou sans personnage [[element:electro]], cette arme peut être désirable pour la [[stat:er]] qu'elle donne.",
+                        "it": "Quest'arma può avere prestazioni pari a o migliori di **[[weapon:white-tassel]] [R5]** se la VEL d'ATT fornita è utilizzata per effettuare più [[ability:na|Attacchi Normali]]. In team con scarsa generazione di energia, ad esempio team senza armi Favonius o un secondo personaggio [[element:electro]], quest'arma guadagna valore."
                     }
                 }   
             ]
