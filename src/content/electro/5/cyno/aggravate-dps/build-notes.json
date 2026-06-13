@@ -1,8 +1,10 @@
 {
     "name": {
         "en": "[[element:aggravate]] DPS",
-        "fr": "DPS [[element:aggravate]]"
+        "fr": "DPS [[element:aggravate]]",
+        "it": "DPS [[element:aggravate]]"
     },
+    "best": true,
     "notes": [
         {
             "en": "**[In-depth guide](https://docs.google.com/spreadsheets/d/1YMPD8Cv0pMOiGENcAG5EzHJt4uQxRxJG0q6LLgv0FiA/edit?gid=0#gid=0) from Cyno Mains**",
