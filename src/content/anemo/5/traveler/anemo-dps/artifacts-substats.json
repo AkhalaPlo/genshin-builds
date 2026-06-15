@@ -7,7 +7,8 @@
             "name": "cr/cd",
             "note": {
                 "en": "Will have higher priority for a full Crit build.",
-                "fr": "Sera plus prioritaire pour un build full Crit."
+                "fr": "Sera plus prioritaire pour un build full Crit.",
+                "it": "Avranno priorità più alta in una build full CRIT."
             }
         }
     ]
