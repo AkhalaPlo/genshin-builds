@@ -21,7 +21,8 @@
                             "pieces": 4,
                             "note": {
                                 "en": "Requires [[character:venti]] to perform a quick [[ability:ca]] at the beginning of his combo.",
-                                "fr": "Nécessite que [[character:venti]] effectue une [[ability:ca]] rapide au début de son combo."
+                                "fr": "Nécessite que [[character:venti]] effectue une [[ability:ca]] rapide au début de son combo.",
+                                "it": "Se utilizzi questo set, effettua un [[ability:ca]] veloce all'inizio della combo di [[character:venti]]."
                             }
                         }
                     ]
@@ -37,7 +38,8 @@
                             "pieces": 4,
                             "note": {
                                 "en": "Loses value if you have high ping (>100).",
-                                "fr": "Perd de la valeur si vous avez un ping élevé (>100)."
+                                "fr": "Perd de la valeur si vous avez un ping élevé (>100).",
+                                "it": "Perde di valore se il tuo ping è alto (>100)."
                             }
                         }
                     ]
@@ -53,7 +55,8 @@
                             "pieces": 4,
                             "note": {
                                 "en": "Gains value if there are [[element:pyro]]/[[element:hydro]]/[[element:electro]]/[[element:cryo]] units that deal significant damage on the team.",
-                                "fr": "Gagne de la valeur s'il y a dans l'équipe des personnages [[element:pyro]]/[[element:hydro]]/[[element:electro]]/[[element:cryo]] qui infligent des dégâts significatifs."
+                                "fr": "Gagne de la valeur s'il y a dans l'équipe des personnages [[element:pyro]]/[[element:hydro]]/[[element:electro]]/[[element:cryo]] qui infligent des dégâts significatifs.",
+                                "it": "Guadagna valore se nel team ci sono personaggi [[element:pyro]]/[[element:hydro]]/[[element:electro]]/[[element:cryo]] che infliggono danni rilevanti."
                             }
                         }
                     ]
