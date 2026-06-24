@@ -43,18 +43,10 @@ const substatRows = artifacts.substats.substats_priority.map(
     hasAlternatives: 'items' in priority,
   }),
 );
-
-const statsLabel = `${t(
-  locale,
-  'ui',
-  'Main Stats',
-  undefined,
-  false,
-)} / ${t(locale, 'ui', 'Substats', undefined, false)}`;
 ---
 
 <div class="card recommendation-card artifact-stats-card">
-  <h2>{statsLabel}</h2>
+  <h2>{t(locale, 'ui', 'Artifact Stats', undefined, false)}</h2>
 
   <div class="recommendation-card-body">
     <div class="section recommendation-section">
