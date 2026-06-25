@@ -13,6 +13,11 @@ type ArtifactSetBrowserData = {
       html: string;
     }[];
     bonusTypes: string[];
+    fourPieceUsage: {
+      characterName: string;
+      characterRarity: string;
+      href: string;
+    }[];
   }[];
   bonusTypes: {
     id: string;
@@ -40,6 +45,20 @@ const rarityLabel = t(locale, 'ui', 'Rarity');
 const searchLabel = t(locale, 'ui', 'Search');
 const bonusLabel = t(locale, 'ui', 'Set Bonus', undefined, false);
 const artifactSetLabel = `${t(locale, 'ui', 'Artifacts')} ${t(locale, 'ui', 'Sets')}`;
+const mentionedOnLabel = t(
+  locale,
+  'ui',
+  'Artifact set mentioned on',
+  undefined,
+  false,
+);
+const noMentionsLabel = t(
+  locale,
+  'ui',
+  'No artifact set mentions',
+  undefined,
+  false,
+);
 ---
 
 <section class="artifact-set-browser" data-artifact-browser>
@@ -134,6 +153,29 @@ const artifactSetLabel = `${t(locale, 'ui', 'Artifacts')} ${t(locale, 'ui', 'Set
               </section>
             ))}
           </div>
+
+          <section
+            class="artifact-set-usage"
+            aria-label={`${artifactSet.name} ${mentionedOnLabel}`}
+          >
+            <h3>{mentionedOnLabel}</h3>
+            {artifactSet.fourPieceUsage.length > 0 ? (
+              <div class="artifact-set-usage-list">
+                {artifactSet.fourPieceUsage.map((usage) => (
+                  <a
+                    class={`artifact-set-usage-chip character-rarity-${usage.characterRarity}`}
+                    href={usage.href}
+                  >
+                    <span class="artifact-set-usage-character">
+                      {usage.characterName}
+                    </span>
+                  </a>
+                ))}
+              </div>
+            ) : (
+              <p class="artifact-set-usage-empty">{noMentionsLabel}</p>
+            )}
+          </section>
         </article>
       ))
     }

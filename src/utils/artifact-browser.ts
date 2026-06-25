@@ -1,7 +1,14 @@
+import fs from 'fs';
 import path from 'path';
-import { readJSONFile } from './content';
+import translationAliases from '../data/translation-aliases.json';
+import {
+  getPublicCharacterName,
+  getPublicCharacterSlug,
+} from './character-slugs';
+import { loadJSON, readJSONFile } from './content';
 import { getLocale, t } from './i18n';
 import { resolveArtifactAssetUrl } from './item-assets';
+import { localizedPath } from './paths';
 
 /**
  * Artifact set bonus keys supported by the source data.
@@ -12,6 +19,24 @@ import { resolveArtifactAssetUrl } from './item-assets';
 const bonusKeys = ['1p', '2p', '4p'] as const;
 
 type BonusKey = (typeof bonusKeys)[number];
+
+/**
+ * Character link rendered in the 4-piece artifact set usage section.
+ */
+type ArtifactSetUsage = {
+  characterName: string;
+  characterRarity: string;
+  href: string;
+};
+
+/**
+ * Translation aliases relevant to canonicalizing artifact set recommendation IDs.
+ */
+type TranslationAliasCategory = Partial<
+  Record<'set', Record<string, string>>
+>;
+
+const aliases = translationAliases as TranslationAliasCategory;
 
 /**
  * Localized bonus text as stored in `artifact_sets.json`.
@@ -33,6 +58,168 @@ type ArtifactSetData = {
   '2p'?: LocalizedArtifactEffect;
   '4p'?: LocalizedArtifactEffect;
 };
+
+/**
+ * Extracts a canonical set ID from one artifact recommendation item.
+ *
+ * @param item Raw artifact set item from `artifacts-sets.json`.
+ * @returns Canonical artifact set ID, or null when the item is unusable.
+ */
+function normalizeArtifactSetItemId(item: any) {
+  const setId = item?.name;
+
+  if (typeof setId !== 'string' || !setId.trim()) {
+    return null;
+  }
+
+  return aliases.set?.[setId] ?? setId;
+}
+
+/**
+ * Returns every direct item list attached to one artifact recommendation group.
+ *
+ * Groups can hold a plain `items` list, nested `choices`, or both.
+ *
+ * @param group Raw artifact recommendation group.
+ * @returns Flat list of raw artifact set items.
+ */
+function getArtifactSetItems(group: any) {
+  const items = Array.isArray(group?.items) ? group.items : [];
+  const choiceItems = Array.isArray(group?.choices)
+    ? group.choices.flatMap((choice: any) =>
+        Array.isArray(choice?.items) ? choice.items : [],
+      )
+    : [];
+
+  return [...items, ...choiceItems];
+}
+
+/**
+ * Builds a reverse index of artifact sets mentioned as 4-piece options.
+ *
+ * Only builds marked `best: true` are scanned. Both ranked set rows and
+ * conditional set groups are included because the artifact page labels this as
+ * a 4-piece mention, not a ranking position.
+ *
+ * @param locale Locale dictionary bundle used for character display names.
+ * @param lang Active language code used for character links.
+ * @returns Artifact set IDs mapped to characters that mention them as 4-piece.
+ */
+function getArtifactSetFourPieceUsage(locale: any, lang: string) {
+  const contentPath = path.resolve('src/content');
+  const usageBySet = new Map<string, ArtifactSetUsage[]>();
+
+  if (!fs.existsSync(contentPath)) {
+    return usageBySet;
+  }
+
+  fs.readdirSync(contentPath, { withFileTypes: true })
+    .filter((element) => element.isDirectory() && element.name !== 'site')
+    .forEach((element) => {
+      const elementPath = path.join(contentPath, element.name);
+
+      fs.readdirSync(elementPath, { withFileTypes: true })
+        .filter((rarity) => rarity.isDirectory())
+        .forEach((rarity) => {
+          const rarityPath = path.join(elementPath, rarity.name);
+
+          fs.readdirSync(rarityPath, { withFileTypes: true })
+            .filter((character) => character.isDirectory())
+            .forEach((character) => {
+              const characterPath = path.join(rarityPath, character.name);
+              const metadataPath = path.join(characterPath, 'metadata.json');
+
+              if (!fs.existsSync(metadataPath)) {
+                return;
+              }
+
+              const characterName = getPublicCharacterName(locale, {
+                character: character.name,
+                element: element.name,
+              });
+              const characterSlug = getPublicCharacterSlug({
+                character: character.name,
+                element: element.name,
+              });
+              const href = localizedPath(lang, characterSlug);
+
+              fs.readdirSync(characterPath, { withFileTypes: true })
+                .filter((build) => build.isDirectory())
+                .forEach((build) => {
+                  const buildPath = path.join(characterPath, build.name);
+                  const buildNoteData = loadJSON(buildPath, 'build-notes.json');
+
+                  if (buildNoteData?.best !== true) {
+                    return;
+                  }
+
+                  const rawArtifactSets = loadJSON(
+                    buildPath,
+                    'artifacts-sets.json',
+                  );
+                  const rankedGroups = Array.isArray(
+                    rawArtifactSets?.artifact_sets,
+                  )
+                    ? rawArtifactSets.artifact_sets.flatMap(
+                        (rank: any) => rank.groups ?? [],
+                      )
+                    : [];
+                  const conditionalGroups = Array.isArray(
+                    rawArtifactSets?.conditional,
+                  )
+                    ? rawArtifactSets.conditional.flatMap(
+                        (entry: any) => entry.groups ?? [entry],
+                      )
+                    : [];
+                  const groups = [...rankedGroups, ...conditionalGroups];
+
+                  if (groups.length === 0) {
+                    return;
+                  }
+
+                  const usageEntry = {
+                    characterName,
+                    characterRarity: rarity.name,
+                    href,
+                  };
+                  const seenInBuild = new Set<string>();
+
+                  groups.forEach((group: any) => {
+                    getArtifactSetItems(group).forEach((item: any) => {
+                      if (Number(item?.pieces) !== 4) {
+                        return;
+                      }
+
+                      const setId = normalizeArtifactSetItemId(item);
+
+                      if (!setId || seenInBuild.has(setId)) {
+                        return;
+                      }
+
+                      seenInBuild.add(setId);
+
+                      if (!usageBySet.has(setId)) {
+                        usageBySet.set(setId, []);
+                      }
+
+                      const usage = usageBySet.get(setId);
+
+                      if (!usage?.some((item) => item.href === href)) {
+                        usage?.push(usageEntry);
+                      }
+                    });
+                  });
+                });
+            });
+        });
+    });
+
+  usageBySet.forEach((usage) => {
+    usage.sort((a, b) => a.characterName.localeCompare(b.characterName));
+  });
+
+  return usageBySet;
+}
 
 /**
  * Returns a localized artifact bonus description with English fallback.
@@ -58,7 +245,11 @@ function getLocalizedEffect(
  * @param lang Active language code used for bonus descriptions.
  * @returns Localized artifact set card entries.
  */
-function getArtifactSetEntries(locale: any, lang: string) {
+function getArtifactSetEntries(
+  locale: any,
+  lang: string,
+  fourPieceUsageBySet: Map<string, ArtifactSetUsage[]>,
+) {
   const filePath = path.resolve('src/data/artifacts/artifact_sets.json');
   const artifactData = readJSONFile(filePath) as Record<
     string,
@@ -81,6 +272,7 @@ function getArtifactSetEntries(locale: any, lang: string) {
       rarity: info.rarity,
       bonuses,
       bonusTypes: bonuses.map((bonus) => bonus.id),
+      fourPieceUsage: fourPieceUsageBySet.get(id) ?? [],
     };
   });
 }
@@ -93,9 +285,12 @@ function getArtifactSetEntries(locale: any, lang: string) {
  */
 export function getArtifactSetBrowserData(lang = 'en') {
   const locale = getLocale(lang);
-  const artifactSets = getArtifactSetEntries(locale, lang).sort((a, b) =>
-    a.name.localeCompare(b.name),
-  );
+  const fourPieceUsageBySet = getArtifactSetFourPieceUsage(locale, lang);
+  const artifactSets = getArtifactSetEntries(
+    locale,
+    lang,
+    fourPieceUsageBySet,
+  ).sort((a, b) => a.name.localeCompare(b.name));
   const rarities = [
     ...new Set(artifactSets.map((artifactSet) => artifactSet.rarity)),
   ].sort((a, b) => a - b);

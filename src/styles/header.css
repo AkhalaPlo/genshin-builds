@@ -3,8 +3,7 @@
   top: 0;
   z-index: 100;
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-  background: rgba(10, 10, 10, 0.7);
-  backdrop-filter: blur(10px);
+  background: rgba(10, 10, 10, 0.92);
 }
 
 .header-content {
@@ -404,5 +403,25 @@
     border-right: 0;
     background: color-mix(in srgb, rgb(10, 10, 10) 70%, var(--bg));
     backdrop-filter: none;
+  }
+}
+
+@media (max-height: 760px) and (min-width: 769px) {
+  .header-content {
+    height: 52px;
+  }
+
+  .logo-link h1 {
+    font-size: 1.2rem;
+  }
+
+  .menu-toggle {
+    width: 36px;
+    height: 36px;
+  }
+
+  .menu-backdrop,
+  .side-menu {
+    height: calc(100vh - 52px);
   }
 }
