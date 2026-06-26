@@ -10,9 +10,7 @@
         {
             "name": "cr",
             "note": {
-                "en": "Desired substat when using [[weapon:favonius-lance]].",
-                "fr": "Souhaité lors de l'utilisation de [[weapon:favonius-lance]].",
-                 "it": "Substat desiderabile se utilizzi [[weapon:favonius-lance]]."
+                "en": "[[note:cr-favo]]."
             }
         },
         "hp"
