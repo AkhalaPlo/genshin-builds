@@ -10,9 +10,7 @@
                 {
                     "name": "favonius-sword",
                     "note": {
-                        "en": "With this weapon, try to aim for some **[[stat:cr]]** stats to trigger the weapon passive reliably.",
-                        "fr": "Avec cette arme, essayez d'obtenir un peu de **[[stat:cr]]** pour déclencher le passif de l'arme de façon fiable.",
-                        "it": "Assicurati di ottenere **[[stat:cr]]** sufficiente ad attivare la passiva."
+                        "en": "[[note:favo]]"
                     }
                 }
             ]

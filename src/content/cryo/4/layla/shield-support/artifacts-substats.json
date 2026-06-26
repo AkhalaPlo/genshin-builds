@@ -11,8 +11,7 @@
         {
             "name": "cr",
             "note": {
-                "en": "Only recommended if using **[[weapon:favonius-sword]]**",
-                "fr": "Uniquement recommandé avec **[[weapon:favonius-sword]]**."
+                "en": "[[note:cr-favo]]."
             }
         },
         "hp"

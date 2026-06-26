@@ -6,9 +6,7 @@
                 {
                     "name": "favonius-codex",
                     "note": {
-                        "en": "Try to build some [[stat:cr]] in substats if using this weapon.",
-                        "fr": "Essayez d'avoir du [[stat:cr]] en sous-stats si vous utilisez cette arme.",
-                        "it": "Se utilizzi quest'arma, cerca di accumulare del [[stat:cr]] per attivarne la passiva."
+                        "en": "[[note:favo]]."
                     }
                 }
             ]
