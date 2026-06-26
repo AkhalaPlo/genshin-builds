@@ -20,5 +20,11 @@
             "cd",
             "hp%"
         ]
+    },
+      "notes": [
+    {
+        "en": "While a [[stat:hp%]]/[[stat:cryo-dmg]]/CRIT build is ideal for personal damage, additional [[stat:hp%]] Main Stats can be used to increase shield durability without a huge drop in personal damage as [[character:layla]]'s damage is partially [[stat:hp]] scaling.",
+        "fr": "Si une configuration axée sur [[stat:hp%]]/[[stat:cryo-dmg]]/CRIT est idéale pour optimiser les dégâts personnels, il est possible d'ajouter des statistiques principales [[stat:hp%]] supplémentaires afin d'augmenter la résistance du bouclier sans pour autant réduire de manière significative les dégâts personnels, car les dégâts des [[character:layla]] dépendent en partie des [[stat:hp]].",
+        "it": "Sebbene una build [[stat:hp%]]/[[stat:cryo-dmg]]/CRIT sia ideale per i danni personali, è possibile utilizzare Statistiche Principali [[stat:hp%]] aggiuntive per aumentare la resistenza dello scudo senza un calo significativo dei danni personali, poiché i danni di [[character:layla]] sono parzialmente scalati in base ai [[stat:hp]]."
     }
 }
