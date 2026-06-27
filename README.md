@@ -150,8 +150,8 @@ docs/root-readme
 > - You did not edit generated files in `dist`.
 > - Any localized content has an English fallback.
 > - GitHub will automatically check that the site builds when you open or update the PR.
+> - Vercel will generate a preview, allowing you to browse the website with your changes
 > - If the build check fails, ask for help before the PR is merged.
-> - If you are unsure about JSON formatting, add the `Needs Format Check` label so someone can check it.
 
 #### How to:
 
@@ -164,12 +164,6 @@ docs/root-readme
 5. Click `Create pull request`.
 
 **Goal:** Ask for your changes to be added to the site.
-
-#### Pull Request Labels
-
-Use this label when you need help before the PR can be merged:
-
-- `Needs Format Check`: use this if you are unsure about JSON formatting and need someone to check it.
 
 ---
 
