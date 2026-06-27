@@ -5,14 +5,16 @@
             "note": {
                 "en": "Only if needed. Prioritize until meeting [[stat:er]] requirements.",
                 "fr": "Seulement si nécessaire. Prioriser jusqu'à atteindre les besoins de [[stat:er]].",
-                "it": "Solo se necessario, dare la priorità ai requisiti di [[stat:er]]."
+                "it": "Solo se necessario, dare la priorità ai requisiti di [[stat:er]].",
+                "ru": "Только при нужде во Взрыве стихии"
             }
         },
         "hp%",
         {
             "name": "cr",
             "note": {
-                "en": "[[note:cr-favo]]."
+                "en": "[[note:cr-favo]].",
+                "ru": "[[note:cr-favo]]."
             }
         },
         "hp",
