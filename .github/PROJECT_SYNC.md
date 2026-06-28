@@ -9,8 +9,17 @@ project 1:
 - every managed parent and build issue gets the `Auto Sync` label
 - each build project item gets a `last_updated` text field matching its
   character's `metadata.json`
+- each build issue contains an automatically maintained list of weapons and artifact sets released after `last_updated` that are not already referenced by that build
 - missing issues, sub-issue relationships, project items, and the text field are
   created automatically; unrelated project data is left alone
+
+The generated release list uses `version_released` from `src/data`, English item
+names from `src/i18n/en`, and the character's weapon type from `metadata.json`.
+Build-level recommendation files take precedence over shared character-level
+files.
+
+Human-written issue text
+outside the generated release-audit markers is preserved.
 
 Traveler uses its public slug (`anemo-traveler`, `pyro-traveler`, and so on) so
 the elemental variants do not all resolve to one issue.

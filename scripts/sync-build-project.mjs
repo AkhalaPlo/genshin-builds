@@ -6,6 +6,10 @@ import { pathToFileURL } from 'node:url';
 const API_URL = 'https://api.github.com';
 const API_VERSION = '2026-03-10';
 const PAGE_SIZE = 100;
+const RELEASE_AUDIT_START =
+  '<!-- genshin-build-project-sync:release-audit:start -->';
+const RELEASE_AUDIT_END =
+  '<!-- genshin-build-project-sync:release-audit:end -->';
 
 const sleep = (milliseconds) =>
   new Promise((resolve) => setTimeout(resolve, milliseconds));
@@ -40,6 +44,282 @@ function automationMarker(kind, sourcePath) {
   return `<!-- genshin-build-project-sync:${kind}:${sourcePath.replaceAll('\\', '/')} -->`;
 }
 
+function readJsonFile(filePath) {
+  try {
+    return JSON.parse(fs.readFileSync(filePath, 'utf8'));
+  } catch (error) {
+    throw new Error(`Could not parse ${filePath}: ${error.message}`);
+  }
+}
+
+function parseGameVersion(value, context) {
+  const match = String(value ?? '').match(/^\s*(\d+)\.(\d+)/);
+
+  if (!match) {
+    throw new Error(
+      `${context} must start with a numeric game version such as "6.6". Received ${JSON.stringify(value)}.`,
+    );
+  }
+
+  return [Number.parseInt(match[1], 10), Number.parseInt(match[2], 10)];
+}
+
+function compareGameVersions(left, right) {
+  const [leftMajor, leftMinor] = parseGameVersion(left, 'Version');
+  const [rightMajor, rightMinor] = parseGameVersion(right, 'Version');
+
+  return leftMajor - rightMajor || leftMinor - rightMinor;
+}
+
+function collectKnownIds(value, knownIds, result = new Set()) {
+  if (typeof value === 'string') {
+    if (knownIds.has(value)) {
+      result.add(value);
+    }
+
+    for (const match of value.matchAll(
+      /\[\[(?:weapon|set|artifact):([^|\]]+)/g,
+    )) {
+      if (knownIds.has(match[1])) {
+        result.add(match[1]);
+      }
+    }
+
+    return result;
+  }
+
+  if (Array.isArray(value)) {
+    for (const item of value) {
+      collectKnownIds(item, knownIds, result);
+    }
+
+    return result;
+  }
+
+  if (value && typeof value === 'object') {
+    for (const item of Object.values(value)) {
+      collectKnownIds(item, knownIds, result);
+    }
+  }
+
+  return result;
+}
+
+function loadEffectiveBuildDocuments(characterPath, buildPath) {
+  const characterFiles = fs
+    .readdirSync(characterPath, { withFileTypes: true })
+    .filter(
+      (entry) =>
+        entry.isFile() &&
+        entry.name.endsWith('.json') &&
+        entry.name !== 'metadata.json',
+    )
+    .map((entry) => entry.name);
+  const buildFiles = fs
+    .readdirSync(buildPath, { withFileTypes: true })
+    .filter((entry) => entry.isFile() && entry.name.endsWith('.json'))
+    .map((entry) => entry.name);
+  const effectiveFiles = new Set([...characterFiles, ...buildFiles]);
+
+  return [...effectiveFiles].map((fileName) => {
+    const buildFile = path.join(buildPath, fileName);
+    const effectiveFile = fs.existsSync(buildFile)
+      ? buildFile
+      : path.join(characterPath, fileName);
+
+    return readJsonFile(effectiveFile);
+  });
+}
+
+function makeCatalogItems(entries, translations, context) {
+  return Object.entries(entries).map(([id, data]) => {
+    parseGameVersion(
+      data.version_released,
+      `${context} ${id} version_released`,
+    );
+
+    return {
+      id,
+      name: translations[id] ?? id,
+      version: data.version_released,
+    };
+  });
+}
+
+export function loadReleaseCatalog(rootDirectory = process.cwd()) {
+  const dataDirectory = path.join(rootDirectory, 'src', 'data');
+  const localeDirectory = path.join(rootDirectory, 'src', 'i18n', 'en');
+  const weaponTranslations = readJsonFile(
+    path.join(localeDirectory, 'weapons.json'),
+  );
+  const artifactTranslations = readJsonFile(
+    path.join(localeDirectory, 'artifact-sets.json'),
+  );
+  const weaponsByType = new Map();
+  const weaponsDirectory = path.join(dataDirectory, 'weapons');
+
+  for (const fileName of fs
+    .readdirSync(weaponsDirectory)
+    .filter((name) => name.endsWith('.json'))
+    .sort()) {
+    const weaponType = path.basename(fileName, '.json');
+    const entries = readJsonFile(path.join(weaponsDirectory, fileName));
+    weaponsByType.set(
+      weaponType,
+      makeCatalogItems(entries, weaponTranslations, `${weaponType} weapon`),
+    );
+  }
+
+  const artifactEntries = readJsonFile(
+    path.join(dataDirectory, 'artifacts', 'artifact_sets.json'),
+  );
+
+  return {
+    weaponsByType,
+    artifactSets: makeCatalogItems(
+      artifactEntries,
+      artifactTranslations,
+      'artifact set',
+    ),
+  };
+}
+
+function sortReleaseItems(items) {
+  return items.sort(
+    (left, right) =>
+      compareGameVersions(left.version, right.version) ||
+      left.name.localeCompare(right.name),
+  );
+}
+
+export function addReleaseAudits(inventory, catalog) {
+  const artifactIds = new Set(catalog.artifactSets.map((item) => item.id));
+
+  for (const character of inventory) {
+    const weaponCatalog = catalog.weaponsByType.get(character.weaponType);
+
+    if (!weaponCatalog) {
+      throw new Error(
+        `Unknown weapon type ${JSON.stringify(character.weaponType)} for ${character.sourcePath}.`,
+      );
+    }
+
+    parseGameVersion(
+      character.lastUpdated,
+      `${character.sourcePath}/metadata.json last_updated`,
+    );
+    const weaponIds = new Set(weaponCatalog.map((item) => item.id));
+    const characterPath = path.resolve(character.sourcePath);
+
+    for (const build of character.builds) {
+      const buildPath = path.resolve(build.sourcePath);
+      const buildDocuments = loadEffectiveBuildDocuments(
+        characterPath,
+        buildPath,
+      );
+      const mentionedWeapons = collectKnownIds(buildDocuments, weaponIds);
+      const mentionedArtifactSets = collectKnownIds(
+        buildDocuments,
+        artifactIds,
+      );
+
+      build.releaseAudit = {
+        lastUpdated: character.lastUpdated,
+        weaponType: character.weaponType,
+        weapons: sortReleaseItems(
+          weaponCatalog.filter(
+            (item) =>
+              compareGameVersions(item.version, character.lastUpdated) > 0 &&
+              !mentionedWeapons.has(item.id),
+          ),
+        ),
+        artifactSets: sortReleaseItems(
+          catalog.artifactSets.filter(
+            (item) =>
+              compareGameVersions(item.version, character.lastUpdated) > 0 &&
+              !mentionedArtifactSets.has(item.id),
+          ),
+        ),
+      };
+    }
+  }
+
+  return inventory;
+}
+
+function renderReleaseList(items) {
+  if (items.length === 0) {
+    return '_None._';
+  }
+
+  return items
+    .map(
+      (item) =>
+        `- **${item.name}** (\`${item.id}\`) — released in \`${item.version}\``,
+    )
+    .join('\n');
+}
+
+export function renderReleaseAudit(audit) {
+  if (!audit) {
+    throw new Error('Build release audit data is missing.');
+  }
+
+  const weaponType =
+    audit.weaponType.charAt(0).toUpperCase() + audit.weaponType.slice(1);
+
+  return [
+    RELEASE_AUDIT_START,
+    `## Items released after \`${audit.lastUpdated}\``,
+    '',
+    'These items are not currently mentioned in this build.',
+    '',
+    `### ${weaponType} weapons`,
+    '',
+    renderReleaseList(audit.weapons),
+    '',
+    '### Artifact sets',
+    '',
+    renderReleaseList(audit.artifactSets),
+    RELEASE_AUDIT_END,
+  ].join('\n');
+}
+
+export function buildIssueBody(currentBody, buildMarker, audit) {
+  let body = String(currentBody ?? '')
+    .replaceAll('\r\n', '\n')
+    .trim();
+
+  if (!body.includes(buildMarker)) {
+    body = [buildMarker, body].filter(Boolean).join('\n\n');
+  }
+
+  const section = renderReleaseAudit(audit);
+  const startIndex = body.indexOf(RELEASE_AUDIT_START);
+  const endIndex = body.indexOf(RELEASE_AUDIT_END);
+
+  const hasDuplicateMarkers =
+    startIndex !== body.lastIndexOf(RELEASE_AUDIT_START) ||
+    endIndex !== body.lastIndexOf(RELEASE_AUDIT_END);
+
+  if (
+    (startIndex === -1) !== (endIndex === -1) ||
+    (startIndex !== -1 && endIndex < startIndex) ||
+    hasDuplicateMarkers
+  ) {
+    throw new Error(
+      'Build issue body contains invalid managed release-audit markers.',
+    );
+  }
+
+  if (startIndex === -1) {
+    return [body, section].filter(Boolean).join('\n\n');
+  }
+
+  const sectionEnd = endIndex + RELEASE_AUDIT_END.length;
+  return `${body.slice(0, startIndex)}${section}${body.slice(sectionEnd)}`.trim();
+}
+
 /**
  * Reads character metadata and immediate build directories from src/content.
  * Folder names are intentionally used as issue titles because they are stable,
@@ -71,7 +351,22 @@ export function loadBuildInventory(contentDirectory) {
           continue;
         }
 
-        let metadata = JSON.parse(fs.readFileSync(metadataPath, 'utf8'));
+        const metadata = readJsonFile(metadataPath);
+
+        if (
+          typeof metadata.last_updated !== 'string' ||
+          metadata.last_updated.trim().length === 0
+        ) {
+          throw new Error(
+            `${metadataPath} must contain a non-empty string named last_updated.`,
+          );
+        }
+
+        if (typeof metadata.weapon !== 'string' || !metadata.weapon) {
+          throw new Error(
+            `${metadataPath} must contain a non-empty string named weapon.`,
+          );
+        }
 
         const sourcePath = path
           .relative(process.cwd(), characterDirectory)
@@ -89,6 +384,7 @@ export function loadBuildInventory(contentDirectory) {
           name: parentTitle(characterEntry.name, elementEntry.name),
           sourcePath,
           lastUpdated: metadata.last_updated,
+          weaponType: metadata.weapon,
           builds,
         });
       }
@@ -267,6 +563,19 @@ async function addIssueLabel(client, repository, issueNumber, labelName) {
     body: { labels: [labelName] },
     mutation: true,
   });
+}
+
+async function updateIssueBody(client, repository, issueNumber, body) {
+  const { payload } = await client.request(
+    `/repos/${repository}/issues/${issueNumber}`,
+    {
+      method: 'PATCH',
+      body: { body },
+      mutation: true,
+    },
+  );
+
+  return payload;
 }
 
 async function addSubIssue(client, repository, parentNumber, subIssueId) {
@@ -526,9 +835,9 @@ export async function synchronize({
   labelName,
   dryRun,
 }) {
-
   const stats = {
     issuesCreated: 0,
+    issueBodiesUpdated: 0,
     labelsAdded: 0,
     subIssueRelationshipsAdded: 0,
     projectItemsAdded: 0,
@@ -599,6 +908,35 @@ export async function synchronize({
     issue.labels = [...(issue.labels ?? []), { name: labelName }];
     stats.labelsAdded += 1;
     console.log(`Added label "${labelName}" to ${issueLabel(issue)}.`);
+  };
+
+  const ensureBuildIssueBody = async (issue, buildMarker, audit) => {
+    const currentBody = String(issue.body ?? '').replaceAll('\r\n', '\n');
+    const desiredBody = buildIssueBody(currentBody, buildMarker, audit);
+
+    if (currentBody.trim() === desiredBody) {
+      return;
+    }
+
+    if (dryRun) {
+      console.log(
+        `[dry-run] Update ${issueLabel(issue)} body with ${audit.weapons.length} newer weapon(s) and ${audit.artifactSets.length} newer artifact set(s).`,
+      );
+      stats.plannedChanges += 1;
+      return;
+    }
+
+    const updatedIssue = await updateIssueBody(
+      client,
+      repository,
+      issue.number,
+      desiredBody,
+    );
+    issue.body = updatedIssue.body ?? desiredBody;
+    stats.issueBodiesUpdated += 1;
+    console.log(
+      `Updated ${issueLabel(issue)} body with ${audit.weapons.length} newer weapon(s) and ${audit.artifactSets.length} newer artifact set(s).`,
+    );
   };
 
   const ensureProjectItem = async (issue) => {
@@ -688,7 +1026,7 @@ export async function synchronize({
     if (!parentIssue) {
       for (const build of character.builds) {
         console.log(
-          `[dry-run] Create sub-issue "${build.name}" with label "${labelName}", attach it to "${character.name}", add it to the project, and set "${fieldName}" to ${JSON.stringify(character.lastUpdated)}.`,
+          `[dry-run] Create sub-issue "${build.name}" with label "${labelName}" and a release audit containing ${build.releaseAudit.weapons.length} weapon(s) and ${build.releaseAudit.artifactSets.length} artifact set(s), attach it to "${character.name}", add it to the project, and set "${fieldName}" to ${JSON.stringify(character.lastUpdated)}.`,
         );
         stats.plannedChanges += 4;
       }
@@ -720,7 +1058,7 @@ export async function synchronize({
       if (!subIssue) {
         if (dryRun) {
           console.log(
-            `[dry-run] Create sub-issue "${build.name}" with label "${labelName}" under "${character.name}".`,
+            `[dry-run] Create sub-issue "${build.name}" with label "${labelName}" and a release audit containing ${build.releaseAudit.weapons.length} weapon(s) and ${build.releaseAudit.artifactSets.length} artifact set(s) under "${character.name}".`,
           );
           stats.plannedChanges += 2;
           console.log(
@@ -734,7 +1072,7 @@ export async function synchronize({
           client,
           repository,
           build.name,
-          buildMarker,
+          buildIssueBody('', buildMarker, build.releaseAudit),
           labelName,
         );
         repositoryIssues.push(subIssue);
@@ -765,6 +1103,7 @@ export async function synchronize({
         }
       }
 
+      await ensureBuildIssueBody(subIssue, buildMarker, build.releaseAudit);
       await ensureIssueLabel(subIssue);
       const item = await ensureProjectItem(subIssue);
       await ensureFieldValue(subIssue, item, character.lastUpdated);
@@ -789,8 +1128,9 @@ async function main() {
     throw new Error(`Unknown options: ${unknownArguments.join(', ')}`);
   }
 
-  const inventory = loadBuildInventory(
-    path.join(process.cwd(), 'src', 'content'),
+  const inventory = addReleaseAudits(
+    loadBuildInventory(path.join(process.cwd(), 'src', 'content')),
+    loadReleaseCatalog(process.cwd()),
   );
 
   if (argumentsSet.has('--print-plan')) {
