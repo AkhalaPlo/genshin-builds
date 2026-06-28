@@ -162,9 +162,9 @@ export function rankBuilds(builds, currentVersion) {
     .map((build) => ({
       ...build,
       score:
-        build.characterScore * 0.4 +
+        build.characterScore * 0.3 +
         Number(build.bestRole) * 0.2 +
-        (build.age / maxAge) * 0.3 +
+        (build.age / maxAge) * 0.4 +
         (build.weaponCount / maxWeapons) * 0.05 +
         (build.artifactSetCount / maxArtifactSets) * 0.05,
     }))
