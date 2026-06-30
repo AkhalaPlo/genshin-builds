@@ -10,6 +10,12 @@ export function compareCharacterCards(left, right, sort) {
       Number(value(right, 'rarity')) - Number(value(left, 'rarity')) || byName
     );
   }
+  if (sort === 'release') {
+    return (
+      Number.parseFloat(value(right, 'versionReleased')) -
+        Number.parseFloat(value(left, 'versionReleased')) || byName
+    );
+  }
 
   const property = sort === 'weapon' ? 'weapon' : 'element';
   return compareText(value(left, property), value(right, property)) || byName;
