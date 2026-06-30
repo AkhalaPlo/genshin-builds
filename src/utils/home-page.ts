@@ -19,16 +19,19 @@ function normalizeVersion(version: unknown) {
     : '';
 }
 
-function getLatestChangelogVersion(contentPath: string) {
+function getRecentChangelogVersions(contentPath: string) {
   const changelogPath = path.join(contentPath, 'site', 'changelog.json');
 
   if (!fs.existsSync(changelogPath)) {
-    return '';
+    return [];
   }
 
   const changelog = readJSONFile(changelogPath);
 
-  return normalizeVersion(changelog?.groups?.[0]?.version);
+  return (changelog?.groups ?? [])
+    .slice(0, 2)
+    .map((group: any) => normalizeVersion(group.version))
+    .filter(Boolean);
 }
 
 function getBuildSummaries(
@@ -65,7 +68,7 @@ export function getHomePageData(lang = 'en') {
   const locale = getLocale(lang);
   const contentPath = path.join(process.cwd(), 'src', 'content');
   const translator = new TranslationHelper(locale, {}, lang);
-  const latestVersion = getLatestChangelogVersion(contentPath);
+  const recentVersions = getRecentChangelogVersions(contentPath);
 
   const characters = getContentCharacters(contentPath)
     .map(({ character, characterPath, element, metadataPath, rarity }) => {
@@ -94,9 +97,7 @@ export function getHomePageData(lang = 'en') {
         weapon: metadata.weapon,
         lastUpdated,
         versionReleased,
-        isRecentlyUpdated: latestVersion
-          ? lastUpdated === latestVersion
-          : false,
+        isRecentlyUpdated: recentVersions.includes(lastUpdated),
         image: resolveCharacterAssetUrl(assetContext, metadata.image, 'image'),
         portrait: resolveCharacterAssetUrl(
           assetContext,
@@ -111,13 +112,13 @@ export function getHomePageData(lang = 'en') {
         a.element.localeCompare(b.element) || a.name.localeCompare(b.name),
     );
 
-  const recentlyUpdatedCharacters = latestVersion
-    ? characters.filter((character) => character.lastUpdated === latestVersion)
-    : [];
+  const recentlyUpdatedCharacters = characters.filter(
+    (character) => character.isRecentlyUpdated,
+  );
 
   return {
     characters,
-    latestVersion,
+    recentVersions,
     recentlyUpdatedCharacters,
     lang,
     locale,
