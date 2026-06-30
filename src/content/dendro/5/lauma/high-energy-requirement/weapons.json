@@ -11,7 +11,8 @@
                     "name": "a-thousand-floating-dreams",
                     "note": {
                         "en": "Calculated with the passive giving 32 [[stat:em]] and 20% [[stat:dendro-dmg]] Bonus",
-                        "fr": "Calculé avec le passif donnant 32 de [[stat:em]] et 20 % de bonus de [[stat:dendro-dmg]]."
+                        "fr": "Calculé avec le passif donnant 32 de [[stat:em]] et 20 % de bonus de [[stat:dendro-dmg]].",
+                        "ru": "Предполагается что бонус от Пассивной способности составляет 32 [[stat:em|МС]] и 20% [[stat:dendro-dmg|бонуса Дендро урона]]."
                     }
                 },
                 {
@@ -19,7 +20,8 @@
                     "refinement": 5,
                     "note": {
                         "en": "Assumes passive is always active.",
-                        "fr": "Suppose que le passif est toujours actif."
+                        "fr": "Suppose que le passif est toujours actif.",
+                        "ru": "Предполагается, что эффект Пассивной способности действует постоянно."
                     }
                 }
             ]
@@ -31,7 +33,8 @@
                     "name": "sunny-morning-sleep-in",
                     "note": {
                         "en": "This weapon assumes you are gaining the [[stat:em]] from the [[ability:skill]] portion of the passive.",
-                        "fr": "Ce classement suppose que vous obtenez la [[stat:em]] de la partie [[ability:skill]] du passif."
+                        "fr": "Ce classement suppose que vous obtenez la [[stat:em]] de la partie [[ability:skill]] du passif.",
+                        "ru": "Предполагается, что [[character:lauma]] получает бонус к [[stat:em|МС]] после использования [[ability:skill|Элементального навыка]]."
                     }
                 },
                 {
@@ -43,7 +46,8 @@
                     "refinement": 5,
                     "note": {
                         "en": "This weapon assume you are using hold [[ability:skill]] for damage, if you are not, this weapon should not be considered",
-                        "fr": "Cette classement suppose que vous utilisez le [[ability:skill]] appui long pour les dégâts ; si ce n'est pas le cas, elle ne doit pas être considérée."
+                        "fr": "Cette classement suppose que vous utilisez le [[ability:skill]] appui long pour les dégâts ; si ce n'est pas le cas, elle ne doit pas être considérée.",
+                        "ru": "Предполагается, что [[character:lauma]] использует долгое нажатие [[ability:skill|Элементального навыка]], чтобы наносить урон. В ином случае не рекомендуется использовать."
                     }
                 }
             ]
