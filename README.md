@@ -222,19 +222,19 @@ The website is built on our folder structure: adding a new folder will automatic
 ### Recently Updated Filter
 
 The home page shows a `Recently updated` filter when at least one character was
-updated for the latest changelog version.
+updated during either of the two latest changelog versions.
 
 The site reads [`src/content/site/changelog.json`](./src/content/site/changelog.json)
-and treats the first item in `groups` as the latest version. It compares that
-`version` value with each character folder's `metadata.json` `last_updated`
-value:
+and treats the first two items in `groups` as the recent versions. It compares
+those `version` values with each character folder's `metadata.json`
+`last_updated` value:
 
 ```txt
 src/content/<element>/<rarity>/<character>/metadata.json
 ```
 
 To make a character appear when this filter is checked, set `last_updated` to
-the same version as the first changelog group, for example:
+the same version as either of the first two changelog groups, for example:
 
 ```json
 {
@@ -244,7 +244,7 @@ the same version as the first changelog group, for example:
 
 The comparison trims extra spaces and normalizes spacing around `/`, but keep
 the written version consistent with the changelog. If no character matches the
-latest changelog version, the filter is hidden.
+two latest changelog versions, the filter is hidden.
 
 ---
 

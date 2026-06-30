@@ -30,8 +30,8 @@ src/content/<element>/<rarity>/<character>/metadata.json
 - `last_updated`: Genshin version string shown in the page header and used by
   the home page `Recently updated` filter.
 - `version_released`: Character release version from the official HoYoWiki,
-  used by the home page `Version - Newest` sort. Use the changelog format for
-  Luna versions, such as `6.6 / Luna VII`.
+  used by the home page `Release date - Newest` sort. Use the changelog format
+  for Luna versions, such as `6.6 / Luna VII`.
 - `image`: Official fallback URL for the character splash art.
 - `portrait`: Official fallback URL for the small character icon used on the
   home page character list. Should come from the Hoyolab Battle Chronicles
@@ -39,11 +39,11 @@ src/content/<element>/<rarity>/<character>/metadata.json
 
 ## Recently Updated Filter
 
-The home page checks the latest version from the first `groups` item in
-`src/content/site/changelog.json`.
+The home page checks the two latest versions from the first two `groups` items
+in `src/content/site/changelog.json`.
 
 When a character should appear under the `Recently updated` filter, set
-`last_updated` to the same version:
+`last_updated` to either version:
 
 ```json
 {
@@ -53,9 +53,9 @@ When a character should appear under the `Recently updated` filter, set
 
 The comparison trims extra spaces and normalizes spacing around `/`. For
 clarity, still copy the version exactly as it appears in the changelog. If the
-value does not match the latest changelog version, the character remains visible
-in the normal roster but will not appear when the `Recently updated` filter is
-checked.
+value does not match either recent changelog version, the character remains
+visible in the normal roster but will not appear when the `Recently updated`
+filter is checked.
 
 ## Images
 

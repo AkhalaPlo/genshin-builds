@@ -16,8 +16,9 @@ export const getStaticPaths = getLanguageStaticPaths;
 const requestedLang = Array.isArray(Astro.params.lang)
   ? Astro.params.lang[0]
   : Astro.params.lang;
-const { characters, lang, latestVersion, locale, recentlyUpdatedCharacters } =
-  getHomePageData(requestedLang ?? 'en');
+const { characters, lang, locale, recentlyUpdatedCharacters } = getHomePageData(
+  requestedLang ?? 'en',
+);
 ---
 
 <html lang={lang}>
@@ -36,7 +37,6 @@ const { characters, lang, latestVersion, locale, recentlyUpdatedCharacters } =
         {t(locale, 'ui', 'Home translation disclaimer', undefined, false)}
       </p>
       <HomeFilters
-        latestVersion={latestVersion}
         locale={locale}
         recentlyUpdatedCount={recentlyUpdatedCharacters.length}
       />
