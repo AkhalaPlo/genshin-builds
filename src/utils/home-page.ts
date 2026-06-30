@@ -81,6 +81,7 @@ export function getHomePageData(lang = 'en') {
         element,
       });
       const lastUpdated = normalizeVersion(metadata.last_updated);
+      const versionReleased = normalizeVersion(metadata.version_released);
 
       return {
         name,
@@ -92,6 +93,7 @@ export function getHomePageData(lang = 'en') {
         rarity,
         weapon: metadata.weapon,
         lastUpdated,
+        versionReleased,
         isRecentlyUpdated: latestVersion
           ? lastUpdated === latestVersion
           : false,

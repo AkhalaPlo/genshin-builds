@@ -16,6 +16,7 @@ src/content/<element>/<rarity>/<character>/metadata.json
 {
   "weapon": "bow",
   "last_updated": "5.7",
+  "version_released": "3.3",
   "portrait": "https://example.com/character-icon.webp"
 }
 ```
@@ -28,6 +29,9 @@ src/content/<element>/<rarity>/<character>/metadata.json
   files in `src/data/weapons`.
 - `last_updated`: Genshin version string shown in the page header and used by
   the home page `Recently updated` filter.
+- `version_released`: Character release version from the official HoYoWiki,
+  used by the home page `Version - Newest` sort. Use the changelog format for
+  Luna versions, such as `6.6 / Luna VII`.
 - `image`: Official fallback URL for the character splash art.
 - `portrait`: Official fallback URL for the small character icon used on the
   home page character list. Should come from the Hoyolab Battle Chronicles
