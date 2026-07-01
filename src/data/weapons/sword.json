@@ -381,13 +381,13 @@
         "version_released": "1.0",
         "source": "Exploration",
         "passive": {
-            "en": "Upon causing an Overloaded, Superconduct, Electro-Charged, Quicken, Aggravate, Hyperbloom, Lunar-Charged, or Electro-infused Swirl reaction, ATK is increased by {{value}}% for 12s.",
-            "de": "Erhöht den ANG nach Auslösen der Reaktionen „Überladen“, „Supraleiter“, „Unter Strom“, „Urwuchs“, „Suprawuchs“, „Supraspross“, „Mond unter Strom“ und „Elektro-Verwirbelung“ 12 s lang um {{value}}%.",
-            "es": "Tras causar una reacción de Sobrecarga, Superconductor, Electrocargado, Aceleración, Intensificación, Sobreflorecimiento, Electrocargado Lunar o Torbellino Electro, el ATQ aumenta en un {{value}}% durante 12 s.",
-            "fr": "Augmente l'ATQ de {{value}}% pendant 12 s après avoir déclenché une réaction de Surcharge, de Supraconduction, d'Électrocution, de Sélénocution, de Stimulation, de Suractivation, d'Exubérance ou de Dispersion Électro.",
-            "it": "Dopo aver causato una reazione di Sovraccarico, Superconduzione, Electrocarica, Vivificazione, Accentuazione, Iperfioritura, Carica lunare o Turbinio di Electro, l'ATT aumenta di un {{value}}% per 12 s.",
-            "ru": "Увеличивает силу атаки на {{value}}% на 12 сек. после активации реакций Перегрузка, Сверхпроводник, Заряжен, Стимуляция, Обострение, Вегетация, Лунный заряд или Электро Рассеивание.",
-            "pt": "Após causar uma reação elemental de Sobrecarga, Supercondutor, Eletricamente Carregado, Aceleração, Intensificação, Superflorescimento, Carga Lunar ou Redemoinho de Electro, o ATQ é aumentado em {{value}}% por 12s."
+            "en": "Upon causing an Overloaded, Superconduct, Stellar-Conduct, Electro-Charged, Quicken, Aggravate, Hyperbloom, Lunar-Charged, or Electro-infused Swirl reaction, ATK is increased by {{value}}% for 12s.",
+            "de": "Erhöht den ANG nach Auslösen der Reaktionen „Überladen“, „Supraleiter“, „Stellar-Supraleiter“, „Unter Strom“, „Urwuchs“, „Suprawuchs“, „Supraspross“, „Mond unter Strom“ oder „Elektro-Verwirbelung“ 12 s lang um {{value}}%.",
+            "es": "Tras causar una reacción de Sobrecarga, Superconductor, Superconductor Estelar, Electrocargado, Aceleración, Intensificación, Sobreflorecimiento, Electrocargado Lunar o Torbellino Electro, el ATQ aumenta en un {{value}}% durante 12 s.",
+            "fr": "Augmente l'ATQ de {{value}}% pendant 12 s après avoir déclenché une réaction de Surcharge, de Supraconduction, d'Astroconduction, d'Électrocution, de Sélénocution, de Stimulation, de Suractivation, d'Exubérance ou de Dispersion Électro.",
+            "it": "Dopo aver causato una reazione di Sovraccarico, Superconduzione, Astroconduzione, Electrocarica, Vivificazione, Accentuazione, Iperfioritura, Carica lunare o Turbinio di Electro, l'ATT aumenta di un {{value}}% per 12 s.",
+            "ru": "Увеличивает силу атаки на {{value}}% на 12 сек. после активации реакций Перегрузка, Звёздный проводник, Сверхпроводник, Заряжен, Стимуляция, Обострение, Вегетация, Лунный заряд или Электро Рассеивание.",
+            "pt": "Após causar uma reação elemental de Sobrecarga, Supercondutor, Supercondutor Estelar, Eletricamente Carregado, Aceleração, Intensificação, Superflorescimento, Carga Lunar ou Redemoinho de Electro, o ATQ é aumentado em {{value}}% por 12s."
         },
         "substat": "em",
         "level_1": {
