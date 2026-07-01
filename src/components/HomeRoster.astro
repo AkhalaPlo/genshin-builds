@@ -8,7 +8,6 @@ const characterCountLabel = t(locale, 'ui', 'Characters');
 const noResultsLabel = t(locale, 'ui', 'No characters found');
 const openBuildsLabel = t(locale, 'ui', 'Open builds');
 const resultsLabel = t(locale, 'ui', 'Results');
-const versionLabel = t(locale, 'ui', 'Version', undefined, false);
 const releaseDateLabel = t(locale, 'ui', 'Release date', undefined, false);
 const newestLabel = t(locale, 'ui', 'Newest', undefined, false);
 const characterPortraitAltTemplate = t(locale, 'ui', 'Character portrait alt');
@@ -18,7 +17,6 @@ const sortOptions = [
   { value: 'name', label: `${characterCountLabel} - A-Z` },
   { value: 'element', label: `${t(locale, 'ui', 'Element')} - A-Z` },
   { value: 'rarity', label: `${t(locale, 'ui', 'Rarity')} - A-Z` },
-  { value: 'weapon', label: `${t(locale, 'ui', 'Weapon')} - A-Z` },
 ];
 const eagerPortraitCount = 9;
 const highPriorityPortraitCount = 4;
@@ -121,15 +119,11 @@ const rosterCharacters = characters.map(getCharacterViewModel);
 
               <span class="roster-character-copy" aria-hidden="true">
                 <span class="roster-character-name">{character.name}</span>
-                <span class="roster-character-meta">
-                  <span>{character.rarityLabel}</span>
-                  <span>{character.weaponLabel}</span>
-                </span>
               </span>
 
               {character.lastUpdated && (
                 <span class="roster-character-updated" aria-hidden="true">
-                  {versionLabel} {character.lastUpdated}
+                  {character.lastUpdated}
                 </span>
               )}
             </a>

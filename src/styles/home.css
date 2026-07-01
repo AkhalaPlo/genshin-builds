@@ -351,6 +351,7 @@
 
 .roster-character {
   --roster-element: var(--element);
+  --roster-rarity: var(--roster-element);
 }
 
 .roster-character.anemo {
@@ -379,6 +380,14 @@
 
 .roster-character.pyro {
   --roster-element: #ff6640;
+}
+
+.roster-character[data-rarity='4'] {
+  --roster-rarity: #b980ff;
+}
+
+.roster-character[data-rarity='5'] {
+  --roster-rarity: #f1b44a;
 }
 
 .roster-character {
@@ -479,42 +488,15 @@
   display: grid;
   min-width: 0;
   gap: 3px;
-  padding: 7px 8px 8px;
+  border-top: 1px solid var(--roster-rarity);
+  padding: 12px 8px 12px;
   background: rgba(3, 5, 8, 0.72);
-}
-
-.roster-character-meta {
-  display: flex;
-  min-width: 0;
-  flex-wrap: nowrap;
-  gap: 4px 6px;
-  overflow: hidden;
-  color: color-mix(in srgb, #fff 62%, var(--roster-element) 38%);
-  font-size: 0.66rem;
-  font-weight: 720;
-  line-height: 1.1;
-  white-space: nowrap;
-}
-
-.roster-character-meta span {
-  min-width: 0;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-.roster-character-meta span:first-child {
-  flex: 0 0 auto;
-}
-
-.roster-character-meta span:last-child {
-  flex: 1 1 auto;
 }
 
 .roster-character-name {
   overflow: hidden;
   color: #fff;
-  font-size: 0.88rem;
+  font-size: 0.85rem;
   font-weight: 820;
   line-height: 1.12;
   text-overflow: ellipsis;
@@ -776,10 +758,6 @@
     padding: 8px;
   }
 
-  .roster-character-copy {
-    padding: 7px;
-  }
-
   .roster-character-name {
     font-size: 0.8rem;
   }
@@ -825,10 +803,6 @@
     grid-template-columns: repeat(auto-fill, minmax(118px, 1fr));
   }
 
-  .roster-character-copy {
-    padding: 7px;
-  }
-
   .roster-character-name {
     font-size: 0.78rem;
   }
@@ -843,10 +817,6 @@
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 7px;
     padding: 8px;
-  }
-
-  .roster-character-copy {
-    padding: 6px;
   }
 
   .roster-character-name {
